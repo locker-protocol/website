@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi" dir="ltr" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Locker Vault - Black Edition | ERC-20 Locker Protocol</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P029LN8NTN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // send_page_view:false — the Angular router sends every page_view (incl. the
+    // first) so client-side route changes are tracked and not double-counted.
+    gtag('config', 'G-P029LN8NTN', { send_page_view: false });
+  </script>
+
+  <!-- SEO: Primary Meta Tags -->
+  <meta name="description" content="Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.">
+  <meta name="keywords" content="Locker Protocol Wallet, crypto wallet extension, Chrome wallet, Brave wallet, MetaMask alternative, air-gapped wallet, QR signing, crypto swap, cross-chain bridge, Hyperliquid perpetuals, Bitcoin, Solana, Tron, Sui, Stellar, non-custodial, open-source">
+  <meta name="author" content="ERC-20 Locker Protocol">
+  <meta name="robots" content="index, follow">
+  <!-- canonical and hreflang tags are managed dynamically by LanguageService -->
+
+  <!-- Open Graph / Facebook / Discord / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ERC-20 Locker Protocol">
+  <meta property="og:title" content="Locker Vault - Black Edition | ERC-20 Locker Protocol">
+  <meta property="og:description" content="Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.">
+  <meta property="og:url" content="https://lockerprotocol.com/vi/locker-erc20-air-gapped-hardware/">
+  <meta property="og:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+  <meta property="og:locale" content="vi_VN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Locker Vault - Black Edition | ERC-20 Locker Protocol">
+  <meta name="twitter:description" content="Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.">
+  <meta name="twitter:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta name="twitter:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ERC-20 Locker Protocol",
+  "alternateName": [
+    "Locker Protocol",
+    "Locker",
+    "LockerProtocol"
+  ],
+  "url": "https://lockerprotocol.com/vi/",
+  "description": "Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ERC-20 Locker Protocol",
+    "url": "https://lockerprotocol.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lockerprotocol.com/assets/icons/icon-512x512.png"
+    }
+  },
+  "inLanguage": "vi"
+}
+  </script>
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <style>
+    /* Global splash pre-loader: painted from the inline HTML on first paint (before the
+       Angular bundle loads), then removed automatically when Angular renders <app-root>.
+       The logo is inline SVG (no request, no <base href> dependency, works air-gapped),
+       which is why there is no white flash while the app boots. */
+    .global-splash-screen {
+      position: fixed; inset: 0; background: #ffffff;
+      display: flex; align-items: center; justify-content: center; z-index: 99999;
+    }
+    .splash-spinner-container {
+      position: relative; width: 120px; height: 120px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .splash-logo { width: 60px; height: 60px; position: absolute; z-index: 10; }
+    .splash-ring {
+      position: absolute; width: 100%; height: 100%; border-radius: 50%;
+      border: 4px solid #f3f4f6; border-top-color: #7c3aed; border-right-color: #3b82f6;
+      animation: splash-spin 2.5s cubic-bezier(0.68, -0.15, 0.265, 1.15) infinite;
+    }
+    @keyframes splash-spin {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(360deg); animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); }
+      100% { transform: rotate(720deg); }
+    }
+  </style>
+<style>*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}svg{display:block;vertical-align:middle}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0;background-color:#fff;color:#1a1a1a;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+</style><link rel="stylesheet" href="styles-GU7PMHYE.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GU7PMHYE.css"></noscript><link rel="modulepreload" href="chunk-QGWTLCFZ.js"><link rel="modulepreload" href="chunk-OERSU4S2.js">  <link rel="canonical" href="https://lockerprotocol.com/vi/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="en" href="https://lockerprotocol.com/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="fr" href="https://lockerprotocol.com/fr/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="zh" href="https://lockerprotocol.com/zh/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="es" href="https://lockerprotocol.com/es/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="ar" href="https://lockerprotocol.com/ar/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="de" href="https://lockerprotocol.com/de/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="he" href="https://lockerprotocol.com/he/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="hi" href="https://lockerprotocol.com/hi/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="id" href="https://lockerprotocol.com/id/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="it" href="https://lockerprotocol.com/it/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="ja" href="https://lockerprotocol.com/ja/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="ko" href="https://lockerprotocol.com/ko/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="pt" href="https://lockerprotocol.com/pt/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="ru" href="https://lockerprotocol.com/ru/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="tr" href="https://lockerprotocol.com/tr/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="vi" href="https://lockerprotocol.com/vi/locker-erc20-air-gapped-hardware/">
+  <link rel="alternate" hreflang="x-default" href="https://lockerprotocol.com/locker-erc20-air-gapped-hardware/">
+</head>
+
+<body>
+  <app-root>
+    <div class="global-splash-screen" aria-label="Loading Application">
+      <div class="splash-spinner-container">
+        <div class="splash-ring"></div>
+        <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M 35 15 H 15 V 35 M 65 15 H 85 V 35 M 35 85 H 15 V 65 M 65 85 H 85 V 65" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 35 15 H 15 V 35 M 65 15" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 65 85 H 85 V 65" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 30 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 40 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 50 22 V 78" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 60 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 70 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <main class="seo-prerender" style="max-width:48rem;margin:0 auto;padding:6rem 1.5rem;font-family:system-ui,sans-serif;line-height:1.6">
+      <h1>Locker Vault - Black Edition</h1>
+      <p>Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.</p>
+      <h2>Locker Vault - Black Edition</h2>
+      <h3>Thanh toán thành công!</h3>
+      <p>Tiền của bạn đã được khóa an toàn qua Locker Protocol. Hãy tham gia Discord của chúng tôi và gửi thông tin giao hàng qua cổng bảo mật.</p>
+      <h3>Tóm tắt đơn hàng</h3>
+      <h3>Tiếp theo là gì?</h3>
+      <p>Sao chép hash giao dịch ở trên — đó là bằng chứng thanh toán on-chain của bạn.</p>
+      <p>Tham gia cộng đồng Discord của Locker Protocol bằng nút bên dưới.</p>
+      <p>Mở kênh #vault-orders và dán hash giao dịch của bạn. Đội ngũ chúng tôi sẽ xác minh thanh toán và liên hệ với bạn về việc giao hàng.</p>
+      <nav aria-label="ERC-20 Locker Protocol"><ul><li><a href="https://lockerprotocol.com/vi/">Locker Protocol Wallet: tiện ích Web3 được AI kiểm tra, khóa ngoại tuyến</a></li><li><a href="https://lockerprotocol.com/vi/vault/">Chọn mức bảo mật của bạn</a></li><li><a href="https://lockerprotocol.com/vi/locker-vault-extensions/">Tiện ích Locker Protocol Wallet</a></li><li><a href="https://lockerprotocol.com/vi/locker/">Locker Protocol - Khóa token, trao quyền và đa chữ ký</a></li><li><a href="https://lockerprotocol.com/vi/ledger-alternative/">Thay thế Ledger — chiếc ví cách ly mạng mà bạn có thể tự kiểm chứng</a></li><li><a href="https://lockerprotocol.com/vi/metamask-alternative/">Lựa chọn thay thế MetaMask không giữ khóa trong trình duyệt</a></li><li><a href="https://lockerprotocol.com/vi/threat-model/">Mô hình mối đe dọa của Locker Protocol</a></li><li><a href="https://lockerprotocol.com/vi/security/">Bảo mật &amp; công bố có trách nhiệm</a></li></ul></nav>
+    </main>
+  </app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-XU56S3AU.js" type="module"></script></body>
+
+</html>

@@ -1,0 +1,886 @@
+{
+  "COMPARISON": {
+    "TITLE": "Why Locker Protocol?",
+    "SUBTITLE": "Each tool below leads in its category. Locker brings air-gapped self-custody, multisig and on-chain locking together in one open, non-custodial stack.",
+    "LEDGER_LINK": "Coming from Ledger? Read the dedicated comparison",
+    "HEADER": {
+      "FEATURE": "Feature",
+      "STATUS": "Availability"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "Self-Custody",
+      "AIR_GAP": "Air-Gapped Signing",
+      "ON_DEVICE_VERIFY": "On-Device Verification",
+      "MULTISIG": "Multisig (M-of-N)",
+      "VESTING": "Token Vesting Schedules",
+      "LP_LOCK": "LP Locking + Public Proof",
+      "BATCH_SIGN": "Batch Signing",
+      "ROLES": "Granular Access Roles",
+      "NO_SAAS": "Fully On-Chain, No SaaS",
+      "NO_FEES": "No Subscription Fees",
+      "SECURE_ELEMENT": "Certified Secure Element",
+      "INSTITUTIONAL": "Institutional Custody & Compliance"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "You alone hold the keys, no third party can move or freeze your funds.",
+      "AIR_GAP": "Private keys never touch an internet-connected device; every request crosses as a QR code.",
+      "ON_DEVICE_VERIFY": "Review the real transaction on a trusted screen before signing, to stop phishing.",
+      "MULTISIG": "Funds move only when several independent signers approve.",
+      "VESTING": "Release tokens gradually over time under fixed, on-chain rules.",
+      "LP_LOCK": "Lock Uniswap/PancakeSwap LP tokens with a verifiable public proof.",
+      "BATCH_SIGN": "Approve several operations in a single signing session.",
+      "ROLES": "Separate admin, operator and signer roles for team setups.",
+      "NO_SAAS": "Runs fully on-chain, no hosted service that could be shut down.",
+      "NO_FEES": "Open-source and free; you pay only network gas.",
+      "SECURE_ELEMENT": "Keys isolated in a certified, tamper-resistant hardware chip.",
+      "INSTITUTIONAL": "Insurance, SOC-2 audits and enterprise custody controls."
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Ledger Alternative — The Air-Gapped Wallet You Can Verify",
+      "DESCRIPTION": "Looking for a Ledger alternative? Locker Protocol turns any offline phone into a free, open-source air-gapped wallet: QR-only signing, no USB, no Bluetooth, nothing to buy, nothing to ship."
+    },
+    "HERO": {
+      "BADGE": "Ledger Alternative",
+      "TITLE_1": "The Air-Gapped Wallet",
+      "TITLE_2": "You Can Actually Verify",
+      "SUBTITLE": "A hardware wallet asks you to trust a sealed chip and closed firmware. Locker Protocol asks for nothing: the smart contracts are public and verified on-chain, and the wallet holds no keys at all — sign on a phone that never touches the internet.",
+      "CTA_PRIMARY": "Create your vault — it's free",
+      "CTA_SECONDARY": "Read the threat model"
+    },
+    "WHY": {
+      "TITLE": "Why people look for an alternative",
+      "SUBTITLE": "Three dated facts — each documented by Ledger's own public communications.",
+      "SOURCE_LABEL": "Source",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "July 2020",
+          "TITLE": "Customer database breach",
+          "DESC": "Order data of ~272,000 customers — names, home addresses, phone numbers — ended up public, followed by phishing campaigns and physical threats. Buying a security device created the very data that exposed its owners.",
+          "SOURCE": "Ledger's disclosure"
+        },
+        "RECOVER": {
+          "DATE": "May 2023",
+          "TITLE": "Ledger Recover",
+          "DESC": "A firmware update showed the seed can leave the Secure Element when firmware asks for it. \"Keys never leave the chip\" became a policy — not a property.",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "December 2023",
+          "TITLE": "Connect Kit supply-chain attack",
+          "DESC": "A compromised Ledger npm library served a wallet drainer inside major dApps for several hours. The attack surface wasn't the device — it was the vendor.",
+          "SOURCE": "Ledger's incident report"
+        }
+      },
+      "TRADEMARK": "Ledger is a trademark of Ledger SAS, used here only to identify the product being compared. Every fact above links to Ledger's own public communications."
+    },
+    "PILLARS": {
+      "TITLE": "What changes with Locker",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "Optical air gap",
+          "DESC": "No USB, no Bluetooth, no NFC. Transactions cross as QR codes you can see. There is no hidden channel, because there is no channel."
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "Nothing to trust blind",
+          "DESC": "The contracts are published and verified on every chain. The extension holds zero key material — there is nothing in the browser worth stealing."
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "Nothing to buy, nothing to ship",
+          "DESC": "Any factory-reset phone becomes the vault. No order, no delivery, no customer database — we cannot leak what we never collect."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Keep your dApps",
+          "DESC": "The Locker extension is a drop-in Web3 wallet: your existing dApp workflow stays exactly the same, only the signing moves off-line."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker vs Ledger, side by side",
+      "COL_FEATURE": "Feature",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Advantage Ledger",
+      "ROWS": {
+        "PRICE": { "FEATURE": "Price", "LOCKER": "Free", "LEDGER": "€79–€399" },
+        "CHANNEL": { "FEATURE": "Signing channel", "LOCKER": "QR codes only (optical)", "LEDGER": "USB / Bluetooth" },
+        "SOURCE": { "FEATURE": "Source code", "LOCKER": "Contracts public & verified on-chain", "LEDGER": "Apps open, firmware closed" },
+        "EXTRACTION": { "FEATURE": "Seed extraction path", "LOCKER": "None by construction", "LEDGER": "Recover: firmware-assisted, opt-in" },
+        "SUPPLY": { "FEATURE": "Supply-chain exposure", "LOCKER": "No hardware, rebuildable software", "LEDGER": "Device manufacturing and delivery" },
+        "DATA": { "FEATURE": "Personal data required", "LOCKER": "None", "LEDGER": "Shipping identity (leaked in 2020)" },
+        "DAPPS": { "FEATURE": "dApp workflow", "LOCKER": "Drop-in extension (EIP-6963)", "LEDGER": "Ledger Live or third-party wallet" },
+        "ONCHAIN": { "FEATURE": "On-chain multisig, vesting and locks", "LOCKER": "Built in", "LEDGER": "—" },
+        "SECURE_ELEMENT": { "FEATURE": "Certified secure element", "LOCKER": "—", "LEDGER": "Yes (CC EAL5+)" },
+        "INSTITUTIONAL": { "FEATURE": "Institutional custody and insurance", "LOCKER": "—", "LEDGER": "Yes (Enterprise)" }
+      }
+    },
+    "HONEST": {
+      "TITLE": "What a secure element does better",
+      "DESC": "A certified secure element resists physical extraction: an attacker who steals the device and owns lab equipment faces a hardened chip. That is a real advantage, and we don't claim otherwise. Our answer is different: against remote attacks — malware, drainers, supply-chain compromises — which cause the overwhelming majority of crypto losses, an optical air gap is stricter than any cable.",
+      "CTA": "Read the full threat model"
+    },
+    "MIGRATE": {
+      "TITLE": "Leave in about 10 minutes",
+      "SUBTITLE": "Three steps, no purchase, no account.",
+      "STEPS": {
+        "S1": { "TITLE": "Turn an old phone into a vault", "DESC": "Factory-reset it, switch to airplane mode, install the vault from a QR code. It never goes online again." },
+        "S2": { "TITLE": "Print your paper backup", "DESC": "An encrypted QR code restores your vault anywhere. Whoever finds the paper sees only ciphertext." },
+        "S3": { "TITLE": "Transfer your funds", "DESC": "Send from your current wallet to your new address — at your own pace, nothing to migrate in bulk." }
+      },
+      "CTA": "Create your vault — it's free"
+    },
+    "FAQ": {
+      "TITLE": "Frequently asked questions",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "Is a phone really as secure as a hardware wallet?",
+          "A": "Against remote attacks — malware, drainers, phishing — an offline phone signing over QR codes is stricter than a USB or Bluetooth device: there is no channel to attack. Against physical lab-grade extraction, a certified secure element keeps an edge; our threat model documents this honestly instead of claiming otherwise."
+        },
+        "COST": {
+          "Q": "Do I need to buy anything at all?",
+          "A": "No. Any phone you already own becomes the vault after a factory reset and airplane mode. No device to order, no shipping, no account — and therefore no customer database to leak."
+        },
+        "DAPPS": {
+          "Q": "Will my dApps still work?",
+          "A": "Yes. The Locker extension registers as a standard Web3 wallet (EIP-6963), so dApps detect it like any browser wallet. Your workflow stays the same — only the signature happens on the offline vault, through QR codes."
+        },
+        "BREAK": {
+          "Q": "What happens if the phone breaks or is lost?",
+          "A": "You restore from your paper backup: an encrypted QR code printed when you created the vault. With the paper and your password, you recover on any other phone in minutes."
+        },
+        "FREE": {
+          "Q": "Why is it free — what's the business model?",
+          "A": "The software is free of charge, end to end, and stays that way. The project sells an optional pre-configured hardware vault for those who prefer a dedicated device; the keys and the protocol never depend on it."
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "MetaMask alternative with no keys in the browser",
+      "DESCRIPTION": "Same dApp experience, zero private keys in the browser: every transaction is signed by a free vault on an offline phone, through QR codes."
+    },
+    "HERO": {
+      "BADGE": "MetaMask alternative",
+      "TITLE_1": "Same wallet habits.",
+      "TITLE_2": "No keys left to steal.",
+      "SUBTITLE": "Locker Protocol Wallet behaves like MetaMask on every dApp. The difference is what the extension does not contain: no seed, no keystore, no signer. Every transaction is signed on an offline phone, through a QR code.",
+      "CTA_SECONDARY": "How the security works"
+    },
+    "PILLARS": {
+      "TITLE": "What changes for you",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "Nothing to steal in the browser",
+          "DESC": "A browser extension can be attacked by malware, a rogue extension or a bad update. Ours holds zero key material, so the worst case stays an inconvenience, never a loss."
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "You see what you sign",
+          "DESC": "The offline phone decodes calldata, token approvals and typed data, and shows the real content before you approve. Blind signing simply cannot happen."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Every dApp keeps working",
+          "DESC": "Standard EIP-1193 and EIP-6963 interfaces: connect buttons detect Locker like they detect MetaMask. Swaps, bridges, mints and signatures work unchanged, on 9 EVM chains."
+        },
+        "FREE": {
+          "TITLE": "Free, with no account and no server",
+          "DESC": "Both the extension and the vault are free. There is no signup, no analytics, and no server of ours between you and the chain."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Side by side",
+      "COL_FEATURE": "Feature",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "Where MetaMask is ahead",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "Where private keys live",
+          "LOCKER": "On an offline phone, never in the browser",
+          "MM": "Encrypted inside the browser extension"
+        },
+        "MALWARE": {
+          "FEATURE": "If your computer is infected",
+          "LOCKER": "Nothing to extract, signing stays offline",
+          "MM": "Keys and signing are exposed to the machine"
+        },
+        "SIGNING": {
+          "FEATURE": "What you approve",
+          "LOCKER": "Decoded transaction on a separate screen",
+          "MM": "Popup on the same, possibly compromised, machine"
+        },
+        "HARDWARE": {
+          "FEATURE": "Hardware wallet support",
+          "LOCKER": "Any old phone becomes the signer, free",
+          "MM": "Supported, requires buying a device"
+        },
+        "BACKUP": {
+          "FEATURE": "Seed backup",
+          "LOCKER": "Encrypted paper QR code, restorable on any phone",
+          "MM": "Manual seed phrase copy"
+        },
+        "MOBILE": {
+          "FEATURE": "Mobile app",
+          "LOCKER": "The vault runs on any phone; browsing stays on desktop",
+          "MM": "Full mobile wallet with built-in browser"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Where MetaMask genuinely wins",
+      "DESC": "MetaMask has more than a decade of production history, a large security team and a mobile app with an integrated browser. If you trade daily from your phone and accept keys on a connected device, it remains a solid choice. Locker exists for the money you cannot afford to lose: the trade is a few seconds of QR scanning per transaction, in exchange for keys that never touch the internet.",
+      "CTA": "Read the threat model"
+    },
+    "MIGRATE": {
+      "TITLE": "Switch in three steps",
+      "SUBTITLE": "Ten minutes, and your keys leave the internet for good.",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "Install the extension",
+          "DESC": "Add Locker Protocol Wallet from the store. Your dApps detect it immediately."
+        },
+        "VAULT": {
+          "TITLE": "Turn an old phone into a vault",
+          "DESC": "Open the vault app on a phone you leave offline, create a fresh wallet there, and print the encrypted paper backup."
+        },
+        "MOVE": {
+          "TITLE": "Move your funds",
+          "DESC": "Send your assets to the new address. From then on, every transaction is approved on the offline phone, by QR code."
+        }
+      },
+      "CTA": "Create your vault"
+    },
+    "FAQ": {
+      "TITLE": "Frequently asked questions",
+      "ITEMS": {
+        "SEED": {
+          "Q": "Can I import my MetaMask seed phrase?",
+          "A": "You can, but we recommend the opposite: create a fresh wallet on the offline phone and transfer your funds to it. A seed that has ever lived on a connected machine may already be compromised, and keeping it defeats the point of an air gap."
+        },
+        "DAPPS": {
+          "Q": "Will my dApps really work?",
+          "A": "Yes. The extension exposes the same standard interfaces as MetaMask (EIP-1193, EIP-6963), so dApps list it like any other wallet. Transactions signed from the vault are accepted by DEXes, bridges and exchanges on mainnet."
+        },
+        "LOSE": {
+          "Q": "What if I lose the offline phone?",
+          "A": "Your funds are safe. Restore the encrypted paper backup on any other phone with your password. Without both the paper and the password, the phone alone reveals nothing."
+        },
+        "COST": {
+          "Q": "How much does it cost?",
+          "A": "Nothing. The extension and the vault are free, with no account and no subscription. The project sells an optional pre-configured device for those who prefer dedicated hardware."
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask is a trademark of Consensys. This page is an independent comparison, based on the publicly documented behavior of both products."
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "The Locker Protocol Threat Model",
+      "DESCRIPTION": "What Locker Protocol protects against, what it doesn't, and why we chose verifiability over trusted hardware. An honest threat model for air-gapped, QR-only self-custody."
+    },
+    "HERO": {
+      "TITLE": "The Locker Protocol Threat Model",
+      "SUBTITLE": "What we protect against, what we don't, and why we chose verifiability over trusted hardware."
+    },
+    "PRINCIPLES": {
+      "TITLE": "Three principles",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "Air gap by construction, not by policy",
+          "DESC": "The signing device has no USB, no Bluetooth, no network. Requests and signatures cross as QR codes you can see. A property enforced by physics needs no promise."
+        },
+        "VERIFY": {
+          "TITLE": "Verifiable beats certified",
+          "DESC": "The contracts — where your funds actually live — are published and verified on-chain on all 9 networks. Certification asks for your trust; verified contracts don't need it."
+        },
+        "NO_DATA": {
+          "TITLE": "No accounts, no servers, no data",
+          "DESC": "Nothing to register, nothing shipped, nothing stored about you. A database that doesn't exist cannot leak."
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "Threats, honestly",
+      "VERDICT_PROTECTED": "Protected",
+      "VERDICT_PARTIAL": "Partial — honest limit",
+      "VERDICT_OUT": "Out of scope",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "Remote malware and wallet drainers",
+          "HOW": "Keys live on a device with no network connection. Malware on your computer can propose a transaction — only the offline vault can sign it, after you've read it."
+        },
+        "PHISHING": {
+          "THREAT": "Blind signing and phishing",
+          "HOW": "The vault decodes every request into human-readable fields on a trusted screen before signing. What you sign is what you saw."
+        },
+        "SUPPLY": {
+          "THREAT": "Vendor and supply-chain compromise",
+          "HOW": "No hardware is sold, so none can be intercepted. Updates come only through the browser stores, and the contracts holding your funds are verified on-chain."
+        },
+        "LOSS": {
+          "THREAT": "Loss or destruction of the device",
+          "HOW": "The paper backup is an encrypted QR code. Print it, store it, restore on any phone with your password."
+        },
+        "THEFT": {
+          "THREAT": "Physical theft with lab equipment",
+          "HOW": "The vault is encrypted at rest behind your password. But a phone has no certified secure element: against a lab-equipped attacker holding the device, a hardware wallet's chip resists better. On this specific point, a Ledger wins — and we say so."
+        },
+        "WRENCH": {
+          "THREAT": "Coercion — the $5 wrench",
+          "HOW": "No wallet resists physical coercion. The structural answer is M-of-N multisig: no single person, coerced or not, can move the funds."
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "Where a secure element wins",
+      "DESC": "A certified secure element (CC EAL5+) resists physical key extraction: decapping, glitching, side channels. If your main risk is a sophisticated attacker physically seizing your signer, a dedicated hardware chip defends that scenario better than a phone. We publish this page so you make that trade-off consciously — not discover it later."
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "Why software anyway",
+      "DESC": "In 2023, Ledger Recover demonstrated that firmware decides what a secure element does: the chip protected the seed only until its vendor shipped a way out. A component you cannot inspect protects you only as long as its vendor chooses to. We prefer properties you can check to promises you must trust."
+    },
+    "PROOF": {
+      "TITLE": "Don't trust us either — check",
+      "ITEMS": {
+        "TESTS": { "VALUE": "500+", "LABEL": "automated tests, run on every change" },
+        "CONTRACTS": { "VALUE": "7", "LABEL": "smart contracts, deployed on 9 chains" },
+        "SLITHER": { "VALUE": "0", "LABEL": "static-analysis findings, config published" },
+        "SOURCE": { "VALUE": "100%", "LABEL": "of the contracts published & verified on-chain" }
+      },
+      "CTA": "Browse the source on GitHub"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "Security & responsible disclosure",
+      "DESCRIPTION": "No keys in the browser, deterministic builds, 500+ automated tests — and how to report a vulnerability."
+    },
+    "HERO": {
+      "TITLE": "Security by construction",
+      "SUBTITLE": "The extension holds no private keys and the vault never touches the internet — there is nothing in the browser to steal. Every release ships only when the numbers below are green."
+    },
+    "NOKEYS": {
+      "TITLE": "Nothing to steal in the browser",
+      "DESC": "The extension contains zero key material: no seed, no keystore, no signer. Every signature is produced by the air-gapped vault and travels back as a QR code — a one-way optical channel that malware on your computer cannot cross."
+    },
+    "PROOF": {
+      "TITLE": "The numbers behind it",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "44/44",
+          "LABEL": "store package files rebuilt bit for bit"
+        },
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "automated tests gating every release"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "static-analysis findings tolerated in CI"
+        },
+        "MATRIX": {
+          "VALUE": "86",
+          "LABEL": "dApp-surface rows, each requiring a green test"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "Found a vulnerability?",
+      "DESC": "Email us with SECURITY in the subject and steps to reproduce — and never include a real seed phrase or private key.",
+      "ITEMS": {
+        "ACK": "We acknowledge reports within 72 hours and keep you informed until resolution.",
+        "COORD": "Coordinated disclosure: we ask for reasonable time to ship a fix — 90 days at most.",
+        "SAFE": "Safe harbor: good-faith research never leads to legal action. Test with your own funds, on testnets.",
+        "CREDIT": "Confirmed reporters are credited publicly, unless you prefer anonymity."
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Sovereign security infrastructure.",
+    "LEDGER_ALTERNATIVE": "Ledger Alternative",
+    "METAMASK_ALTERNATIVE": "MetaMask Alternative",
+    "THREAT_MODEL": "Threat Model",
+    "SECURITY": "Security",
+    "BUILT_WITH": "Built with {heart} for a safer Web3."
+  },
+  "NAV": {
+    "CONNECT_WALLET": "Connect Wallet",
+    "CONNECTING": "Connecting...",
+    "EXTENSION": "Extension",
+    "VAULT": "Vault",
+    "SECURITY": "Security",
+    "LOCKER": "Locker",
+    "MENU": "Menu",
+    "DOCS": "Docs"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet: AI-Checked Web3 Extension With Air-Gapped Keys"
+    },
+    "HERO": {
+      "BADGE": "Embedded AI risk detection",
+      "TITLE": "without the key",
+      "TITLE_2": "sitting on your machine",
+      "DESCRIPTION": "On-device AI risk detection, zero cloud. Locker Protocol Wallet is a browser extension that drops into any Web3 dApp: swap, bridge and trade Hyperliquid perpetuals as usual. Every signature is approved on a separate offline device by QR code, so your private key never touches a connected computer.",
+      "CTA_VAULT": "GET THE VAULT",
+      "FREE": "Free and open-source",
+      "SHOT_ALT": "The Locker Protocol Wallet popup: balances, Send, Receive, Swap and Bridge",
+      "SHOT_HOME": "Balances across every network, with Send, Receive, Swap and Bridge",
+      "SHOT_PERPS": "Hyperliquid: balance, PnL and the open position",
+      "SHOT_TRADE": "A Hyperliquid market: price chart, order book, Buy and Sell",
+      "SHOT_SWAP": "A swap quote: rate, fee and minimum received",
+      "SHOT_BRIDGE": "A bridge between two chains, with its duration and destination",
+      "SHOT_SIGN": "The animated QR code the offline Vault scans to sign",
+      "SEP": ", "
+    },
+    "PROOF": {
+      "KEYS_TITLE": "Keys stay offline",
+      "KEYS_DESC": "The extension holds no private key. Your offline Vault signs, by QR code.",
+      "AI_TITLE": "AI checks every signature",
+      "AI_DESC": "A local model flags risky requests, on your device, even offline.",
+      "DAPPS_TITLE": "Every dApp works",
+      "DAPPS_DESC": "It answers the standard Web3 API, so sites see an ordinary wallet.",
+      "OPEN_TITLE": "Auditable code",
+      "OPEN_DESC": "Open-source, reproducible builds, published on the store.",
+      "PRIVACY_TITLE": "No account, no tracking",
+      "PRIVACY_DESC": "No sign-up, no telemetry, no analytics inside the wallet."
+    },
+    "DO": {
+      "BADGE": "Browser extension",
+      "TITLE": "Everything you already do on-chain",
+      "SUBTITLE": "Swaps, bridges, perpetuals and transfers across Ethereum, Bitcoin, Solana, Tron, Sui, Stellar and Hyperliquid. One extension, one offline key.",
+      "SHOT_ALT": "Hyperliquid balance, PnL and open positions inside the extension",
+      "SWAP_TITLE": "Swap",
+      "SWAP_DESC": "The best route across aggregators, with the real fee shown before you sign.",
+      "BRIDGE_TITLE": "Bridge",
+      "BRIDGE_DESC": "Move funds from one chain to another and follow the transfer until it lands.",
+      "PERPS_TITLE": "Trade Hyperliquid",
+      "PERPS_DESC": "Perpetuals, positions, PnL and HyperCore transfers, straight from the popup.",
+      "SEND_TITLE": "Send and receive",
+      "SEND_DESC": "Six chain families in one account, every address derived from the same Vault."
+    },
+    "STEPS": {
+      "BADGE": "How it works",
+      "TITLE": "Two devices, three minutes",
+      "SUBTITLE": "The browser deals with the internet. A second device, kept offline, deals with the keys.",
+      "STEP_1_TITLE": "Install the extension",
+      "STEP_1_DESC": "Add it from the Chrome Web Store, on Chrome or on Brave.",
+      "STEP_2_TITLE": "Pair your Vault",
+      "STEP_2_DESC": "Install the free Vault app on a spare phone kept offline, then scan the account QR code it shows.",
+      "STEP_3_TITLE": "Sign by QR code",
+      "STEP_3_DESC": "The extension displays a QR code, the Vault reads it, checks it and hands back the signature. The key never moves.",
+      "LEARN_MORE": "See the extension page"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "The device that holds your keys, and nothing else",
+      "DESC": "A free app installed on a spare phone that never goes online again. It generates the keys, shows exactly what it is asked to sign, and hands back a signature by QR code.",
+      "POINT_1": "Runs with no network, no Bluetooth and no cable",
+      "POINT_2": "Re-checks every request on its own screen, with its embedded AI model",
+      "POINT_3": "Ethereum, Bitcoin, Solana, Tron, Sui and Stellar from a single recovery phrase",
+      "POINT_4": "Free, open-source, installable on any old smartphone",
+      "SHOT_ALT": "The Locker Vault app on a phone, showing the accounts screen",
+      "LEARN_MORE": "Compare the Vault versions"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "The token-locking protocol is still here",
+      "DESC": "Deploy your own locking contract: time or price conditions, vesting schedules, multi-signature, and the Launch Suite for presales. It is a product of its own, and it now has its own page.",
+      "CTA": "See Locker Protocol",
+      "POINT_1": "Time and price locks",
+      "POINT_2": "Automated vesting",
+      "POINT_3": "Multi-signature",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "Install it, then keep your keys offline",
+      "SUBTITLE": "The extension for everyday use, the Vault for the keys. Both free, both open-source."
+    },
+    "AI": {
+      "BADGE": "Embedded AI",
+      "TITLE": "AI risk detection - on your device, even offline",
+      "SUBTITLE": "Every signature is analyzed locally by three independent layers. Zero cloud, zero telemetry: unlike cloud transaction simulators, what you sign never leaves your device.",
+      "RULES_TITLE": "Rules decide",
+      "RULES_DESC": "A finite, auditable set of deterministic rules blocks the dangerous shapes: unlimited approvals, collection-wide grants, fake tokens, phishing origins. Only these rules can lock signing - the AI never gates, so nothing can talk it into unlocking either.",
+      "ML_TITLE": "Local AI flags",
+      "ML_DESC": "A machine-learning classifier, built on known drainer patterns, scores every request on your device in milliseconds - compact enough to run inside the offline Vault too. It catches the unusual combinations no single rule covers, like 85% of your balance leaving for a first-seen address.",
+      "VAULT_TITLE": "The Vault re-checks",
+      "VAULT_DESC": "The QR never carries a verdict. The air-gapped Vault re-decodes and re-scores the raw payload with its own embedded copy of the model - a compromised computer gets contradicted on the trusted screen.",
+      "POINT_LOCAL": "0 bytes of your activity leave the device",
+      "POINT_REPRO": "Byte-reproducible model training - auditable AI",
+      "POINT_ADVISORY": "AI advises, deterministic rules decide"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "Choose your security level",
+    "SUBTITLE": "The Locker Vault is available as a physical version for total isolation, or as a free app for your mobile devices.",
+    "AI": {
+      "TITLE": "AI on the trusted screen",
+      "DESC": "The Vault embeds its own AI risk model - fully offline. It re-analyzes every request from the raw QR payload, so even a compromised computer cannot hide a warning from the screen that has the last word."
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault (Hardware)",
+      "BADGE": "Layer 0 Security",
+      "DESC": "Total physical antenna ablation. Exclusive optical signature. The ultimate security level for whales and institutions.",
+      "PRICE": "Coming Soon",
+      "CTA": "Soon"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault (App)",
+      "BADGE": "Software Air-Gap",
+      "DESC": "Install our PWA on a dedicated offline device. Free, Open-Source and QR-Sign compatible.",
+      "PRICE": "FREE",
+      "CTA": "ACCESS VAULT"
+    },
+    "EXTENSION": {
+      "TITLE": "Locker Protocol Wallet Extension",
+      "BADGE": "New",
+      "DESC": "Pair your Vault with our browser extension: a drop-in MetaMask replacement that works with any Web3 dApp while your keys stay air-gapped.",
+      "CTA": "DISCOVER THE EXTENSION"
+    },
+    "COMPARISON": {
+      "TITLE": "Technical Comparison",
+      "COL_FEATURE": "Feature",
+      "CAT_SECURITY": "Security",
+      "CAT_COMMUNICATION": "Communication",
+      "CAT_SOFTWARE": "Software",
+      "CAT_SUPPORT": "Support & Extras",
+      "FEATURE_1": "Isolation type",
+      "HW_1": "Physical - antennas removed",
+      "SW_1": "Software - airplane mode",
+      "FEATURE_2": "Network attack surface",
+      "HW_2": "Zero (no radio components)",
+      "SW_2": "Minimal (radio present but disabled)",
+      "FEATURE_3": "Malware resistance",
+      "HW_3": "Total immunity",
+      "SW_3": "Depends on device hygiene",
+      "FEATURE_4": "Zero-day protection",
+      "HW_4": "Impossible (no attack surface)",
+      "SW_4": "Risk if device not dedicated",
+      "FEATURE_5": "Communication with app",
+      "HW_5": "QR Code only (optical)",
+      "SW_5": "QR Code only (camera)",
+      "FEATURE_6": "WiFi / Bluetooth / NFC",
+      "HW_6": "Physically absent",
+      "SW_6": "Present but disabled",
+      "FEATURE_7": "USB connection",
+      "HW_7": "None - zero cables",
+      "SW_7": "None - zero cables",
+      "FEATURE_8": "Multi-Signature (M-of-N)",
+      "HW_8": "Yes - up to 20 signers",
+      "SW_8": "Yes - up to 20 signers",
+      "FEATURE_9": "Unlimited wallets (unique mnemonics)",
+      "HW_9": "Yes - each wallet has its own seed",
+      "SW_9": "Yes - each wallet has its own seed",
+      "FEATURE_10": "Open Source",
+      "HW_10": "Yes - verifiable code",
+      "SW_10": "Yes - verifiable code",
+      "FEATURE_11": "MetaMask compatible",
+      "HW_11": "Yes (via QR codes)",
+      "SW_11": "Yes (via QR codes)",
+      "FEATURE_12": "Encrypted Paper Wallet (AES-256)",
+      "HW_12": "Yes",
+      "SW_12": "Yes",
+      "FEATURE_13": "Firmware updates",
+      "HW_13": "None - zero attack surface",
+      "SW_13": "Automatic (PWA)",
+      "FEATURE_14": "Support",
+      "HW_14": "VIP Discord",
+      "SW_14": "Community Discord",
+      "FEATURE_15": "Price",
+      "HW_15": "Coming Soon",
+      "SW_15": "Free"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "Browser Extension",
+    "TITLE": "Locker Protocol Wallet Extension",
+    "SUBTITLE": "The air-gapped Vault in your browser. A drop-in MetaMask replacement that works with any Web3 dApp, your private keys never leave the Vault.",
+    "AI": {
+      "TITLE": "AI-checked signing ceremony",
+      "DESC": "Before any QR reaches your Vault, the extension analyzes the request on-device: deterministic rules gate the dangerous shapes, and a local AI model flags unusual patterns - no cloud, no telemetry. The Vault then re-checks everything independently with its own embedded model."
+    },
+    "DOWNLOAD": {
+      "TITLE": "Get it for your browser",
+      "SUBTITLE": "Open-source, and installed from a single Chrome Web Store listing.",
+      "CTA": "Install",
+      "NOTE": "Chrome and Brave install the extension from the same Chrome Web Store listing."
+    },
+    "WHY": {
+      "TITLE": "Why the Locker Protocol Wallet Extension?",
+      "DAPPS": {
+        "TITLE": "Any Web3 dApp",
+        "DESC": "A drop-in MetaMask replacement: swaps, bridges, lending, NFT marketplaces, if it works with MetaMask, it works with Locker Protocol Wallet."
+      },
+      "KEYS": {
+        "TITLE": "Keys Stay Air-Gapped",
+        "DESC": "The extension holds zero private keys. Every transaction is signed by your offline Vault through QR codes, nothing to steal in the browser."
+      },
+      "SIMPLE": {
+        "TITLE": "Simplified Vault Usage",
+        "DESC": "A guided, step-by-step signing ceremony in the side panel. Air-gapped security made as simple as scanning a QR code."
+      }
+    },
+    "HOW": {
+      "TITLE": "How It Works",
+      "STEP_1_TITLE": "Connect like MetaMask",
+      "STEP_1_DESC": "Open any Web3 dApp and connect: the extension exposes your Vault accounts to the dApp, without any private key.",
+      "STEP_2_TITLE": "Scan with your Vault",
+      "STEP_2_DESC": "When a signature is needed, the extension shows a QR code. Scan it with your offline Vault, review and approve the operation.",
+      "STEP_3_TITLE": "Broadcast the signature",
+      "STEP_3_DESC": "Present the signed QR code back to the extension's camera. The transaction is broadcast, your keys never touched the internet."
+    },
+    "CTA": {
+      "TITLE": "You'll need a Locker Vault",
+      "DESC": "The extension pairs with the air-gapped Locker Vault, the offline device that holds your keys and signs every operation.",
+      "BUTTON": "Get the Locker Vault"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "Install Free Vault",
+    "STEP_1": "Take your dedicated device (smartphone or tablet)",
+    "STEP_2": "Open the camera and scan the QR code below",
+    "STEP_3": "Follow the instructions to 'Add to home screen'",
+    "WARNING": "For maximum security, put this device in Airplane Mode permanently after installation.",
+    "CLOSE": "Close"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "Limited Edition",
+    "CONNECT_TO_PAY": "CONNECT WALLET TO PAY",
+    "CONFIRM_PREORDER": "CONFIRM PRE-ORDER",
+    "VIP_DETECTED": "WLFI holder detected",
+    "VIP_APPLIED": "VIP discount applied!",
+    "OFFER_LIMIT": "Offer valid until January 1st, 2027",
+    "DELIVERY_INFO": "1st batch delivery: Q1 2027 (Jan-Mar)",
+    "INCLUDES": "Your order includes the Locker Vault (Hardware) and lifetime access to the Locker Protocol software suite.",
+    "PAY_STABLECOINS": "Pay in Stablecoins",
+    "LOCKER_INFO": "Your payment is secured by Locker Protocol. Tokens are added directly into a lock via our own protocol - we use Locker to receive payments.",
+    "JOIN_DISCORD": "Join Discord Community",
+    "LOCK_INFO": "By validating, you agree that your funds will be sent via Locker Protocol's addToLock mechanism. We use our own protocol to secure payments.",
+    "BALANCE": "Balance",
+    "REQUIRED": "Required",
+    "INSUFFICIENT_FUNDS": "Insufficient funds for this transaction",
+    "STEP_APPROVE": "Approve",
+    "STEP_LOCK": "Lock",
+    "APPROVING": "Approving token spend...",
+    "LOCKING": "Locking funds in Locker...",
+    "SUCCESS_TITLE": "Payment Successful!",
+    "SUCCESS_DESC": "Your funds have been securely locked via Locker Protocol. Join our Discord to provide your shipping information via our secure portal.",
+    "RECEIPT_TITLE": "Order Summary",
+    "TX_HASH": "Transaction Hash",
+    "COPY_TX": "Copy transaction hash",
+    "PAYMENT_REF": "Payment Reference",
+    "NEXT_STEP_TITLE": "What to do next?",
+    "STEP1_DESC": "Copy your Transaction Hash above - this is your on-chain proof of payment.",
+    "STEP2_DESC": "Join the Locker Protocol Discord community by clicking the button below.",
+    "STEP3_DESC": "Open the #vault-orders channel and paste your Transaction Hash. Our team will verify your payment and contact you for shipping details.",
+    "UNSUPPORTED_CHAIN": "Unsupported network - please switch"
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "Watch the demo",
+      "LOCKER": "Watch the Locker demo",
+      "VAULT": "Watch the Vault demo",
+      "EXTENSION": "Watch the Extension demo",
+      "CLOSE": "Close video"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "Advanced Locking & Vesting",
+        "DESC": "Lock tokens automatically by specific dates or price targets. Configurable automated vesting schedules included."
+      },
+      "MULTISIG": {
+        "TITLE": "Multi-Signature Security",
+        "DESC": "100% decentralized protocol controlled by your team. Configurable thresholds and signers. No intermediaries."
+      },
+      "OPENSOURCE": {
+        "TITLE": "100% Open-Source",
+        "DESC": "Total transparency. Our smart contracts, Air-gapped Wallet companion app, and user interface are fully open-source."
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "Separation of powers",
+      "TITLE": "Change your wallet. Not your vault.",
+      "SUBTITLE": "In a normal wallet, your funds ARE your private key, leak it and they are gone. Locker keeps your funds inside a contract. Your wallet is only a key you can swap the moment you have a doubt, without moving a single token.",
+      "NORMAL_LABEL": "A normal wallet",
+      "NORMAL_TITLE": "Your funds ARE your key",
+      "NORMAL_DESC": "One leaked key and everything drains. Suspect it? You have to rush every token to a new address, racing the attacker.",
+      "LOCKER_LABEL": "With Locker",
+      "LOCKER_TITLE": "Your funds live in a contract",
+      "LOCKER_DESC": "The key only controls the vault. Doubt it? Swap it, your funds never move, and stay behind your rules.",
+      "FOOTER": "Your wallet becomes disposable. Your security does not."
+    },
+    "AIRGAPPED": {
+      "BADGE": "Maximum Security",
+      "TITLE": "Air-gapped Wallet Architecture",
+      "DESC": "For ultimate security against hacks and malware, our protocol natively supports offline signing using the Air-gapped Wallet companion app.",
+      "FEATURE_1": "PWA Technology: Install on any old smartphone, no app store needed",
+      "FEATURE_2": "True Air-gapped: Keep the device completely disconnected from the internet",
+      "FEATURE_3": "100% Free & Open-Source: No tracking, no hidden code. Verify and build it yourself",
+      "FEATURE_4": "MetaMask Compatible: Sign Web3 transactions seamlessly via QR connection"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "Ultra-Secure Backup",
+      "TITLE": "Encrypted Paper Wallet via QR Code",
+      "DESC": "No need to write down 12 words on a piece of paper. Export your wallet as an AES-256 encrypted QR code protected by your ultra-secure password.",
+      "FEATURE_1": "Printable Backup: Simply print the QR code and store it safely in your physical safe.",
+      "FEATURE_2": "Password Encrypted: Even if someone finds your paper, they cannot read the keys without your strong password.",
+      "FEATURE_3": "Instant Recovery: Scan the printed QR code with a new air-gapped device to instantly restore your entire wallet."
+    },
+    "METAMASK": {
+      "TITLE": "Seamless MetaMask Integration",
+      "DESC": "Connect your Air-gapped Wallet securely to any Web3 dApp via MetaMask without ever exposing your private keys.",
+      "FEATURE_1": "Scan QR codes to sign transactions",
+      "FEATURE_2": "Interact with Uniswap, Aave, and more",
+      "FEATURE_3": "True physical isolation for everyday Web3 usage"
+    },
+    "EXTENSION": {
+      "BADGE": "Browser Extension",
+      "TITLE": "The Vault Power, In Your Browser",
+      "DESC": "Install the Locker Protocol Wallet extension and use your air-gapped Vault on any Web3 dApp. It behaves exactly like MetaMask, but every signature comes from your offline Vault via QR codes.",
+      "FEATURE_1": "Works with any Web3 dApp: swaps, bridges, lending and more",
+      "FEATURE_2": "Simplified and secured Vault ceremony, guided step by step",
+      "FEATURE_3": "Zero private keys in the browser, ever",
+      "CTA": "Get the Extension",
+      "MOCK_CONNECTED": "Connected",
+      "MOCK_SCAN": "Scan with your Vault"
+    },
+    "SMART_DCA": {
+      "BADGE": "Discipline & Vesting",
+      "TITLE": "Smart DCA & Anti-FOMO Locks",
+      "DESC": "Protect your investments from emotional decisions. You can create multiple locks per token with entirely different rules, combining time-based and price-based targets into a single strategy.",
+      "FEATURE_1": "Multiple Strategies: Lock 50% for 1 year, and 50% for 4 years OR unlock early if price hits +300%.",
+      "FEATURE_2": "Combinable Rules: Time based or Price based, or beautifully combine both on the same lock.",
+      "FEATURE_3": "Vesting & DCA: Add to your existing locks over time to average down or build long-term positions."
+    },
+    "MULTI_SIG": {
+      "BADGE": "Governance & Security",
+      "TITLE": "True Multi-Signature Made Easy",
+      "DESC": "Secure your funds with multiple signers without ever exposing a single private key. Whether you are a paranoid solo investor or a distributed DAO, the signature gathering is completely flexible and offline.",
+      "CASE_1_TITLE": "Solo User (Maximum Security)",
+      "CASE_1_DESC": "Hold multiple keys on a single offline device. Generate each signature as a QR code and sequentially scan them using your computer's webcam directly into the UI.",
+      "CASE_2_TITLE": "Distributed Teams & DAOs",
+      "CASE_2_DESC": "Co-signers generate their signature offline, snap a photo of the QR code with their phone, and send it via any messaging app. The relayer groups the photos in the UI and broadcasts the final decision.",
+      "NOTE": "Zero Exposure: Signatures are just cryptographic proofs. Private keys never leave the offline devices."
+    },
+    "WORKFLOW": {
+      "TITLE": "How It Works",
+      "STEP_1_TITLE": "1. Deploy",
+      "STEP_1_DESC": "Launch your Locker smart contract directly from our UI. Setup your multi-sig signers and threshold.",
+      "STEP_2_TITLE": "2. Lock & Vest",
+      "STEP_2_DESC": "Lock your ERC20 tokens. Configure time-based or price-based automated unlocking rules.",
+      "STEP_3_TITLE": "3. Manage Securely",
+      "STEP_3_DESC": "Sign operations offline using your Air-gapped Wallet. Execute them securely fully on-chain."
+    },
+    "QR_FLOW": {
+      "BADGE": "Air-Gapped Security",
+      "TITLE": "Secure Air-Gapped Transactions",
+      "SUBTITLE": "Private keys never leave the offline device. Every transaction is verified visually via QR codes before signing - no USB, no Bluetooth, no network connection.",
+      "STEP_1": "Generate a transaction proposal as an EIP-712 QR code",
+      "STEP_2": "Scan & sign offline on your air-gapped Vault device",
+      "STEP_3": "Collect M-of-N signed QR codes back",
+      "STEP_4": "Broadcast directly to the blockchain via RPC"
+    },
+    "USE_CASES": {
+      "TITLE": "Built For Everyone",
+      "DAO_TITLE": "DAOs & Web3 Projects",
+      "DAO_DESC": "Secure your community treasury with multi-signature rules that require team consensus for any movement.",
+      "FOUNDERS_TITLE": "Founders & Investors",
+      "FOUNDERS_DESC": "Automate token distributions with our advanced vesting rules based on time or hitting specific price targets.",
+      "INDIVIDUALS_TITLE": "Individuals",
+      "INDIVIDUALS_DESC": "Protect your personal wealth against hacks and malware by keeping your keys physically air-gapped."
+    },
+    "FLEXIBILITY": {
+      "TITLE": "Flexible & Advanced Tools",
+      "BATCH_TITLE": "Batch Management",
+      "BATCH_DESC": "Lock or distribute multiple tokens in a single transaction, saving gas and time.",
+      "RESCUE_TITLE": "Token Rescue",
+      "RESCUE_DESC": "Accidentally sent tokens to your locker address? Recover them with the team's approval.",
+      "EXTEND_TITLE": "Gasless Execution",
+      "EXTEND_DESC": "Signatures are gathered offline. Once the threshold is met, any wallet can execute the transaction on-chain."
+    },
+    "LAUNCH": {
+      "BADGE": "Launch Suite",
+      "SOON": "Coming Soon",
+      "TITLE": "Launch Your Token on the Same Security Rails",
+      "DESC": "Raise, distribute and vest with the audited Locker infrastructure: your presale funds and investor allocations live in sovereign smart contracts, governed by your air-gapped Vault.",
+      "PRESALE_TITLE": "Stablecoin Presales",
+      "PRESALE_DESC": "Raise in stablecoins with hard caps and on-chain rules. No oracle games: contributions are what they say they are.",
+      "VESTING_TITLE": "Investor Vesting",
+      "VESTING_DESC": "Distribute allocations through on-chain vesting schedules investors claim themselves, with public immutable proof.",
+      "SECURITY_TITLE": "Audited Rails",
+      "SECURITY_DESC": "The same factory-canonical contracts and multisig governance that protect every Locker, signed from your air-gapped Vault.",
+      "CTA": "Coming Soon"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "Open-Source (Free)",
+      "OPEN_SOURCE_DESC": "We believe privacy and security are fundamental rights. Our Smart Contracts, Air-gapped Wallet, and UI are 100% free and open-source. Clone the repo, audit the code, and deploy yourself.",
+      "OSS_BADGE": "Open-Source",
+      "OPEN_VAULT": "Discover the Vault"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Why Locker Exists",
+      "CONTENT_P1": "Every year, billions of dollars in crypto assets are stolen - not because blockchains are insecure, but because the devices used to sign transactions are compromised. Malware silently alters transaction payloads before they reach your hardware wallet, and by the time you confirm, it's already too late.",
+      "CONTENT_P2": "Existing solutions all share the same critical flaw: they require a direct connection (USB, Bluetooth, or software bridge) between the signing device and an internet-connected machine. That connection is the attack surface.",
+      "CONTENT_P3": "Locker was built from the ground up to eliminate that single point of failure. By physically isolating the keystore via a true Air-Gap and verifying exact transaction payloads on a completely offline device, it ensures that even on a fully compromised computer, attackers cannot alter or intercept your signatures.",
+      "CONTENT_P4": "The smart contracts are 100% open-source. Clone them, audit them, deploy them yourself. No trust required - only math.",
+      "GITHUB_CTA": "View Smart Contracts on GitHub"
+    },
+    "FAQ": {
+      "TITLE": "Frequently Asked Questions",
+      "Q1": "What is Locker Protocol?",
+      "A1": "Locker Protocol is a complete, free ecosystem to secure your crypto. It combines locking Smart Contracts (by time or price condition) with an air-gapped offline Vault compatible with Web3. Each user deploys their own contract - no proxy, no admin key - and remains 100% owner.",
+      "Q2": "Is it really free?",
+      "A2": "Yes, 100% free and open-source. Deploying your Locker, the Vault application and the interface are entirely free. The only costs are standard blockchain network gas fees. No platform fees, no subscription, no percentage taken from your assets.",
+      "Q3": "What is the air-gapped Vault?",
+      "A3": "The Vault is an application installed on a dedicated device kept permanently offline (Airplane Mode). Your private keys are generated and stored locally, never exposed to the Internet. Communication with the online app is done exclusively via QR codes - no USB, Bluetooth or WiFi.",
+      "Q4": "How does price-condition locking work?",
+      "A4": "Beyond classic time-based locking, Locker Protocol integrates with Uniswap V2/V3 on-chain oracles. You can create a conditional lock: your tokens only unlock when the market price reaches a defined target. The smart contract checks liquidity pools in real time.",
+      "Q5": "Do I need a dedicated device for the Vault?",
+      "A5": "For maximum security, yes - an old reset smartphone or tablet is enough. You install the Vault, switch to Airplane Mode, and the device stays permanently offline. For testing, you can also use it on your main machine.",
+      "Q6": "How does multi-signature work?",
+      "A6": "You define an M-of-N threshold: for example 2 out of 3 signers must approve each action. Signatures are collected offline via QR codes. Once the threshold is reached, any wallet can submit the transaction and pay gas once for the entire group.",
+      "Q7": "What happens if I lose my offline device?",
+      "A7": "When creating the wallet, a 12 or 24-word recovery phrase is provided. Write it on paper and store it safely. If your device is lost or destroyed, install the Vault on a new offline device and import your phrase - all your keys are restored.",
+      "Q8": "What happens if your site shuts down?",
+      "A8": "The interface is just a façade to interact with the blockchain. It holds no funds and no keys. All code is open-source on GitHub: download it, run it locally, and regain full access to your Locker. Your funds are on the blockchain, not with us.",
+      "Q9": "Can signers be changed after deployment?",
+      "A9": "Yes. The SignerManager contract allows adding, removing signers or changing the security threshold at any time. These administrative actions themselves require multi-signature approval from the current quorum.",
+      "Q10": "What is the encrypted Paper Wallet?",
+      "A10": "The Paper Wallet uses AES-256 encryption protected by your password. Even if someone finds your paper, they cannot read the keys without the password. Scan the printed QR code with a new air-gapped device to instantly restore your wallet.",
+      "Q11": "Do my private keys ever travel via Bluetooth or USB?",
+      "A11": "Never. The Vault uses no Bluetooth, NFC, WiFi, or USB. The only communication method is scanning animated QR codes (BC-UR protocol). No malware can cross this physical barrier.",
+      "Q12": "How does MetaMask integration work?",
+      "A12": "Your air-gapped Vault connects to MetaMask via QR codes. You can interact with any Web3 dApp (Uniswap, Aave, etc.) while maintaining total physical isolation. Private keys never leave the offline device.",
+      "Q13": "If tokens are sent to the contract by mistake, are they lost?",
+      "A13": "No. The protocol includes a Token Rescue function. Authorized signers can recover mistakenly sent tokens via a multi-signature action validated by the quorum.",
+      "Q14": "Which networks are supported?",
+      "A14": "Locker Protocol is 100% EVM-compatible and deployed on: Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche and Linea.",
+      "Q15": "Is the code auditable?",
+      "A15": "Yes. The entire codebase - Solidity Smart Contracts, PWA web interface, and Vault cryptographic modules - is published as open-source on GitHub. Any expert can analyze every line of code."
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "Add to Chrome",
+    "CTA_BRAVE": "Add to Brave",
+    "CTA_GENERIC": "Get the extension"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "Token locking",
+    "TITLE": "Your own locking contract,",
+    "TITLE_2": "no admin key, no intermediary",
+    "DESCRIPTION": "Every user deploys their own smart contract. Lock tokens by date or by price target, set vesting schedules, require several signatures. No proxy, no admin key: it is yours entirely.",
+    "CTA_WALLET": "See the wallet",
+    "META": {
+      "TITLE": "Locker Protocol - Token Locking, Vesting and Multi-Signature",
+      "DESCRIPTION": "Deploy your own ERC-20 locking contract: time and price locks, automated vesting, multi-signature, and offline signing with the Locker Vault."
+    },
+    "CTA_CREATE": "CREATE A LOCKER"
+  }
+}

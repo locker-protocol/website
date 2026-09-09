@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="hi" dir="ltr" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ledger का विकल्प — एयर-गैप्ड वॉलेट जिसे आप स्वयं सत्यापित कर सकते हैं | ERC-20 Locker Protocol</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P029LN8NTN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // send_page_view:false — the Angular router sends every page_view (incl. the
+    // first) so client-side route changes are tracked and not double-counted.
+    gtag('config', 'G-P029LN8NTN', { send_page_view: false });
+  </script>
+
+  <!-- SEO: Primary Meta Tags -->
+  <meta name="description" content="Ledger का विकल्प खोज रहे हैं? Locker Protocol किसी भी ऑफ़लाइन फ़ोन को निःशुल्क, ओपन सोर्स एयर-गैप्ड वॉलेट में बदल देता है: केवल QR से हस्ताक्षर, न USB, न ब्लूटूथ, न कुछ खरीदना, न कुछ मँगवाना।">
+  <meta name="keywords" content="Locker Protocol Wallet, crypto wallet extension, Chrome wallet, Brave wallet, MetaMask alternative, air-gapped wallet, QR signing, crypto swap, cross-chain bridge, Hyperliquid perpetuals, Bitcoin, Solana, Tron, Sui, Stellar, non-custodial, open-source">
+  <meta name="author" content="ERC-20 Locker Protocol">
+  <meta name="robots" content="index, follow">
+  <!-- canonical and hreflang tags are managed dynamically by LanguageService -->
+
+  <!-- Open Graph / Facebook / Discord / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ERC-20 Locker Protocol">
+  <meta property="og:title" content="Ledger का विकल्प — एयर-गैप्ड वॉलेट जिसे आप स्वयं सत्यापित कर सकते हैं | ERC-20 Locker Protocol">
+  <meta property="og:description" content="Ledger का विकल्प खोज रहे हैं? Locker Protocol किसी भी ऑफ़लाइन फ़ोन को निःशुल्क, ओपन सोर्स एयर-गैप्ड वॉलेट में बदल देता है: केवल QR से हस्ताक्षर, न USB, न ब्लूटूथ, न कुछ खरीदना, न कुछ मँगवाना।">
+  <meta property="og:url" content="https://lockerprotocol.com/hi/ledger-alternative/">
+  <meta property="og:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+  <meta property="og:locale" content="hi_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ledger का विकल्प — एयर-गैप्ड वॉलेट जिसे आप स्वयं सत्यापित कर सकते हैं | ERC-20 Locker Protocol">
+  <meta name="twitter:description" content="Ledger का विकल्प खोज रहे हैं? Locker Protocol किसी भी ऑफ़लाइन फ़ोन को निःशुल्क, ओपन सोर्स एयर-गैप्ड वॉलेट में बदल देता है: केवल QR से हस्ताक्षर, न USB, न ब्लूटूथ, न कुछ खरीदना, न कुछ मँगवाना।">
+  <meta name="twitter:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta name="twitter:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ERC-20 Locker Protocol",
+  "alternateName": [
+    "Locker Protocol",
+    "Locker",
+    "LockerProtocol"
+  ],
+  "url": "https://lockerprotocol.com/hi/",
+  "description": "Ledger का विकल्प खोज रहे हैं? Locker Protocol किसी भी ऑफ़लाइन फ़ोन को निःशुल्क, ओपन सोर्स एयर-गैप्ड वॉलेट में बदल देता है: केवल QR से हस्ताक्षर, न USB, न ब्लूटूथ, न कुछ खरीदना, न कुछ मँगवाना।",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ERC-20 Locker Protocol",
+    "url": "https://lockerprotocol.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lockerprotocol.com/assets/icons/icon-512x512.png"
+    }
+  },
+  "inLanguage": "hi"
+}
+  </script>
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <style>
+    /* Global splash pre-loader: painted from the inline HTML on first paint (before the
+       Angular bundle loads), then removed automatically when Angular renders <app-root>.
+       The logo is inline SVG (no request, no <base href> dependency, works air-gapped),
+       which is why there is no white flash while the app boots. */
+    .global-splash-screen {
+      position: fixed; inset: 0; background: #ffffff;
+      display: flex; align-items: center; justify-content: center; z-index: 99999;
+    }
+    .splash-spinner-container {
+      position: relative; width: 120px; height: 120px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .splash-logo { width: 60px; height: 60px; position: absolute; z-index: 10; }
+    .splash-ring {
+      position: absolute; width: 100%; height: 100%; border-radius: 50%;
+      border: 4px solid #f3f4f6; border-top-color: #7c3aed; border-right-color: #3b82f6;
+      animation: splash-spin 2.5s cubic-bezier(0.68, -0.15, 0.265, 1.15) infinite;
+    }
+    @keyframes splash-spin {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(360deg); animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); }
+      100% { transform: rotate(720deg); }
+    }
+  </style>
+<style>*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}svg{display:block;vertical-align:middle}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0;background-color:#fff;color:#1a1a1a;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+</style><link rel="stylesheet" href="styles-GU7PMHYE.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GU7PMHYE.css"></noscript><link rel="modulepreload" href="chunk-QGWTLCFZ.js"><link rel="modulepreload" href="chunk-OERSU4S2.js">  <link rel="canonical" href="https://lockerprotocol.com/hi/ledger-alternative/">
+  <link rel="alternate" hreflang="en" href="https://lockerprotocol.com/ledger-alternative/">
+  <link rel="alternate" hreflang="fr" href="https://lockerprotocol.com/fr/ledger-alternative/">
+  <link rel="alternate" hreflang="zh" href="https://lockerprotocol.com/zh/ledger-alternative/">
+  <link rel="alternate" hreflang="es" href="https://lockerprotocol.com/es/ledger-alternative/">
+  <link rel="alternate" hreflang="ar" href="https://lockerprotocol.com/ar/ledger-alternative/">
+  <link rel="alternate" hreflang="de" href="https://lockerprotocol.com/de/ledger-alternative/">
+  <link rel="alternate" hreflang="he" href="https://lockerprotocol.com/he/ledger-alternative/">
+  <link rel="alternate" hreflang="hi" href="https://lockerprotocol.com/hi/ledger-alternative/">
+  <link rel="alternate" hreflang="id" href="https://lockerprotocol.com/id/ledger-alternative/">
+  <link rel="alternate" hreflang="it" href="https://lockerprotocol.com/it/ledger-alternative/">
+  <link rel="alternate" hreflang="ja" href="https://lockerprotocol.com/ja/ledger-alternative/">
+  <link rel="alternate" hreflang="ko" href="https://lockerprotocol.com/ko/ledger-alternative/">
+  <link rel="alternate" hreflang="pt" href="https://lockerprotocol.com/pt/ledger-alternative/">
+  <link rel="alternate" hreflang="ru" href="https://lockerprotocol.com/ru/ledger-alternative/">
+  <link rel="alternate" hreflang="tr" href="https://lockerprotocol.com/tr/ledger-alternative/">
+  <link rel="alternate" hreflang="vi" href="https://lockerprotocol.com/vi/ledger-alternative/">
+  <link rel="alternate" hreflang="x-default" href="https://lockerprotocol.com/ledger-alternative/">
+</head>
+
+<body>
+  <app-root>
+    <div class="global-splash-screen" aria-label="Loading Application">
+      <div class="splash-spinner-container">
+        <div class="splash-ring"></div>
+        <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M 35 15 H 15 V 35 M 65 15 H 85 V 35 M 35 85 H 15 V 65 M 65 85 H 85 V 65" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 35 15 H 15 V 35 M 65 15" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 65 85 H 85 V 65" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 30 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 40 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 50 22 V 78" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 60 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 70 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <main class="seo-prerender" style="max-width:48rem;margin:0 auto;padding:6rem 1.5rem;font-family:system-ui,sans-serif;line-height:1.6">
+      <h1>Ledger का विकल्प — एयर-गैप्ड वॉलेट जिसे आप स्वयं सत्यापित कर सकते हैं</h1>
+      <p>Ledger का विकल्प खोज रहे हैं? Locker Protocol किसी भी ऑफ़लाइन फ़ोन को निःशुल्क, ओपन सोर्स एयर-गैप्ड वॉलेट में बदल देता है: केवल QR से हस्ताक्षर, न USB, न ब्लूटूथ, न कुछ खरीदना, न कुछ मँगवाना।</p>
+      <h2>लोग विकल्प क्यों खोज रहे हैं</h2>
+      <p>तीन तिथि-सहित तथ्य — हर एक स्वयं Ledger की सार्वजनिक घोषणाओं से प्रमाणित।</p>
+      <h3>ग्राहक डेटाबेस लीक</h3>
+      <p>लगभग 272,000 ग्राहकों का ऑर्डर डेटा — नाम, घर के पते, फ़ोन नंबर — सार्वजनिक हो गया, जिसके बाद फ़िशिंग अभियान और शारीरिक धमकियाँ आईं। सुरक्षा उपकरण खरीदने ने ही वह डेटा पैदा किया जिसने उसके मालिकों को उजागर कर दिया।</p>
+      <h3>Ledger Recover</h3>
+      <p>एक फ़र्मवेयर अपडेट ने दिखा दिया कि फ़र्मवेयर के माँगते ही सीड Secure Element से बाहर जा सकती है। &quot;कुंजियाँ चिप से कभी बाहर नहीं जातीं&quot; एक नीति बन गई — गुण नहीं।</p>
+      <h3>Connect Kit सप्लाई-चेन हमला</h3>
+      <p>Ledger की एक समझौता की गई npm लाइब्रेरी ने कई घंटों तक बड़े dApps के भीतर वॉलेट ड्रेनर परोसा। हमले की सतह उपकरण नहीं था — बल्कि स्वयं विक्रेता था।</p>
+      <h2>Locker के साथ क्या बदलता है</h2>
+      <h3>ऑप्टिकल एयर गैप</h3>
+      <p>न USB, न ब्लूटूथ, न NFC। लेनदेन ऐसे QR कोड बनकर गुज़रते हैं जिन्हें आप देख सकते हैं। कोई छिपा चैनल नहीं है, क्योंकि चैनल है ही नहीं।</p>
+      <h3>आँख मूँदकर मानने को कुछ नहीं</h3>
+      <p>कॉन्ट्रैक्ट हर चेन पर प्रकाशित और सत्यापित हैं। एक्सटेंशन में कोई कुंजी नहीं — ब्राउज़र में चुराने लायक कुछ है ही नहीं।</p>
+      <h3>न कुछ खरीदना, न कुछ मँगवाना</h3>
+      <p>फ़ैक्टरी रीसेट किया हुआ कोई भी फ़ोन वॉल्ट बन जाता है। न ऑर्डर, न डिलीवरी, न ग्राहक डेटाबेस — जो कभी इकट्ठा ही नहीं हुआ, वह लीक नहीं हो सकता।</p>
+      <h3>अपने dApps वही रखिए</h3>
+      <p>Locker एक्सटेंशन एक मानक Web3 वॉलेट है: dApps के साथ आपका तरीक़ा ज्यों का त्यों रहता है, बस हस्ताक्षर ऑफ़लाइन चला जाता है।</p>
+      <h2>Locker बनाम Ledger, आमने-सामने</h2>
+      <h2>सुरक्षित चिप जो बेहतर करती है</h2>
+      <p>प्रमाणित सुरक्षित चिप भौतिक निष्कर्षण का प्रतिरोध करती है: उपकरण चुराने वाला और प्रयोगशाला उपकरणों से लैस हमलावर एक सख़्त चिप से टकराता है। यह वास्तविक बढ़त है, और हम इसके विपरीत दावा नहीं करते। हमारा उत्तर कहीं और है: दूरस्थ हमलों — मैलवेयर, ड्रेनर, सप्लाई-चेन सेंधमारी — के विरुद्ध, जो क्रिप्टो नुक़सानों के विशाल बहुमत का कारण हैं, ऑप्टिकल एयर गैप किसी भी केबल से अधिक सख़्त है।</p>
+      <h2>लगभग 10 मिनट में निकल जाइए</h2>
+      <p>तीन क़दम, कोई ख़रीद नहीं, कोई खाता नहीं।</p>
+      <h3>पुराने फ़ोन को वॉल्ट बनाइए</h3>
+      <p>फ़ैक्टरी रीसेट कीजिए, हवाई जहाज़ मोड चालू कीजिए, QR कोड से वॉल्ट इंस्टॉल कीजिए। वह फिर कभी ऑनलाइन नहीं होता।</p>
+      <h3>अपना पेपर बैकअप छापिए</h3>
+      <p>एक एन्क्रिप्टेड QR कोड आपकी वॉल्ट कहीं भी बहाल कर देता है। काग़ज़ पाने वाले को सिर्फ़ सिफर टेक्स्ट दिखता है।</p>
+      <h3>अपनी निधियाँ स्थानांतरित कीजिए</h3>
+      <p>मौजूदा वॉलेट से नए पते पर भेजिए — अपनी गति से, एक साथ सब कुछ ले जाने की ज़रूरत नहीं।</p>
+      <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
+      <h3>क्या फ़ोन सचमुच हार्डवेयर वॉलेट जितना सुरक्षित है?</h3>
+      <p>दूरस्थ हमलों — मैलवेयर, ड्रेनर, फ़िशिंग — के विरुद्ध QR से हस्ताक्षर करने वाला ऑफ़लाइन फ़ोन USB या ब्लूटूथ उपकरण से अधिक सख़्त है: हमला करने के लिए कोई चैनल है ही नहीं। प्रयोगशाला-स्तरीय भौतिक निष्कर्षण के विरुद्ध प्रमाणित सुरक्षित चिप की बढ़त बनी रहती है; हमारा खतरा मॉडल इसे ईमानदारी से दर्ज करता है, उलटा दावा नहीं करता।</p>
+      <h3>क्या मुझे कुछ भी खरीदना पड़ेगा?</h3>
+      <p>नहीं। आपके पास जो भी फ़ोन पहले से है, वह फ़ैक्टरी रीसेट और हवाई जहाज़ मोड के बाद वॉल्ट बन जाता है। न कोई उपकरण मँगवाना, न शिपिंग, न खाता — इसलिए लीक होने लायक़ कोई ग्राहक डेटाबेस भी नहीं।</p>
+      <h3>क्या मेरे dApps चलते रहेंगे?</h3>
+      <p>हाँ। Locker एक्सटेंशन मानक Web3 वॉलेट (EIP-6963) के रूप में पंजीकृत होता है, इसलिए dApps उसे किसी भी ब्राउज़र वॉलेट की तरह पहचानते हैं। आपका तरीक़ा नहीं बदलता — केवल हस्ताक्षर ऑफ़लाइन वॉल्ट पर, QR कोड के ज़रिए होता है।</p>
+      <h3>फ़ोन टूट जाए या खो जाए तो क्या होगा?</h3>
+      <p>आप पेपर बैकअप से बहाल करते हैं: वॉल्ट बनाते समय छापा गया एन्क्रिप्टेड QR कोड। काग़ज़ और अपने पासवर्ड के साथ, आप मिनटों में किसी भी दूसरे फ़ोन पर सब कुछ वापस पा लेते हैं।</p>
+      <h3>यह निःशुल्क क्यों है — व्यवसाय मॉडल क्या है?</h3>
+      <p>सॉफ़्टवेयर शुरू से अंत तक निःशुल्क है और रहेगा। परियोजना उन लोगों के लिए वैकल्पिक, पूर्व-कॉन्फ़िगर हार्डवेयर वॉल्ट बेचती है जो समर्पित उपकरण पसंद करते हैं; कुंजियाँ और प्रोटोकॉल कभी उस पर निर्भर नहीं होते।</p>
+      <nav aria-label="ERC-20 Locker Protocol"><ul><li><a href="https://lockerprotocol.com/hi/">Locker Protocol Wallet: AI-जाँचा Web3 एक्सटेंशन, ऑफ़लाइन कुंजियों के साथ</a></li><li><a href="https://lockerprotocol.com/hi/vault/">अपना सुरक्षा स्तर चुनें</a></li><li><a href="https://lockerprotocol.com/hi/locker-vault-extensions/">Locker Protocol Wallet एक्सटेंशन</a></li><li><a href="https://lockerprotocol.com/hi/locker/">Locker Protocol - टोकन लॉकिंग, वेस्टिंग और मल्टी-सिग्नेचर</a></li><li><a href="https://lockerprotocol.com/hi/locker-erc20-air-gapped-hardware/">Locker Vault - Black Edition</a></li><li><a href="https://lockerprotocol.com/hi/metamask-alternative/">ब्राउज़र में बिना कुंजी वाला MetaMask विकल्प</a></li><li><a href="https://lockerprotocol.com/hi/threat-model/">Locker Protocol का खतरा मॉडल</a></li><li><a href="https://lockerprotocol.com/hi/security/">सुरक्षा और ज़िम्मेदार प्रकटीकरण</a></li></ul></nav>
+    </main>
+  </app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-XU56S3AU.js" type="module"></script></body>
+
+</html>

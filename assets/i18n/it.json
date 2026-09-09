@@ -1,0 +1,947 @@
+{
+  "COMPARISON": {
+    "TITLE": "Perché Locker Protocol?",
+    "SUBTITLE": "Ogni strumento qui sotto guida la sua categoria. Locker riunisce autocustodia air-gapped, multisig e blocco on-chain in un unico stack aperto e non custodial.",
+    "LEDGER_LINK": "Arrivi da Ledger? Leggi il confronto dedicato",
+    "HEADER": {
+      "FEATURE": "Funzionalità",
+      "STATUS": "Disponibilità"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "Autocustodia",
+      "AIR_GAP": "Firma air-gapped",
+      "ON_DEVICE_VERIFY": "Verifica sul dispositivo",
+      "MULTISIG": "Multisig (M su N)",
+      "VESTING": "Calendari di vesting dei token",
+      "LP_LOCK": "Blocco LP + prova pubblica",
+      "BATCH_SIGN": "Firma in batch",
+      "ROLES": "Ruoli di accesso granulari",
+      "NO_SAAS": "Interamente on-chain, senza SaaS",
+      "NO_FEES": "Nessun abbonamento",
+      "SECURE_ELEMENT": "Secure element certificato",
+      "INSTITUTIONAL": "Custodia istituzionale e compliance"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "Solo tu detieni le chiavi; nessun terzo può muovere o congelare i tuoi fondi.",
+      "AIR_GAP": "Le chiavi private non toccano mai un dispositivo connesso a Internet; ogni richiesta passa come codice QR.",
+      "ON_DEVICE_VERIFY": "Controlla la transazione reale su uno schermo fidato prima di firmare, per fermare il phishing.",
+      "MULTISIG": "I fondi si muovono solo quando più firmatari indipendenti approvano.",
+      "VESTING": "Rilascia i token gradualmente nel tempo secondo regole fisse, on-chain.",
+      "LP_LOCK": "Blocca i token LP di Uniswap/PancakeSwap con una prova pubblica verificabile.",
+      "BATCH_SIGN": "Approva più operazioni in un'unica sessione di firma.",
+      "ROLES": "Separa i ruoli di admin, operatore e firmatario per i team.",
+      "NO_SAAS": "Gira interamente on-chain, senza servizio ospitato che possa chiudere.",
+      "NO_FEES": "Open-source e gratuito; paghi solo il gas della rete.",
+      "SECURE_ELEMENT": "Chiavi isolate in un chip hardware certificato e antimanomissione.",
+      "INSTITUTIONAL": "Assicurazione, audit SOC-2 e controlli di custodia enterprise."
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Alternativa a Ledger — il wallet air-gapped che puoi verificare",
+      "DESCRIPTION": "Cerchi un'alternativa a Ledger? Locker Protocol trasforma qualsiasi telefono offline in un wallet air-gapped gratuito e open-source: firma solo via QR, niente USB, niente Bluetooth, niente da comprare, niente da spedire."
+    },
+    "HERO": {
+      "BADGE": "Alternativa a Ledger",
+      "TITLE_1": "Il wallet air-gapped",
+      "TITLE_2": "che puoi davvero verificare",
+      "SUBTITLE": "Un hardware wallet ti chiede di fidarti di un chip sigillato e di un firmware chiuso. Locker Protocol non chiede nulla: gli smart contract sono pubblici e verificati on-chain, e il wallet non detiene alcuna chiave — firma su un telefono che non tocca mai Internet.",
+      "CTA_PRIMARY": "Crea la tua vault — è gratis",
+      "CTA_SECONDARY": "Leggi il modello di minaccia"
+    },
+    "WHY": {
+      "TITLE": "Perché si cerca un'alternativa",
+      "SUBTITLE": "Tre fatti datati — ciascuno documentato dalle comunicazioni pubbliche della stessa Ledger.",
+      "SOURCE_LABEL": "Fonte",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "Luglio 2020",
+          "TITLE": "Violazione del database clienti",
+          "DESC": "I dati d'ordine di circa 272 000 clienti — nomi, indirizzi di casa, numeri di telefono — sono finiti pubblici, seguiti da campagne di phishing e minacce fisiche. Comprare un dispositivo di sicurezza ha creato proprio i dati che hanno esposto i suoi proprietari.",
+          "SOURCE": "comunicato di Ledger"
+        },
+        "RECOVER": {
+          "DATE": "Maggio 2023",
+          "TITLE": "Ledger Recover",
+          "DESC": "Un aggiornamento del firmware ha mostrato che la seed può uscire dal Secure Element quando il firmware lo chiede. «Le chiavi non lasciano mai il chip» è diventata una policy — non una proprietà.",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "Dicembre 2023",
+          "TITLE": "Attacco supply-chain al Connect Kit",
+          "DESC": "Una libreria npm di Ledger compromessa ha servito un drainer di wallet dentro grandi dApp per diverse ore. La superficie d'attacco non era il dispositivo — era il fornitore.",
+          "SOURCE": "rapporto d'incidente di Ledger"
+        }
+      },
+      "TRADEMARK": "Ledger è un marchio di Ledger SAS, usato qui solo per identificare il prodotto confrontato. Ogni fatto sopra rimanda alle comunicazioni pubbliche della stessa Ledger."
+    },
+    "PILLARS": {
+      "TITLE": "Cosa cambia con Locker",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "Air gap ottico",
+          "DESC": "Niente USB, niente Bluetooth, niente NFC. Le transazioni passano come codici QR che puoi vedere. Non c'è un canale nascosto, perché non c'è alcun canale."
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "Niente da credere sulla parola",
+          "DESC": "I contratti sono pubblicati e verificati su ogni chain. L'estensione non contiene alcuna chiave — nel browser non c'è nulla da rubare."
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "Niente da comprare, niente da spedire",
+          "DESC": "Qualsiasi telefono riportato ai dati di fabbrica diventa la vault. Nessun ordine, nessuna consegna, nessun database clienti — non può trapelare ciò che non viene mai raccolto."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Tieni le tue dApp",
+          "DESC": "L'estensione Locker è un wallet Web3 standard: il tuo flusso con le dApp resta identico, solo la firma passa offline."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker vs Ledger, fianco a fianco",
+      "COL_FEATURE": "Criterio",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Vantaggio Ledger",
+      "ROWS": {
+        "PRICE": {
+          "FEATURE": "Prezzo",
+          "LOCKER": "Gratis",
+          "LEDGER": "79–399 €"
+        },
+        "CHANNEL": {
+          "FEATURE": "Canale di firma",
+          "LOCKER": "Solo codici QR (ottico)",
+          "LEDGER": "USB / Bluetooth"
+        },
+        "SOURCE": {
+          "FEATURE": "Codice sorgente",
+          "LOCKER": "Contratti pubblici e verificati on-chain",
+          "LEDGER": "App aperte, firmware chiuso"
+        },
+        "EXTRACTION": {
+          "FEATURE": "Via d'estrazione della seed",
+          "LOCKER": "Nessuna, per costruzione",
+          "LEDGER": "Recover: assistita dal firmware, opt-in"
+        },
+        "SUPPLY": {
+          "FEATURE": "Esposizione supply-chain",
+          "LOCKER": "Niente hardware, software ricompilabile",
+          "LEDGER": "Produzione e spedizione di dispositivi"
+        },
+        "DATA": {
+          "FEATURE": "Dati personali richiesti",
+          "LOCKER": "Nessuno",
+          "LEDGER": "Identità di spedizione (trapelata nel 2020)"
+        },
+        "DAPPS": {
+          "FEATURE": "Flusso con le dApp",
+          "LOCKER": "Estensione standard (EIP-6963)",
+          "LEDGER": "Ledger Live o wallet di terzi"
+        },
+        "ONCHAIN": {
+          "FEATURE": "Multisig, vesting e lock on-chain",
+          "LOCKER": "Integrati",
+          "LEDGER": "—"
+        },
+        "SECURE_ELEMENT": {
+          "FEATURE": "Secure element certificato",
+          "LOCKER": "—",
+          "LEDGER": "Sì (CC EAL5+)"
+        },
+        "INSTITUTIONAL": {
+          "FEATURE": "Custodia istituzionale e assicurazione",
+          "LOCKER": "—",
+          "LEDGER": "Sì (Enterprise)"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Cosa fa meglio un secure element",
+      "DESC": "Un secure element certificato resiste all'estrazione fisica: un attaccante che ruba il dispositivo e dispone di un laboratorio si scontra con un chip indurito. È un vantaggio reale, e non sosteniamo il contrario. La nostra risposta è altrove: contro gli attacchi remoti — malware, drainer, compromissioni supply-chain — che causano la stragrande maggioranza delle perdite cripto, un air gap ottico è più severo di qualsiasi cavo.",
+      "CTA": "Leggi il modello di minaccia completo"
+    },
+    "MIGRATE": {
+      "TITLE": "Vattene in circa 10 minuti",
+      "SUBTITLE": "Tre passi, nessun acquisto, nessun account.",
+      "STEPS": {
+        "S1": {
+          "TITLE": "Trasforma un vecchio telefono in vault",
+          "DESC": "Riportalo ai dati di fabbrica, metti la modalità aereo, installa la vault da un codice QR. Non tornerà mai più online."
+        },
+        "S2": {
+          "TITLE": "Stampa il tuo backup cartaceo",
+          "DESC": "Un codice QR cifrato ripristina la tua vault ovunque. Chi trova il foglio vede solo testo cifrato."
+        },
+        "S3": {
+          "TITLE": "Trasferisci i tuoi fondi",
+          "DESC": "Invia dal tuo wallet attuale al nuovo indirizzo — al tuo ritmo, niente da migrare in blocco."
+        }
+      },
+      "CTA": "Crea la tua vault — è gratis"
+    },
+    "FAQ": {
+      "TITLE": "Domande frequenti",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "Un telefono è davvero sicuro quanto un hardware wallet?",
+          "A": "Contro gli attacchi remoti — malware, drainer, phishing — un telefono offline che firma via QR è più severo di un dispositivo USB o Bluetooth: non c'è alcun canale da attaccare. Contro l'estrazione fisica da laboratorio, un secure element certificato mantiene il vantaggio; il nostro modello di minaccia lo documenta onestamente invece di sostenere il contrario."
+        },
+        "COST": {
+          "Q": "Devo comprare qualcosa?",
+          "A": "No. Qualsiasi telefono che già possiedi diventa la vault dopo un ripristino di fabbrica e la modalità aereo. Nessun dispositivo da ordinare, nessuna spedizione, nessun account — e quindi nessun database clienti che possa trapelare."
+        },
+        "DAPPS": {
+          "Q": "Le mie dApp continueranno a funzionare?",
+          "A": "Sì. L'estensione Locker si registra come wallet Web3 standard (EIP-6963), quindi le dApp la rilevano come qualsiasi wallet da browser. Il tuo flusso non cambia — solo la firma avviene sulla vault offline, tramite codici QR."
+        },
+        "BREAK": {
+          "Q": "Cosa succede se il telefono si rompe o si perde?",
+          "A": "Ripristini dal tuo backup cartaceo: un codice QR cifrato stampato alla creazione della vault. Con il foglio e la tua password, recuperi tutto su qualsiasi altro telefono in pochi minuti."
+        },
+        "FREE": {
+          "Q": "Perché è gratis — qual è il modello di business?",
+          "A": "Il software è gratuito, da cima a fondo, e resterà tale. Il progetto vende una vault hardware preconfigurata, opzionale, per chi preferisce un dispositivo dedicato; le chiavi e il protocollo non ne dipendono mai."
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "Alternativa a MetaMask senza chiavi nel browser",
+      "DESCRIPTION": "La stessa esperienza dApp, zero chiavi private nel browser: ogni transazione è firmata da una vault gratuita su un telefono offline, tramite codice QR."
+    },
+    "HERO": {
+      "BADGE": "Alternativa a MetaMask",
+      "TITLE_1": "Le stesse abitudini.",
+      "TITLE_2": "Niente più da rubare.",
+      "SUBTITLE": "Locker Protocol Wallet si comporta come MetaMask su ogni dApp. La differenza è ciò che l'estensione non contiene: niente seed, niente keystore, niente firmatario. Ogni transazione viene firmata su un telefono offline, tramite codice QR.",
+      "CTA_SECONDARY": "Come funziona la sicurezza"
+    },
+    "PILLARS": {
+      "TITLE": "Cosa cambia per te",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "Niente da rubare nel browser",
+          "DESC": "Un'estensione del browser può essere attaccata da malware, da un'estensione ostile o da un aggiornamento avvelenato. La nostra non custodisce alcun segreto: il caso peggiore resta un fastidio, mai una perdita."
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "Vedi ciò che firmi",
+          "DESC": "Il telefono offline decodifica calldata, approvazioni di token e dati tipizzati, e mostra il contenuto reale prima dell'approvazione. Firmare alla cieca diventa semplicemente impossibile."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Ogni dApp continua a funzionare",
+          "DESC": "Interfacce standard EIP-1193 ed EIP-6963: i pulsanti di connessione rilevano Locker come rilevano MetaMask. Swap, bridge, mint e firme funzionano invariati, su 9 chain EVM."
+        },
+        "FREE": {
+          "TITLE": "Gratis, senza account e senza server",
+          "DESC": "Estensione e vault sono gratuiti. Nessuna registrazione, nessun tracciamento, e nessun nostro server tra te e la chain."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "A confronto",
+      "COL_FEATURE": "Criterio",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "Dove MetaMask resta avanti",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "Dove vivono le chiavi private",
+          "LOCKER": "Su un telefono offline, mai nel browser",
+          "MM": "Cifrate dentro l'estensione del browser"
+        },
+        "MALWARE": {
+          "FEATURE": "Se il tuo computer è infetto",
+          "LOCKER": "Niente da estrarre, la firma resta offline",
+          "MM": "Chiavi e firma esposte alla macchina"
+        },
+        "SIGNING": {
+          "FEATURE": "Ciò che approvi",
+          "LOCKER": "Transazione decodificata su uno schermo separato",
+          "MM": "Popup sulla stessa macchina, forse compromessa"
+        },
+        "HARDWARE": {
+          "FEATURE": "Supporto hardware wallet",
+          "LOCKER": "Qualsiasi vecchio telefono diventa il firmatario, gratis",
+          "MM": "Supportato, richiede l'acquisto di un dispositivo"
+        },
+        "BACKUP": {
+          "FEATURE": "Backup della seed",
+          "LOCKER": "Codice QR su carta cifrato, ripristinabile su qualsiasi telefono",
+          "MM": "Copia manuale della frase di recupero"
+        },
+        "MOBILE": {
+          "FEATURE": "App mobile",
+          "LOCKER": "La vault gira su qualsiasi telefono; la navigazione resta sul desktop",
+          "MM": "Wallet mobile completo con browser integrato"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Dove MetaMask vince davvero",
+      "DESC": "MetaMask ha oltre dieci anni di storia in produzione, un grande team di sicurezza e un'app mobile con browser integrato. Se operi ogni giorno dal telefono e accetti chiavi su un dispositivo connesso, resta una scelta solida. Locker esiste per i soldi che non puoi permetterti di perdere: qualche secondo di scansione QR per transazione, in cambio di chiavi che non toccano mai Internet.",
+      "CTA": "Leggi il threat model"
+    },
+    "MIGRATE": {
+      "TITLE": "Cambia in tre passi",
+      "SUBTITLE": "Dieci minuti, e le tue chiavi lasciano Internet per sempre.",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "Installa l'estensione",
+          "DESC": "Aggiungi Locker Protocol Wallet dallo store. Le tue dApp lo rilevano subito."
+        },
+        "VAULT": {
+          "TITLE": "Trasforma un vecchio telefono in vault",
+          "DESC": "Apri l'app della vault su un telefono che lasci offline, crea lì un portafoglio nuovo e stampa il backup cartaceo cifrato."
+        },
+        "MOVE": {
+          "TITLE": "Sposta i tuoi fondi",
+          "DESC": "Invia i tuoi asset al nuovo indirizzo. Da quel momento, ogni transazione si approva sul telefono offline, tramite codice QR."
+        }
+      },
+      "CTA": "Crea la tua vault"
+    },
+    "FAQ": {
+      "TITLE": "Domande frequenti",
+      "ITEMS": {
+        "SEED": {
+          "Q": "Posso importare la mia seed di MetaMask?",
+          "A": "Puoi, ma consigliamo l'opposto: crea un portafoglio nuovo sul telefono offline e trasferisci lì i tuoi fondi. Una seed che ha vissuto su una macchina connessa potrebbe essere già compromessa, e tenerla vanifica il senso dell'air gap."
+        },
+        "DAPPS": {
+          "Q": "Le mie dApp funzioneranno davvero?",
+          "A": "Sì. L'estensione espone le stesse interfacce standard di MetaMask (EIP-1193, EIP-6963), quindi le dApp la elencano come qualsiasi altro wallet. Le transazioni firmate dalla vault sono accettate da DEX, bridge ed exchange in mainnet."
+        },
+        "LOSE": {
+          "Q": "E se perdo il telefono offline?",
+          "A": "I tuoi fondi sono al sicuro. Ripristina il backup cartaceo cifrato su qualsiasi altro telefono con la tua password. Senza carta e password insieme, il telefono da solo non rivela nulla."
+        },
+        "COST": {
+          "Q": "Quanto costa?",
+          "A": "Niente. L'estensione e la vault sono gratuite, senza account né abbonamento. Il progetto vende un dispositivo preconfigurato opzionale per chi preferisce hardware dedicato."
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask è un marchio di Consensys. Questa pagina è un confronto indipendente, basato sul comportamento pubblicamente documentato dei due prodotti."
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "Il modello di minaccia di Locker Protocol",
+      "DESCRIPTION": "Da cosa protegge Locker Protocol, da cosa no, e perché abbiamo scelto la verificabilità invece dell'hardware di fiducia. Un modello di minaccia onesto per l'autocustodia air-gapped, 100 % QR."
+    },
+    "HERO": {
+      "TITLE": "Il modello di minaccia di Locker Protocol",
+      "SUBTITLE": "Da cosa proteggiamo, da cosa no, e perché abbiamo scelto la verificabilità invece dell'hardware di fiducia."
+    },
+    "PRINCIPLES": {
+      "TITLE": "Tre principi",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "Air gap per costruzione, non per policy",
+          "DESC": "Il dispositivo che firma non ha USB, né Bluetooth, né rete. Richieste e firme passano come codici QR che puoi vedere. Una proprietà imposta dalla fisica non ha bisogno di promesse."
+        },
+        "VERIFY": {
+          "TITLE": "Verificabile batte certificato",
+          "DESC": "I contratti — dove vivono davvero i tuoi fondi — sono pubblicati e verificati on-chain su tutte le 9 reti. La certificazione chiede la tua fiducia; un contratto verificato non ne ha bisogno."
+        },
+        "NO_DATA": {
+          "TITLE": "Niente account, niente server, niente dati",
+          "DESC": "Niente da registrare, niente di spedito, niente di memorizzato su di te. Un database che non esiste non può trapelare."
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "Le minacce, onestamente",
+      "VERDICT_PROTECTED": "Protetto",
+      "VERDICT_PARTIAL": "Parziale — limite dichiarato",
+      "VERDICT_OUT": "Fuori perimetro",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "Malware remoto e drainer di wallet",
+          "HOW": "Le chiavi vivono su un dispositivo senza connessione di rete. Il malware sul tuo computer può proporre una transazione — solo la vault offline può firmarla, dopo che l'hai letta."
+        },
+        "PHISHING": {
+          "THREAT": "Firma alla cieca e phishing",
+          "HOW": "La vault decodifica ogni richiesta in campi leggibili su uno schermo fidato prima della firma. Ciò che firmi è ciò che hai visto."
+        },
+        "SUPPLY": {
+          "THREAT": "Compromissione del fornitore o della supply chain",
+          "HOW": "Non si vende hardware, quindi nessuno può essere intercettato. Gli aggiornamenti arrivano solo dagli store dei browser, e i contratti che custodiscono i tuoi fondi sono verificati on-chain."
+        },
+        "LOSS": {
+          "THREAT": "Perdita o distruzione del dispositivo",
+          "HOW": "Il backup cartaceo è un codice QR cifrato. Stampalo, conservalo, ripristina su qualsiasi telefono con la tua password."
+        },
+        "THEFT": {
+          "THREAT": "Furto fisico con attrezzatura da laboratorio",
+          "HOW": "La vault è cifrata a riposo dietro la tua password. Ma un telefono non ha un secure element certificato: contro un attaccante attrezzato che tiene il dispositivo, il chip di un hardware wallet resiste meglio. Su questo punto preciso, un Ledger vince — e lo diciamo."
+        },
+        "WRENCH": {
+          "THREAT": "Coercizione — la chiave inglese da 5 $",
+          "HOW": "Nessun wallet resiste alla coercizione fisica. La risposta strutturale è il multisig M-su-N: nessuno, costretto o no, può muovere i fondi da solo."
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "Dove vince un secure element",
+      "DESC": "Un secure element certificato (CC EAL5+) resiste all'estrazione fisica delle chiavi: decapping, glitching, canali laterali. Se il tuo rischio principale è un attaccante sofisticato che si impossessa fisicamente del tuo firmatario, un chip dedicato difende quello scenario meglio di un telefono. Pubblichiamo questa pagina perché tu faccia quella scelta consapevolmente — non perché la scopra dopo."
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "Perché comunque software",
+      "DESC": "Nel 2023, Ledger Recover ha dimostrato che è il firmware a decidere cosa fa un secure element: il chip ha protetto la seed finché il suo fornitore non ha consegnato una via d'uscita. Un componente che non puoi ispezionare ti protegge solo finché il suo fornitore lo vuole. Preferiamo proprietà che puoi controllare a promesse da credere."
+    },
+    "PROOF": {
+      "TITLE": "Non credere nemmeno a noi — controlla",
+      "ITEMS": {
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "test automatizzati, eseguiti a ogni modifica"
+        },
+        "CONTRACTS": {
+          "VALUE": "7",
+          "LABEL": "smart contract, deployati su 9 chain"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "finding di analisi statica, configurazione pubblicata"
+        },
+        "SOURCE": {
+          "VALUE": "100 %",
+          "LABEL": "dei contratti pubblicati e verificati on-chain"
+        }
+      },
+      "CTA": "Esplora il codice su GitHub"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "Sicurezza e divulgazione responsabile",
+      "DESCRIPTION": "Nessuna chiave nel browser, build deterministiche, oltre 500 test automatizzati — e come segnalare una vulnerabilità."
+    },
+    "HERO": {
+      "TITLE": "Sicurezza per costruzione",
+      "SUBTITLE": "L'estensione non detiene chiavi private e la vault non tocca mai Internet — nel browser non c'è nulla da rubare. Ogni release esce solo quando i numeri qui sotto sono verdi."
+    },
+    "NOKEYS": {
+      "TITLE": "Niente da rubare nel browser",
+      "DESC": "L'estensione non contiene alcun segreto: niente seed, niente keystore, niente firmatario. Ogni firma è prodotta dalla vault air-gapped e torna come codice QR — un canale ottico a senso unico che un malware sul tuo computer non può attraversare."
+    },
+    "PROOF": {
+      "TITLE": "I numeri dietro",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "44/44",
+          "LABEL": "file del pacchetto store ricostruiti bit per bit"
+        },
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "test automatizzati a guardia di ogni release"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "segnalazioni di analisi statica tollerate in CI"
+        },
+        "MATRIX": {
+          "VALUE": "86",
+          "LABEL": "righe di superficie dApp, ognuna con test verde"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "Hai trovato una vulnerabilità?",
+      "DESC": "Scrivici con SECURITY nell'oggetto e i passi per riprodurla — mai includere una vera frase di recupero o una chiave privata.",
+      "ITEMS": {
+        "ACK": "Confermiamo la ricezione entro 72 ore e ti teniamo aggiornato fino alla risoluzione.",
+        "COORD": "Divulgazione coordinata: chiediamo un tempo ragionevole per rilasciare la correzione — al massimo 90 giorni.",
+        "SAFE": "Safe harbor: la ricerca in buona fede non porta mai ad azioni legali. Testa con i tuoi fondi, sulle testnet.",
+        "CREDIT": "I segnalatori confermati ricevono credito pubblico, salvo tu preferisca l'anonimato."
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Infrastruttura di sicurezza sovrana.",
+    "LEDGER_ALTERNATIVE": "Alternativa a Ledger",
+    "METAMASK_ALTERNATIVE": "Alternativa a MetaMask",
+    "THREAT_MODEL": "Modello di minaccia",
+    "SECURITY": "Sicurezza",
+    "BUILT_WITH": "Costruito con {heart} per un Web3 più sicuro."
+  },
+  "NAV": {
+    "CONNECT_WALLET": "Connetti il wallet",
+    "CONNECTING": "Connessione...",
+    "EXTENSION": "Estensione",
+    "VAULT": "Cassaforte",
+    "SECURITY": "Sicurezza",
+    "LOCKER": "Locker",
+    "MENU": "Menu",
+    "DOCS": "Documentazione"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet: estensione Web3 verificata dall'IA con chiavi offline"
+    },
+    "HERO": {
+      "BADGE": "Rilevamento dei rischi con IA integrata",
+      "TITLE": "senza la chiave",
+      "TITLE_2": "che resta sul computer",
+      "DESCRIPTION": "Rilevamento dei rischi con IA sul dispositivo, zero cloud. Locker Protocol Wallet è un'estensione del browser che si innesta su qualsiasi dApp Web3: scambia, usa i bridge e opera sui perpetui Hyperliquid come sempre. Ogni firma viene approvata su un dispositivo offline separato, tramite QR code, così la tua chiave privata non tocca mai un computer connesso.",
+      "CTA_VAULT": "OTTIENI LA CASSAFORTE",
+      "FREE": "Gratuita e open-source",
+      "SHOT_ALT": "La finestra di Locker Protocol Wallet: saldi, Invia, Ricevi, Scambia e Bridge",
+      "SHOT_HOME": "I saldi su tutte le reti, con Invia, Ricevi, Scambia e Bridge",
+      "SHOT_PERPS": "Hyperliquid: saldo, PnL e la posizione aperta",
+      "SHOT_TRADE": "Un mercato Hyperliquid: grafico, book degli ordini, Compra e Vendi",
+      "SHOT_SWAP": "Una quotazione di scambio: tasso, commissione e minimo ricevuto",
+      "SHOT_BRIDGE": "Un bridge fra due catene, con durata e destinazione",
+      "SHOT_SIGN": "Il codice QR animato che la cassaforte offline inquadra per firmare",
+      "SEP": ", "
+    },
+    "PROOF": {
+      "KEYS_TITLE": "Le chiavi restano offline",
+      "KEYS_DESC": "L'estensione non conserva nessuna chiave privata. A firmare è la tua cassaforte offline, via QR code.",
+      "AI_TITLE": "L'IA controlla ogni firma",
+      "AI_DESC": "Un modello locale segnala le richieste rischiose, sul tuo dispositivo, anche offline.",
+      "DAPPS_TITLE": "Tutte le dApp funzionano",
+      "DAPPS_DESC": "Risponde all'API Web3 standard, quindi i siti vedono un portafoglio qualunque.",
+      "OPEN_TITLE": "Codice verificabile",
+      "OPEN_DESC": "Open-source, build riproducibili, pubblicata sullo store.",
+      "PRIVACY_TITLE": "Nessun account, nessun tracciamento",
+      "PRIVACY_DESC": "Nessuna registrazione, nessuna telemetria, nessuna analitica dentro il portafoglio."
+    },
+    "DO": {
+      "BADGE": "Estensione del browser",
+      "TITLE": "Tutto quello che già fai on-chain",
+      "SUBTITLE": "Scambi, bridge, perpetui e trasferimenti su Ethereum, Bitcoin, Solana, Tron, Sui, Stellar e Hyperliquid. Un'estensione, una chiave offline.",
+      "SHOT_ALT": "Saldo Hyperliquid, PnL e posizioni aperte nell'estensione",
+      "SWAP_TITLE": "Scambia",
+      "SWAP_DESC": "Il percorso migliore tra gli aggregatori, con la commissione reale mostrata prima di firmare.",
+      "BRIDGE_TITLE": "Bridge",
+      "BRIDGE_DESC": "Sposta i fondi da una catena all'altra e segui il trasferimento fino all'arrivo.",
+      "PERPS_TITLE": "Opera su Hyperliquid",
+      "PERPS_DESC": "Perpetui, posizioni, PnL e trasferimenti HyperCore, direttamente dalla finestra.",
+      "SEND_TITLE": "Invia e ricevi",
+      "SEND_DESC": "Sei famiglie di catene in un unico account, ogni indirizzo derivato dalla stessa cassaforte."
+    },
+    "STEPS": {
+      "BADGE": "Come funziona",
+      "TITLE": "Due dispositivi, tre minuti",
+      "SUBTITLE": "Il browser si occupa di internet. Un secondo dispositivo, tenuto offline, si occupa delle chiavi.",
+      "STEP_1_TITLE": "Installa l'estensione",
+      "STEP_1_DESC": "Aggiungila dal Chrome Web Store, su Chrome o su Brave.",
+      "STEP_2_TITLE": "Abbina la cassaforte",
+      "STEP_2_DESC": "Installa l'app gratuita della cassaforte su un telefono di scorta tenuto offline, poi scansiona il QR code dell'account che mostra.",
+      "STEP_3_TITLE": "Firma con un QR code",
+      "STEP_3_DESC": "L'estensione mostra un QR code, la cassaforte lo legge, lo verifica e restituisce la firma. La chiave non si muove mai.",
+      "LEARN_MORE": "Vedi la pagina dell'estensione"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "Il dispositivo che custodisce le tue chiavi, e nient'altro",
+      "DESC": "Un'app gratuita installata su un telefono di scorta che non torna mai più online. Genera le chiavi, mostra esattamente ciò che le viene chiesto di firmare e restituisce una firma via QR code.",
+      "POINT_1": "Funziona senza rete, senza Bluetooth e senza cavo",
+      "POINT_2": "Ricontrolla ogni richiesta sul proprio schermo, con il suo modello di IA integrato",
+      "POINT_3": "Ethereum, Bitcoin, Solana, Tron, Sui e Stellar da un'unica frase di recupero",
+      "POINT_4": "Gratuita, open-source, installabile su qualsiasi vecchio smartphone",
+      "SHOT_ALT": "L'app Locker Vault su un telefono, schermata degli account",
+      "LEARN_MORE": "Confronta le versioni della cassaforte"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "Il protocollo di blocco dei token è sempre qui",
+      "DESC": "Distribuisci il tuo contratto di blocco: condizioni di tempo o di prezzo, piani di vesting, multi-firma e la Launch Suite per le prevendite. È un prodotto a sé, e adesso ha una pagina tutta sua.",
+      "CTA": "Vedi Locker Protocol",
+      "POINT_1": "Blocchi per data e per prezzo",
+      "POINT_2": "Vesting automatizzato",
+      "POINT_3": "Multi-firma",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "Installala, poi tieni le chiavi offline",
+      "SUBTITLE": "L'estensione per l'uso quotidiano, la cassaforte per le chiavi. Entrambe gratuite, entrambe open-source."
+    },
+    "AI": {
+      "BADGE": "IA integrata",
+      "TITLE": "Rilevamento dei rischi con IA - sul tuo dispositivo, anche offline",
+      "SUBTITLE": "Ogni firma viene analizzata localmente da tre livelli indipendenti. Zero cloud, zero telemetria: a differenza dei simulatori di transazioni in cloud, ciò che firmi non lascia mai il tuo dispositivo.",
+      "RULES_TITLE": "Le regole decidono",
+      "RULES_DESC": "Un insieme finito e verificabile di regole deterministiche blocca gli schemi pericolosi: approvazioni illimitate, permessi su intere collezioni, token falsi, origini di phishing. Solo queste regole possono bloccare la firma - l'IA non blocca mai, quindi niente può convincerla a sbloccare.",
+      "ML_TITLE": "L'IA locale segnala",
+      "ML_DESC": "Un classificatore di machine learning, costruito su schemi noti di drainer, valuta ogni richiesta sul tuo dispositivo in millisecondi ed è abbastanza compatto da girare anche dentro la cassaforte offline. Coglie le combinazioni insolite che nessuna singola regola copre, come l'85% del tuo saldo in uscita verso un indirizzo mai visto.",
+      "VAULT_TITLE": "La cassaforte ricontrolla",
+      "VAULT_DESC": "Il QR non trasporta mai un verdetto. La cassaforte air-gapped decodifica e rivaluta il payload grezzo con la propria copia integrata del modello - un computer compromesso viene smentito sullo schermo fidato.",
+      "POINT_LOCAL": "0 byte della tua attività lasciano il dispositivo",
+      "POINT_REPRO": "Addestramento del modello riproducibile byte per byte - IA verificabile",
+      "POINT_ADVISORY": "L'IA consiglia, le regole deterministiche decidono"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "Scegli il tuo livello di sicurezza",
+    "SUBTITLE": "La Locker Vault esiste in versione fisica per l'isolamento totale, o come app gratuita per i tuoi dispositivi mobili.",
+    "AI": {
+      "TITLE": "L'IA sullo schermo fidato",
+      "DESC": "La cassaforte integra il proprio modello di rischio IA - completamente offline. Rianalizza ogni richiesta a partire dal payload grezzo del QR: nemmeno un computer compromesso può nascondere un avviso allo schermo che ha l'ultima parola."
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault (hardware)",
+      "BADGE": "Sicurezza layer 0",
+      "DESC": "Ablazione fisica totale delle antenne. Firma ottica esclusiva. Il livello di sicurezza definitivo per whale e istituzioni.",
+      "PRICE": "In arrivo",
+      "CTA": "Presto"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault (app)",
+      "BADGE": "Air-gap software",
+      "DESC": "Installa la nostra PWA su un dispositivo dedicato offline. Gratuita, open-source e compatibile con la firma via QR.",
+      "PRICE": "GRATIS",
+      "CTA": "ACCEDI ALLA CASSAFORTE"
+    },
+    "EXTENSION": {
+      "TITLE": "Estensione Locker Protocol Wallet",
+      "BADGE": "Novità",
+      "DESC": "Abbina la tua cassaforte alla nostra estensione per browser: un sostituto diretto di MetaMask che funziona con qualsiasi dApp Web3 mentre le tue chiavi restano air-gapped.",
+      "CTA": "SCOPRI L'ESTENSIONE"
+    },
+    "COMPARISON": {
+      "TITLE": "Confronto tecnico",
+      "COL_FEATURE": "Caratteristica",
+      "CAT_SECURITY": "Sicurezza",
+      "CAT_COMMUNICATION": "Comunicazione",
+      "CAT_SOFTWARE": "Software",
+      "CAT_SUPPORT": "Supporto ed extra",
+      "FEATURE_1": "Tipo di isolamento",
+      "HW_1": "Fisico - antenne rimosse",
+      "SW_1": "Software - modalità aereo",
+      "FEATURE_2": "Superficie di attacco di rete",
+      "HW_2": "Zero (nessun componente radio)",
+      "SW_2": "Minima (radio presente ma disattivata)",
+      "FEATURE_3": "Resistenza ai malware",
+      "HW_3": "Immunità totale",
+      "SW_3": "Dipende dall'igiene del dispositivo",
+      "FEATURE_4": "Protezione zero-day",
+      "HW_4": "Impossibile (nessuna superficie di attacco)",
+      "SW_4": "Rischio se il dispositivo non è dedicato",
+      "FEATURE_5": "Comunicazione con l'app",
+      "HW_5": "Solo codice QR (ottico)",
+      "SW_5": "Solo codice QR (fotocamera)",
+      "FEATURE_6": "WiFi / Bluetooth / NFC",
+      "HW_6": "Fisicamente assenti",
+      "SW_6": "Presenti ma disattivati",
+      "FEATURE_7": "Connessione USB",
+      "HW_7": "Nessuna - zero cavi",
+      "SW_7": "Nessuna - zero cavi",
+      "FEATURE_8": "Multi-firma (M su N)",
+      "HW_8": "Sì - fino a 20 firmatari",
+      "SW_8": "Sì - fino a 20 firmatari",
+      "FEATURE_9": "Wallet illimitati (mnemonici unici)",
+      "HW_9": "Sì - ogni wallet ha la propria seed",
+      "SW_9": "Sì - ogni wallet ha la propria seed",
+      "FEATURE_10": "Open source",
+      "HW_10": "Sì - codice verificabile",
+      "SW_10": "Sì - codice verificabile",
+      "FEATURE_11": "Compatibile MetaMask",
+      "HW_11": "Sì (tramite codici QR)",
+      "SW_11": "Sì (tramite codici QR)",
+      "FEATURE_12": "Paper wallet cifrato (AES-256)",
+      "HW_12": "Sì",
+      "SW_12": "Sì",
+      "FEATURE_13": "Aggiornamenti firmware",
+      "HW_13": "Nessuno - zero superficie di attacco",
+      "SW_13": "Automatici (PWA)",
+      "FEATURE_14": "Supporto",
+      "HW_14": "Discord VIP",
+      "SW_14": "Discord della community",
+      "FEATURE_15": "Prezzo",
+      "HW_15": "In arrivo",
+      "SW_15": "Gratis"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "Estensione per browser",
+    "TITLE": "Estensione Locker Protocol Wallet",
+    "SUBTITLE": "La cassaforte air-gapped nel tuo browser. Un sostituto diretto di MetaMask che funziona con qualsiasi dApp Web3; le tue chiavi private non lasciano mai la cassaforte.",
+    "AI": {
+      "TITLE": "Cerimonia di firma verificata dall'IA",
+      "DESC": "Prima che un QR raggiunga la tua cassaforte, l'estensione analizza la richiesta sul dispositivo: le regole deterministiche bloccano gli schemi pericolosi e un modello IA locale segnala i pattern insoliti - niente cloud, niente telemetria. La cassaforte poi ricontrolla tutto in modo indipendente con il proprio modello integrato."
+    },
+    "DOWNLOAD": {
+      "TITLE": "Scaricala per il tuo browser",
+      "SUBTITLE": "Open-source, si installa da un'unica scheda del Chrome Web Store.",
+      "CTA": "Installa",
+      "NOTE": "Chrome e Brave installano l'estensione dalla stessa scheda del Chrome Web Store."
+    },
+    "WHY": {
+      "TITLE": "Perché l'estensione Locker Protocol Wallet?",
+      "DAPPS": {
+        "TITLE": "Qualsiasi dApp Web3",
+        "DESC": "Un sostituto diretto di MetaMask: swap, bridge, lending, marketplace NFT - se funziona con MetaMask, funziona con Locker Protocol Wallet."
+      },
+      "KEYS": {
+        "TITLE": "Le chiavi restano air-gapped",
+        "DESC": "L'estensione non detiene alcuna chiave privata. Ogni transazione è firmata dalla tua cassaforte offline tramite codici QR - nel browser non c'è nulla da rubare."
+      },
+      "SIMPLE": {
+        "TITLE": "Uso semplificato della cassaforte",
+        "DESC": "Una cerimonia di firma guidata passo passo nel pannello laterale. La sicurezza air-gapped resa semplice come scansionare un codice QR."
+      }
+    },
+    "HOW": {
+      "TITLE": "Come funziona",
+      "STEP_1_TITLE": "Connettiti come con MetaMask",
+      "STEP_1_DESC": "Apri qualsiasi dApp Web3 e connettiti: l'estensione espone alla dApp gli account della cassaforte, senza alcuna chiave privata.",
+      "STEP_2_TITLE": "Scansiona con la cassaforte",
+      "STEP_2_DESC": "Quando serve una firma, l'estensione mostra un codice QR. Scansionalo con la cassaforte offline, controlla e approva l'operazione.",
+      "STEP_3_TITLE": "Trasmetti la firma",
+      "STEP_3_DESC": "Mostra il codice QR firmato alla fotocamera dell'estensione. La transazione viene trasmessa; le tue chiavi non hanno mai toccato Internet."
+    },
+    "CTA": {
+      "TITLE": "Ti servirà una Locker Vault",
+      "DESC": "L'estensione si abbina alla Locker Vault air-gapped, il dispositivo offline che custodisce le tue chiavi e firma ogni operazione.",
+      "BUTTON": "Ottieni la Locker Vault"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "Installa la cassaforte gratuita",
+    "STEP_1": "Prendi il tuo dispositivo dedicato (smartphone o tablet)",
+    "STEP_2": "Apri la fotocamera e scansiona il codice QR qui sotto",
+    "STEP_3": "Segui le istruzioni per «Aggiungi alla schermata Home»",
+    "WARNING": "Per la massima sicurezza, metti questo dispositivo in modalità aereo in modo permanente dopo l'installazione.",
+    "CLOSE": "Chiudi"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "Edizione limitata",
+    "CONNECT_TO_PAY": "CONNETTI IL WALLET PER PAGARE",
+    "CONFIRM_PREORDER": "CONFERMA IL PREORDINE",
+    "VIP_DETECTED": "Titolare di WLFI rilevato",
+    "VIP_APPLIED": "Sconto VIP applicato!",
+    "OFFER_LIMIT": "Offerta valida fino al 1° gennaio 2027",
+    "DELIVERY_INFO": "Consegna del 1° lotto: T1 2027 (gen-mar)",
+    "INCLUDES": "Il tuo ordine include la Locker Vault (hardware) e l'accesso a vita alla suite software Locker Protocol.",
+    "PAY_STABLECOINS": "Paga in stablecoin",
+    "LOCKER_INFO": "Il tuo pagamento è protetto da Locker Protocol. I token vengono aggiunti direttamente in un blocco tramite il nostro stesso protocollo - usiamo Locker per ricevere i pagamenti.",
+    "JOIN_DISCORD": "Unisciti alla community Discord",
+    "LOCK_INFO": "Confermando accetti che i tuoi fondi siano inviati tramite il meccanismo addToLock di Locker Protocol. Usiamo il nostro stesso protocollo per proteggere i pagamenti.",
+    "BALANCE": "Saldo",
+    "REQUIRED": "Richiesto",
+    "INSUFFICIENT_FUNDS": "Fondi insufficienti per questa transazione",
+    "STEP_APPROVE": "Approva",
+    "STEP_LOCK": "Blocca",
+    "APPROVING": "Approvazione della spesa dei token...",
+    "LOCKING": "Blocco dei fondi in Locker...",
+    "SUCCESS_TITLE": "Pagamento riuscito!",
+    "SUCCESS_DESC": "I tuoi fondi sono stati bloccati in sicurezza tramite Locker Protocol. Unisciti al nostro Discord per fornire i dati di spedizione tramite il nostro portale sicuro.",
+    "RECEIPT_TITLE": "Riepilogo dell'ordine",
+    "TX_HASH": "Hash della transazione",
+    "COPY_TX": "Copia l'hash della transazione",
+    "PAYMENT_REF": "Riferimento di pagamento",
+    "NEXT_STEP_TITLE": "E adesso?",
+    "STEP1_DESC": "Copia l'hash della transazione qui sopra - è la tua prova di pagamento on-chain.",
+    "STEP2_DESC": "Unisciti alla community Discord di Locker Protocol cliccando il pulsante qui sotto.",
+    "STEP3_DESC": "Apri il canale #vault-orders e incolla il tuo hash di transazione. Il nostro team verificherà il pagamento e ti contatterà per la spedizione.",
+    "UNSUPPORTED_CHAIN": "Rete non supportata - cambia rete"
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "Guarda la demo",
+      "LOCKER": "Guarda la demo del Locker",
+      "VAULT": "Guarda la demo della cassaforte",
+      "EXTENSION": "Guarda la demo dell'estensione",
+      "CLOSE": "Chiudi il video"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "Blocco e vesting avanzati",
+        "DESC": "Blocca i token automaticamente fino a una data precisa o a un obiettivo di prezzo. Piani di vesting automatici e configurabili inclusi."
+      },
+      "MULTISIG": {
+        "TITLE": "Sicurezza multifirma",
+        "DESC": "Protocollo decentralizzato al 100 %, controllato dal tuo team. Soglie e firmatari configurabili. Nessun intermediario."
+      },
+      "OPENSOURCE": {
+        "TITLE": "100 % open source",
+        "DESC": "Trasparenza totale. I nostri smart contract, l'app companion air-gapped e l'interfaccia sono interamente open source."
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "Separazione dei poteri",
+      "TITLE": "Cambia wallet. Non cassaforte.",
+      "SUBTITLE": "In un wallet normale i tuoi fondi SONO la tua chiave privata: trapela, e sono spariti. Locker tiene i tuoi fondi dentro un contratto. Il wallet è solo una chiave che puoi sostituire al primo dubbio, senza muovere un solo token.",
+      "NORMAL_LABEL": "Un wallet normale",
+      "NORMAL_TITLE": "I tuoi fondi SONO la tua chiave",
+      "NORMAL_DESC": "Una chiave trapelata e tutto si svuota. Un sospetto? Devi correre a spostare ogni token su un nuovo indirizzo, in gara con l'attaccante.",
+      "LOCKER_LABEL": "Con Locker",
+      "LOCKER_TITLE": "I tuoi fondi vivono in un contratto",
+      "LOCKER_DESC": "La chiave controlla solo la cassaforte. Un dubbio? Sostituiscila: i fondi non si muovono mai e restano dietro le tue regole.",
+      "FOOTER": "Il tuo wallet diventa usa e getta. La tua sicurezza no."
+    },
+    "AIRGAPPED": {
+      "BADGE": "Sicurezza massima",
+      "TITLE": "Architettura di cassaforte air-gapped",
+      "DESC": "Per la massima sicurezza contro attacchi e malware, il nostro protocollo supporta nativamente la firma offline tramite l'app companion air-gapped.",
+      "FEATURE_1": "Tecnologia PWA: installala su qualunque vecchio smartphone, senza passare da uno store",
+      "FEATURE_2": "Vero air-gap: tieni il dispositivo completamente scollegato da internet",
+      "FEATURE_3": "100 % gratuita e open source: nessun tracciamento, nessun codice nascosto. Verificala e compilala tu stesso",
+      "FEATURE_4": "Compatibile con MetaMask: firma le transazioni Web3 con una semplice connessione via QR"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "Backup ultra-sicuro",
+      "TITLE": "Portafoglio di carta cifrato tramite codice QR",
+      "DESC": "Non serve più annotare 12 parole su un foglio. Esporta il portafoglio come codice QR cifrato in AES-256, protetto dalla tua password ultra-sicura.",
+      "FEATURE_1": "Backup stampabile: basta stampare il codice QR e riporlo nella tua cassaforte fisica.",
+      "FEATURE_2": "Cifrato con password: anche se qualcuno trova il foglio, non può leggere le chiavi senza la tua password robusta.",
+      "FEATURE_3": "Ripristino immediato: scansiona il QR stampato con un nuovo dispositivo air-gapped per ripristinare subito l'intero portafoglio."
+    },
+    "METAMASK": {
+      "TITLE": "Integrazione con MetaMask senza attriti",
+      "DESC": "Collega la tua cassaforte air-gapped a qualsiasi dApp Web3 tramite MetaMask, senza mai esporre le chiavi private.",
+      "FEATURE_1": "Scansiona codici QR per firmare le transazioni",
+      "FEATURE_2": "Interagisci con Uniswap, Aave e molti altri",
+      "FEATURE_3": "Isolamento fisico reale per l'uso quotidiano di Web3"
+    },
+    "EXTENSION": {
+      "BADGE": "Estensione per browser",
+      "TITLE": "La potenza della cassaforte, nel tuo browser",
+      "DESC": "Installa l'estensione Locker Protocol Wallet e usa la tua cassaforte air-gapped su qualsiasi dApp Web3. Si comporta esattamente come MetaMask, ma ogni firma arriva dalla tua cassaforte offline tramite codici QR.",
+      "FEATURE_1": "Funziona con qualsiasi dApp Web3: swap, bridge, lending e altro",
+      "FEATURE_2": "Cerimonia della cassaforte semplificata e sicura, guidata passo passo",
+      "FEATURE_3": "Zero chiavi private nel browser, mai",
+      "CTA": "Ottieni l'estensione",
+      "MOCK_CONNECTED": "Connesso",
+      "MOCK_SCAN": "Scansiona con la cassaforte"
+    },
+    "SMART_DCA": {
+      "BADGE": "Disciplina e vesting",
+      "TITLE": "DCA intelligente e blocchi anti-FOMO",
+      "DESC": "Proteggi i tuoi investimenti dalle decisioni emotive. Puoi creare più blocchi per token con regole del tutto diverse, combinando scadenze e obiettivi di prezzo in un'unica strategia.",
+      "FEATURE_1": "Strategie multiple: blocca il 50 % per 1 anno e il 50 % per 4 anni, OPPURE sblocca prima se il prezzo tocca +300 %.",
+      "FEATURE_2": "Regole combinabili: a tempo, a prezzo, o entrambe elegantemente unite nello stesso blocco.",
+      "FEATURE_3": "Vesting e DCA: aggiungi fondi ai blocchi esistenti nel tempo per mediare al ribasso o costruire posizioni di lungo periodo."
+    },
+    "MULTI_SIG": {
+      "BADGE": "Governance e sicurezza",
+      "TITLE": "La vera multifirma, finalmente semplice",
+      "DESC": "Metti al sicuro i tuoi fondi con più firmatari senza mai esporre una sola chiave privata. Che tu sia un investitore solitario e prudente o una DAO distribuita nel mondo, la raccolta delle firme resta del tutto flessibile e offline.",
+      "CASE_1_TITLE": "Utente singolo (sicurezza massima)",
+      "CASE_1_DESC": "Conserva più chiavi su un unico dispositivo offline. Genera ogni firma come codice QR e scansionale una dopo l'altra con la webcam del computer, direttamente nell'interfaccia.",
+      "CASE_2_TITLE": "Team distribuiti e DAO",
+      "CASE_2_DESC": "Ogni cofirmatario genera la propria firma offline, fotografa il codice QR con il telefono e lo invia con una qualsiasi app di messaggistica. Chi trasmette raccoglie le foto nell'interfaccia e invia la decisione finale.",
+      "NOTE": "Zero esposizione: le firme sono solo prove crittografiche. Le chiavi private non lasciano mai i dispositivi offline."
+    },
+    "WORKFLOW": {
+      "TITLE": "Come funziona",
+      "STEP_1_TITLE": "1. Distribuire",
+      "STEP_1_DESC": "Avvia il tuo smart contract Locker direttamente dalla nostra interfaccia. Configura i firmatari multifirma e la soglia.",
+      "STEP_2_TITLE": "2. Bloccare e applicare il vesting",
+      "STEP_2_DESC": "Blocca i tuoi token ERC20. Configura regole di sblocco automatico per scadenza o per prezzo.",
+      "STEP_3_TITLE": "3. Gestire in sicurezza",
+      "STEP_3_DESC": "Firma le operazioni offline con la tua cassaforte air-gapped. Poi eseguile interamente on-chain."
+    },
+    "QR_FLOW": {
+      "BADGE": "Sicurezza air-gapped",
+      "TITLE": "Transazioni air-gapped sicure",
+      "SUBTITLE": "Le chiavi private non lasciano mai il dispositivo offline. Ogni transazione viene verificata visivamente tramite codici QR prima della firma: niente USB, niente Bluetooth, nessuna connessione di rete.",
+      "STEP_1": "Genera una proposta di transazione come codice QR EIP-712",
+      "STEP_2": "Scansiona e firma offline sulla tua cassaforte air-gapped",
+      "STEP_3": "Recupera le M firme su N in codici QR",
+      "STEP_4": "Trasmetti direttamente alla blockchain tramite RPC"
+    },
+    "USE_CASES": {
+      "TITLE": "Pensato per tutti",
+      "DAO_TITLE": "DAO e progetti Web3",
+      "DAO_DESC": "Metti al sicuro la tesoreria della tua community con regole multifirma che richiedono il consenso del team per ogni movimento.",
+      "FOUNDERS_TITLE": "Fondatori e investitori",
+      "FOUNDERS_DESC": "Automatizza la distribuzione dei token con le nostre regole di vesting avanzate, basate sul tempo o sul raggiungimento di obiettivi di prezzo precisi.",
+      "INDIVIDUALS_TITLE": "Privati",
+      "INDIVIDUALS_DESC": "Proteggi il tuo patrimonio da attacchi e malware tenendo le chiavi fisicamente isolate dalla rete."
+    },
+    "FLEXIBILITY": {
+      "TITLE": "Strumenti flessibili e avanzati",
+      "BATCH_TITLE": "Gestione in blocco",
+      "BATCH_DESC": "Blocca o distribuisci più token in un'unica transazione, risparmiando gas e tempo.",
+      "RESCUE_TITLE": "Recupero di token",
+      "RESCUE_DESC": "Hai inviato token per errore all'indirizzo del tuo Locker? Recuperali con l'approvazione del team.",
+      "EXTEND_TITLE": "Esecuzione senza gas",
+      "EXTEND_DESC": "Le firme si raccolgono offline. Raggiunta la soglia, qualsiasi portafoglio può eseguire la transazione on-chain."
+    },
+    "LAUNCH": {
+      "BADGE": "Suite Launch",
+      "SOON": "In arrivo",
+      "TITLE": "Lancia il tuo token sugli stessi binari di sicurezza",
+      "DESC": "Raccogli, distribuisci e applica il vesting con l'infrastruttura verificata di Locker: i fondi della prevendita e le allocazioni degli investitori vivono in smart contract sovrani, governati dalla tua cassaforte air-gapped.",
+      "PRESALE_TITLE": "Prevendite in stablecoin",
+      "PRESALE_DESC": "Raccogli in stablecoin con tetti rigidi e regole on-chain. Niente giochi di oracoli: i contributi sono ciò che dichiarano di essere.",
+      "VESTING_TITLE": "Vesting per investitori",
+      "VESTING_DESC": "Distribuisci le allocazioni tramite calendari di vesting on-chain che gli investitori riscattano da soli, con prova pubblica immutabile.",
+      "SECURITY_TITLE": "Binari verificati",
+      "SECURITY_DESC": "Gli stessi contratti canonici di factory e la stessa governance multisig che proteggono ogni Locker, firmati dalla tua cassaforte air-gapped.",
+      "CTA": "In arrivo"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "Open-source (gratis)",
+      "OPEN_SOURCE_DESC": "Riteniamo che privacy e sicurezza siano diritti fondamentali. I nostri smart contract, la cassaforte air-gapped e l'interfaccia sono 100 % gratuiti e open source. Clona il repository, verifica il codice e distribuiscilo tu stesso.",
+      "OSS_BADGE": "Open source",
+      "OPEN_VAULT": "Scopri la cassaforte"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Perché esiste Locker",
+      "CONTENT_P1": "Ogni anno vengono rubati miliardi di dollari in cripto-attività, non perché le blockchain siano insicure, ma perché i dispositivi che firmano le transazioni sono compromessi. Un malware altera in silenzio il contenuto della transazione prima che arrivi al tuo portafoglio hardware e, quando confermi, è già troppo tardi.",
+      "CONTENT_P2": "Le soluzioni esistenti condividono tutte lo stesso difetto critico: richiedono un collegamento diretto (USB, Bluetooth o ponte software) tra il dispositivo di firma e una macchina connessa a internet. È proprio quel collegamento la superficie d'attacco.",
+      "CONTENT_P3": "Locker è stato progettato da zero per eliminare quell'unico punto di rottura. Isolando fisicamente l'archivio delle chiavi con un vero air-gap e verificando il contenuto esatto delle transazioni su un dispositivo completamente offline, garantisce che, anche su un computer del tutto compromesso, un attaccante non possa alterare né intercettare le tue firme.",
+      "CONTENT_P4": "Gli smart contract sono 100 % open source. Clonali, verificali, distribuiscili tu stesso. Nessuna fiducia richiesta: solo matematica.",
+      "GITHUB_CTA": "Vedi gli smart contract su GitHub"
+    },
+    "FAQ": {
+      "TITLE": "Domande frequenti",
+      "Q1": "Che cos'è Locker Protocol?",
+      "A1": "Locker Protocol è un ecosistema completo e gratuito per mettere al sicuro le tue cripto. Unisce smart contract di blocco (per scadenza o per condizione di prezzo) a una cassaforte offline air-gapped compatibile con Web3. Ogni utente distribuisce il proprio contratto — senza proxy, senza chiave di amministrazione — e ne resta proprietario al 100 %.",
+      "Q2": "È davvero gratuito?",
+      "A2": "Sì, 100 % gratuito e open source. La distribuzione del tuo Locker, l'applicazione cassaforte e l'interfaccia sono interamente gratuite. Gli unici costi sono le normali commissioni di gas della rete. Nessun costo di piattaforma, nessun abbonamento, nessuna percentuale sui tuoi averi.",
+      "Q3": "Che cos'è la cassaforte air-gapped?",
+      "A3": "La cassaforte è un'applicazione installata su un dispositivo dedicato, tenuto sempre offline (modalità aereo). Le chiavi private vengono generate e conservate in locale, senza mai essere esposte a internet. La comunicazione con l'app online avviene esclusivamente tramite codici QR: niente USB, Bluetooth o WiFi.",
+      "Q4": "Come funziona il blocco per condizione di prezzo?",
+      "A4": "Oltre al classico blocco a scadenza, Locker Protocol si appoggia agli oracoli on-chain di Uniswap V2/V3. Puoi creare un blocco condizionale: i tuoi token si sbloccano solo quando il prezzo di mercato raggiunge l'obiettivo definito. Lo smart contract interroga le pool di liquidità in tempo reale.",
+      "Q5": "Serve un dispositivo dedicato per la cassaforte?",
+      "A5": "Per la massima sicurezza sì: basta un vecchio smartphone o tablet ripristinato. Installi la cassaforte, attivi la modalità aereo e il dispositivo resta sempre offline. Per fare prove puoi usarla anche sulla macchina principale.",
+      "Q6": "Come funziona la multifirma?",
+      "A6": "Definisci una soglia M su N: per esempio 2 firmatari su 3 devono approvare ogni azione. Le firme si raccolgono offline tramite codici QR. Raggiunta la soglia, qualsiasi portafoglio può inviare la transazione e pagare il gas una sola volta per tutto il gruppo.",
+      "Q7": "Cosa succede se perdo il dispositivo offline?",
+      "A7": "Alla creazione del portafoglio ricevi una frase di recupero di 12 o 24 parole. Annotala su carta e conservala al sicuro. Se il dispositivo va perso o si rompe, installa la cassaforte su un nuovo dispositivo offline e importa la frase: tutte le chiavi vengono ripristinate.",
+      "Q8": "Cosa succede se il vostro sito chiude?",
+      "A8": "L'interfaccia è solo una facciata per dialogare con la blockchain. Non custodisce né fondi né chiavi. Tutto il codice è open source su GitHub: scaricalo, eseguilo in locale e riottieni pieno accesso al tuo Locker. I tuoi fondi sono sulla blockchain, non da noi.",
+      "Q9": "I firmatari si possono cambiare dopo la distribuzione?",
+      "A9": "Sì. Il contratto SignerManager consente in qualsiasi momento di aggiungere o rimuovere firmatari e di modificare la soglia di sicurezza. Queste azioni amministrative richiedono a loro volta l'approvazione multifirma del quorum in carica.",
+      "Q10": "Che cos'è il portafoglio di carta cifrato?",
+      "A10": "Il portafoglio di carta usa la cifratura AES-256 protetta dalla tua password. Anche se qualcuno trova il foglio, non può leggere le chiavi senza la password. Scansiona il QR stampato con un nuovo dispositivo air-gapped per ripristinare subito il portafoglio.",
+      "Q11": "Le mie chiavi private passano mai per Bluetooth o USB?",
+      "A11": "Mai. La cassaforte non usa Bluetooth, NFC, WiFi né USB. L'unico canale di comunicazione è la lettura di codici QR animati (protocollo BC-UR). Nessun malware può superare questa barriera fisica.",
+      "Q12": "Come funziona l'integrazione con MetaMask?",
+      "A12": "La tua cassaforte air-gapped si collega a MetaMask tramite codici QR. Puoi interagire con qualsiasi dApp Web3 (Uniswap, Aave, ecc.) mantenendo un isolamento fisico totale. Le chiavi private non lasciano mai il dispositivo offline.",
+      "Q13": "Se dei token vengono inviati al contratto per errore, sono persi?",
+      "A13": "No. Il protocollo include una funzione di recupero dei token. I firmatari autorizzati possono recuperare i token inviati per errore tramite un'azione multifirma validata dal quorum.",
+      "Q14": "Quali reti sono supportate?",
+      "A14": "Locker Protocol è compatibile EVM al 100% ed è distribuito su: Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche e Linea.",
+      "Q15": "Il codice è verificabile?",
+      "A15": "Sì. L'intero codice — smart contract Solidity, interfaccia web PWA e moduli crittografici della cassaforte — è pubblicato come open source su GitHub. Qualsiasi esperto può analizzarne ogni riga."
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "Aggiungi a Chrome",
+    "CTA_BRAVE": "Aggiungi a Brave",
+    "CTA_GENERIC": "Ottieni l'estensione"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "Blocco dei token",
+    "TITLE": "Il tuo contratto di blocco,",
+    "TITLE_2": "senza chiave di amministrazione, senza intermediari",
+    "DESCRIPTION": "Ogni utente distribuisce il proprio smart contract. Blocca i token per data o per obiettivo di prezzo, imposta piani di vesting, richiedi più firme. Nessun proxy, nessuna chiave di amministrazione: è interamente tuo.",
+    "CTA_WALLET": "Vedi il portafoglio",
+    "META": {
+      "TITLE": "Locker Protocol - Blocco dei token, vesting e multi-firma",
+      "DESCRIPTION": "Distribuisci il tuo contratto di blocco ERC-20: blocchi per data e per prezzo, vesting automatizzato, multi-firma e firma offline con Locker Vault."
+    },
+    "CTA_CREATE": "CREA UN LOCKER"
+  }
+}

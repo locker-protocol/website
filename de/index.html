@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de" dir="ltr" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Locker Protocol Wallet: KI-geprüfte Web3-Erweiterung mit Offline-Schlüsseln | ERC-20 Locker Protocol</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P029LN8NTN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // send_page_view:false — the Angular router sends every page_view (incl. the
+    // first) so client-side route changes are tracked and not double-counted.
+    gtag('config', 'G-P029LN8NTN', { send_page_view: false });
+  </script>
+
+  <!-- SEO: Primary Meta Tags -->
+  <meta name="description" content="KI-Risikoerkennung auf dem Gerät, ohne Cloud. Locker Protocol Wallet ist eine Browser-Erweiterung, die sich in jede Web3-dApp einfügt: tauschen, bridgen und Hyperliquid-Perpetuals handeln wie gewohnt. Jede Signatur wird auf einem getrennten Offline-Gerät per QR-Code freigegeben, Ihr privater Schlüssel berührt also nie einen verbundenen Rechner.">
+  <meta name="keywords" content="Locker Protocol Wallet, crypto wallet extension, Chrome wallet, Brave wallet, MetaMask alternative, air-gapped wallet, QR signing, crypto swap, cross-chain bridge, Hyperliquid perpetuals, Bitcoin, Solana, Tron, Sui, Stellar, non-custodial, open-source">
+  <meta name="author" content="ERC-20 Locker Protocol">
+  <meta name="robots" content="index, follow">
+  <!-- canonical and hreflang tags are managed dynamically by LanguageService -->
+
+  <!-- Open Graph / Facebook / Discord / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ERC-20 Locker Protocol">
+  <meta property="og:title" content="Locker Protocol Wallet: KI-geprüfte Web3-Erweiterung mit Offline-Schlüsseln | ERC-20 Locker Protocol">
+  <meta property="og:description" content="KI-Risikoerkennung auf dem Gerät, ohne Cloud. Locker Protocol Wallet ist eine Browser-Erweiterung, die sich in jede Web3-dApp einfügt: tauschen, bridgen und Hyperliquid-Perpetuals handeln wie gewohnt. Jede Signatur wird auf einem getrennten Offline-Gerät per QR-Code freigegeben, Ihr privater Schlüssel berührt also nie einen verbundenen Rechner.">
+  <meta property="og:url" content="https://lockerprotocol.com/de/">
+  <meta property="og:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Locker Protocol Wallet: KI-geprüfte Web3-Erweiterung mit Offline-Schlüsseln | ERC-20 Locker Protocol">
+  <meta name="twitter:description" content="KI-Risikoerkennung auf dem Gerät, ohne Cloud. Locker Protocol Wallet ist eine Browser-Erweiterung, die sich in jede Web3-dApp einfügt: tauschen, bridgen und Hyperliquid-Perpetuals handeln wie gewohnt. Jede Signatur wird auf einem getrennten Offline-Gerät per QR-Code freigegeben, Ihr privater Schlüssel berührt also nie einen verbundenen Rechner.">
+  <meta name="twitter:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta name="twitter:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ERC-20 Locker Protocol",
+  "alternateName": [
+    "Locker Protocol",
+    "Locker",
+    "LockerProtocol"
+  ],
+  "url": "https://lockerprotocol.com/de/",
+  "description": "KI-Risikoerkennung auf dem Gerät, ohne Cloud. Locker Protocol Wallet ist eine Browser-Erweiterung, die sich in jede Web3-dApp einfügt: tauschen, bridgen und Hyperliquid-Perpetuals handeln wie gewohnt. Jede Signatur wird auf einem getrennten Offline-Gerät per QR-Code freigegeben, Ihr privater Schlüssel berührt also nie einen verbundenen Rechner.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ERC-20 Locker Protocol",
+    "url": "https://lockerprotocol.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lockerprotocol.com/assets/icons/icon-512x512.png"
+    }
+  },
+  "inLanguage": "de"
+}
+  </script>
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <style>
+    /* Global splash pre-loader: painted from the inline HTML on first paint (before the
+       Angular bundle loads), then removed automatically when Angular renders <app-root>.
+       The logo is inline SVG (no request, no <base href> dependency, works air-gapped),
+       which is why there is no white flash while the app boots. */
+    .global-splash-screen {
+      position: fixed; inset: 0; background: #ffffff;
+      display: flex; align-items: center; justify-content: center; z-index: 99999;
+    }
+    .splash-spinner-container {
+      position: relative; width: 120px; height: 120px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .splash-logo { width: 60px; height: 60px; position: absolute; z-index: 10; }
+    .splash-ring {
+      position: absolute; width: 100%; height: 100%; border-radius: 50%;
+      border: 4px solid #f3f4f6; border-top-color: #7c3aed; border-right-color: #3b82f6;
+      animation: splash-spin 2.5s cubic-bezier(0.68, -0.15, 0.265, 1.15) infinite;
+    }
+    @keyframes splash-spin {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(360deg); animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); }
+      100% { transform: rotate(720deg); }
+    }
+  </style>
+<style>*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}svg{display:block;vertical-align:middle}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0;background-color:#fff;color:#1a1a1a;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+</style><link rel="stylesheet" href="styles-GU7PMHYE.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GU7PMHYE.css"></noscript><link rel="modulepreload" href="chunk-QGWTLCFZ.js"><link rel="modulepreload" href="chunk-OERSU4S2.js">  <link rel="canonical" href="https://lockerprotocol.com/de/">
+  <link rel="alternate" hreflang="en" href="https://lockerprotocol.com/">
+  <link rel="alternate" hreflang="fr" href="https://lockerprotocol.com/fr/">
+  <link rel="alternate" hreflang="zh" href="https://lockerprotocol.com/zh/">
+  <link rel="alternate" hreflang="es" href="https://lockerprotocol.com/es/">
+  <link rel="alternate" hreflang="ar" href="https://lockerprotocol.com/ar/">
+  <link rel="alternate" hreflang="de" href="https://lockerprotocol.com/de/">
+  <link rel="alternate" hreflang="he" href="https://lockerprotocol.com/he/">
+  <link rel="alternate" hreflang="hi" href="https://lockerprotocol.com/hi/">
+  <link rel="alternate" hreflang="id" href="https://lockerprotocol.com/id/">
+  <link rel="alternate" hreflang="it" href="https://lockerprotocol.com/it/">
+  <link rel="alternate" hreflang="ja" href="https://lockerprotocol.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://lockerprotocol.com/ko/">
+  <link rel="alternate" hreflang="pt" href="https://lockerprotocol.com/pt/">
+  <link rel="alternate" hreflang="ru" href="https://lockerprotocol.com/ru/">
+  <link rel="alternate" hreflang="tr" href="https://lockerprotocol.com/tr/">
+  <link rel="alternate" hreflang="vi" href="https://lockerprotocol.com/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://lockerprotocol.com/">
+</head>
+
+<body>
+  <app-root>
+    <div class="global-splash-screen" aria-label="Loading Application">
+      <div class="splash-spinner-container">
+        <div class="splash-ring"></div>
+        <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M 35 15 H 15 V 35 M 65 15 H 85 V 35 M 35 85 H 15 V 65 M 65 85 H 85 V 65" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 35 15 H 15 V 35 M 65 15" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 65 85 H 85 V 65" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 30 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 40 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 50 22 V 78" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 60 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 70 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <main class="seo-prerender" style="max-width:48rem;margin:0 auto;padding:6rem 1.5rem;font-family:system-ui,sans-serif;line-height:1.6">
+      <h1>Locker Protocol Wallet: KI-geprüfte Web3-Erweiterung mit Offline-Schlüsseln</h1>
+      <p>KI-Risikoerkennung auf dem Gerät, ohne Cloud. Locker Protocol Wallet ist eine Browser-Erweiterung, die sich in jede Web3-dApp einfügt: tauschen, bridgen und Hyperliquid-Perpetuals handeln wie gewohnt. Jede Signatur wird auf einem getrennten Offline-Gerät per QR-Code freigegeben, Ihr privater Schlüssel berührt also nie einen verbundenen Rechner.</p>
+      <h3>Schlüssel bleiben offline</h3>
+      <p>Die Erweiterung hält keinen privaten Schlüssel. Es signiert Ihr Offline-Tresor, per QR-Code.</p>
+      <h3>KI prüft jede Signatur</h3>
+      <p>Ein lokales Modell warnt vor riskanten Anfragen, auf Ihrem Gerät, selbst offline.</p>
+      <h3>Jede dApp funktioniert</h3>
+      <p>Sie beantwortet die Standard-Web3-API, für Websites sieht sie aus wie eine gewöhnliche Wallet.</p>
+      <h3>Prüfbarer Code</h3>
+      <p>Quelloffen, reproduzierbare Builds, im Store veröffentlicht.</p>
+      <h3>Kein Konto, kein Tracking</h3>
+      <p>Keine Anmeldung, keine Telemetrie, keine Analyse in der Wallet.</p>
+      <h2>Alles, was Sie ohnehin on-chain tun</h2>
+      <p>Swaps, Bridges, Perpetuals und Überweisungen auf Ethereum, Bitcoin, Solana, Tron, Sui, Stellar und Hyperliquid. Eine Erweiterung, ein Offline-Schlüssel.</p>
+      <h3>Tauschen</h3>
+      <p>Die beste Route über die Aggregatoren, mit der echten Gebühr vor der Signatur.</p>
+      <h3>Bridge</h3>
+      <p>Mittel von einer Kette auf die andere bewegen und den Transfer bis zur Ankunft verfolgen.</p>
+      <h3>Auf Hyperliquid handeln</h3>
+      <p>Perpetuals, Positionen, PnL und HyperCore-Transfers, direkt im Fenster.</p>
+      <h3>Senden und empfangen</h3>
+      <p>Sechs Kettenfamilien in einem Konto, jede Adresse aus demselben Tresor abgeleitet.</p>
+      <h2>Zwei Geräte, drei Minuten</h2>
+      <p>Der Browser erledigt das Internet. Ein zweites Gerät, dauerhaft offline, erledigt die Schlüssel.</p>
+      <h3>Erweiterung installieren</h3>
+      <p>Aus dem Chrome Web Store hinzufügen, in Chrome oder in Brave.</p>
+      <h3>Tresor koppeln</h3>
+      <p>Installieren Sie die kostenlose Tresor-App auf einem ausrangierten Telefon, das offline bleibt, und scannen Sie den Konto-QR-Code, den sie zeigt.</p>
+      <h3>Per QR-Code signieren</h3>
+      <p>Die Erweiterung zeigt einen QR-Code, der Tresor liest ihn, prüft ihn und gibt die Signatur zurück. Der Schlüssel bewegt sich nie.</p>
+      <h2>Das Gerät, das Ihre Schlüssel hält, und sonst nichts</h2>
+      <p>Eine kostenlose App auf einem ausrangierten Telefon, das nie wieder online geht. Sie erzeugt die Schlüssel, zeigt genau, was signiert werden soll, und gibt eine Signatur per QR-Code zurück.</p>
+      <p>Läuft ohne Netz, ohne Bluetooth und ohne Kabel</p>
+      <p>Prüft jede Anfrage auf dem eigenen Bildschirm erneut, mit eingebautem KI-Modell</p>
+      <p>Ethereum, Bitcoin, Solana, Tron, Sui und Stellar aus einer einzigen Wiederherstellungsphrase</p>
+      <p>Kostenlos, quelloffen, auf jedem alten Smartphone installierbar</p>
+      <h2>Das Protokoll zum Sperren von Token gibt es weiterhin</h2>
+      <p>Bringen Sie Ihren eigenen Sperrvertrag aus: Zeit- oder Preisbedingungen, Vesting-Pläne, Multi-Signatur und die Launch Suite für Vorverkäufe. Ein eigenständiges Produkt, das jetzt seine eigene Seite hat.</p>
+      <p>Sperren nach Datum und Preis</p>
+      <p>Automatisiertes Vesting</p>
+      <p>Multi-Signatur</p>
+      <p>Launch Suite</p>
+      <h2>Installieren, und die Schlüssel offline lassen</h2>
+      <p>Die Erweiterung für den Alltag, der Tresor für die Schlüssel. Beides kostenlos, beides quelloffen.</p>
+      <h2>KI-Risikoerkennung - auf Ihrem Gerät, selbst offline</h2>
+      <p>Jede Signatur wird lokal von drei unabhängigen Schichten analysiert. Null Cloud, null Telemetrie: Anders als bei Cloud-Transaktionssimulatoren verlässt das, was Sie signieren, nie Ihr Gerät.</p>
+      <h3>Regeln entscheiden</h3>
+      <p>Ein endlicher, auditierbarer Satz deterministischer Regeln blockiert die gefährlichen Muster: unbegrenzte Approvals, Freigaben für ganze Collections, gefälschte Tokens, Phishing-Quellen. Nur diese Regeln können das Signieren sperren - die KI blockiert nie, also kann sie auch nichts zum Entsperren überreden.</p>
+      <h3>Lokale KI warnt</h3>
+      <p>Ein Machine-Learning-Klassifikator, trainiert auf bekannten Drainer-Mustern, bewertet jede Anfrage auf Ihrem Gerät in Millisekunden - kompakt genug, um auch im Offline-Tresor zu laufen. Er erkennt die ungewöhnlichen Kombinationen, die keine einzelne Regel abdeckt, etwa 85 % Ihres Guthabens auf dem Weg zu einer nie gesehenen Adresse.</p>
+      <h3>Der Tresor prüft nach</h3>
+      <p>Der QR-Code transportiert nie ein Urteil. Der Air-Gap-Tresor dekodiert und bewertet die rohe Payload erneut - mit seiner eigenen eingebetteten Kopie des Modells. Ein kompromittierter Computer wird auf dem vertrauenswürdigen Bildschirm widerlegt.</p>
+      <nav aria-label="ERC-20 Locker Protocol"><ul><li><a href="https://lockerprotocol.com/de/vault/">Wählen Sie Ihre Sicherheitsstufe</a></li><li><a href="https://lockerprotocol.com/de/locker-vault-extensions/">Locker Protocol Wallet Erweiterung</a></li><li><a href="https://lockerprotocol.com/de/locker/">Locker Protocol - Token sperren, Vesting und Multi-Signatur</a></li><li><a href="https://lockerprotocol.com/de/locker-erc20-air-gapped-hardware/">Locker Vault - Black Edition</a></li><li><a href="https://lockerprotocol.com/de/ledger-alternative/">Ledger-Alternative — die Air-Gap-Wallet, die Sie überprüfen können</a></li><li><a href="https://lockerprotocol.com/de/metamask-alternative/">MetaMask-Alternative ohne Schlüssel im Browser</a></li><li><a href="https://lockerprotocol.com/de/threat-model/">Das Bedrohungsmodell von Locker Protocol</a></li><li><a href="https://lockerprotocol.com/de/security/">Sicherheit &amp; verantwortungsvolle Offenlegung</a></li></ul></nav>
+    </main>
+  </app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-XU56S3AU.js" type="module"></script></body>
+
+</html>

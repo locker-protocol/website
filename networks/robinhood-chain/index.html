@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locker Protocol - Official Robinhood Chain Token Lockers</title>
+  <meta name="description" content="Securely lock ERC-20 tokens, WETH, USDG, and official Robinhood Stock Tokens (AAPL, NVDA, TSLA) on the Robinhood Chain. Create time-locked vaults and price-conditioned smart contract locks.">
+  <link rel="canonical" href="https://lockerprotocol.com/networks/robinhood-chain/">
+  
+  <!-- Fonts ship with the site, no third-party request at runtime. -->
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <style>
+    :root {
+      --bg-dark: #ffffff;
+      --bg-card: #f9fafb;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --primary: #8b5cf6;
+      --primary-hover: #7c3aed;
+      --accent: #8b5cf6;
+      --accent-hover: #7c3aed;
+      --border: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .btn-launch {
+      background-color: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-launch:hover {
+      background-color: var(--primary-hover);
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+    }
+    /* Hero Section */
+    .hero {
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 span {
+      background: linear-gradient(135deg, var(--primary) 0%, #6d28d9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      color: var(--text-muted);
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 3rem auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Features Grid */
+    .features {
+      padding: 4rem 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      border-radius: 16px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(139, 92, 246, 0.3);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.06);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background-color: rgba(139, 92, 246, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 6rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-title {
+      font-family: 'Outfit', sans-serif;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 4rem;
+    }
+
+    .faq-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      background-color: var(--bg-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .faq-question {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+
+    .faq-answer {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 4rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Locker Protocol",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Locker Protocol is a decentralized liquidity locking and token vesting protocol deployed across major EVM blockchains, now officially supporting Robinhood Chain.",
+      "featureList": [
+        "Create time-locked vaults for standard ERC-20 tokens",
+        "Lock LP tokens dynamically using DexScreener pricing feeds",
+        "Lock official Robinhood Stock Tokens securely",
+        "Configure price-conditioned contract release conditions"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I connect to the Robinhood Chain on Locker Protocol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply click the network selector modal in the upper right corner of the Locker Protocol application and select 'Robinhood Chain'. If the network is not configured in your MetaMask or other EVM wallet, the application will prompt you to automatically add and configure the chain ID 4663 network configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I lock Robinhood Stock Tokens (AAPL, NVDA, TSLA, etc.)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The official Robinhood Stock Tokens are standard ERC-20 contracts on the Robinhood Chain. Locker Protocol recognizes their canonical contract addresses, displays verified status badges, and supports creation of secure temporal and price-conditioned locks for these assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are prices calculated for LP pairs and price-conditioned locks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Locker Protocol utilizes a dynamic on-chain PriceCalculator contract that interacts directly with Uniswap V2 and Uniswap V3 pricing pools. The interface integrates the DexScreener API and on-chain factory registry checks to resolve pricing structures cleanly."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <a href="/" class="logo">Locker <span>Protocol</span></a>
+      <a href="https://app.lockerprotocol.com/" class="btn-launch">Launch App</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+          <path d="M19.78 2.2a.96.96 0 0 0-.75-.15C13.2 3.6 8 8.8 8 15v1H6.5a.5.5 0 0 0-.5.5v1.25a.75.75 0 0 0 .75.75H8.5c.28 0 .5.22.5.5v2.25a.75.75 0 0 0 .75.75h1.25a.5.5 0 0 0 .5-.5V20c6.2-1.2 11.4-6.4 12.8-12a.96.96 0 0 0-.72-.8M9.5 13.5c.82 0 1.5-.68 1.5-1.5s-.68-1.5-1.5-1.5-1.5.68-1.5 1.5.68 1.5 1.5 1.5z" fill="currentColor"/>
+        </svg>
+        Robinhood Chain Support Live
+      </div>
+      <h1>Official Token Lockers on <br><span>Robinhood Chain</span></h1>
+      <p class="hero-desc">Securely lock WETH, USDG, and official Robinhood Stock Tokens. Create high-security time-locks and price-conditioned release vaults directly on the Robinhood EVM Layer-2 network.</p>
+      <a href="https://app.lockerprotocol.com/?network=robinhood-mainnet" class="btn-launch" style="padding: 1rem 2.5rem; font-size: 1rem;">Lock Your Tokens Now</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3>Time-Locked Vaults</h3>
+          <p>Create secure vesting vaults and locks. Lock any standard ERC-20 assets on Robinhood Chain until a specified date and time, protected by audited smart contracts.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3>Price-Conditioned Releases</h3>
+          <p>Lock tokens until an asset reaches a specific target price, calculated dynamically using Uniswap V2 pairs and Uniswap V3 pools on Robinhood Chain.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3>Verified Stock Tokens</h3>
+          <p>Official registry verification for Robinhood Stock Tokens (AAPL, NVDA, TSLA, MSFT, META, SPY, QQQ). Prevent token spoofing and ensure absolute security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-wrapper">
+        <div class="faq-item">
+          <div class="faq-question">How do I connect to the Robinhood Chain on Locker Protocol?</div>
+          <div class="faq-answer">Simply click the network selector modal in the upper right corner of the Locker Protocol application and select 'Robinhood Chain'. If the network is not configured in your MetaMask or other EVM wallet, the application will prompt you to automatically add and configure the chain ID 4663 network configuration.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I lock Robinhood Stock Tokens (AAPL, NVDA, TSLA, etc.)?</div>
+          <div class="faq-answer">Yes. The official Robinhood Stock Tokens are standard ERC-20 contracts on the Robinhood Chain. Locker Protocol recognizes their canonical contract addresses, displays verified status badges, and supports creation of secure temporal and price-conditioned locks for these assets.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How are prices calculated for LP pairs and price-conditioned locks?</div>
+          <div class="faq-answer">Locker Protocol utilizes a dynamic on-chain PriceCalculator contract that interacts directly with Uniswap V2 and Uniswap V3 pricing pools. The interface integrates the DexScreener API and on-chain factory registry checks to resolve pricing structures cleanly.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Locker Protocol. Deployed securely on 10 chains.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

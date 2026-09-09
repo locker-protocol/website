@@ -1,0 +1,947 @@
+{
+  "COMPARISON": {
+    "TITLE": "Neden Locker Protocol?",
+    "SUBTITLE": "Aşağıdaki her araç kendi kategorisinin lideridir. Locker; hava boşluklu öz saklamayı, çoklu imzayı ve zincir üstü kilitleri tek bir açık kaynaklı, saklamasız yığında birleştirir.",
+    "LEDGER_LINK": "Ledger'dan mı geliyorsunuz? Ayrıntılı karşılaştırmayı okuyun",
+    "HEADER": {
+      "FEATURE": "Özellik",
+      "STATUS": "Kullanılabilirlik"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "Öz saklama",
+      "AIR_GAP": "Hava boşluklu imzalama",
+      "ON_DEVICE_VERIFY": "Cihaz üzerinde doğrulama",
+      "MULTISIG": "Çoklu imza (N'de M)",
+      "VESTING": "Token hak ediş takvimleri",
+      "LP_LOCK": "LP kilidi + herkese açık kanıt",
+      "BATCH_SIGN": "Toplu imzalama",
+      "ROLES": "Esnek erişim rolleri",
+      "NO_SAAS": "Tamamen zincir üstü, SaaS yok",
+      "NO_FEES": "Abonelik ücreti yok",
+      "SECURE_ELEMENT": "Sertifikalı güvenli eleman",
+      "INSTITUTIONAL": "Kurumsal saklama ve uyum"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "Anahtarları yalnızca siz tutarsınız; hiçbir üçüncü taraf fonlarınızı taşıyamaz veya donduramaz.",
+      "AIR_GAP": "Özel anahtarlar internete bağlı bir cihaza asla dokunmaz; her istek QR kodla taşınır.",
+      "ON_DEVICE_VERIFY": "İmzalamadan önce gerçek işlemi güvenilir bir ekranda inceleyin — oltalamaya karşı.",
+      "MULTISIG": "Fonlar ancak birden fazla bağımsız imzacının onayıyla hareket eder.",
+      "VESTING": "Tokenleri sabit zincir üstü kurallarla zaman içinde serbest bırakın.",
+      "LP_LOCK": "Uniswap/PancakeSwap LP tokenlerini doğrulanabilir herkese açık kanıtla kilitleyin.",
+      "BATCH_SIGN": "Tek bir imza oturumunda birden fazla işlemi onaylayın.",
+      "ROLES": "Ekipler için ayrı yönetici, operatör ve imzacı rolleri.",
+      "NO_SAAS": "Tamamen zincir üstünde çalışır; kapatılabilecek bir barındırma hizmeti yoktur.",
+      "NO_FEES": "Açık kaynak ve ücretsiz; yalnızca ağ gas ücretini ödersiniz.",
+      "SECURE_ELEMENT": "Anahtarlar sertifikalı, kurcalamaya dayanıklı bir donanım çipinde yalıtılmıştır.",
+      "INSTITUTIONAL": "Sigorta, SOC-2 denetimleri ve kurumsal saklama kontrolleri."
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Ledger Alternatifi — doğrulayabileceğiniz hava boşluklu cüzdan",
+      "DESCRIPTION": "Ledger'a alternatif mi arıyorsunuz? Locker Protocol, çevrimdışı herhangi bir telefonu ücretsiz, açık kaynak, hava boşluklu bir cüzdana dönüştürür: yalnızca QR ile imzalama, USB yok, Bluetooth yok, satın alınacak ya da kargolanacak hiçbir şey yok."
+    },
+    "HERO": {
+      "BADGE": "Ledger Alternatifi",
+      "TITLE_1": "Hava boşluklu cüzdan —",
+      "TITLE_2": "gerçekten doğrulayabileceğiniz",
+      "SUBTITLE": "Bir donanım cüzdanı, mühürlü bir çipe ve kapalı bir aygıt yazılımına güvenmenizi ister. Locker Protocol hiçbir şey istemez: akıllı sözleşmeler herkese açık ve zincir üstünde doğrulanmıştır, cüzdan ise hiçbir anahtar tutmaz — internete asla dokunmayan bir telefonda imzalayın.",
+      "CTA_PRIMARY": "Kasanızı oluşturun — ücretsiz",
+      "CTA_SECONDARY": "Tehdit modelini okuyun"
+    },
+    "WHY": {
+      "TITLE": "İnsanlar neden alternatif arıyor",
+      "SUBTITLE": "Tarihli üç olgu — her biri Ledger'ın kendi kamuya açık duyurularıyla belgelenmiş.",
+      "SOURCE_LABEL": "Kaynak",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "Temmuz 2020",
+          "TITLE": "Müşteri veritabanı sızıntısı",
+          "DESC": "Yaklaşık 272 000 müşterinin sipariş verileri — isimler, ev adresleri, telefon numaraları — kamuya düştü; ardından oltalama kampanyaları ve fiziksel tehditler geldi. Bir güvenlik cihazı satın almak, sahiplerini ifşa eden verilerin ta kendisini yarattı.",
+          "SOURCE": "Ledger'ın duyurusu"
+        },
+        "RECOVER": {
+          "DATE": "Mayıs 2023",
+          "TITLE": "Ledger Recover",
+          "DESC": "Bir aygıt yazılımı güncellemesi, aygıt yazılımı istediğinde seed'in Secure Element'ten çıkabildiğini gösterdi. \"Anahtarlar çipten asla çıkmaz\" bir özellik değil, bir politika haline geldi.",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "Aralık 2023",
+          "TITLE": "Connect Kit tedarik zinciri saldırısı",
+          "DESC": "Ele geçirilen bir Ledger npm kütüphanesi, büyük dApp'lerin içinde saatlerce cüzdan boşaltıcı dağıttı. Saldırı yüzeyi cihaz değildi — tedarikçiydi.",
+          "SOURCE": "Ledger'ın olay raporu"
+        }
+      },
+      "TRADEMARK": "Ledger, Ledger SAS'ın ticari markasıdır ve burada yalnızca karşılaştırılan ürünü tanımlamak için kullanılmıştır. Yukarıdaki her olgu, Ledger'ın kendi kamuya açık duyurularına bağlantı verir."
+    },
+    "PILLARS": {
+      "TITLE": "Locker ile ne değişiyor",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "Optik hava boşluğu",
+          "DESC": "USB yok, Bluetooth yok, NFC yok. İşlemler görebildiğiniz QR kodları olarak geçer. Gizli bir kanal yok, çünkü ortada kanal yok."
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "Körü körüne inanılacak bir şey yok",
+          "DESC": "Sözleşmeler her zincirde yayımlanmış ve doğrulanmıştır. Eklenti hiçbir anahtar içermez — tarayıcıda çalınacak bir şey yoktur."
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "Satın alınacak, kargolanacak bir şey yok",
+          "DESC": "Fabrika ayarlarına döndürülen herhangi bir telefon kasaya dönüşür. Sipariş yok, teslimat yok, müşteri veritabanı yok — hiç toplanmayan veri sızamaz."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "dApp'lerinizi koruyun",
+          "DESC": "Locker eklentisi standart bir Web3 cüzdanıdır: dApp akışınız birebir aynı kalır, yalnızca imzalama çevrimdışına taşınır."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker ve Ledger yan yana",
+      "COL_FEATURE": "Kriter",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Avantaj Ledger",
+      "ROWS": {
+        "PRICE": {
+          "FEATURE": "Fiyat",
+          "LOCKER": "Ücretsiz",
+          "LEDGER": "79–399 €"
+        },
+        "CHANNEL": {
+          "FEATURE": "İmza kanalı",
+          "LOCKER": "Yalnızca QR kodları (optik)",
+          "LEDGER": "USB / Bluetooth"
+        },
+        "SOURCE": {
+          "FEATURE": "Kaynak kod",
+          "LOCKER": "Sözleşmeler herkese açık, zincir üstünde doğrulanmış",
+          "LEDGER": "Uygulamalar açık, aygıt yazılımı kapalı"
+        },
+        "EXTRACTION": {
+          "FEATURE": "Seed çıkarma yolu",
+          "LOCKER": "Tasarım gereği yok",
+          "LEDGER": "Recover: aygıt yazılımı destekli, isteğe bağlı"
+        },
+        "SUPPLY": {
+          "FEATURE": "Tedarik zinciri riski",
+          "LOCKER": "Donanım yok, yeniden derlenebilir yazılım",
+          "LEDGER": "Cihaz üretimi ve kargolama"
+        },
+        "DATA": {
+          "FEATURE": "Gereken kişisel veriler",
+          "LOCKER": "Hiçbiri",
+          "LEDGER": "Teslimat kimliği (2020'de sızdı)"
+        },
+        "DAPPS": {
+          "FEATURE": "dApp akışı",
+          "LOCKER": "Standart eklenti (EIP-6963)",
+          "LEDGER": "Ledger Live veya üçüncü taraf cüzdan"
+        },
+        "ONCHAIN": {
+          "FEATURE": "Zincir üstü multisig, hak ediş ve kilitler",
+          "LOCKER": "Yerleşik",
+          "LEDGER": "—"
+        },
+        "SECURE_ELEMENT": {
+          "FEATURE": "Sertifikalı güvenli eleman",
+          "LOCKER": "—",
+          "LEDGER": "Evet (CC EAL5+)"
+        },
+        "INSTITUTIONAL": {
+          "FEATURE": "Kurumsal saklama ve sigorta",
+          "LOCKER": "—",
+          "LEDGER": "Evet (Enterprise)"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Güvenli elemanın daha iyi yaptığı şey",
+      "DESC": "Sertifikalı bir güvenli eleman fiziksel çıkarmaya direnir: cihazı çalan ve laboratuvar donanımına sahip bir saldırgan, sertleştirilmiş bir çiple karşılaşır. Bu gerçek bir avantajdır ve aksini iddia etmiyoruz. Bizim yanıtımız başka yerde: kripto kayıplarının ezici çoğunluğuna neden olan uzaktan saldırılara — kötü amaçlı yazılım, boşaltıcılar, tedarik zinciri ihlalleri — karşı optik bir hava boşluğu her kablodan daha katıdır.",
+      "CTA": "Tehdit modelinin tamamını okuyun"
+    },
+    "MIGRATE": {
+      "TITLE": "Yaklaşık 10 dakikada ayrılın",
+      "SUBTITLE": "Üç adım; satın alma yok, hesap yok.",
+      "STEPS": {
+        "S1": {
+          "TITLE": "Eski bir telefonu kasaya dönüştürün",
+          "DESC": "Fabrika ayarlarına döndürün, uçak moduna alın, kasayı bir QR kodundan kurun. Bir daha asla çevrimiçi olmaz."
+        },
+        "S2": {
+          "TITLE": "Kâğıt yedeğinizi yazdırın",
+          "DESC": "Şifreli bir QR kodu kasanızı her yerde geri yükler. Kâğıdı bulan yalnızca şifreli metin görür."
+        },
+        "S3": {
+          "TITLE": "Varlıklarınızı aktarın",
+          "DESC": "Mevcut cüzdanınızdan yeni adresinize gönderin — kendi hızınızda, toplu taşıma zorunluluğu yok."
+        }
+      },
+      "CTA": "Kasanızı oluşturun — ücretsiz"
+    },
+    "FAQ": {
+      "TITLE": "Sık sorulan sorular",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "Bir telefon gerçekten donanım cüzdanı kadar güvenli mi?",
+          "A": "Uzaktan saldırılara — kötü amaçlı yazılım, boşaltıcılar, oltalama — karşı QR ile imzalayan çevrimdışı bir telefon, USB veya Bluetooth'lu bir cihazdan daha katıdır: saldırılacak kanal yoktur. Laboratuvar düzeyinde fiziksel çıkarmaya karşı ise sertifikalı güvenli eleman avantajını korur; tehdit modelimiz bunu aksini iddia etmek yerine dürüstçe belgeler."
+        },
+        "COST": {
+          "Q": "Herhangi bir şey satın almam gerekiyor mu?",
+          "A": "Hayır. Zaten sahip olduğunuz herhangi bir telefon, fabrika sıfırlaması ve uçak modundan sonra kasaya dönüşür. Sipariş edilecek cihaz yok, kargo yok, hesap yok — dolayısıyla sızabilecek bir müşteri veritabanı da yok."
+        },
+        "DAPPS": {
+          "Q": "dApp'lerim çalışmaya devam edecek mi?",
+          "A": "Evet. Locker eklentisi standart bir Web3 cüzdanı olarak kaydolur (EIP-6963); dApp'ler onu herhangi bir tarayıcı cüzdanı gibi algılar. Akışınız değişmez — yalnızca imza, QR kodları aracılığıyla çevrimdışı kasada gerçekleşir."
+        },
+        "BREAK": {
+          "Q": "Telefon bozulur ya da kaybolursa ne olur?",
+          "A": "Kâğıt yedeğinizden geri yüklersiniz: kasa oluşturulurken yazdırılan şifreli bir QR kodu. Kâğıt ve parolanızla, başka herhangi bir telefonda dakikalar içinde her şeyi kurtarırsınız."
+        },
+        "FREE": {
+          "Q": "Neden ücretsiz — iş modeli ne?",
+          "A": "Yazılım uçtan uca ücretsizdir ve öyle kalacaktır. Proje, özel bir cihaz tercih edenler için isteğe bağlı, önceden yapılandırılmış bir donanım kasası satar; anahtarlar ve protokol ona asla bağımlı değildir."
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "Tarayıcıda anahtar tutmayan MetaMask alternatifi",
+      "DESCRIPTION": "Aynı dApp deneyimi, tarayıcıda sıfır özel anahtar: her işlem, çevrimdışı bir telefondaki ücretsiz kasa tarafından QR kodla imzalanır."
+    },
+    "HERO": {
+      "BADGE": "MetaMask alternatifi",
+      "TITLE_1": "Aynı alışkanlıklar.",
+      "TITLE_2": "Çalınacak bir şey kalmadı.",
+      "SUBTITLE": "Locker Protocol Wallet her dApp'te MetaMask gibi davranır. Fark, eklentinin içermediklerindedir: seed yok, keystore yok, imzacı yok. Her işlem çevrimdışı bir telefonda, QR kodla imzalanır.",
+      "CTA_SECONDARY": "Güvenlik nasıl çalışır"
+    },
+    "PILLARS": {
+      "TITLE": "Sizin için ne değişiyor",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "Tarayıcıda çalınacak bir şey yok",
+          "DESC": "Bir tarayıcı eklentisi kötü amaçlı yazılımla, düşman bir eklentiyle veya zehirlenmiş bir güncellemeyle saldırıya uğrayabilir. Bizimki hiçbir sır tutmaz: en kötü durum bir rahatsızlık olarak kalır, asla bir kayıp olmaz."
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "Ne imzaladığınızı görürsünüz",
+          "DESC": "Çevrimdışı telefon calldata'yı, token onaylarını ve tiplenmiş verileri çözer ve onaylamadan önce gerçek içeriği gösterir. Körü körüne imzalamak düpedüz imkânsız hale gelir."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Tüm dApp'leriniz çalışmaya devam eder",
+          "DESC": "Standart EIP-1193 ve EIP-6963 arayüzleri: bağlantı düğmeleri Locker'ı MetaMask'ı algıladıkları gibi algılar. Swap, köprü, mint ve imzalar 9 EVM zincirinde değişmeden çalışır."
+        },
+        "FREE": {
+          "TITLE": "Ücretsiz, hesapsız ve sunucusuz",
+          "DESC": "Eklenti de kasa da ücretsizdir. Kayıt yok, izleme yok ve sizinle zincir arasında bize ait hiçbir sunucu yok."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Yan yana",
+      "COL_FEATURE": "Özellik",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "MetaMask'ın önde olduğu yerler",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "Özel anahtarlar nerede yaşar",
+          "LOCKER": "Çevrimdışı bir telefonda, asla tarayıcıda değil",
+          "MM": "Tarayıcı eklentisinin içinde şifrelenmiş"
+        },
+        "MALWARE": {
+          "FEATURE": "Bilgisayarınız enfekte olursa",
+          "LOCKER": "Çıkarılacak bir şey yok, imza çevrimdışı kalır",
+          "MM": "Anahtarlar ve imza makineye açık"
+        },
+        "SIGNING": {
+          "FEATURE": "Neyi onaylıyorsunuz",
+          "LOCKER": "Ayrı bir ekranda çözülmüş işlem",
+          "MM": "Aynı, muhtemelen ele geçirilmiş makinede açılır pencere"
+        },
+        "HARDWARE": {
+          "FEATURE": "Donanım cüzdanı desteği",
+          "LOCKER": "Herhangi bir eski telefon imzacı olur, ücretsiz",
+          "MM": "Destekleniyor, cihaz satın almayı gerektirir"
+        },
+        "BACKUP": {
+          "FEATURE": "Seed yedeği",
+          "LOCKER": "Şifrelenmiş kağıt QR kod, her telefonda geri yüklenebilir",
+          "MM": "Kurtarma ifadesinin elle kopyalanması"
+        },
+        "MOBILE": {
+          "FEATURE": "Mobil uygulama",
+          "LOCKER": "Kasa her telefonda çalışır; gezinme masaüstünde kalır",
+          "MM": "Yerleşik tarayıcılı tam mobil cüzdan"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "MetaMask'ın gerçekten kazandığı yer",
+      "DESC": "MetaMask'ın üretimde on yılı aşkın geçmişi, büyük bir güvenlik ekibi ve yerleşik tarayıcılı bir mobil uygulaması var. Her gün telefondan işlem yapıyor ve bağlı bir cihazda anahtar tutmayı kabul ediyorsanız, hâlâ sağlam bir tercih. Locker, kaybetmeyi göze alamayacağınız para için var: işlem başına birkaç saniyelik QR taraması karşılığında, internete asla dokunmayan anahtarlar.",
+      "CTA": "Tehdit modelini oku"
+    },
+    "MIGRATE": {
+      "TITLE": "Üç adımda geçiş",
+      "SUBTITLE": "On dakika, ve anahtarlarınız interneti temelli terk eder.",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "Eklentiyi yükleyin",
+          "DESC": "Locker Protocol Wallet'ı mağazadan ekleyin. dApp'leriniz onu hemen algılar."
+        },
+        "VAULT": {
+          "TITLE": "Eski bir telefonu kasaya dönüştürün",
+          "DESC": "Çevrimdışı bırakacağınız bir telefonda kasa uygulamasını açın, orada yeni bir cüzdan oluşturun ve şifrelenmiş kağıt yedeği yazdırın."
+        },
+        "MOVE": {
+          "TITLE": "Paranızı taşıyın",
+          "DESC": "Varlıklarınızı yeni adrese gönderin. Artık her işlem çevrimdışı telefonda, QR kodla onaylanır."
+        }
+      },
+      "CTA": "Kasanızı oluşturun"
+    },
+    "FAQ": {
+      "TITLE": "Sık sorulan sorular",
+      "ITEMS": {
+        "SEED": {
+          "Q": "MetaMask seed ifademi içe aktarabilir miyim?",
+          "A": "Aktarabilirsiniz, ama tersini öneriyoruz: çevrimdışı telefonda yeni bir cüzdan oluşturun ve paranızı oraya taşıyın. Bağlı bir makinede yaşamış bir seed zaten ele geçirilmiş olabilir ve onu tutmak air gap'in anlamını yok eder."
+        },
+        "DAPPS": {
+          "Q": "dApp'lerim gerçekten çalışacak mı?",
+          "A": "Evet. Eklenti MetaMask ile aynı standart arayüzleri sunar (EIP-1193, EIP-6963), bu yüzden dApp'ler onu herhangi bir cüzdan gibi listeler. Kasadan imzalanan işlemler ana ağdaki DEX'ler, köprüler ve borsalar tarafından kabul edilir."
+        },
+        "LOSE": {
+          "Q": "Ya çevrimdışı telefonu kaybedersem?",
+          "A": "Paranız güvende. Şifrelenmiş kağıt yedeği parolanızla başka herhangi bir telefonda geri yükleyin. Kağıt ve parola bir arada olmadan telefon tek başına hiçbir şey açığa vurmaz."
+        },
+        "COST": {
+          "Q": "Ücreti ne kadar?",
+          "A": "Hiç. Eklenti ve kasa ücretsizdir, hesap da abonelik de yok. Proje, özel donanım tercih edenler için isteğe bağlı, önceden yapılandırılmış bir cihaz satar."
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask, Consensys'in ticari markasıdır. Bu sayfa, iki ürünün kamuya açık belgelenmiş davranışına dayanan bağımsız bir karşılaştırmadır."
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "Locker Protocol Tehdit Modeli",
+      "DESCRIPTION": "Locker Protocol neye karşı korur, neye karşı korumaz ve neden güvenilen donanım yerine doğrulanabilirliği seçtik. Hava boşluklu, %100 QR öz saklama için dürüst bir tehdit modeli."
+    },
+    "HERO": {
+      "TITLE": "Locker Protocol Tehdit Modeli",
+      "SUBTITLE": "Neye karşı koruruz, neye karşı korumayız ve neden güvenilen donanım yerine doğrulanabilirliği seçtik."
+    },
+    "PRINCIPLES": {
+      "TITLE": "Üç ilke",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "Politika değil, tasarım gereği hava boşluğu",
+          "DESC": "İmzalayan cihazda USB, Bluetooth ve ağ yoktur. İstekler ve imzalar, görebildiğiniz QR kodları olarak geçer. Fizikle güvence altına alınmış bir özelliğin söze ihtiyacı yoktur."
+        },
+        "VERIFY": {
+          "TITLE": "Doğrulanabilir, sertifikalıyı yener",
+          "DESC": "Fonlarınızın gerçekten durduğu yer olan sözleşmeler, 9 ağın tümünde yayımlanmış ve zincir üstünde doğrulanmıştır. Sertifika güveninizi ister; doğrulanmış bir sözleşmenin buna ihtiyacı yoktur."
+        },
+        "NO_DATA": {
+          "TITLE": "Hesap yok, sunucu yok, veri yok",
+          "DESC": "Kaydedilecek bir şey yok, kargolanan bir şey yok, hakkınızda saklanan bir şey yok. Var olmayan bir veritabanı sızamaz."
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "Tehditler, dürüstçe",
+      "VERDICT_PROTECTED": "Korunuyor",
+      "VERDICT_PARTIAL": "Kısmi — dürüst sınır",
+      "VERDICT_OUT": "Kapsam dışı",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "Uzaktan kötü amaçlı yazılım ve cüzdan boşaltıcılar",
+          "HOW": "Anahtarlar, ağ bağlantısı olmayan bir cihazda yaşar. Bilgisayarınızdaki kötü amaçlı yazılım bir işlem önerebilir — imzalayabilecek tek şey, siz okuduktan sonra, çevrimdışı kasadır."
+        },
+        "PHISHING": {
+          "THREAT": "Kör imzalama ve oltalama",
+          "HOW": "Kasa, imzalamadan önce her isteği güvenilir bir ekranda okunabilir alanlara çözer. İmzaladığınız şey, gördüğünüz şeydir."
+        },
+        "SUPPLY": {
+          "THREAT": "Tedarikçi veya tedarik zinciri ihlali",
+          "HOW": "Donanım satılmaz, dolayısıyla hiçbiri yolda ele geçirilemez. Güncellemeler yalnızca tarayıcı mağazalarından gelir ve fonlarınızı tutan sözleşmeler zincir üstünde doğrulanmıştır."
+        },
+        "LOSS": {
+          "THREAT": "Cihazın kaybı veya yok olması",
+          "HOW": "Kâğıt yedek, şifreli bir QR kodudur. Yazdırın, saklayın, parolanızla herhangi bir telefonda geri yükleyin."
+        },
+        "THEFT": {
+          "THREAT": "Laboratuvar donanımıyla fiziksel hırsızlık",
+          "HOW": "Kasa, parolanızın arkasında beklemede şifrelidir. Ama telefonda sertifikalı güvenli eleman yoktur: cihazı elinde tutan donanımlı bir saldırgana karşı donanım cüzdanının çipi daha iyi direnir. Tam bu noktada Ledger kazanır — ve bunu söylüyoruz."
+        },
+        "WRENCH": {
+          "THREAT": "Zorlama — 5 dolarlık İngiliz anahtarı",
+          "HOW": "Hiçbir cüzdan fiziksel zorlamaya direnemez. Yapısal yanıt M/N multisig'dir: zorlanmış olsun ya da olmasın, hiç kimse fonları tek başına taşıyamaz."
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "Güvenli elemanın kazandığı yer",
+      "DESC": "Sertifikalı bir güvenli eleman (CC EAL5+) fiziksel anahtar çıkarmaya direnir: kapak açma, glitching, yan kanallar. Ana riskiniz, imzalayıcınızı fiziksel olarak ele geçiren sofistike bir saldırgansa, özel bir çip bu senaryoyu telefondan daha iyi savunur. Bu sayfayı, bu dengeyi bilinçli kurmanız için yayımlıyoruz — sonradan keşfetmeniz için değil."
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "Yine de neden yazılım",
+      "DESC": "2023'te Ledger Recover, güvenli elemanın ne yapacağına aygıt yazılımının karar verdiğini kanıtladı: çip, tedarikçisi bir çıkış yolu gönderene dek seed'i korudu. İnceleyemediğiniz bir bileşen, sizi ancak tedarikçisi istediği sürece korur. Biz, inanılması gereken sözler yerine doğrulayabileceğiniz özellikleri tercih ediyoruz."
+    },
+    "PROOF": {
+      "TITLE": "Bize de inanmayın — kontrol edin",
+      "ITEMS": {
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "otomatik test, her değişiklikte çalışır"
+        },
+        "CONTRACTS": {
+          "VALUE": "7",
+          "LABEL": "akıllı sözleşme, 9 zincirde dağıtıldı"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "statik analiz bulgusu, yapılandırma yayımlandı"
+        },
+        "SOURCE": {
+          "VALUE": "%100",
+          "LABEL": "sözleşme yayımlandı ve zincir üstünde doğrulandı"
+        }
+      },
+      "CTA": "Kaynak kodu GitHub'da inceleyin"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "Güvenlik ve sorumlu açıklama",
+      "DESCRIPTION": "Tarayıcıda anahtar yok, deterministik derlemeler, 500'den fazla otomatik test — ve bir güvenlik açığını nasıl bildireceğiniz."
+    },
+    "HERO": {
+      "TITLE": "Tasarım gereği güvenlik",
+      "SUBTITLE": "Eklenti hiçbir özel anahtar tutmaz ve kasa internete asla dokunmaz — tarayıcıda çalınacak bir şey yoktur. Her sürüm, ancak aşağıdaki rakamlar yeşilken yayımlanır."
+    },
+    "NOKEYS": {
+      "TITLE": "Tarayıcıda çalınacak bir şey yok",
+      "DESC": "Eklenti hiçbir anahtar malzemesi içermez: seed yok, keystore yok, imzacı yok. Her imza hava boşluklu kasada üretilir ve QR kod olarak geri döner — bilgisayarınızdaki kötü amaçlı yazılımın aşamayacağı tek yönlü optik bir kanal."
+    },
+    "PROOF": {
+      "TITLE": "Arkasındaki rakamlar",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "44/44",
+          "LABEL": "store paketi dosyası bit bit yeniden üretildi"
+        },
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "her sürümü koruyan otomatik test"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "CI'da tolere edilen statik analiz bulgusu"
+        },
+        "MATRIX": {
+          "VALUE": "86",
+          "LABEL": "dApp yüzey satırı, her biri yeşil test ister"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "Bir açık mı buldunuz?",
+      "DESC": "Konu satırına SECURITY yazıp yeniden üretme adımlarıyla bize yazın — asla gerçek bir kurtarma ifadesi veya özel anahtar eklemeyin.",
+      "ITEMS": {
+        "ACK": "Bildirimleri 72 saat içinde onaylar, çözüme kadar sizi bilgilendiririz.",
+        "COORD": "Koordineli açıklama: düzeltmeyi yayımlamak için makul bir süre isteriz — en fazla 90 gün.",
+        "SAFE": "Güvenli liman: iyi niyetli araştırma asla hukuki işlemle sonuçlanmaz. Kendi fonlarınızla, test ağlarında deneyin.",
+        "CREDIT": "Doğrulanan bildirimciler, anonimlik tercih etmedikçe kamuya açık şekilde anılır."
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Egemen güvenlik altyapısı.",
+    "LEDGER_ALTERNATIVE": "Ledger Alternatifi",
+    "METAMASK_ALTERNATIVE": "MetaMask Alternatifi",
+    "THREAT_MODEL": "Tehdit Modeli",
+    "SECURITY": "Güvenlik",
+    "BUILT_WITH": "Daha güvenli bir Web3 için {heart} ile geliştirildi."
+  },
+  "NAV": {
+    "CONNECT_WALLET": "Cüzdan Bağla",
+    "CONNECTING": "Bağlanıyor...",
+    "EXTENSION": "Uzantı",
+    "VAULT": "Kasa",
+    "SECURITY": "Güvenlik",
+    "LOCKER": "Locker",
+    "MENU": "Menü",
+    "DOCS": "Belgeler"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet: yapay zekâ denetimli, çevrimdışı anahtarlı Web3 uzantısı"
+    },
+    "HERO": {
+      "BADGE": "Gömülü yapay zekâ ile risk tespiti",
+      "TITLE": "gibi, ama anahtar",
+      "TITLE_2": "bilgisayarınızda durmadan",
+      "DESCRIPTION": "Cihaz üzerinde yapay zekâ ile risk tespiti, sıfır bulut. Locker Protocol Wallet, her Web3 dApp'ine olduğu gibi giren bir tarayıcı uzantısıdır: takas yapın, köprü kullanın, Hyperliquid sürekli işlemlerini her zamanki gibi sürün. Her imza ayrı bir çevrimdışı cihazda QR koduyla onaylanır, böylece özel anahtarınız bağlı bir bilgisayara hiç değmez.",
+      "CTA_VAULT": "KASAYI EDİNİN",
+      "FREE": "Ücretsiz ve açık kaynak",
+      "SHOT_ALT": "Locker Protocol Wallet penceresi: bakiyeler, Gönder, Al, Takas ve Köprü",
+      "SHOT_HOME": "Tüm ağlardaki bakiyeler; Gönder, Al, Takas ve Köprü",
+      "SHOT_PERPS": "Hyperliquid: bakiye, kar-zarar ve açık pozisyon",
+      "SHOT_TRADE": "Bir Hyperliquid piyasası: fiyat grafiği, emir defteri, Al ve Sat",
+      "SHOT_SWAP": "Bir takas teklifi: kur, ücret ve alınacak asgari tutar",
+      "SHOT_BRIDGE": "İki zincir arasında köprü, süresi ve varış ağıyla",
+      "SHOT_SIGN": "Çevrimdışı kasanın imzalamak için okuttuğu hareketli QR kodu",
+      "SEP": " "
+    },
+    "PROOF": {
+      "KEYS_TITLE": "Anahtarlar çevrimdışı kalır",
+      "KEYS_DESC": "Uzantı hiçbir özel anahtar tutmaz. İmzayı çevrimdışı kasanız atar, QR koduyla.",
+      "AI_TITLE": "Yapay zekâ her imzayı denetler",
+      "AI_DESC": "Yerel bir model riskli istekleri işaret eder, cihazınızda, çevrimdışıyken bile.",
+      "DAPPS_TITLE": "Her dApp çalışır",
+      "DAPPS_DESC": "Standart Web3 API'sine yanıt verir, siteler sıradan bir cüzdan görür.",
+      "OPEN_TITLE": "Denetlenebilir kod",
+      "OPEN_DESC": "Açık kaynak, yeniden üretilebilir derlemeler, mağazada yayımlandı.",
+      "PRIVACY_TITLE": "Hesap yok, izleme yok",
+      "PRIVACY_DESC": "Kayıt yok, telemetri yok, cüzdanın içinde analitik yok."
+    },
+    "DO": {
+      "BADGE": "Tarayıcı uzantısı",
+      "TITLE": "Zincir üzerinde zaten yaptığınız her şey",
+      "SUBTITLE": "Ethereum, Bitcoin, Solana, Tron, Sui, Stellar ve Hyperliquid üzerinde takaslar, köprüler, sürekli işlemler ve transferler. Tek uzantı, tek çevrimdışı anahtar.",
+      "SHOT_ALT": "Uzantı içinde Hyperliquid bakiyesi, kar-zarar ve açık pozisyonlar",
+      "SWAP_TITLE": "Takas",
+      "SWAP_DESC": "Toplayıcılar arasında en iyi rota, imzadan önce gerçek ücret görünür.",
+      "BRIDGE_TITLE": "Köprü",
+      "BRIDGE_DESC": "Parayı bir zincirden diğerine taşıyın ve varışına kadar transferi izleyin.",
+      "PERPS_TITLE": "Hyperliquid'de işlem",
+      "PERPS_DESC": "Sürekli işlemler, pozisyonlar, kar-zarar ve HyperCore transferleri, doğrudan pencereden.",
+      "SEND_TITLE": "Gönder ve al",
+      "SEND_DESC": "Tek hesapta altı zincir ailesi, her adres aynı kasadan türetilir."
+    },
+    "STEPS": {
+      "BADGE": "Nasıl çalışır",
+      "TITLE": "İki cihaz, üç dakika",
+      "SUBTITLE": "İnterneti tarayıcı üstlenir. Sürekli çevrimdışı duran ikinci cihaz da anahtarları.",
+      "STEP_1_TITLE": "Uzantıyı kurun",
+      "STEP_1_DESC": "Chrome veya Brave'de, Chrome Web Mağazası'ndan ekleyin.",
+      "STEP_2_TITLE": "Kasanızı eşleyin",
+      "STEP_2_DESC": "Çevrimdışı bıraktığınız yedek bir telefona ücretsiz kasa uygulamasını kurun, sonra gösterdiği hesap QR kodunu okutun.",
+      "STEP_3_TITLE": "QR koduyla imzalayın",
+      "STEP_3_DESC": "Uzantı bir QR kodu gösterir, kasa okur, denetler ve imzayı geri verir. Anahtar hiç yerinden kıpırdamaz.",
+      "LEARN_MORE": "Uzantı sayfasına bakın"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "Yalnızca anahtarlarınızı tutan cihaz",
+      "DESC": "Bir daha çevrimiçi olmayacak yedek bir telefona kurulan ücretsiz bir uygulama. Anahtarları üretir, imzalaması istenen şeyi olduğu gibi gösterir ve imzayı QR koduyla geri verir.",
+      "POINT_1": "Ağ, Bluetooth ve kablo olmadan çalışır",
+      "POINT_2": "Her isteği kendi ekranında, gömülü yapay zekâ modeliyle yeniden denetler",
+      "POINT_3": "Tek bir kurtarma ifadesinden Ethereum, Bitcoin, Solana, Tron, Sui ve Stellar",
+      "POINT_4": "Ücretsiz, açık kaynak, her eski akıllı telefona kurulabilir",
+      "SHOT_ALT": "Telefondaki Locker Vault uygulaması, hesaplar ekranı",
+      "LEARN_MORE": "Kasa sürümlerini karşılaştır"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "Jeton kilitleme protokolü hâlâ burada",
+      "DESC": "Kendi kilitleme sözleşmenizi kurun: zaman veya fiyat koşulları, hak ediş takvimleri, çoklu imza ve ön satışlar için Launch Suite. Kendi başına bir ürün ve artık kendi sayfası var.",
+      "CTA": "Locker Protocol'ü görün",
+      "POINT_1": "Tarihe ve fiyata göre kilitler",
+      "POINT_2": "Otomatik hak ediş",
+      "POINT_3": "Çoklu imza",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "Kurun, anahtarlarınızı çevrimdışı tutun",
+      "SUBTITLE": "Günlük kullanım için uzantı, anahtarlar için kasa. İkisi de ücretsiz, ikisi de açık kaynak."
+    },
+    "AI": {
+      "BADGE": "Gömülü Yapay Zekâ",
+      "TITLE": "Yapay zekâ ile risk tespiti — cihazınızda, çevrimdışıyken bile",
+      "SUBTITLE": "Her imza, üç bağımsız katman tarafından yerel olarak analiz edilir. Sıfır bulut, sıfır telemetri: bulut tabanlı işlem simülatörlerinin aksine, imzaladığınız şey cihazınızdan asla çıkmaz.",
+      "RULES_TITLE": "Kurallar karar verir",
+      "RULES_DESC": "Sonlu ve denetlenebilir bir deterministik kural kümesi tehlikeli kalıpları engeller: sınırsız onaylar, koleksiyonun tamamına verilen yetkiler, sahte tokenler, phishing kaynakları. İmzalamayı yalnızca bu kurallar kilitleyebilir — yapay zekâ asla engellemez, dolayısıyla hiçbir şey onu kilidi açmaya da ikna edemez.",
+      "ML_TITLE": "Yerel yapay zekâ uyarır",
+      "ML_DESC": "Bilinen drainer kalıplarıyla eğitilmiş bir makine öğrenimi sınıflandırıcısı, her isteği cihazınızda milisaniyeler içinde puanlar ve çevrimdışı kasanın içinde de çalışacak kadar kompakttır. Tek bir kuralın kapsamadığı olağan dışı kombinasyonları yakalar — örneğin bakiyenizin %85'inin ilk kez görülen bir adrese gitmesi gibi.",
+      "VAULT_TITLE": "Kasa yeniden denetler",
+      "VAULT_DESC": "QR asla bir hüküm taşımaz. Hava boşluklu kasa, ham veriyi modelin kendi gömülü kopyasıyla yeniden çözer ve yeniden puanlar — ele geçirilmiş bir bilgisayar, güvenilir ekranda yalanlanır.",
+      "POINT_LOCAL": "Etkinliğinizden cihaz dışına çıkan veri: 0 bayt",
+      "POINT_REPRO": "Bayt bayt yeniden üretilebilir model eğitimi — denetlenebilir yapay zekâ",
+      "POINT_ADVISORY": "Yapay zekâ önerir, deterministik kurallar karar verir"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "Güvenlik seviyenizi seçin",
+    "SUBTITLE": "Locker Vault, tam yalıtım için fiziksel bir sürümde — veya mobil cihazlarınız için ücretsiz bir uygulama olarak sunulur.",
+    "AI": {
+      "TITLE": "Güvenilir ekranda yapay zekâ",
+      "DESC": "Kasa, kendi yapay zekâ risk modelini içinde taşır — tamamen çevrimdışı. Her isteği ham QR verisinden yeniden analiz eder; böylece ele geçirilmiş bir bilgisayar bile son sözü söyleyen ekrandan bir uyarıyı gizleyemez."
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault (Donanım)",
+      "BADGE": "Seviye 0 Güvenlik",
+      "DESC": "Antenlerin tamamen fiziksel olarak çıkarılması. Yalnızca optik imzalama. Balinalar ve kurumlar için en üst düzey güvenlik.",
+      "PRICE": "Yakında",
+      "CTA": "Yakında"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault (Uygulama)",
+      "BADGE": "Yazılımsal Hava Boşluğu",
+      "DESC": "PWA'mızı özel bir çevrimdışı cihaza kurun. Ücretsiz, açık kaynak ve QR ile imzalama destekli.",
+      "PRICE": "ÜCRETSİZ",
+      "CTA": "KASAYI AÇ"
+    },
+    "EXTENSION": {
+      "TITLE": "Locker Protocol Wallet Eklentisi",
+      "BADGE": "Yeni",
+      "DESC": "Kasanızı tarayıcı eklentimizle eşleştirin: anahtarlar hava boşluğunda kalırken her Web3 uygulamasıyla çalışan, MetaMask'in yerine geçen bir çözüm.",
+      "CTA": "EKLENTİYİ KEŞFET"
+    },
+    "COMPARISON": {
+      "TITLE": "Teknik Karşılaştırma",
+      "COL_FEATURE": "Özellik",
+      "CAT_SECURITY": "Güvenlik",
+      "CAT_COMMUNICATION": "İletişim",
+      "CAT_SOFTWARE": "Yazılım",
+      "CAT_SUPPORT": "Destek ve Ekstralar",
+      "FEATURE_1": "Yalıtım türü",
+      "HW_1": "Fiziksel — antenler çıkarılmış",
+      "SW_1": "Yazılımsal — uçak modu",
+      "FEATURE_2": "Ağ saldırı yüzeyi",
+      "HW_2": "Sıfır (radyo bileşeni yok)",
+      "SW_2": "Minimum (radyo var ama devre dışı)",
+      "FEATURE_3": "Kötü amaçlı yazılıma direnç",
+      "HW_3": "Tam bağışıklık",
+      "SW_3": "Cihaz hijyenine bağlı",
+      "FEATURE_4": "Zero-day koruması",
+      "HW_4": "İmkânsız (saldırı yüzeyi yok)",
+      "SW_4": "Cihaz özel değilse risk",
+      "FEATURE_5": "Uygulamayla iletişim",
+      "HW_5": "Yalnızca QR kod (optik)",
+      "SW_5": "Yalnızca QR kod (kamera)",
+      "FEATURE_6": "WiFi / Bluetooth / NFC",
+      "HW_6": "Fiziksel olarak yok",
+      "SW_6": "Mevcut ama devre dışı",
+      "FEATURE_7": "USB bağlantısı",
+      "HW_7": "Yok — sıfır kablo",
+      "SW_7": "Yok — sıfır kablo",
+      "FEATURE_8": "Çoklu imza (N'de M)",
+      "HW_8": "Evet — 20 imzacıya kadar",
+      "SW_8": "Evet — 20 imzacıya kadar",
+      "FEATURE_9": "Sınırsız cüzdan (benzersiz anımsatıcılar)",
+      "HW_9": "Evet — her cüzdanın kendi tohum ifadesi",
+      "SW_9": "Evet — her cüzdanın kendi tohum ifadesi",
+      "FEATURE_10": "Açık kaynak",
+      "HW_10": "Evet — denetlenebilir kod",
+      "SW_10": "Evet — denetlenebilir kod",
+      "FEATURE_11": "MetaMask uyumluluğu",
+      "HW_11": "Evet (QR kodlarla)",
+      "SW_11": "Evet (QR kodlarla)",
+      "FEATURE_12": "Şifreli kâğıt cüzdan (AES-256)",
+      "HW_12": "Evet",
+      "SW_12": "Evet",
+      "FEATURE_13": "Yazılım güncellemeleri",
+      "HW_13": "Hiç — sıfır saldırı yüzeyi",
+      "SW_13": "Otomatik (PWA)",
+      "FEATURE_14": "Destek",
+      "HW_14": "VIP Discord",
+      "SW_14": "Topluluk Discord'u",
+      "FEATURE_15": "Fiyat",
+      "HW_15": "Yakında",
+      "SW_15": "Ücretsiz"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "Tarayıcı Eklentisi",
+    "TITLE": "Locker Protocol Wallet Eklentisi",
+    "SUBTITLE": "Hava boşluklu kasanız, tarayıcınızda. Her Web3 uygulamasıyla çalışan, MetaMask'in yerine geçen bir çözüm; özel anahtarlar kasadan asla çıkmaz.",
+    "AI": {
+      "TITLE": "Yapay zekâ denetimli imza töreni",
+      "DESC": "Herhangi bir QR kasanıza ulaşmadan önce eklenti, isteği cihaz üzerinde analiz eder: deterministik kurallar tehlikeli kalıpları engeller, yerel bir yapay zekâ modeli olağan dışı kalıpları işaretler — bulut yok, telemetri yok. Ardından kasa, kendi gömülü modeliyle her şeyi bağımsız olarak yeniden denetler."
+    },
+    "DOWNLOAD": {
+      "TITLE": "Tarayıcınız için kurun",
+      "SUBTITLE": "Açık kaynak, tek bir Chrome Web Mağazası kaydından kurulur.",
+      "CTA": "Kur",
+      "NOTE": "Chrome ve Brave, uzantıyı aynı Chrome Web Mağazası kaydından kurar."
+    },
+    "WHY": {
+      "TITLE": "Neden Locker Protocol Wallet Eklentisi?",
+      "DAPPS": {
+        "TITLE": "Her Web3 Uygulaması",
+        "DESC": "MetaMask'in yerine geçer: takaslar, köprüler, borç verme, NFT pazar yerleri — MetaMask ile çalışan her şey Locker Protocol Wallet ile de çalışır."
+      },
+      "KEYS": {
+        "TITLE": "Anahtarlar Hava Boşluğunda Kalır",
+        "DESC": "Eklenti hiçbir özel anahtar tutmaz. Her işlemi çevrimdışı kasanız QR kodlarla imzalar — tarayıcıda çalınacak hiçbir şey yoktur."
+      },
+      "SIMPLE": {
+        "TITLE": "Basitleştirilmiş Kasa Deneyimi",
+        "DESC": "Yan panelde adım adım yönlendiren bir imza töreni. Hava boşluklu güvenlik, QR kod taramak kadar basit."
+      }
+    },
+    "HOW": {
+      "TITLE": "Nasıl çalışır",
+      "STEP_1_TITLE": "MetaMask gibi bağlanın",
+      "STEP_1_DESC": "Herhangi bir Web3 uygulamasını açıp bağlanın: eklenti, kasa hesaplarınızı dApp'e sunar — hiçbir özel anahtar dahil edilmez.",
+      "STEP_2_TITLE": "Kasanızla tarayın",
+      "STEP_2_DESC": "Bir imza gerektiğinde eklenti bir QR kod gösterir. Hava boşluklu kasanızla tarayın, işlemi inceleyin ve onaylayın.",
+      "STEP_3_TITLE": "İmzayı geri gönderin",
+      "STEP_3_DESC": "İmzalı QR kodu eklentinin kamerasına gösterin. İşlem gönderildi — anahtarlarınız internete hiç dokunmadı."
+    },
+    "CTA": {
+      "TITLE": "Bir Locker Vault'a ihtiyacınız olacak",
+      "DESC": "Eklenti, anahtarlarınızı tutan ve her işlemi imzalayan çevrimdışı cihaz olan hava boşluklu Locker Vault ile birlikte çalışır.",
+      "BUTTON": "Locker Vault Edin"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "Ücretsiz Kasayı Kur",
+    "STEP_1": "Özel bir cihaz alın (akıllı telefon veya tablet)",
+    "STEP_2": "Kamerayı açın ve aşağıdaki QR kodu tarayın",
+    "STEP_3": "\"Ana ekrana ekle\" talimatlarını izleyin",
+    "WARNING": "Azami güvenlik için, kurulumdan sonra bu cihazı kalıcı olarak uçak moduna alın.",
+    "CLOSE": "Kapat"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "Sınırlı Sürüm",
+    "CONNECT_TO_PAY": "ÖDEMEK İÇİN CÜZDAN BAĞLAYIN",
+    "CONFIRM_PREORDER": "ÖN SİPARİŞİ ONAYLA",
+    "VIP_DETECTED": "WLFI sahibi algılandı",
+    "VIP_APPLIED": "VIP indirimi uygulandı!",
+    "OFFER_LIMIT": "Teklif 1 Ocak 2027'ye kadar geçerlidir",
+    "DELIVERY_INFO": "1. parti teslimatı: 2027 1. çeyrek (Oca-Mar)",
+    "INCLUDES": "Siparişiniz Locker Vault'u (donanım) ve Locker Protocol yazılım paketine ömür boyu erişimi içerir.",
+    "PAY_STABLECOINS": "Stablecoin ile öde",
+    "LOCKER_INFO": "Ödemeniz Locker Protocol ile güvence altındadır. Tokenler kendi protokolümüz üzerinden doğrudan bir kilide gider — ödemeleri almak için Locker'ı kullanıyoruz.",
+    "JOIN_DISCORD": "Discord Topluluğuna Katıl",
+    "LOCK_INFO": "Onaylayarak, fonların Locker Protocol'ün addToLock mekanizmasıyla gönderileceğini kabul edersiniz. Ödemeleri güvence altına almak için kendi protokolümüzü kullanıyoruz.",
+    "BALANCE": "Bakiye",
+    "REQUIRED": "Gerekli",
+    "INSUFFICIENT_FUNDS": "Bu işlem için yetersiz bakiye",
+    "STEP_APPROVE": "Onay",
+    "STEP_LOCK": "Kilit",
+    "APPROVING": "Token harcaması onaylanıyor...",
+    "LOCKING": "Fonlar Locker'da kilitleniyor...",
+    "SUCCESS_TITLE": "Ödeme Başarılı!",
+    "SUCCESS_DESC": "Fonlarınız Locker Protocol ile güvenle kilitlendi. Discord'umuza katılın ve teslimat bilgilerinizi güvenli portal üzerinden iletin.",
+    "RECEIPT_TITLE": "Sipariş Özeti",
+    "TX_HASH": "İşlem Hash'i",
+    "COPY_TX": "İşlem hash'ini kopyala",
+    "PAYMENT_REF": "Ödeme Referansı",
+    "NEXT_STEP_TITLE": "Sırada ne var?",
+    "STEP1_DESC": "Yukarıdaki işlem hash'ini kopyalayın — zincir üstü ödeme kanıtınız budur.",
+    "STEP2_DESC": "Aşağıdaki düğmeyle Locker Protocol Discord topluluğuna katılın.",
+    "STEP3_DESC": "#vault-orders kanalını açın ve işlem hash'inizi yapıştırın. Ekibimiz ödemeyi doğrulayıp teslimat için sizinle iletişime geçecektir.",
+    "UNSUPPORTED_CHAIN": "Desteklenmeyen ağ — geçiş yapın"
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "Demoyu izle",
+      "LOCKER": "Locker demosunu izle",
+      "VAULT": "Kasa demosunu izle",
+      "EXTENSION": "Eklenti demosunu izle",
+      "CLOSE": "Videoyu kapat"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "Gelişmiş kilitleme ve hak ediş",
+        "DESC": "Token'ları belirli tarihlere veya hedef fiyatlara göre otomatik kilitleyin. Yapılandırılabilir otomatik hak ediş takvimleri dahildir."
+      },
+      "MULTISIG": {
+        "TITLE": "Çoklu imza güvenliği",
+        "DESC": "Ekibinizin kontrolündeki %100 merkeziyetsiz protokol. Yapılandırılabilir eşikler ve imzacılar. Aracı yok."
+      },
+      "OPENSOURCE": {
+        "TITLE": "%100 açık kaynak",
+        "DESC": "Tam şeffaflık. Akıllı sözleşmelerimiz, hava boşluklu cüzdan yardımcı uygulamamız ve kullanıcı arayüzümüz tamamen açık kaynaklıdır."
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "Güçler ayrılığı",
+      "TITLE": "Cüzdanı değiştirin. Kasayı değil.",
+      "SUBTITLE": "Normal bir cüzdanda fonlarınız özel anahtarınızın TA KENDİSİDİR: sızarsa her şey gider. Locker fonları bir sözleşmenin içinde tutar. Cüzdan yalnızca bir anahtardır; en ufak şüphede tek bir token taşımadan değiştirebilirsiniz.",
+      "NORMAL_LABEL": "Normal cüzdan",
+      "NORMAL_TITLE": "Fonlarınız anahtarınızın TA KENDİSİ",
+      "NORMAL_DESC": "Tek bir sızan anahtar, her şeyi sızdırır. Şüphe mi var? Saldırgana karşı yarışarak her tokeni yeni bir adrese taşımanız gerekir.",
+      "LOCKER_LABEL": "Locker ile",
+      "LOCKER_TITLE": "Fonlarınız bir sözleşmede yaşar",
+      "LOCKER_DESC": "Anahtar yalnızca kasayı yönetir. Şüphe mi var? Değiştirin — fonlar hiç hareket etmez ve kurallarınızın koruması altında kalır.",
+      "FOOTER": "Cüzdan harcanabilir hâle gelir. Güvenliğiniz değil."
+    },
+    "AIRGAPPED": {
+      "BADGE": "Maksimum güvenlik",
+      "TITLE": "Hava boşluklu cüzdan mimarisi",
+      "DESC": "Saldırılara ve kötü amaçlı yazılımlara karşı en üst düzey güvenlik için protokolümüz, hava boşluklu cüzdan yardımcı uygulamasıyla çevrimdışı imzalamayı yerleşik olarak destekler.",
+      "FEATURE_1": "PWA teknolojisi: Herhangi bir eski akıllı telefona kurulur, uygulama mağazası gerekmez",
+      "FEATURE_2": "Gerçek hava boşluğu: Cihazı internetten tamamen kopuk tutun",
+      "FEATURE_3": "%100 ücretsiz ve açık kaynak: İzleme yok, gizli kod yok. Kendiniz doğrulayıp derleyin",
+      "FEATURE_4": "MetaMask uyumlu: QR bağlantısıyla Web3 işlemlerini sorunsuz imzalayın"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "Ultra güvenli yedek",
+      "TITLE": "QR kodla şifrelenmiş kağıt cüzdan",
+      "DESC": "12 kelimeyi bir kağıda yazmanıza gerek yok. Cüzdanınızı, ultra güvenli parolanızla korunan AES-256 şifreli bir QR kodu olarak dışa aktarın.",
+      "FEATURE_1": "Yazdırılabilir yedek: QR kodunu yazdırın ve fiziksel kasanızda güvenle saklayın.",
+      "FEATURE_2": "Parola şifreli: Kağıdınızı bulan biri bile güçlü parolanız olmadan anahtarları okuyamaz.",
+      "FEATURE_3": "Anında kurtarma: Yazdırılan QR kodu yeni bir hava boşluklu cihazla tarayın, tüm cüzdanınız anında geri yüklensin."
+    },
+    "METAMASK": {
+      "TITLE": "Sorunsuz MetaMask entegrasyonu",
+      "DESC": "Hava boşluklu cüzdanınızı, özel anahtarlarınızı asla açığa çıkarmadan MetaMask üzerinden herhangi bir Web3 dApp'ine güvenle bağlayın.",
+      "FEATURE_1": "İşlemleri imzalamak için QR kodları tarayın",
+      "FEATURE_2": "Uniswap, Aave ve daha fazlasıyla etkileşin",
+      "FEATURE_3": "Günlük Web3 kullanımında gerçek fiziksel yalıtım"
+    },
+    "EXTENSION": {
+      "BADGE": "Tarayıcı Eklentisi",
+      "TITLE": "Kasanızın gücü, tarayıcınızda",
+      "DESC": "Locker Protocol Wallet eklentisini kurun ve hava boşluklu kasanızı her Web3 uygulamasında kullanın. Tıpkı MetaMask gibi davranır, ama her imza QR kodlarla çevrimdışı kasanızdan gelir.",
+      "FEATURE_1": "Her Web3 uygulamasıyla çalışır: takaslar, köprüler, borç verme ve fazlası",
+      "FEATURE_2": "Adım adım yönlendiren, basitleştirilmiş ve güvenli kasa töreni",
+      "FEATURE_3": "Tarayıcıda sıfır özel anahtar — sonsuza dek",
+      "CTA": "Eklentiyi Edin",
+      "MOCK_CONNECTED": "Bağlandı",
+      "MOCK_SCAN": "Kasanızla tarayın"
+    },
+    "SMART_DCA": {
+      "BADGE": "Disiplin ve hak ediş",
+      "TITLE": "Akıllı DCA ve FOMO karşıtı kilitler",
+      "DESC": "Yatırımlarınızı duygusal kararlardan koruyun. Token başına tamamen farklı kurallara sahip birden fazla kilit oluşturabilir, zaman ve fiyat hedeflerini tek bir stratejide birleştirebilirsiniz.",
+      "FEATURE_1": "Çoklu strateji: %50'yi 1 yıl, %50'yi 4 yıl kilitleyin YA DA fiyat +%300'e ulaşırsa erken açın.",
+      "FEATURE_2": "Birleştirilebilir kurallar: Zamana dayalı, fiyata dayalı ya da aynı kilitte ikisini zarifçe birleştirin.",
+      "FEATURE_3": "Hak ediş ve DCA: Maliyeti düşürmek veya uzun vadeli pozisyon kurmak için mevcut kilitlerinize zamanla ekleme yapın."
+    },
+    "MULTI_SIG": {
+      "BADGE": "Yönetişim ve güvenlik",
+      "TITLE": "Gerçek çoklu imza artık kolay",
+      "DESC": "Tek bir özel anahtar bile açığa çıkarmadan fonlarınızı birden fazla imzacıyla koruyun. İster temkinli bir bireysel yatırımcı ister dağıtık bir DAO olun, imza toplama tamamen esnek ve çevrimdışıdır.",
+      "CASE_1_TITLE": "Tek kullanıcı (maksimum güvenlik)",
+      "CASE_1_DESC": "Birden fazla anahtarı tek bir çevrimdışı cihazda tutun. Her imzayı QR kodu olarak üretin ve bilgisayarınızın web kamerasıyla sırayla doğrudan arayüze tarayın.",
+      "CASE_2_TITLE": "Dağıtık ekipler ve DAO'lar",
+      "CASE_2_DESC": "Ortak imzacılar imzalarını çevrimdışı üretir, QR kodun fotoğrafını telefonlarıyla çekip herhangi bir mesajlaşma uygulamasıyla gönderir. Aktarıcı fotoğrafları arayüzde birleştirir ve nihai kararı yayınlar.",
+      "NOTE": "Sıfır ifşa: İmzalar yalnızca kriptografik kanıtlardır. Özel anahtarlar çevrimdışı cihazlardan asla çıkmaz."
+    },
+    "WORKFLOW": {
+      "TITLE": "Nasıl çalışır",
+      "STEP_1_TITLE": "1. Dağıtın",
+      "STEP_1_DESC": "Locker akıllı sözleşmenizi doğrudan arayüzümüzden başlatın. Çoklu imza imzacılarınızı ve eşiğinizi ayarlayın.",
+      "STEP_2_TITLE": "2. Kilitleyin ve hak edişe bağlayın",
+      "STEP_2_DESC": "ERC20 token'larınızı kilitleyin. Zamana veya fiyata dayalı otomatik kilit açma kuralları yapılandırın.",
+      "STEP_3_TITLE": "3. Güvenle yönetin",
+      "STEP_3_DESC": "İşlemleri hava boşluklu cüzdanınızla çevrimdışı imzalayın. Tamamen zincir üzerinde güvenle yürütün."
+    },
+    "QR_FLOW": {
+      "BADGE": "Hava boşluklu güvenlik",
+      "TITLE": "Güvenli hava boşluklu işlemler",
+      "SUBTITLE": "Özel anahtarlar çevrimdışı cihazdan asla çıkmaz. Her işlem imzalanmadan önce QR kodlarıyla görsel olarak doğrulanır — USB yok, Bluetooth yok, ağ bağlantısı yok.",
+      "STEP_1": "İşlem önerisini EIP-712 QR kodu olarak üretin",
+      "STEP_2": "Hava boşluklu kasa cihazınızda tarayıp çevrimdışı imzalayın",
+      "STEP_3": "M-of-N imzalı QR kodlarını geri toplayın",
+      "STEP_4": "RPC üzerinden doğrudan blokzincire yayınlayın"
+    },
+    "USE_CASES": {
+      "TITLE": "Herkes için tasarlandı",
+      "DAO_TITLE": "DAO'lar ve Web3 projeleri",
+      "DAO_DESC": "Her fon hareketi için ekip mutabakatı gerektiren çoklu imza kurallarıyla topluluk hazinenizi koruyun.",
+      "FOUNDERS_TITLE": "Kurucular ve yatırımcılar",
+      "FOUNDERS_DESC": "Zamana veya belirli fiyat hedeflerine ulaşmaya dayalı gelişmiş hak ediş kurallarıyla token dağıtımlarını otomatikleştirin.",
+      "INDIVIDUALS_TITLE": "Bireyler",
+      "INDIVIDUALS_DESC": "Anahtarlarınızı fiziksel olarak hava boşluklu tutarak kişisel varlığınızı saldırılara ve kötü amaçlı yazılımlara karşı koruyun."
+    },
+    "FLEXIBILITY": {
+      "TITLE": "Esnek ve gelişmiş araçlar",
+      "BATCH_TITLE": "Toplu yönetim",
+      "BATCH_DESC": "Tek işlemde birden fazla token kilitleyin veya dağıtın; gazdan ve zamandan tasarruf edin.",
+      "RESCUE_TITLE": "Token kurtarma",
+      "RESCUE_DESC": "Yanlışlıkla locker adresinize token mı gönderdiniz? Ekibin onayıyla geri alın.",
+      "EXTEND_TITLE": "Gazsız yürütme",
+      "EXTEND_DESC": "İmzalar çevrimdışı toplanır. Eşik sağlandığında herhangi bir cüzdan işlemi zincir üzerinde yürütebilir."
+    },
+    "LAUNCH": {
+      "BADGE": "Launch Paketi",
+      "SOON": "Yakında",
+      "TITLE": "Tokeninizi aynı güvenlik rayları üzerinde başlatın",
+      "DESC": "Locker'ın denetimden geçmiş altyapısında toplayın, dağıtın ve hak edişe bağlayın: ön satış fonları ve yatırımcı tahsisleri, hava boşluklu kasanızın yönettiği egemen akıllı sözleşmelerde yaşar.",
+      "PRESALE_TITLE": "Stablecoin ön satışları",
+      "PRESALE_DESC": "Sıkı limitler ve zincir üstü kurallarla stablecoin toplayın. Oracle oyunları yok: katkılar tam olarak söyledikleri şeydir.",
+      "VESTING_TITLE": "Yatırımcı hak edişi",
+      "VESTING_DESC": "Tahsisleri, yatırımcıların kendilerinin talep ettiği zincir üstü hak ediş takvimleriyle ve herkese açık, değiştirilemez kanıtla dağıtın.",
+      "SECURITY_TITLE": "Kanıtlanmış raylar",
+      "SECURITY_DESC": "Her Locker'ı koruyan aynı kanonik fabrika sözleşmeleri ve aynı çoklu imza yönetişimi — imzalar hava boşluklu kasanızdan gelir.",
+      "CTA": "Yakında"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "Açık Kaynak (Ücretsiz)",
+      "OPEN_SOURCE_DESC": "Gizlilik ve güvenliğin temel haklar olduğuna inanıyoruz. Akıllı sözleşmelerimiz, hava boşluklu cüzdanımız ve arayüzümüz %100 ücretsiz ve açık kaynaklıdır. Depoyu klonlayın, kodu denetleyin ve kendiniz dağıtın.",
+      "OSS_BADGE": "Açık kaynak",
+      "OPEN_VAULT": "Kasayı keşfet"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Locker neden var",
+      "CONTENT_P1": "Her yıl milyarlarca dolarlık kripto varlık çalınıyor — blokzincirler güvensiz olduğu için değil, işlemleri imzalayan cihazlar ele geçirildiği için. Kötü amaçlı yazılım, işlem verilerini donanım cüzdanınıza ulaşmadan sessizce değiştirir ve siz onayladığınızda iş işten geçmiş olur.",
+      "CONTENT_P2": "Mevcut çözümlerin hepsi aynı kritik kusuru paylaşıyor: imzalama cihazı ile internete bağlı makine arasında doğrudan bir bağlantı (USB, Bluetooth veya yazılım köprüsü) gerektiriyorlar. O bağlantı, saldırı yüzeyinin ta kendisidir.",
+      "CONTENT_P3": "Locker, bu tekil hata noktasını ortadan kaldırmak için sıfırdan tasarlandı. Anahtar deposunu gerçek bir hava boşluğuyla fiziksel olarak yalıtarak ve işlem verilerinin tam içeriğini tamamen çevrimdışı bir cihazda doğrulayarak, bilgisayarınız tümüyle ele geçirilmiş olsa bile saldırganların imzalarınızı değiştirmesini veya ele geçirmesini imkânsız kılar.",
+      "CONTENT_P4": "Akıllı sözleşmeler %100 açık kaynaklıdır. Klonlayın, denetleyin, kendiniz dağıtın. Güven gerekmez — yalnızca matematik.",
+      "GITHUB_CTA": "Akıllı sözleşmeleri GitHub'da görüntüle"
+    },
+    "FAQ": {
+      "TITLE": "Sık sorulan sorular",
+      "Q1": "Locker Protocol nedir?",
+      "A1": "Locker Protocol, kriptonuzu korumak için eksiksiz ve ücretsiz bir ekosistemdir. Kilitleme akıllı sözleşmelerini (zaman veya fiyat koşuluyla) Web3 uyumlu hava boşluklu çevrimdışı bir kasayla birleştirir. Her kullanıcı kendi sözleşmesini dağıtır — vekil yok, yönetici anahtarı yok — ve %100 sahibi olarak kalır.",
+      "Q2": "Gerçekten ücretsiz mi?",
+      "A2": "Evet, %100 ücretsiz ve açık kaynak. Locker'ınızı dağıtmak, kasa uygulaması ve arayüz tamamen ücretsizdir. Tek maliyet standart blokzincir ağı gaz ücretleridir. Platform ücreti yok, abonelik yok, varlıklarınızdan pay alınmaz.",
+      "Q3": "Hava boşluklu kasa nedir?",
+      "A3": "Kasa, kalıcı olarak çevrimdışı tutulan (uçak modu) özel bir cihaza kurulan bir uygulamadır. Özel anahtarlarınız yerel olarak üretilir ve saklanır, internete asla açılmaz. Çevrimiçi uygulamayla iletişim yalnızca QR kodlarıyla yapılır — USB, Bluetooth veya WiFi yok.",
+      "Q4": "Fiyat koşullu kilitleme nasıl çalışır?",
+      "A4": "Klasik zamana dayalı kilitlemenin ötesinde, Locker Protocol Uniswap V2/V3 zincir üstü oracle'larıyla entegredir. Koşullu bir kilit oluşturabilirsiniz: token'larınız yalnızca piyasa fiyatı belirlenen hedefe ulaştığında açılır. Akıllı sözleşme likidite havuzlarını gerçek zamanlı denetler.",
+      "Q5": "Kasa için özel bir cihaz gerekir mi?",
+      "A5": "Maksimum güvenlik için evet — sıfırlanmış eski bir akıllı telefon veya tablet yeterlidir. Kasayı kurar, uçak moduna geçersiniz ve cihaz kalıcı olarak çevrimdışı kalır. Denemek için ana makinenizde de kullanabilirsiniz.",
+      "Q6": "Çoklu imza nasıl çalışır?",
+      "A6": "M-of-N eşiği tanımlarsınız: örneğin her işlemi 3 imzacıdan 2'sinin onaylaması gerekir. İmzalar QR kodlarıyla çevrimdışı toplanır. Eşik sağlandığında herhangi bir cüzdan işlemi gönderebilir ve tüm grup için gazı bir kez öder.",
+      "Q7": "Çevrimdışı cihazımı kaybedersem ne olur?",
+      "A7": "Cüzdan oluşturulurken 12 veya 24 kelimelik bir kurtarma ifadesi verilir. Kağıda yazın ve güvenle saklayın. Cihazınız kaybolur veya bozulursa, kasayı yeni bir çevrimdışı cihaza kurup ifadenizi içe aktarın — tüm anahtarlarınız geri gelir.",
+      "Q8": "Siteniz kapanırsa ne olur?",
+      "A8": "Arayüz, blokzincirle konuşmak için yalnızca bir cephedir. Ne fon ne de anahtar tutar. Tüm kod GitHub'da açık kaynaklıdır: indirin, yerelde çalıştırın ve Locker'ınıza tam erişimi geri kazanın. Fonlarınız bizde değil, blokzincirdedir.",
+      "Q9": "Dağıtımdan sonra imzacılar değiştirilebilir mi?",
+      "A9": "Evet. SignerManager sözleşmesi, imzacı eklemeye, çıkarmaya veya güvenlik eşiğini istediğiniz zaman değiştirmeye izin verir. Bu yönetim işlemleri de mevcut yeter sayının çoklu imza onayını gerektirir.",
+      "Q10": "Şifreli kağıt cüzdan nedir?",
+      "A10": "Kağıt cüzdan, parolanızla korunan AES-256 şifrelemesi kullanır. Kağıdınızı bulan biri bile parola olmadan anahtarları okuyamaz. Yazdırılan QR kodu yeni bir hava boşluklu cihazla tarayın ve cüzdanınızı anında geri yükleyin.",
+      "Q11": "Özel anahtarlarım hiç Bluetooth veya USB üzerinden geçer mi?",
+      "A11": "Asla. Kasa Bluetooth, NFC, WiFi veya USB kullanmaz. Tek iletişim yöntemi animasyonlu QR kodları taramaktır (BC-UR protokolü). Hiçbir kötü amaçlı yazılım bu fiziksel engeli aşamaz.",
+      "Q12": "MetaMask entegrasyonu nasıl çalışır?",
+      "A12": "Hava boşluklu kasanız MetaMask'e QR kodlarıyla bağlanır. Tam fiziksel yalıtımı korurken herhangi bir Web3 dApp'iyle (Uniswap, Aave vb.) etkileşebilirsiniz. Özel anahtarlar çevrimdışı cihazdan asla çıkmaz.",
+      "Q13": "Sözleşmeye yanlışlıkla token gönderilirse kaybolur mu?",
+      "A13": "Hayır. Protokolde bir token kurtarma işlevi vardır. Yetkili imzacılar, yeter sayıyla doğrulanan bir çoklu imza işlemiyle yanlışlıkla gönderilen token'ları geri alabilir.",
+      "Q14": "Hangi ağlar destekleniyor?",
+      "A14": "Locker Protocol %100 EVM uyumludur ve şu ağlarda dağıtılmıştır: Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche ve Linea.",
+      "Q15": "Kod denetlenebilir mi?",
+      "A15": "Evet. Tüm kod tabanı — Solidity akıllı sözleşmeleri, PWA web arayüzü ve kasanın kriptografik modülleri — GitHub'da açık kaynak olarak yayınlanmıştır. Her uzman her satırı inceleyebilir."
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "Chrome'a ekle",
+    "CTA_BRAVE": "Brave'e ekle",
+    "CTA_GENERIC": "Uzantıyı edinin"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "Jeton kilitleme",
+    "TITLE": "Kendi kilitleme sözleşmeniz,",
+    "TITLE_2": "yönetici anahtarı ve aracı olmadan",
+    "DESCRIPTION": "Her kullanıcı kendi akıllı sözleşmesini kurar. Jetonları tarihe veya fiyat hedefine göre kilitleyin, hak ediş takvimleri tanımlayın, birden çok imza şartı koyun. Vekil yok, yönetici anahtarı yok: tamamen sizin.",
+    "CTA_WALLET": "Cüzdanı görün",
+    "META": {
+      "TITLE": "Locker Protocol - Jeton kilitleme, hak ediş ve çoklu imza",
+      "DESCRIPTION": "Kendi ERC-20 kilitleme sözleşmenizi kurun: tarihe ve fiyata göre kilitler, otomatik hak ediş, çoklu imza ve Locker Vault ile çevrimdışı imzalama."
+    },
+    "CTA_CREATE": "LOCKER OLUŞTUR"
+  }
+}

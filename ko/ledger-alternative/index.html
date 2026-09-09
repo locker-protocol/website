@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko" dir="ltr" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ledger 대안 — 직접 검증할 수 있는 에어갭 지갑 | ERC-20 Locker Protocol</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P029LN8NTN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // send_page_view:false — the Angular router sends every page_view (incl. the
+    // first) so client-side route changes are tracked and not double-counted.
+    gtag('config', 'G-P029LN8NTN', { send_page_view: false });
+  </script>
+
+  <!-- SEO: Primary Meta Tags -->
+  <meta name="description" content="Ledger의 대안을 찾고 계신가요? Locker Protocol은 오프라인 휴대폰을 무료 오픈소스 에어갭 지갑으로 바꿉니다. 서명은 QR로만, USB 없음, 블루투스 없음, 살 것도 배송받을 것도 없습니다.">
+  <meta name="keywords" content="Locker Protocol Wallet, crypto wallet extension, Chrome wallet, Brave wallet, MetaMask alternative, air-gapped wallet, QR signing, crypto swap, cross-chain bridge, Hyperliquid perpetuals, Bitcoin, Solana, Tron, Sui, Stellar, non-custodial, open-source">
+  <meta name="author" content="ERC-20 Locker Protocol">
+  <meta name="robots" content="index, follow">
+  <!-- canonical and hreflang tags are managed dynamically by LanguageService -->
+
+  <!-- Open Graph / Facebook / Discord / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ERC-20 Locker Protocol">
+  <meta property="og:title" content="Ledger 대안 — 직접 검증할 수 있는 에어갭 지갑 | ERC-20 Locker Protocol">
+  <meta property="og:description" content="Ledger의 대안을 찾고 계신가요? Locker Protocol은 오프라인 휴대폰을 무료 오픈소스 에어갭 지갑으로 바꿉니다. 서명은 QR로만, USB 없음, 블루투스 없음, 살 것도 배송받을 것도 없습니다.">
+  <meta property="og:url" content="https://lockerprotocol.com/ko/ledger-alternative/">
+  <meta property="og:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ledger 대안 — 직접 검증할 수 있는 에어갭 지갑 | ERC-20 Locker Protocol">
+  <meta name="twitter:description" content="Ledger의 대안을 찾고 계신가요? Locker Protocol은 오프라인 휴대폰을 무료 오픈소스 에어갭 지갑으로 바꿉니다. 서명은 QR로만, USB 없음, 블루투스 없음, 살 것도 배송받을 것도 없습니다.">
+  <meta name="twitter:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta name="twitter:image:alt" content="Locker Protocol Wallet - Web3 extension with air-gapped keys">
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ERC-20 Locker Protocol",
+  "alternateName": [
+    "Locker Protocol",
+    "Locker",
+    "LockerProtocol"
+  ],
+  "url": "https://lockerprotocol.com/ko/",
+  "description": "Ledger의 대안을 찾고 계신가요? Locker Protocol은 오프라인 휴대폰을 무료 오픈소스 에어갭 지갑으로 바꿉니다. 서명은 QR로만, USB 없음, 블루투스 없음, 살 것도 배송받을 것도 없습니다.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ERC-20 Locker Protocol",
+    "url": "https://lockerprotocol.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lockerprotocol.com/assets/icons/icon-512x512.png"
+    }
+  },
+  "inLanguage": "ko"
+}
+  </script>
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <style>
+    /* Global splash pre-loader: painted from the inline HTML on first paint (before the
+       Angular bundle loads), then removed automatically when Angular renders <app-root>.
+       The logo is inline SVG (no request, no <base href> dependency, works air-gapped),
+       which is why there is no white flash while the app boots. */
+    .global-splash-screen {
+      position: fixed; inset: 0; background: #ffffff;
+      display: flex; align-items: center; justify-content: center; z-index: 99999;
+    }
+    .splash-spinner-container {
+      position: relative; width: 120px; height: 120px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .splash-logo { width: 60px; height: 60px; position: absolute; z-index: 10; }
+    .splash-ring {
+      position: absolute; width: 100%; height: 100%; border-radius: 50%;
+      border: 4px solid #f3f4f6; border-top-color: #7c3aed; border-right-color: #3b82f6;
+      animation: splash-spin 2.5s cubic-bezier(0.68, -0.15, 0.265, 1.15) infinite;
+    }
+    @keyframes splash-spin {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(360deg); animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); }
+      100% { transform: rotate(720deg); }
+    }
+  </style>
+<style>*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}svg{display:block;vertical-align:middle}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-greek.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/inter/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0;background-color:#fff;color:#1a1a1a;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+</style><link rel="stylesheet" href="styles-GU7PMHYE.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GU7PMHYE.css"></noscript><link rel="modulepreload" href="chunk-QGWTLCFZ.js"><link rel="modulepreload" href="chunk-OERSU4S2.js">  <link rel="canonical" href="https://lockerprotocol.com/ko/ledger-alternative/">
+  <link rel="alternate" hreflang="en" href="https://lockerprotocol.com/ledger-alternative/">
+  <link rel="alternate" hreflang="fr" href="https://lockerprotocol.com/fr/ledger-alternative/">
+  <link rel="alternate" hreflang="zh" href="https://lockerprotocol.com/zh/ledger-alternative/">
+  <link rel="alternate" hreflang="es" href="https://lockerprotocol.com/es/ledger-alternative/">
+  <link rel="alternate" hreflang="ar" href="https://lockerprotocol.com/ar/ledger-alternative/">
+  <link rel="alternate" hreflang="de" href="https://lockerprotocol.com/de/ledger-alternative/">
+  <link rel="alternate" hreflang="he" href="https://lockerprotocol.com/he/ledger-alternative/">
+  <link rel="alternate" hreflang="hi" href="https://lockerprotocol.com/hi/ledger-alternative/">
+  <link rel="alternate" hreflang="id" href="https://lockerprotocol.com/id/ledger-alternative/">
+  <link rel="alternate" hreflang="it" href="https://lockerprotocol.com/it/ledger-alternative/">
+  <link rel="alternate" hreflang="ja" href="https://lockerprotocol.com/ja/ledger-alternative/">
+  <link rel="alternate" hreflang="ko" href="https://lockerprotocol.com/ko/ledger-alternative/">
+  <link rel="alternate" hreflang="pt" href="https://lockerprotocol.com/pt/ledger-alternative/">
+  <link rel="alternate" hreflang="ru" href="https://lockerprotocol.com/ru/ledger-alternative/">
+  <link rel="alternate" hreflang="tr" href="https://lockerprotocol.com/tr/ledger-alternative/">
+  <link rel="alternate" hreflang="vi" href="https://lockerprotocol.com/vi/ledger-alternative/">
+  <link rel="alternate" hreflang="x-default" href="https://lockerprotocol.com/ledger-alternative/">
+</head>
+
+<body>
+  <app-root>
+    <div class="global-splash-screen" aria-label="Loading Application">
+      <div class="splash-spinner-container">
+        <div class="splash-ring"></div>
+        <svg class="splash-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M 35 15 H 15 V 35 M 65 15 H 85 V 35 M 35 85 H 15 V 65 M 65 85 H 85 V 65" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 35 15 H 15 V 35 M 65 15" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 65 85 H 85 V 65" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 30 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 40 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 50 22 V 78" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 60 22 V 78" fill="none" stroke="#9900CC" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 70 30 V 69" fill="none" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <main class="seo-prerender" style="max-width:48rem;margin:0 auto;padding:6rem 1.5rem;font-family:system-ui,sans-serif;line-height:1.6">
+      <h1>Ledger 대안 — 직접 검증할 수 있는 에어갭 지갑</h1>
+      <p>Ledger의 대안을 찾고 계신가요? Locker Protocol은 오프라인 휴대폰을 무료 오픈소스 에어갭 지갑으로 바꿉니다. 서명은 QR로만, USB 없음, 블루투스 없음, 살 것도 배송받을 것도 없습니다.</p>
+      <h2>사람들이 대안을 찾는 이유</h2>
+      <p>날짜가 명확한 세 가지 사실 — 모두 Ledger 자신의 공식 발표로 입증됩니다.</p>
+      <h3>고객 데이터베이스 유출</h3>
+      <p>약 272,000명 고객의 주문 데이터 — 이름, 집 주소, 전화번호 — 가 공개되었고, 피싱 캠페인과 물리적 협박이 뒤따랐습니다. 보안 기기를 샀다는 사실이, 소유자를 노출시킨 바로 그 데이터를 만들어낸 것입니다.</p>
+      <h3>Ledger Recover</h3>
+      <p>펌웨어 업데이트로, 펌웨어가 요구하면 시드가 보안 칩 밖으로 나갈 수 있다는 사실이 드러났습니다. &quot;키는 칩을 떠나지 않는다&quot;는 속성이 아니라 정책이 되었습니다.</p>
+      <h3>Connect Kit 공급망 공격</h3>
+      <p>침해된 Ledger의 npm 라이브러리가 몇 시간 동안 주요 dApp 안에 지갑 드레이너를 배포했습니다. 공격 표면은 기기가 아니라 — 공급업체 자신이었습니다.</p>
+      <h2>Locker로 바뀌는 것</h2>
+      <h3>광학 에어갭</h3>
+      <p>USB 없음, 블루투스 없음, NFC 없음. 트랜잭션은 눈으로 볼 수 있는 QR 코드로 오갑니다. 숨겨진 채널은 없습니다. 채널 자체가 없으니까요.</p>
+      <h3>맹목적으로 믿을 것은 없습니다</h3>
+      <p>컨트랙트는 모든 체인에 공개·검증되어 있습니다. 확장 프로그램에는 키가 전혀 없습니다 — 브라우저에는 훔칠 만한 것이 없습니다.</p>
+      <h3>살 것도, 배송받을 것도 없음</h3>
+      <p>공장 초기화한 휴대폰이 그대로 볼트가 됩니다. 주문 없음, 배송 없음, 고객 데이터베이스 없음 — 애초에 수집하지 않은 데이터는 유출될 수 없습니다.</p>
+      <h3>쓰던 dApp 그대로</h3>
+      <p>Locker 확장 프로그램은 표준 Web3 지갑입니다. dApp 사용 방식은 그대로이고, 서명만 오프라인으로 옮겨집니다.</p>
+      <h2>Locker와 Ledger, 나란히 비교</h2>
+      <h2>보안 칩이 더 잘하는 것</h2>
+      <p>인증된 보안 칩은 물리적 추출에 저항합니다. 기기를 훔치고 실험 장비까지 갖춘 공격자는 강화된 칩에 부딪힙니다. 이것은 실제 강점이고, 우리는 아니라고 말하지 않습니다. 우리의 답은 다른 곳에 있습니다. 암호화폐 손실의 압도적 다수를 일으키는 원격 공격 — 악성코드, 드레이너, 공급망 침해 — 앞에서는, 광학 에어갭이 그 어떤 케이블보다 엄격합니다.</p>
+      <h2>약 10분이면 떠날 수 있습니다</h2>
+      <p>세 단계. 구매 없음, 계정 없음.</p>
+      <h3>오래된 휴대폰을 볼트로</h3>
+      <p>공장 초기화하고, 비행기 모드를 켜고, QR 코드로 볼트를 설치하세요. 그 기기는 다시는 온라인에 연결되지 않습니다.</p>
+      <h3>종이 백업 인쇄</h3>
+      <p>암호화된 QR 코드 하나로 어디서든 볼트를 복원합니다. 종이를 주운 사람에게는 암호문만 보입니다.</p>
+      <h3>자산 이전</h3>
+      <p>지금 쓰는 지갑에서 새 주소로 보내세요 — 서두를 필요 없이, 한꺼번에 옮길 필요도 없습니다.</p>
+      <h2>자주 묻는 질문</h2>
+      <h3>휴대폰이 정말 하드웨어 지갑만큼 안전한가요?</h3>
+      <p>원격 공격 — 악성코드, 드레이너, 피싱 — 에 대해서는 QR로 서명하는 오프라인 휴대폰이 USB나 블루투스 기기보다 엄격합니다. 공격할 채널 자체가 없기 때문입니다. 실험실 수준의 물리적 추출에 대해서는 인증된 보안 칩이 우위를 유지합니다. 우리의 위협 모델은 그 반대를 주장하는 대신 이를 정직하게 기록합니다.</p>
+      <h3>무언가를 사야 하나요?</h3>
+      <p>아니요. 이미 갖고 있는 휴대폰이 공장 초기화와 비행기 모드 후에 볼트가 됩니다. 주문할 기기 없음, 배송 없음, 계정 없음 — 따라서 유출될 고객 데이터베이스도 없습니다.</p>
+      <h3>쓰던 dApp이 계속 작동하나요?</h3>
+      <p>네. Locker 확장 프로그램은 표준 Web3 지갑으로 등록되므로(EIP-6963) dApp은 여느 브라우저 지갑처럼 인식합니다. 사용 방식은 그대로 — 서명만 오프라인 볼트에서 QR 코드로 이뤄집니다.</p>
+      <h3>휴대폰이 고장 나거나 없어지면요?</h3>
+      <p>종이 백업으로 복원합니다. 볼트를 만들 때 인쇄한 암호화 QR 코드입니다. 종이와 비밀번호만 있으면 다른 어떤 휴대폰에서도 몇 분 안에 복구됩니다.</p>
+      <h3>왜 무료인가요 — 비즈니스 모델이 뭔가요?</h3>
+      <p>소프트웨어는 처음부터 끝까지 무료이며, 앞으로도 그렇습니다. 프로젝트는 전용 기기를 선호하는 분들을 위해 사전 구성된 하드웨어 볼트를 선택 사항으로 판매합니다. 키와 프로토콜은 결코 거기에 의존하지 않습니다.</p>
+      <nav aria-label="ERC-20 Locker Protocol"><ul><li><a href="https://lockerprotocol.com/ko/">Locker Protocol Wallet: AI가 검사하는 Web3 확장 프로그램, 키는 오프라인에</a></li><li><a href="https://lockerprotocol.com/ko/vault/">보안 수준을 선택하세요</a></li><li><a href="https://lockerprotocol.com/ko/locker-vault-extensions/">Locker Protocol Wallet 확장 프로그램</a></li><li><a href="https://lockerprotocol.com/ko/locker/">Locker Protocol - 토큰 잠금, 베스팅, 다중 서명</a></li><li><a href="https://lockerprotocol.com/ko/locker-erc20-air-gapped-hardware/">Locker Vault - Black Edition</a></li><li><a href="https://lockerprotocol.com/ko/metamask-alternative/">브라우저에 키를 두지 않는 MetaMask 대안</a></li><li><a href="https://lockerprotocol.com/ko/threat-model/">Locker Protocol 위협 모델</a></li><li><a href="https://lockerprotocol.com/ko/security/">보안과 책임 있는 공개</a></li></ul></nav>
+    </main>
+  </app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-XU56S3AU.js" type="module"></script></body>
+
+</html>

@@ -1,0 +1,947 @@
+{
+  "COMPARISON": {
+    "TITLE": "Mengapa Locker Protocol?",
+    "SUBTITLE": "Setiap alat di bawah ini adalah pemimpin di kategorinya. Locker menyatukan penyimpanan mandiri air-gap, multi-tanda tangan, dan kunci on-chain dalam satu perangkat sumber terbuka non-kustodial.",
+    "LEDGER_LINK": "Pindah dari Ledger? Baca perbandingan khususnya",
+    "HEADER": {
+      "FEATURE": "Fitur",
+      "STATUS": "Ketersediaan"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "Penyimpanan mandiri",
+      "AIR_GAP": "Penandatanganan air-gap",
+      "ON_DEVICE_VERIFY": "Verifikasi di perangkat",
+      "MULTISIG": "Multi-tanda tangan (M-dari-N)",
+      "VESTING": "Jadwal vesting token",
+      "LP_LOCK": "Kunci LP + bukti publik",
+      "BATCH_SIGN": "Penandatanganan massal",
+      "ROLES": "Peran akses fleksibel",
+      "NO_SAAS": "Sepenuhnya on-chain, tanpa SaaS",
+      "NO_FEES": "Tanpa biaya langganan",
+      "SECURE_ELEMENT": "Elemen aman bersertifikat",
+      "INSTITUTIONAL": "Kustodi institusional & kepatuhan"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "Hanya Anda yang memegang kunci; tidak ada pihak ketiga yang bisa memindahkan atau membekukan dana Anda.",
+      "AIR_GAP": "Kunci privat tidak pernah menyentuh perangkat yang terhubung Internet; setiap permintaan dibawa lewat kode QR.",
+      "ON_DEVICE_VERIFY": "Tinjau transaksi sebenarnya di layar tepercaya sebelum menandatangani — melawan phishing.",
+      "MULTISIG": "Dana hanya bergerak jika beberapa penanda tangan independen menyetujui.",
+      "VESTING": "Lepaskan token secara bertahap dengan aturan on-chain yang tetap.",
+      "LP_LOCK": "Kunci token LP Uniswap/PancakeSwap dengan bukti publik yang dapat diverifikasi.",
+      "BATCH_SIGN": "Setujui beberapa operasi dalam satu sesi tanda tangan.",
+      "ROLES": "Peran admin, operator, dan penanda tangan yang terpisah untuk tim.",
+      "NO_SAAS": "Berjalan sepenuhnya on-chain, tanpa layanan hosting yang bisa ditutup.",
+      "NO_FEES": "Sumber terbuka dan gratis; Anda hanya membayar gas jaringan.",
+      "SECURE_ELEMENT": "Kunci diisolasi dalam cip perangkat keras bersertifikat yang tahan pembongkaran.",
+      "INSTITUTIONAL": "Asuransi, audit SOC-2, dan kontrol kustodi perusahaan."
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Alternatif Ledger — dompet air-gap yang bisa Anda verifikasi",
+      "DESCRIPTION": "Mencari alternatif Ledger? Locker Protocol mengubah ponsel offline apa pun menjadi dompet air-gap gratis dan sumber terbuka: tanda tangan hanya lewat QR, tanpa USB, tanpa Bluetooth, tidak ada yang perlu dibeli atau dikirim."
+    },
+    "HERO": {
+      "BADGE": "Alternatif Ledger",
+      "TITLE_1": "Dompet air-gap",
+      "TITLE_2": "yang benar-benar bisa Anda verifikasi",
+      "SUBTITLE": "Dompet perangkat keras meminta Anda memercayai cip tersegel dan firmware tertutup. Locker Protocol tidak meminta apa pun: smart contract-nya publik dan terverifikasi on-chain, dan dompetnya sama sekali tidak menyimpan kunci — tanda tangani di ponsel yang tidak pernah menyentuh internet.",
+      "CTA_PRIMARY": "Buat vault Anda — gratis",
+      "CTA_SECONDARY": "Baca model ancaman"
+    },
+    "WHY": {
+      "TITLE": "Mengapa orang mencari alternatif",
+      "SUBTITLE": "Tiga fakta bertanggal — masing-masing terdokumentasi dalam pengumuman publik Ledger sendiri.",
+      "SOURCE_LABEL": "Sumber",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "Juli 2020",
+          "TITLE": "Kebocoran basis data pelanggan",
+          "DESC": "Data pesanan sekitar 272.000 pelanggan — nama, alamat rumah, nomor telepon — menjadi publik, disusul kampanye phishing dan ancaman fisik. Membeli perangkat keamanan justru menciptakan data yang membuat pemiliknya terekspos.",
+          "SOURCE": "pengumuman Ledger"
+        },
+        "RECOVER": {
+          "DATE": "Mei 2023",
+          "TITLE": "Ledger Recover",
+          "DESC": "Sebuah pembaruan firmware menunjukkan bahwa seed bisa keluar dari Secure Element ketika firmware memintanya. \"Kunci tidak pernah meninggalkan cip\" berubah menjadi kebijakan — bukan sifat.",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "Desember 2023",
+          "TITLE": "Serangan rantai pasok Connect Kit",
+          "DESC": "Pustaka npm Ledger yang diretas menyajikan penguras dompet di dalam dApp besar selama berjam-jam. Permukaan serangannya bukan perangkat — melainkan vendornya.",
+          "SOURCE": "laporan insiden Ledger"
+        }
+      },
+      "TRADEMARK": "Ledger adalah merek dagang Ledger SAS, digunakan di sini semata-mata untuk mengidentifikasi produk yang dibandingkan. Setiap fakta di atas tertaut ke pengumuman publik Ledger sendiri."
+    },
+    "PILLARS": {
+      "TITLE": "Apa yang berubah dengan Locker",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "Air gap optik",
+          "DESC": "Tanpa USB, tanpa Bluetooth, tanpa NFC. Transaksi berpindah sebagai kode QR yang bisa Anda lihat. Tidak ada saluran tersembunyi, karena memang tidak ada saluran."
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "Tidak ada yang perlu dipercaya membuta",
+          "DESC": "Kontrak dipublikasikan dan diverifikasi di setiap chain. Ekstensi tidak memuat kunci apa pun — tidak ada yang layak dicuri di peramban."
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "Tidak ada yang dibeli, tidak ada yang dikirim",
+          "DESC": "Ponsel apa pun yang direset pabrik menjadi vault. Tanpa pesanan, tanpa pengiriman, tanpa basis data pelanggan — yang tidak pernah dikumpulkan tidak mungkin bocor."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Pertahankan dApp Anda",
+          "DESC": "Ekstensi Locker adalah dompet Web3 standar: alur kerja dApp Anda tetap persis sama, hanya penandatanganan yang berpindah ke offline."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker vs Ledger, berdampingan",
+      "COL_FEATURE": "Kriteria",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Keunggulan Ledger",
+      "ROWS": {
+        "PRICE": {
+          "FEATURE": "Harga",
+          "LOCKER": "Gratis",
+          "LEDGER": "€79–€399"
+        },
+        "CHANNEL": {
+          "FEATURE": "Saluran tanda tangan",
+          "LOCKER": "Hanya kode QR (optik)",
+          "LEDGER": "USB / Bluetooth"
+        },
+        "SOURCE": {
+          "FEATURE": "Kode sumber",
+          "LOCKER": "Kontrak publik & terverifikasi on-chain",
+          "LEDGER": "Aplikasi terbuka, firmware tertutup"
+        },
+        "EXTRACTION": {
+          "FEATURE": "Jalur ekstraksi seed",
+          "LOCKER": "Tidak ada, dari desainnya",
+          "LEDGER": "Recover: dibantu firmware, opsional"
+        },
+        "SUPPLY": {
+          "FEATURE": "Paparan rantai pasok",
+          "LOCKER": "Tanpa perangkat keras, perangkat lunak dapat dibangun ulang",
+          "LEDGER": "Produksi dan pengiriman perangkat"
+        },
+        "DATA": {
+          "FEATURE": "Data pribadi yang diminta",
+          "LOCKER": "Tidak ada",
+          "LEDGER": "Identitas pengiriman (bocor pada 2020)"
+        },
+        "DAPPS": {
+          "FEATURE": "Alur kerja dApp",
+          "LOCKER": "Ekstensi standar (EIP-6963)",
+          "LEDGER": "Ledger Live atau dompet pihak ketiga"
+        },
+        "ONCHAIN": {
+          "FEATURE": "Multisig, vesting, dan penguncian on-chain",
+          "LOCKER": "Bawaan",
+          "LEDGER": "—"
+        },
+        "SECURE_ELEMENT": {
+          "FEATURE": "Elemen aman bersertifikat",
+          "LOCKER": "—",
+          "LEDGER": "Ya (CC EAL5+)"
+        },
+        "INSTITUTIONAL": {
+          "FEATURE": "Kustodian institusional dan asuransi",
+          "LOCKER": "—",
+          "LEDGER": "Ya (Enterprise)"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Apa yang lebih baik dilakukan elemen aman",
+      "DESC": "Elemen aman bersertifikat tahan terhadap ekstraksi fisik: penyerang yang mencuri perangkat dan punya peralatan laboratorium akan berhadapan dengan cip yang diperkeras. Itu keunggulan nyata, dan kami tidak mengklaim sebaliknya. Jawaban kami ada di tempat lain: terhadap serangan jarak jauh — malware, penguras, kompromi rantai pasok — penyebab mayoritas mutlak kerugian kripto, air gap optik lebih ketat daripada kabel mana pun.",
+      "CTA": "Baca model ancaman selengkapnya"
+    },
+    "MIGRATE": {
+      "TITLE": "Pindah dalam sekitar 10 menit",
+      "SUBTITLE": "Tiga langkah, tanpa pembelian, tanpa akun.",
+      "STEPS": {
+        "S1": {
+          "TITLE": "Ubah ponsel lama menjadi vault",
+          "DESC": "Reset pabrik, aktifkan mode pesawat, pasang vault lewat kode QR. Ponsel itu tidak akan pernah online lagi."
+        },
+        "S2": {
+          "TITLE": "Cetak cadangan kertas Anda",
+          "DESC": "Satu kode QR terenkripsi memulihkan vault Anda di mana saja. Siapa pun yang menemukan kertasnya hanya melihat teks tersandi."
+        },
+        "S3": {
+          "TITLE": "Pindahkan dana Anda",
+          "DESC": "Kirim dari dompet Anda sekarang ke alamat baru — sesuai ritme Anda, tak perlu memindahkan semuanya sekaligus."
+        }
+      },
+      "CTA": "Buat vault Anda — gratis"
+    },
+    "FAQ": {
+      "TITLE": "Pertanyaan yang sering diajukan",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "Apakah ponsel benar-benar seaman dompet perangkat keras?",
+          "A": "Terhadap serangan jarak jauh — malware, penguras, phishing — ponsel offline yang menandatangani lewat QR lebih ketat daripada perangkat USB atau Bluetooth: tidak ada saluran yang bisa diserang. Terhadap ekstraksi fisik tingkat laboratorium, elemen aman bersertifikat tetap unggul; model ancaman kami mendokumentasikannya dengan jujur alih-alih mengklaim sebaliknya."
+        },
+        "COST": {
+          "Q": "Apakah saya perlu membeli sesuatu?",
+          "A": "Tidak. Ponsel apa pun yang sudah Anda miliki menjadi vault setelah reset pabrik dan mode pesawat. Tidak ada perangkat yang dipesan, tanpa pengiriman, tanpa akun — sehingga tidak ada basis data pelanggan yang bisa bocor."
+        },
+        "DAPPS": {
+          "Q": "Apakah dApp saya tetap berfungsi?",
+          "A": "Ya. Ekstensi Locker terdaftar sebagai dompet Web3 standar (EIP-6963), jadi dApp mendeteksinya seperti dompet peramban lainnya. Alur kerja Anda tidak berubah — hanya tanda tangan yang terjadi di vault offline, lewat kode QR."
+        },
+        "BREAK": {
+          "Q": "Bagaimana jika ponselnya rusak atau hilang?",
+          "A": "Anda memulihkan dari cadangan kertas: kode QR terenkripsi yang dicetak saat vault dibuat. Dengan kertas itu dan kata sandi Anda, semuanya pulih di ponsel lain mana pun dalam hitungan menit."
+        },
+        "FREE": {
+          "Q": "Mengapa gratis — apa model bisnisnya?",
+          "A": "Perangkat lunaknya gratis, dari ujung ke ujung, dan akan tetap begitu. Proyek ini menjual vault perangkat keras prakonfigurasi yang opsional, bagi yang lebih suka perangkat khusus; kunci dan protokol tidak pernah bergantung padanya."
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "Alternatif MetaMask tanpa kunci di peramban",
+      "DESCRIPTION": "Pengalaman dApp yang sama, nol kunci privat di peramban: setiap transaksi ditandatangani oleh vault gratis di ponsel offline, lewat kode QR."
+    },
+    "HERO": {
+      "BADGE": "Alternatif MetaMask",
+      "TITLE_1": "Kebiasaan yang sama.",
+      "TITLE_2": "Tidak ada lagi yang bisa dicuri.",
+      "SUBTITLE": "Locker Protocol Wallet berperilaku seperti MetaMask di setiap dApp. Bedanya ada pada apa yang tidak dimuat ekstensi: tanpa seed, tanpa keystore, tanpa penanda tangan. Setiap transaksi ditandatangani di ponsel offline, lewat kode QR.",
+      "CTA_SECONDARY": "Cara kerja keamanannya"
+    },
+    "PILLARS": {
+      "TITLE": "Apa yang berubah untuk Anda",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "Tidak ada yang bisa dicuri di peramban",
+          "DESC": "Ekstensi peramban bisa diserang malware, ekstensi jahat, atau pembaruan beracun. Milik kami tidak menyimpan rahasia apa pun: kasus terburuk tetap sekadar gangguan, tidak pernah kerugian."
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "Anda melihat apa yang Anda tanda tangani",
+          "DESC": "Ponsel offline mendekode calldata, persetujuan token, dan data bertipe, lalu menampilkan isi sebenarnya sebelum Anda setujui. Menandatangani secara buta menjadi mustahil."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Semua dApp tetap berjalan",
+          "DESC": "Antarmuka standar EIP-1193 dan EIP-6963: tombol connect mendeteksi Locker sebagaimana mendeteksi MetaMask. Swap, bridge, mint, dan tanda tangan berjalan tanpa perubahan, di 9 chain EVM."
+        },
+        "FREE": {
+          "TITLE": "Gratis, tanpa akun dan tanpa server",
+          "DESC": "Ekstensi dan vault gratis. Tanpa pendaftaran, tanpa pelacakan, dan tanpa server kami di antara Anda dan chain."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Berdampingan",
+      "COL_FEATURE": "Kriteria",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "Di mana MetaMask unggul",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "Di mana kunci privat berada",
+          "LOCKER": "Di ponsel offline, tidak pernah di peramban",
+          "MM": "Terenkripsi di dalam ekstensi peramban"
+        },
+        "MALWARE": {
+          "FEATURE": "Jika komputer Anda terinfeksi",
+          "LOCKER": "Tidak ada yang bisa diambil, penandatanganan tetap offline",
+          "MM": "Kunci dan penandatanganan terpapar ke mesin"
+        },
+        "SIGNING": {
+          "FEATURE": "Apa yang Anda setujui",
+          "LOCKER": "Transaksi terdekode di layar terpisah",
+          "MM": "Popup di mesin yang sama, yang mungkin sudah dibobol"
+        },
+        "HARDWARE": {
+          "FEATURE": "Dukungan hardware wallet",
+          "LOCKER": "Ponsel lama apa pun menjadi penanda tangan, gratis",
+          "MM": "Didukung, harus membeli perangkat"
+        },
+        "BACKUP": {
+          "FEATURE": "Cadangan seed",
+          "LOCKER": "Kode QR kertas terenkripsi, dapat dipulihkan di ponsel mana pun",
+          "MM": "Salinan manual frasa pemulihan"
+        },
+        "MOBILE": {
+          "FEATURE": "Aplikasi seluler",
+          "LOCKER": "Vault berjalan di ponsel apa pun; menjelajah tetap di desktop",
+          "MM": "Dompet seluler lengkap dengan peramban bawaan"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Di mana MetaMask benar-benar menang",
+      "DESC": "MetaMask punya lebih dari satu dekade riwayat produksi, tim keamanan besar, dan aplikasi seluler dengan peramban bawaan. Jika Anda bertransaksi tiap hari dari ponsel dan menerima kunci di perangkat yang terhubung, ia tetap pilihan solid. Locker ada untuk uang yang tidak sanggup Anda relakan: beberapa detik memindai QR per transaksi, ditukar kunci yang tidak pernah menyentuh internet.",
+      "CTA": "Baca model ancaman"
+    },
+    "MIGRATE": {
+      "TITLE": "Pindah dalam tiga langkah",
+      "SUBTITLE": "Sepuluh menit, dan kunci Anda meninggalkan internet untuk selamanya.",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "Pasang ekstensi",
+          "DESC": "Tambahkan Locker Protocol Wallet dari toko. dApp Anda langsung mendeteksinya."
+        },
+        "VAULT": {
+          "TITLE": "Ubah ponsel lama menjadi vault",
+          "DESC": "Buka aplikasi vault di ponsel yang Anda biarkan offline, buat dompet baru di sana, lalu cetak cadangan kertas terenkripsi."
+        },
+        "MOVE": {
+          "TITLE": "Pindahkan dana Anda",
+          "DESC": "Kirim aset ke alamat baru. Sejak itu, setiap transaksi disetujui di ponsel offline, lewat kode QR."
+        }
+      },
+      "CTA": "Buat vault Anda"
+    },
+    "FAQ": {
+      "TITLE": "Pertanyaan yang sering diajukan",
+      "ITEMS": {
+        "SEED": {
+          "Q": "Bisakah saya mengimpor seed MetaMask saya?",
+          "A": "Bisa, tapi kami menyarankan sebaliknya: buat dompet baru di ponsel offline dan pindahkan dana ke sana. Seed yang pernah hidup di mesin terhubung mungkin sudah dibobol, dan mempertahankannya menggagalkan tujuan air gap."
+        },
+        "DAPPS": {
+          "Q": "Apakah dApp saya benar-benar akan berfungsi?",
+          "A": "Ya. Ekstensi memaparkan antarmuka standar yang sama dengan MetaMask (EIP-1193, EIP-6963), jadi dApp mencantumkannya seperti dompet lain. Transaksi yang ditandatangani vault diterima DEX, bridge, dan bursa di mainnet."
+        },
+        "LOSE": {
+          "Q": "Bagaimana jika ponsel offline saya hilang?",
+          "A": "Dana Anda aman. Pulihkan cadangan kertas terenkripsi di ponsel lain mana pun dengan kata sandi Anda. Tanpa kertas dan kata sandi sekaligus, ponsel itu sendiri tidak membocorkan apa pun."
+        },
+        "COST": {
+          "Q": "Berapa biayanya?",
+          "A": "Tidak ada. Ekstensi dan vault gratis, tanpa akun dan tanpa langganan. Proyek ini menjual perangkat prakonfigurasi opsional bagi yang lebih suka perangkat keras khusus."
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask adalah merek dagang Consensys. Halaman ini adalah perbandingan independen, berdasarkan perilaku kedua produk yang terdokumentasi secara publik."
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "Model Ancaman Locker Protocol",
+      "DESCRIPTION": "Dari apa Locker Protocol melindungi, dari apa tidak, dan mengapa kami memilih keterverifikasian ketimbang perangkat keras yang harus dipercaya. Model ancaman yang jujur untuk penyimpanan mandiri air-gap, sepenuhnya QR."
+    },
+    "HERO": {
+      "TITLE": "Model Ancaman Locker Protocol",
+      "SUBTITLE": "Dari apa kami melindungi, dari apa tidak, dan mengapa kami memilih keterverifikasian ketimbang perangkat keras yang harus dipercaya."
+    },
+    "PRINCIPLES": {
+      "TITLE": "Tiga prinsip",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "Air gap dari desain, bukan dari kebijakan",
+          "DESC": "Perangkat penandatangan tidak punya USB, Bluetooth, maupun jaringan. Permintaan dan tanda tangan berpindah sebagai kode QR yang bisa Anda lihat. Sifat yang dijamin fisika tidak butuh janji."
+        },
+        "VERIFY": {
+          "TITLE": "Terverifikasi mengalahkan tersertifikasi",
+          "DESC": "Kontrak — tempat dana Anda sesungguhnya berada — dipublikasikan dan diverifikasi on-chain di semua 9 jaringan. Sertifikasi meminta kepercayaan Anda; kontrak terverifikasi tidak membutuhkannya."
+        },
+        "NO_DATA": {
+          "TITLE": "Tanpa akun, tanpa server, tanpa data",
+          "DESC": "Tidak ada yang didaftarkan, tidak ada yang dikirim, tidak ada tentang Anda yang disimpan. Basis data yang tidak ada tidak mungkin bocor."
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "Ancaman, dengan jujur",
+      "VERDICT_PROTECTED": "Terlindungi",
+      "VERDICT_PARTIAL": "Parsial — batas yang diakui",
+      "VERDICT_OUT": "Di luar cakupan",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "Malware jarak jauh dan penguras dompet",
+          "HOW": "Kunci hidup di perangkat tanpa koneksi jaringan. Malware di komputer Anda bisa mengusulkan transaksi — hanya vault offline yang bisa menandatanganinya, setelah Anda membacanya."
+        },
+        "PHISHING": {
+          "THREAT": "Tanda tangan buta dan phishing",
+          "HOW": "Sebelum menandatangani, vault menguraikan setiap permintaan menjadi bidang yang terbaca di layar tepercaya. Yang Anda tandatangani adalah yang Anda lihat."
+        },
+        "SUPPLY": {
+          "THREAT": "Kompromi vendor atau rantai pasok",
+          "HOW": "Tidak ada perangkat keras yang dijual, jadi tidak ada yang bisa dicegat. Pembaruan hanya datang lewat toko peramban, dan kontrak penyimpan dana Anda terverifikasi on-chain."
+        },
+        "LOSS": {
+          "THREAT": "Kehilangan atau kerusakan perangkat",
+          "HOW": "Cadangan kertas adalah kode QR terenkripsi. Cetak, simpan, pulihkan di ponsel mana pun dengan kata sandi Anda."
+        },
+        "THEFT": {
+          "THREAT": "Pencurian fisik dengan peralatan laboratorium",
+          "HOW": "Vault terenkripsi saat diam di balik kata sandi Anda. Tapi ponsel tidak punya elemen aman bersertifikat: menghadapi penyerang berperalatan lengkap yang memegang perangkat, cip dompet perangkat keras bertahan lebih baik. Tepat di titik ini Ledger menang — dan kami mengatakannya."
+        },
+        "WRENCH": {
+          "THREAT": "Pemaksaan — kunci inggris seharga 5 dolar",
+          "HOW": "Tidak ada dompet yang tahan pemaksaan fisik. Jawaban strukturalnya adalah multisig M-dari-N: tidak seorang pun — dipaksa atau tidak — bisa memindahkan dana sendirian."
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "Di mana elemen aman menang",
+      "DESC": "Elemen aman bersertifikat (CC EAL5+) tahan terhadap ekstraksi kunci fisik: decapping, glitching, kanal samping. Jika risiko utama Anda adalah penyerang canggih yang merebut fisik perangkat penandatangan Anda, cip khusus mempertahankan skenario itu lebih baik daripada ponsel. Kami menerbitkan halaman ini agar Anda menimbang pertukaran itu secara sadar — bukan menemukannya belakangan."
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "Mengapa tetap perangkat lunak",
+      "DESC": "Pada 2023, Ledger Recover membuktikan bahwa firmware-lah yang menentukan apa yang dilakukan elemen aman: cip melindungi seed hanya sampai hari vendornya mengirimkan jalan keluar. Komponen yang tidak bisa Anda periksa hanya melindungi selama vendornya mau. Kami memilih sifat yang bisa Anda periksa ketimbang janji yang harus dipercaya."
+    },
+    "PROOF": {
+      "TITLE": "Jangan percaya kami juga — periksa sendiri",
+      "ITEMS": {
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "pengujian otomatis, dijalankan pada setiap perubahan"
+        },
+        "CONTRACTS": {
+          "VALUE": "7",
+          "LABEL": "kontrak pintar, terpasang di 9 chain"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "temuan analisis statis, konfigurasi dipublikasikan"
+        },
+        "SOURCE": {
+          "VALUE": "100%",
+          "LABEL": "kontrak dipublikasikan & diverifikasi on-chain"
+        }
+      },
+      "CTA": "Telusuri kode di GitHub"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "Keamanan & pengungkapan bertanggung jawab",
+      "DESCRIPTION": "Tanpa kunci di peramban, build deterministik, 500+ pengujian otomatis — dan cara melaporkan kerentanan."
+    },
+    "HERO": {
+      "TITLE": "Aman sejak rancangan",
+      "SUBTITLE": "Ekstensi tidak menyimpan kunci privat apa pun dan vault tidak pernah menyentuh internet — tidak ada yang bisa dicuri di peramban. Setiap rilis hanya keluar saat angka di bawah hijau."
+    },
+    "NOKEYS": {
+      "TITLE": "Tidak ada yang bisa dicuri di peramban",
+      "DESC": "Ekstensi tidak memuat materi rahasia apa pun: tanpa seed, tanpa keystore, tanpa penanda tangan. Setiap tanda tangan dibuat oleh vault ber-air-gap dan kembali sebagai kode QR — kanal optik satu arah yang tak bisa dilintasi malware di komputer Anda."
+    },
+    "PROOF": {
+      "TITLE": "Angka di baliknya",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "44/44",
+          "LABEL": "berkas paket store dibangun ulang bit demi bit"
+        },
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "pengujian otomatis menjaga setiap rilis"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "temuan analisis statis yang ditoleransi di CI"
+        },
+        "MATRIX": {
+          "VALUE": "86",
+          "LABEL": "baris permukaan dApp, masing-masing wajib lulus tes"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "Menemukan kerentanan?",
+      "DESC": "Email kami dengan SECURITY di subjek beserta langkah reproduksi — jangan pernah menyertakan frasa pemulihan asli atau kunci privat.",
+      "ITEMS": {
+        "ACK": "Kami mengonfirmasi laporan dalam 72 jam dan terus mengabari Anda hingga terselesaikan.",
+        "COORD": "Pengungkapan terkoordinasi: kami meminta waktu wajar untuk merilis perbaikan — maksimal 90 hari.",
+        "SAFE": "Safe harbor: riset dengan iktikad baik tidak akan pernah berujung tuntutan hukum. Uji dengan dana Anda sendiri, di testnet.",
+        "CREDIT": "Pelapor yang terkonfirmasi diberi kredit publik, kecuali memilih anonim."
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Infrastruktur keamanan berdaulat.",
+    "LEDGER_ALTERNATIVE": "Alternatif Ledger",
+    "METAMASK_ALTERNATIVE": "Alternatif MetaMask",
+    "THREAT_MODEL": "Model Ancaman",
+    "SECURITY": "Keamanan",
+    "BUILT_WITH": "Dibangun dengan {heart} demi Web3 yang lebih aman."
+  },
+  "NAV": {
+    "CONNECT_WALLET": "Hubungkan Dompet",
+    "CONNECTING": "Menghubungkan...",
+    "EXTENSION": "Ekstensi",
+    "VAULT": "Brankas",
+    "SECURITY": "Keamanan",
+    "LOCKER": "Locker",
+    "MENU": "Menu",
+    "DOCS": "Dokumentasi"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet: ekstensi Web3 yang diperiksa AI dengan kunci offline"
+    },
+    "HERO": {
+      "BADGE": "Deteksi risiko AI tertanam",
+      "TITLE": "tanpa kuncinya",
+      "TITLE_2": "tersimpan di komputer Anda",
+      "DESCRIPTION": "Deteksi risiko AI di perangkat, tanpa cloud. Locker Protocol Wallet adalah ekstensi peramban yang langsung menyatu dengan dApp Web3 mana pun: tukar, jembatani, dan perdagangkan perpetual Hyperliquid seperti biasa. Setiap tanda tangan disetujui di perangkat luring terpisah lewat kode QR, jadi kunci pribadi Anda tak pernah menyentuh komputer yang terhubung.",
+      "CTA_VAULT": "DAPATKAN BRANKAS",
+      "FREE": "Gratis dan sumber terbuka",
+      "SHOT_ALT": "Jendela Locker Protocol Wallet: saldo, Kirim, Terima, Tukar, dan Jembatan",
+      "SHOT_HOME": "Saldo di semua jaringan, dengan Kirim, Terima, Tukar, dan Jembatan",
+      "SHOT_PERPS": "Hyperliquid: saldo, PnL, dan posisi terbuka",
+      "SHOT_TRADE": "Satu pasar Hyperliquid: grafik harga, buku order, Beli dan Jual",
+      "SHOT_SWAP": "Penawaran tukar: kurs, biaya, dan minimum yang diterima",
+      "SHOT_BRIDGE": "Jembatan antar dua rantai, dengan durasi dan tujuannya",
+      "SHOT_SIGN": "Kode QR bergerak yang dipindai brankas luring untuk menandatangani",
+      "SEP": ", "
+    },
+    "PROOF": {
+      "KEYS_TITLE": "Kunci tetap luring",
+      "KEYS_DESC": "Ekstensi tidak menyimpan kunci pribadi. Yang menandatangani adalah brankas luring Anda, lewat kode QR.",
+      "AI_TITLE": "AI memeriksa setiap tanda tangan",
+      "AI_DESC": "Model lokal menandai permintaan berisiko, di perangkat Anda, bahkan saat offline.",
+      "DAPPS_TITLE": "Semua dApp jalan",
+      "DAPPS_DESC": "Ia menjawab API Web3 standar, jadi situs melihat dompet biasa.",
+      "OPEN_TITLE": "Kode bisa diaudit",
+      "OPEN_DESC": "Sumber terbuka, build yang bisa direproduksi, terbit di toko.",
+      "PRIVACY_TITLE": "Tanpa akun, tanpa pelacakan",
+      "PRIVACY_DESC": "Tanpa pendaftaran, tanpa telemetri, tanpa analitik di dalam dompet."
+    },
+    "DO": {
+      "BADGE": "Ekstensi peramban",
+      "TITLE": "Semua yang sudah Anda lakukan on-chain",
+      "SUBTITLE": "Tukar, jembatan, perpetual, dan transfer di Ethereum, Bitcoin, Solana, Tron, Sui, Stellar, dan Hyperliquid. Satu ekstensi, satu kunci luring.",
+      "SHOT_ALT": "Saldo Hyperliquid, PnL, dan posisi terbuka di dalam ekstensi",
+      "SWAP_TITLE": "Tukar",
+      "SWAP_DESC": "Rute terbaik lintas agregator, dengan biaya sebenarnya tampil sebelum Anda menandatangani.",
+      "BRIDGE_TITLE": "Jembatan",
+      "BRIDGE_DESC": "Pindahkan dana antar rantai dan ikuti transfernya sampai tiba.",
+      "PERPS_TITLE": "Berdagang di Hyperliquid",
+      "PERPS_DESC": "Perpetual, posisi, PnL, dan transfer HyperCore, langsung dari jendelanya.",
+      "SEND_TITLE": "Kirim dan terima",
+      "SEND_DESC": "Enam keluarga rantai dalam satu akun, setiap alamat diturunkan dari brankas yang sama."
+    },
+    "STEPS": {
+      "BADGE": "Cara kerjanya",
+      "TITLE": "Dua perangkat, tiga menit",
+      "SUBTITLE": "Peramban mengurus internet. Perangkat kedua, yang selalu luring, mengurus kunci.",
+      "STEP_1_TITLE": "Pasang ekstensinya",
+      "STEP_1_DESC": "Tambahkan dari Chrome Web Store, di Chrome atau di Brave.",
+      "STEP_2_TITLE": "Sandingkan brankas Anda",
+      "STEP_2_DESC": "Pasang aplikasi brankas gratis di ponsel cadangan yang dibiarkan luring, lalu pindai kode QR akun yang ditampilkannya.",
+      "STEP_3_TITLE": "Tanda tangan lewat kode QR",
+      "STEP_3_DESC": "Ekstensi menampilkan kode QR, brankas membacanya, memeriksanya, dan mengembalikan tanda tangan. Kuncinya tidak pernah berpindah.",
+      "LEARN_MORE": "Lihat halaman ekstensi"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "Perangkat yang hanya menyimpan kunci Anda",
+      "DESC": "Aplikasi gratis yang dipasang di ponsel cadangan yang tak akan pernah daring lagi. Ia membuat kunci, menampilkan persis apa yang diminta untuk ditandatangani, dan mengembalikan tanda tangan lewat kode QR.",
+      "POINT_1": "Berjalan tanpa jaringan, tanpa Bluetooth, tanpa kabel",
+      "POINT_2": "Memeriksa ulang setiap permintaan di layarnya sendiri, dengan model AI bawaannya",
+      "POINT_3": "Ethereum, Bitcoin, Solana, Tron, Sui, dan Stellar dari satu frasa pemulihan",
+      "POINT_4": "Gratis, sumber terbuka, bisa dipasang di ponsel lama mana pun",
+      "SHOT_ALT": "Aplikasi Locker Vault di ponsel, layar akun",
+      "LEARN_MORE": "Bandingkan versi brankas"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "Protokol penguncian token tetap ada",
+      "DESC": "Terapkan kontrak penguncian Anda sendiri: syarat waktu atau harga, jadwal vesting, multi-tanda tangan, dan Launch Suite untuk prapenjualan. Produk tersendiri, dan kini punya halamannya sendiri.",
+      "CTA": "Lihat Locker Protocol",
+      "POINT_1": "Kunci berdasarkan tanggal dan harga",
+      "POINT_2": "Vesting otomatis",
+      "POINT_3": "Multi-tanda tangan",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "Pasang, lalu simpan kunci Anda secara luring",
+      "SUBTITLE": "Ekstensi untuk keseharian, brankas untuk kunci. Keduanya gratis, keduanya sumber terbuka."
+    },
+    "AI": {
+      "BADGE": "AI Tertanam",
+      "TITLE": "Deteksi risiko dengan AI — di perangkat Anda, bahkan saat offline",
+      "SUBTITLE": "Setiap tanda tangan dianalisis secara lokal oleh tiga lapisan independen. Nol cloud, nol telemetri: berbeda dari simulator transaksi berbasis cloud, apa yang Anda tandatangani tidak pernah meninggalkan perangkat.",
+      "RULES_TITLE": "Aturan yang memutuskan",
+      "RULES_DESC": "Sekumpulan aturan deterministik yang terbatas dan dapat diaudit memblokir pola-pola berbahaya: persetujuan tanpa batas, izin atas seluruh koleksi, token palsu, sumber phishing. Hanya aturan ini yang bisa mengunci penandatanganan — AI tidak pernah memblokir, jadi tidak ada yang bisa membujuknya untuk membuka kunci.",
+      "ML_TITLE": "AI lokal memberi peringatan",
+      "ML_DESC": "Pengklasifikasi machine learning, dibangun dari pola drainer yang dikenal, menilai setiap permintaan di perangkat Anda dalam hitungan milidetik - cukup ringkas untuk berjalan di dalam brankas luring juga. Ia menangkap kombinasi tak lazim yang tidak tercakup satu aturan pun, misalnya 85 % saldo Anda mengalir ke alamat yang baru pertama kali terlihat.",
+      "VAULT_TITLE": "Brankas memeriksa ulang",
+      "VAULT_DESC": "Kode QR tidak pernah membawa vonis. Brankas ter-air-gap mendekode dan menilai ulang payload mentah dengan salinan model tertanamnya sendiri — komputer yang telah disusupi akan dibantah di layar tepercaya.",
+      "POINT_LOCAL": "0 byte aktivitas Anda yang meninggalkan perangkat",
+      "POINT_REPRO": "Pelatihan model dapat direproduksi byte demi byte — AI yang dapat diaudit",
+      "POINT_ADVISORY": "AI memberi saran, aturan deterministik yang memutuskan"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "Pilih tingkat keamanan Anda",
+    "SUBTITLE": "Locker Vault hadir dalam versi fisik untuk isolasi total — atau sebagai aplikasi gratis untuk perangkat seluler Anda.",
+    "AI": {
+      "TITLE": "AI di layar tepercaya",
+      "DESC": "Brankas menanamkan model risiko AI-nya sendiri — sepenuhnya offline. Ia menganalisis ulang setiap permintaan dari payload QR mentah, sehingga komputer yang disusupi pun tidak dapat menyembunyikan peringatan dari layar yang memegang keputusan akhir."
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault (Perangkat Keras)",
+      "BADGE": "Keamanan Level 0",
+      "DESC": "Pelepasan fisik total semua antena. Penandatanganan optik eksklusif. Tingkat keamanan tertinggi untuk whale dan institusi.",
+      "PRICE": "Segera hadir",
+      "CTA": "Segera hadir"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault (Aplikasi)",
+      "BADGE": "Air-Gap Perangkat Lunak",
+      "DESC": "Pasang PWA kami di perangkat offline khusus. Gratis, sumber terbuka, dan mendukung penandatanganan QR.",
+      "PRICE": "GRATIS",
+      "CTA": "BUKA BRANKAS"
+    },
+    "EXTENSION": {
+      "TITLE": "Ekstensi Locker Protocol Wallet",
+      "BADGE": "Baru",
+      "DESC": "Pasangkan brankas Anda dengan ekstensi peramban kami: pengganti langsung MetaMask yang bekerja dengan setiap aplikasi Web3 sementara kunci tetap ter-air-gap.",
+      "CTA": "JELAJAHI EKSTENSI"
+    },
+    "COMPARISON": {
+      "TITLE": "Perbandingan Teknis",
+      "COL_FEATURE": "Fitur",
+      "CAT_SECURITY": "Keamanan",
+      "CAT_COMMUNICATION": "Komunikasi",
+      "CAT_SOFTWARE": "Perangkat Lunak",
+      "CAT_SUPPORT": "Dukungan & Lainnya",
+      "FEATURE_1": "Jenis isolasi",
+      "HW_1": "Fisik — antena dilepas",
+      "SW_1": "Perangkat lunak — mode pesawat",
+      "FEATURE_2": "Permukaan serangan jaringan",
+      "HW_2": "Nol (tanpa komponen radio)",
+      "SW_2": "Minimal (radio ada tetapi dinonaktifkan)",
+      "FEATURE_3": "Ketahanan terhadap malware",
+      "HW_3": "Imunitas penuh",
+      "SW_3": "Tergantung kebersihan perangkat",
+      "FEATURE_4": "Perlindungan zero-day",
+      "HW_4": "Mustahil (tanpa permukaan serangan)",
+      "SW_4": "Berisiko jika perangkat tidak khusus",
+      "FEATURE_5": "Komunikasi dengan aplikasi",
+      "HW_5": "Hanya kode QR (optik)",
+      "SW_5": "Hanya kode QR (kamera)",
+      "FEATURE_6": "WiFi / Bluetooth / NFC",
+      "HW_6": "Tidak ada secara fisik",
+      "SW_6": "Ada tetapi dinonaktifkan",
+      "FEATURE_7": "Konektivitas USB",
+      "HW_7": "Tidak ada — nol kabel",
+      "SW_7": "Tidak ada — nol kabel",
+      "FEATURE_8": "Multi-tanda tangan (M-dari-N)",
+      "HW_8": "Ya — hingga 20 penanda tangan",
+      "SW_8": "Ya — hingga 20 penanda tangan",
+      "FEATURE_9": "Dompet tak terbatas (mnemonik unik)",
+      "HW_9": "Ya — setiap dompet punya seed phrase sendiri",
+      "SW_9": "Ya — setiap dompet punya seed phrase sendiri",
+      "FEATURE_10": "Sumber terbuka",
+      "HW_10": "Ya — kode dapat diaudit",
+      "SW_10": "Ya — kode dapat diaudit",
+      "FEATURE_11": "Kompatibilitas MetaMask",
+      "HW_11": "Ya (lewat kode QR)",
+      "SW_11": "Ya (lewat kode QR)",
+      "FEATURE_12": "Dompet kertas terenkripsi (AES-256)",
+      "HW_12": "Ya",
+      "SW_12": "Ya",
+      "FEATURE_13": "Pembaruan perangkat lunak",
+      "HW_13": "Tidak pernah — permukaan serangan nol",
+      "SW_13": "Otomatis (PWA)",
+      "FEATURE_14": "Dukungan",
+      "HW_14": "Discord VIP",
+      "SW_14": "Discord komunitas",
+      "FEATURE_15": "Harga",
+      "HW_15": "Segera hadir",
+      "SW_15": "Gratis"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "Ekstensi Peramban",
+    "TITLE": "Ekstensi Locker Protocol Wallet",
+    "SUBTITLE": "Brankas air-gap Anda, di dalam peramban. Pengganti langsung MetaMask yang bekerja dengan setiap aplikasi Web3; kunci privat tidak pernah meninggalkan brankas.",
+    "AI": {
+      "TITLE": "Seremoni penandatanganan yang diperiksa AI",
+      "DESC": "Sebelum kode QR mana pun mencapai brankas Anda, ekstensi menganalisis permintaan di perangkat: aturan deterministik memblokir pola berbahaya, dan model AI lokal menandai pola tak lazim — tanpa cloud, tanpa telemetri. Brankas kemudian memeriksa ulang semuanya secara independen dengan model tertanamnya sendiri."
+    },
+    "DOWNLOAD": {
+      "TITLE": "Pasang untuk peramban Anda",
+      "SUBTITLE": "Sumber terbuka, dipasang dari satu halaman di Chrome Web Store.",
+      "CTA": "Pasang",
+      "NOTE": "Chrome dan Brave memasang ekstensi dari halaman Chrome Web Store yang sama."
+    },
+    "WHY": {
+      "TITLE": "Mengapa ekstensi Locker Protocol Wallet?",
+      "DAPPS": {
+        "TITLE": "Setiap Aplikasi Web3",
+        "DESC": "Pengganti langsung MetaMask: swap, bridge, lending, marketplace NFT — apa pun yang jalan dengan MetaMask, jalan juga dengan Locker Protocol Wallet."
+      },
+      "KEYS": {
+        "TITLE": "Kunci Tetap Ter-air-gap",
+        "DESC": "Ekstensi tidak menyimpan satu pun kunci privat. Setiap transaksi ditandatangani oleh brankas offline Anda lewat kode QR — tidak ada yang bisa dicuri di peramban."
+      },
+      "SIMPLE": {
+        "TITLE": "Pengalaman Brankas yang Disederhanakan",
+        "DESC": "Seremoni tanda tangan terpandu langkah demi langkah di panel samping. Keamanan air-gap semudah memindai kode QR."
+      }
+    },
+    "HOW": {
+      "TITLE": "Cara kerjanya",
+      "STEP_1_TITLE": "Hubungkan seperti MetaMask",
+      "STEP_1_DESC": "Buka aplikasi Web3 mana pun dan hubungkan: ekstensi menyajikan akun brankas Anda ke dApp — tanpa menyertakan kunci privat apa pun.",
+      "STEP_2_TITLE": "Pindai dengan brankas Anda",
+      "STEP_2_DESC": "Saat tanda tangan dibutuhkan, ekstensi menampilkan kode QR. Pindai dengan brankas air-gap Anda, tinjau, lalu setujui operasinya.",
+      "STEP_3_TITLE": "Kirim kembali tanda tangan",
+      "STEP_3_DESC": "Tunjukkan kode QR yang sudah ditandatangani ke kamera ekstensi. Transaksi terkirim — kunci Anda tidak pernah menyentuh Internet."
+    },
+    "CTA": {
+      "TITLE": "Anda akan membutuhkan Locker Vault",
+      "DESC": "Ekstensi ini bekerja berpasangan dengan Locker Vault air-gap — perangkat offline yang menyimpan kunci Anda dan menandatangani setiap operasi.",
+      "BUTTON": "Dapatkan Locker Vault"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "Pasang Brankas Gratis",
+    "STEP_1": "Siapkan perangkat khusus (ponsel pintar atau tablet)",
+    "STEP_2": "Buka kamera dan pindai kode QR di bawah",
+    "STEP_3": "Ikuti petunjuk \"Tambahkan ke layar utama\"",
+    "WARNING": "Untuk keamanan maksimal, setelah pemasangan aktifkan mode pesawat secara permanen di perangkat ini.",
+    "CLOSE": "Tutup"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "Edisi Terbatas",
+    "CONNECT_TO_PAY": "HUBUNGKAN DOMPET UNTUK MEMBAYAR",
+    "CONFIRM_PREORDER": "KONFIRMASI PRA-PESAN",
+    "VIP_DETECTED": "Pemegang WLFI terdeteksi",
+    "VIP_APPLIED": "Diskon VIP diterapkan!",
+    "OFFER_LIMIT": "Penawaran berlaku hingga 1 Januari 2027",
+    "DELIVERY_INFO": "Pengiriman batch 1: Kuartal 1 2027 (Jan-Mar)",
+    "INCLUDES": "Pesanan Anda mencakup Locker Vault (perangkat keras) dan akses seumur hidup ke paket perangkat lunak Locker Protocol.",
+    "PAY_STABLECOINS": "Bayar dengan stablecoin",
+    "LOCKER_INFO": "Pembayaran Anda diamankan oleh Locker Protocol. Token langsung masuk ke sebuah kunci lewat protokol kami sendiri — kami memakai Locker untuk menerima pembayaran.",
+    "JOIN_DISCORD": "Gabung Komunitas Discord",
+    "LOCK_INFO": "Dengan mengonfirmasi, Anda setuju bahwa dana akan dikirim lewat mekanisme addToLock milik Locker Protocol. Kami memakai protokol kami sendiri untuk mengamankan pembayaran.",
+    "BALANCE": "Saldo",
+    "REQUIRED": "Dibutuhkan",
+    "INSUFFICIENT_FUNDS": "Saldo tidak cukup untuk transaksi ini",
+    "STEP_APPROVE": "Persetujuan",
+    "STEP_LOCK": "Penguncian",
+    "APPROVING": "Menyetujui pengeluaran token...",
+    "LOCKING": "Mengunci dana di Locker...",
+    "SUCCESS_TITLE": "Pembayaran Berhasil!",
+    "SUCCESS_DESC": "Dana Anda telah terkunci aman lewat Locker Protocol. Gabunglah Discord kami dan kirim detail pengiriman lewat portal aman.",
+    "RECEIPT_TITLE": "Ringkasan Pesanan",
+    "TX_HASH": "Hash Transaksi",
+    "COPY_TX": "Salin hash transaksi",
+    "PAYMENT_REF": "Referensi Pembayaran",
+    "NEXT_STEP_TITLE": "Apa selanjutnya?",
+    "STEP1_DESC": "Salin hash transaksi di atas — itulah bukti pembayaran on-chain Anda.",
+    "STEP2_DESC": "Gabung komunitas Discord Locker Protocol lewat tombol di bawah.",
+    "STEP3_DESC": "Buka kanal #vault-orders dan tempel hash transaksi Anda. Tim kami akan memverifikasi pembayaran dan menghubungi Anda soal pengiriman.",
+    "UNSUPPORTED_CHAIN": "Jaringan tidak didukung — silakan beralih"
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "Tonton demo",
+      "LOCKER": "Tonton demo Locker",
+      "VAULT": "Tonton demo brankas",
+      "EXTENSION": "Tonton demo ekstensi",
+      "CLOSE": "Tutup video"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "Penguncian & vesting tingkat lanjut",
+        "DESC": "Kunci token otomatis berdasarkan tanggal tertentu atau target harga. Termasuk jadwal vesting otomatis yang dapat dikonfigurasi."
+      },
+      "MULTISIG": {
+        "TITLE": "Keamanan multi-tanda tangan",
+        "DESC": "Protokol 100% terdesentralisasi yang dikendalikan tim Anda. Ambang dan penanda tangan dapat dikonfigurasi. Tanpa perantara."
+      },
+      "OPENSOURCE": {
+        "TITLE": "100% sumber terbuka",
+        "DESC": "Transparansi total. Smart contract kami, aplikasi pendamping Dompet Air-gap, dan antarmuka pengguna sepenuhnya sumber terbuka."
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "Pemisahan kekuasaan",
+      "TITLE": "Ganti dompetnya. Bukan brankasnya.",
+      "SUBTITLE": "Di dompet biasa, dana Anda ADALAH kunci privat Anda: sekali bocor, semuanya hilang. Locker menyimpan dana di dalam sebuah kontrak. Dompet hanyalah kunci — bisa diganti saat ada keraguan sekecil apa pun, tanpa memindahkan satu token pun.",
+      "NORMAL_LABEL": "Dompet biasa",
+      "NORMAL_TITLE": "Dana Anda ADALAH kunci Anda",
+      "NORMAL_DESC": "Satu kunci bocor, semua ikut bocor. Curiga? Anda harus buru-buru memindahkan setiap token ke alamat baru, berpacu dengan penyerang.",
+      "LOCKER_LABEL": "Dengan Locker",
+      "LOCKER_TITLE": "Dana Anda tinggal di dalam kontrak",
+      "LOCKER_DESC": "Kunci hanya mengendalikan brankas. Curiga? Ganti saja — dana tidak bergerak dan tetap terlindungi aturan Anda.",
+      "FOOTER": "Dompet menjadi sekali pakai. Keamanan Anda tidak."
+    },
+    "AIRGAPPED": {
+      "BADGE": "Keamanan maksimal",
+      "TITLE": "Arsitektur Dompet Air-gap",
+      "DESC": "Untuk keamanan tertinggi terhadap peretasan dan malware, protokol kami secara bawaan mendukung penandatanganan offline menggunakan aplikasi pendamping Dompet Air-gap.",
+      "FEATURE_1": "Teknologi PWA: Pasang di ponsel lama mana pun, tanpa perlu app store",
+      "FEATURE_2": "Air-gap sejati: Jaga perangkat benar-benar terputus dari internet",
+      "FEATURE_3": "100% gratis & sumber terbuka: Tanpa pelacakan, tanpa kode tersembunyi. Verifikasi dan bangun sendiri",
+      "FEATURE_4": "Kompatibel MetaMask: Tanda tangani transaksi Web3 dengan mulus lewat koneksi QR"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "Cadangan ultra-aman",
+      "TITLE": "Dompet kertas terenkripsi lewat kode QR",
+      "DESC": "Tak perlu menulis 12 kata di selembar kertas. Ekspor dompet Anda sebagai kode QR terenkripsi AES-256 yang dilindungi kata sandi ultra-kuat Anda.",
+      "FEATURE_1": "Cadangan bisa dicetak: Cukup cetak kode QR dan simpan aman di brankas fisik Anda.",
+      "FEATURE_2": "Terenkripsi kata sandi: Meski seseorang menemukan kertas Anda, mereka tidak bisa membaca kunci tanpa kata sandi kuat Anda.",
+      "FEATURE_3": "Pemulihan instan: Pindai kode QR yang dicetak dengan perangkat air-gap baru untuk memulihkan seluruh dompet seketika."
+    },
+    "METAMASK": {
+      "TITLE": "Integrasi MetaMask yang mulus",
+      "DESC": "Hubungkan Dompet Air-gap Anda dengan aman ke dApp Web3 mana pun lewat MetaMask tanpa pernah mengekspos kunci privat.",
+      "FEATURE_1": "Pindai kode QR untuk menandatangani transaksi",
+      "FEATURE_2": "Berinteraksi dengan Uniswap, Aave, dan lainnya",
+      "FEATURE_3": "Isolasi fisik sejati untuk penggunaan Web3 sehari-hari"
+    },
+    "EXTENSION": {
+      "BADGE": "Ekstensi Peramban",
+      "TITLE": "Kekuatan brankas Anda, di peramban Anda",
+      "DESC": "Pasang ekstensi Locker Protocol Wallet dan gunakan brankas air-gap Anda dengan setiap aplikasi Web3. Perilakunya persis seperti MetaMask, tetapi setiap tanda tangan berasal dari brankas offline Anda lewat kode QR.",
+      "FEATURE_1": "Bekerja dengan setiap aplikasi Web3: swap, bridge, lending, dan lainnya",
+      "FEATURE_2": "Seremoni brankas yang disederhanakan dan aman, dengan panduan langkah demi langkah",
+      "FEATURE_3": "Nol kunci privat di peramban — selamanya",
+      "CTA": "Dapatkan ekstensi",
+      "MOCK_CONNECTED": "Terhubung",
+      "MOCK_SCAN": "Pindai dengan brankas Anda"
+    },
+    "SMART_DCA": {
+      "BADGE": "Disiplin & vesting",
+      "TITLE": "DCA cerdas & kunci anti-FOMO",
+      "DESC": "Lindungi investasi dari keputusan emosional. Anda bisa membuat beberapa kunci per token dengan aturan yang sama sekali berbeda, menggabungkan target berbasis waktu dan harga dalam satu strategi.",
+      "FEATURE_1": "Banyak strategi: Kunci 50% selama 1 tahun, dan 50% selama 4 tahun ATAU buka lebih awal jika harga mencapai +300%.",
+      "FEATURE_2": "Aturan bisa digabung: Berbasis waktu atau harga, atau gabungkan keduanya dengan indah pada kunci yang sama.",
+      "FEATURE_3": "Vesting & DCA: Tambahkan ke kunci yang ada seiring waktu untuk merata-rata harga atau membangun posisi jangka panjang."
+    },
+    "MULTI_SIG": {
+      "BADGE": "Tata kelola & keamanan",
+      "TITLE": "Multi-tanda tangan sejati jadi mudah",
+      "DESC": "Amankan dana dengan beberapa penanda tangan tanpa pernah mengekspos satu kunci privat pun. Baik Anda investor tunggal yang berhati-hati maupun DAO terdistribusi, pengumpulan tanda tangan sepenuhnya fleksibel dan offline.",
+      "CASE_1_TITLE": "Pengguna tunggal (keamanan maksimal)",
+      "CASE_1_DESC": "Simpan beberapa kunci di satu perangkat offline. Hasilkan tiap tanda tangan sebagai kode QR dan pindai berurutan dengan webcam komputer langsung ke antarmuka.",
+      "CASE_2_TITLE": "Tim terdistribusi & DAO",
+      "CASE_2_DESC": "Para penanda tangan membuat tanda tangan offline, memotret kode QR dengan ponsel, dan mengirimnya lewat aplikasi pesan apa pun. Koordinator mengumpulkan foto di antarmuka dan menyiarkan keputusan akhir.",
+      "NOTE": "Nol paparan: Tanda tangan hanyalah bukti kriptografis. Kunci privat tidak pernah meninggalkan perangkat offline."
+    },
+    "WORKFLOW": {
+      "TITLE": "Cara kerjanya",
+      "STEP_1_TITLE": "1. Deploy",
+      "STEP_1_DESC": "Luncurkan smart contract Locker langsung dari antarmuka kami. Atur penanda tangan multisig dan ambang Anda.",
+      "STEP_2_TITLE": "2. Kunci & vesting",
+      "STEP_2_DESC": "Kunci token ERC20 Anda. Konfigurasikan aturan pembukaan otomatis berbasis waktu atau harga.",
+      "STEP_3_TITLE": "3. Kelola dengan aman",
+      "STEP_3_DESC": "Tanda tangani operasi secara offline dengan Dompet Air-gap Anda. Jalankan dengan aman sepenuhnya on-chain."
+    },
+    "QR_FLOW": {
+      "BADGE": "Keamanan air-gap",
+      "TITLE": "Transaksi air-gap yang aman",
+      "SUBTITLE": "Kunci privat tidak pernah meninggalkan perangkat offline. Setiap transaksi diverifikasi secara visual lewat kode QR sebelum ditandatangani — tanpa USB, tanpa Bluetooth, tanpa koneksi jaringan.",
+      "STEP_1": "Buat proposal transaksi sebagai kode QR EIP-712",
+      "STEP_2": "Pindai & tanda tangani offline di perangkat Brankas air-gap Anda",
+      "STEP_3": "Kumpulkan kembali kode QR bertanda tangan M-dari-N",
+      "STEP_4": "Siarkan langsung ke blockchain lewat RPC"
+    },
+    "USE_CASES": {
+      "TITLE": "Dibuat untuk semua orang",
+      "DAO_TITLE": "DAO & proyek Web3",
+      "DAO_DESC": "Amankan kas komunitas dengan aturan multi-tanda tangan yang mensyaratkan konsensus tim untuk setiap perpindahan dana.",
+      "FOUNDERS_TITLE": "Pendiri & investor",
+      "FOUNDERS_DESC": "Otomatiskan distribusi token dengan aturan vesting lanjutan berbasis waktu atau tercapainya target harga tertentu.",
+      "INDIVIDUALS_TITLE": "Perorangan",
+      "INDIVIDUALS_DESC": "Lindungi kekayaan pribadi dari peretasan dan malware dengan menjaga kunci Anda ter-air-gap secara fisik."
+    },
+    "FLEXIBILITY": {
+      "TITLE": "Perkakas fleksibel & canggih",
+      "BATCH_TITLE": "Pengelolaan massal",
+      "BATCH_DESC": "Kunci atau distribusikan banyak token dalam satu transaksi, menghemat gas dan waktu.",
+      "RESCUE_TITLE": "Penyelamatan token",
+      "RESCUE_DESC": "Tak sengaja mengirim token ke alamat locker Anda? Pulihkan dengan persetujuan tim.",
+      "EXTEND_TITLE": "Eksekusi tanpa gas",
+      "EXTEND_DESC": "Tanda tangan dikumpulkan offline. Begitu ambang terpenuhi, dompet mana pun bisa mengeksekusi transaksi on-chain."
+    },
+    "LAUNCH": {
+      "BADGE": "Paket Launch",
+      "SOON": "Segera hadir",
+      "TITLE": "Luncurkan token Anda di atas rel keamanan yang sama",
+      "DESC": "Galang dana, distribusikan, dan vesting di infrastruktur Locker yang telah diaudit: dana presale dan alokasi investor tinggal di smart contract berdaulat yang dikelola brankas air-gap Anda.",
+      "PRESALE_TITLE": "Presale stablecoin",
+      "PRESALE_DESC": "Galang dana dalam stablecoin dengan batas ketat dan aturan on-chain. Tanpa permainan oracle: kontribusi persis seperti yang dinyatakannya.",
+      "VESTING_TITLE": "Vesting investor",
+      "VESTING_DESC": "Distribusikan alokasi lewat jadwal vesting on-chain yang diklaim sendiri oleh investor, dengan bukti publik yang tak dapat diubah.",
+      "SECURITY_TITLE": "Rel yang terbukti",
+      "SECURITY_DESC": "Kontrak factory kanonis yang sama dan tata kelola multi-tanda tangan yang sama yang melindungi setiap Locker — dengan tanda tangan dari brankas air-gap Anda.",
+      "CTA": "Segera hadir"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "Sumber Terbuka (Gratis)",
+      "OPEN_SOURCE_DESC": "Kami percaya privasi dan keamanan adalah hak fundamental. Smart contract, Dompet Air-gap, dan antarmuka kami 100% gratis dan sumber terbuka. Clone repo-nya, audit kodenya, dan deploy sendiri.",
+      "OSS_BADGE": "Sumber terbuka",
+      "OPEN_VAULT": "Jelajahi Brankas"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Mengapa Locker ada",
+      "CONTENT_P1": "Setiap tahun, aset kripto senilai miliaran dolar dicuri — bukan karena blockchain tidak aman, melainkan karena perangkat yang dipakai menandatangani transaksi telah disusupi. Malware diam-diam mengubah muatan transaksi sebelum sampai ke dompet perangkat keras Anda, dan saat Anda menekan konfirmasi, semuanya sudah terlambat.",
+      "CONTENT_P2": "Semua solusi yang ada berbagi cacat kritis yang sama: mereka membutuhkan koneksi langsung (USB, Bluetooth, atau jembatan perangkat lunak) antara perangkat penandatangan dan mesin yang terhubung internet. Koneksi itulah permukaan serangannya.",
+      "CONTENT_P3": "Locker dibangun dari nol untuk menghapus titik kegagalan tunggal itu. Dengan mengisolasi keystore secara fisik lewat Air-Gap sejati dan memverifikasi isi persis muatan transaksi di perangkat yang sepenuhnya offline, ia memastikan bahwa bahkan pada komputer yang sepenuhnya disusupi, penyerang tidak bisa mengubah atau mencegat tanda tangan Anda.",
+      "CONTENT_P4": "Smart contract-nya 100% sumber terbuka. Clone, audit, deploy sendiri. Tak butuh kepercayaan — hanya matematika.",
+      "GITHUB_CTA": "Lihat smart contract di GitHub"
+    },
+    "FAQ": {
+      "TITLE": "Pertanyaan yang sering diajukan",
+      "Q1": "Apa itu Locker Protocol?",
+      "A1": "Locker Protocol adalah ekosistem lengkap dan gratis untuk mengamankan kripto Anda. Ia menggabungkan smart contract penguncian (berdasarkan waktu atau kondisi harga) dengan Brankas offline air-gap yang kompatibel dengan Web3. Setiap pengguna men-deploy kontraknya sendiri — tanpa proxy, tanpa kunci admin — dan tetap menjadi pemilik 100%.",
+      "Q2": "Apakah benar-benar gratis?",
+      "A2": "Ya, 100% gratis dan sumber terbuka. Men-deploy Locker, aplikasi Brankas, dan antarmuka sepenuhnya gratis. Satu-satunya biaya adalah gas standar jaringan blockchain. Tanpa biaya platform, tanpa langganan, tanpa potongan dari aset Anda.",
+      "Q3": "Apa itu Brankas air-gap?",
+      "A3": "Brankas adalah aplikasi yang dipasang di perangkat khusus yang selalu offline (Mode Pesawat). Kunci privat dibuat dan disimpan secara lokal, tidak pernah terekspos ke Internet. Komunikasi dengan aplikasi online hanya lewat kode QR — tanpa USB, Bluetooth, atau WiFi.",
+      "Q4": "Bagaimana penguncian dengan kondisi harga bekerja?",
+      "A4": "Selain penguncian klasik berbasis waktu, Locker Protocol terintegrasi dengan oracle on-chain Uniswap V2/V3. Anda bisa membuat kunci bersyarat: token hanya terbuka saat harga pasar mencapai target yang ditetapkan. Smart contract memeriksa pool likuiditas secara real time.",
+      "Q5": "Apakah saya perlu perangkat khusus untuk Brankas?",
+      "A5": "Untuk keamanan maksimal, ya — ponsel atau tablet lama yang sudah direset sudah cukup. Pasang Brankas, aktifkan Mode Pesawat, dan perangkat tetap offline permanen. Untuk sekadar mencoba, Anda juga bisa memakainya di mesin utama.",
+      "Q6": "Bagaimana multi-tanda tangan bekerja?",
+      "A6": "Anda menentukan ambang M-dari-N: misalnya 2 dari 3 penanda tangan harus menyetujui setiap aksi. Tanda tangan dikumpulkan offline lewat kode QR. Begitu ambang tercapai, dompet mana pun bisa mengirim transaksi dan membayar gas sekali untuk seluruh grup.",
+      "Q7": "Bagaimana jika saya kehilangan perangkat offline saya?",
+      "A7": "Saat membuat dompet, frasa pemulihan 12 atau 24 kata diberikan. Tulis di kertas dan simpan dengan aman. Jika perangkat hilang atau rusak, pasang Brankas di perangkat offline baru dan impor frasa Anda — semua kunci pulih.",
+      "Q8": "Bagaimana jika situs Anda tutup?",
+      "A8": "Antarmuka hanyalah fasad untuk berinteraksi dengan blockchain. Ia tidak menyimpan dana maupun kunci. Semua kode sumber terbuka di GitHub: unduh, jalankan lokal, dan dapatkan kembali akses penuh ke Locker Anda. Dana Anda ada di blockchain, bukan pada kami.",
+      "Q9": "Bisakah penanda tangan diubah setelah deployment?",
+      "A9": "Ya. Kontrak SignerManager memungkinkan menambah, menghapus penanda tangan, atau mengubah ambang keamanan kapan saja. Aksi administratif ini pun memerlukan persetujuan multi-tanda tangan dari kuorum saat ini.",
+      "Q10": "Apa itu dompet kertas terenkripsi?",
+      "A10": "Dompet kertas memakai enkripsi AES-256 yang dilindungi kata sandi Anda. Meski seseorang menemukan kertas Anda, mereka tak bisa membaca kunci tanpa kata sandi. Pindai kode QR yang dicetak dengan perangkat air-gap baru untuk memulihkan dompet seketika.",
+      "Q11": "Apakah kunci privat saya pernah lewat Bluetooth atau USB?",
+      "A11": "Tidak pernah. Brankas tidak memakai Bluetooth, NFC, WiFi, atau USB. Satu-satunya metode komunikasi adalah memindai kode QR animasi (protokol BC-UR). Tak ada malware yang bisa menembus penghalang fisik ini.",
+      "Q12": "Bagaimana integrasi MetaMask bekerja?",
+      "A12": "Brankas air-gap Anda terhubung ke MetaMask lewat kode QR. Anda bisa berinteraksi dengan dApp Web3 mana pun (Uniswap, Aave, dll.) sambil mempertahankan isolasi fisik total. Kunci privat tidak pernah meninggalkan perangkat offline.",
+      "Q13": "Jika token terkirim ke kontrak secara tak sengaja, apakah hilang?",
+      "A13": "Tidak. Protokol menyertakan fungsi Penyelamatan Token. Penanda tangan yang berwenang bisa memulihkan token yang salah kirim lewat aksi multi-tanda tangan yang divalidasi kuorum.",
+      "Q14": "Jaringan apa saja yang didukung?",
+      "A14": "Locker Protocol 100 % kompatibel EVM dan telah di-deploy di: Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche, dan Linea.",
+      "Q15": "Apakah kodenya bisa diaudit?",
+      "A15": "Ya. Seluruh basis kode — smart contract Solidity, antarmuka web PWA, dan modul kriptografi Brankas — diterbitkan sebagai sumber terbuka di GitHub. Pakar mana pun bisa menganalisis setiap baris kode."
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "Tambahkan ke Chrome",
+    "CTA_BRAVE": "Tambahkan ke Brave",
+    "CTA_GENERIC": "Dapatkan ekstensinya"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "Penguncian token",
+    "TITLE": "Kontrak penguncian milik Anda sendiri,",
+    "TITLE_2": "tanpa kunci admin, tanpa perantara",
+    "DESCRIPTION": "Setiap pengguna menerapkan kontrak pintarnya sendiri. Kunci token berdasarkan tanggal atau target harga, atur jadwal vesting, wajibkan beberapa tanda tangan. Tanpa proxy, tanpa kunci admin: sepenuhnya milik Anda.",
+    "CTA_WALLET": "Lihat dompetnya",
+    "META": {
+      "TITLE": "Locker Protocol - Penguncian token, vesting, dan multi-tanda tangan",
+      "DESCRIPTION": "Terapkan kontrak penguncian ERC-20 Anda sendiri: kunci berdasarkan tanggal dan harga, vesting otomatis, multi-tanda tangan, dan penandatanganan luring dengan Locker Vault."
+    },
+    "CTA_CREATE": "BUAT LOCKER"
+  }
+}

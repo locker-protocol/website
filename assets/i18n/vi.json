@@ -1,0 +1,947 @@
+{
+  "COMPARISON": {
+    "TITLE": "Vì sao chọn Locker Protocol?",
+    "SUBTITLE": "Mỗi công cụ dưới đây đều dẫn đầu hạng mục của mình. Locker hợp nhất tự lưu ký cách ly mạng, đa chữ ký và khóa on-chain trong một bộ công cụ mã nguồn mở, phi lưu ký duy nhất.",
+    "LEDGER_LINK": "Chuyển từ Ledger sang? Đọc trang so sánh chuyên biệt",
+    "HEADER": {
+      "FEATURE": "Tính năng",
+      "STATUS": "Tình trạng"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "Tự lưu ký",
+      "AIR_GAP": "Ký cách ly mạng",
+      "ON_DEVICE_VERIFY": "Xác minh trên thiết bị",
+      "MULTISIG": "Đa chữ ký (M-trong-N)",
+      "VESTING": "Lịch vesting token",
+      "LP_LOCK": "Khóa LP + bằng chứng công khai",
+      "BATCH_SIGN": "Ký hàng loạt",
+      "ROLES": "Vai trò truy cập linh hoạt",
+      "NO_SAAS": "Hoàn toàn on-chain, không SaaS",
+      "NO_FEES": "Không phí thuê bao",
+      "SECURE_ELEMENT": "Chip bảo mật được chứng nhận",
+      "INSTITUTIONAL": "Lưu ký tổ chức và tuân thủ"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "Chỉ mình bạn giữ khóa; không bên thứ ba nào có thể di chuyển hay đóng băng tài sản của bạn.",
+      "AIR_GAP": "Khóa riêng tư không bao giờ chạm vào thiết bị nối Internet; mọi yêu cầu được truyền bằng mã QR.",
+      "ON_DEVICE_VERIFY": "Xem giao dịch thật trên màn hình tin cậy trước khi ký — chống lừa đảo.",
+      "MULTISIG": "Tiền chỉ di chuyển khi nhiều người ký độc lập cùng phê duyệt.",
+      "VESTING": "Giải phóng token theo thời gian với quy tắc on-chain cố định.",
+      "LP_LOCK": "Khóa token LP Uniswap/PancakeSwap với bằng chứng công khai có thể xác minh.",
+      "BATCH_SIGN": "Phê duyệt nhiều thao tác trong một phiên ký duy nhất.",
+      "ROLES": "Vai trò quản trị, vận hành và người ký riêng biệt cho các đội nhóm.",
+      "NO_SAAS": "Chạy hoàn toàn on-chain, không dịch vụ lưu trữ nào có thể bị đóng cửa.",
+      "NO_FEES": "Mã nguồn mở và miễn phí; bạn chỉ trả phí gas của mạng.",
+      "SECURE_ELEMENT": "Khóa được cô lập trong chip phần cứng được chứng nhận, chống can thiệp.",
+      "INSTITUTIONAL": "Bảo hiểm, kiểm toán SOC-2 và kiểm soát lưu ký doanh nghiệp."
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Thay thế Ledger — chiếc ví cách ly mạng mà bạn có thể tự kiểm chứng",
+      "DESCRIPTION": "Đang tìm giải pháp thay thế Ledger? Locker Protocol biến bất kỳ điện thoại ngoại tuyến nào thành ví cách ly mạng miễn phí, mã nguồn mở: chỉ ký bằng QR, không USB, không Bluetooth, không phải mua gì, không phải chờ giao hàng."
+    },
+    "HERO": {
+      "BADGE": "Thay thế Ledger",
+      "TITLE_1": "Chiếc ví cách ly mạng",
+      "TITLE_2": "mà bạn thật sự kiểm chứng được",
+      "SUBTITLE": "Ví phần cứng đòi bạn tin vào một con chip niêm phong và firmware đóng. Locker Protocol không đòi hỏi gì: các smart contract công khai và được xác minh on-chain, còn ví thì hoàn toàn không giữ khóa — ký trên một chiếc điện thoại không bao giờ chạm vào internet.",
+      "CTA_PRIMARY": "Tạo két của bạn — miễn phí",
+      "CTA_SECONDARY": "Đọc mô hình mối đe dọa"
+    },
+    "WHY": {
+      "TITLE": "Vì sao người ta tìm giải pháp thay thế",
+      "SUBTITLE": "Ba sự kiện có ngày tháng — mỗi sự kiện đều được chính các thông báo công khai của Ledger xác nhận.",
+      "SOURCE_LABEL": "Nguồn",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "Tháng 7/2020",
+          "TITLE": "Rò rỉ cơ sở dữ liệu khách hàng",
+          "DESC": "Dữ liệu đơn hàng của khoảng 272.000 khách — tên, địa chỉ nhà, số điện thoại — bị công khai, kéo theo các chiến dịch lừa đảo và cả đe dọa ngoài đời. Mua một thiết bị bảo mật lại chính là thứ tạo ra dữ liệu khiến chủ nhân của nó bị lộ.",
+          "SOURCE": "thông báo của Ledger"
+        },
+        "RECOVER": {
+          "DATE": "Tháng 5/2023",
+          "TITLE": "Ledger Recover",
+          "DESC": "Một bản cập nhật firmware cho thấy seed có thể rời khỏi Secure Element khi firmware yêu cầu. \"Khóa không bao giờ rời chip\" trở thành một chính sách — không phải một thuộc tính.",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "Tháng 12/2023",
+          "TITLE": "Tấn công chuỗi cung ứng Connect Kit",
+          "DESC": "Một thư viện npm của Ledger bị chiếm quyền đã phát tán mã rút cạn ví bên trong nhiều dApp lớn suốt nhiều giờ. Bề mặt tấn công không phải thiết bị — mà là chính nhà cung cấp.",
+          "SOURCE": "báo cáo sự cố của Ledger"
+        }
+      },
+      "TRADEMARK": "Ledger là nhãn hiệu của Ledger SAS, chỉ được dùng ở đây để chỉ sản phẩm được so sánh. Mỗi sự kiện phía trên đều dẫn về thông báo công khai của chính Ledger."
+    },
+    "PILLARS": {
+      "TITLE": "Điều gì thay đổi với Locker",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "Cách ly quang học",
+          "DESC": "Không USB, không Bluetooth, không NFC. Giao dịch đi qua dưới dạng mã QR mà bạn nhìn thấy được. Không có kênh ẩn nào, vì vốn dĩ chẳng có kênh nào."
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "Không phải tin mù quáng vào bất cứ điều gì",
+          "DESC": "Hợp đồng được công bố và xác minh trên mọi chuỗi. Tiện ích không chứa bất kỳ khóa nào — trong trình duyệt không có gì đáng để đánh cắp."
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "Không phải mua, không phải chờ giao",
+          "DESC": "Bất kỳ điện thoại nào khôi phục cài đặt gốc đều thành két. Không đơn hàng, không vận chuyển, không cơ sở dữ liệu khách hàng — thứ chưa từng thu thập thì không thể rò rỉ."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Giữ nguyên các dApp của bạn",
+          "DESC": "Tiện ích Locker là một ví Web3 tiêu chuẩn: cách bạn dùng dApp giữ nguyên hoàn toàn, chỉ có chữ ký chuyển sang ngoại tuyến."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker và Ledger, đặt cạnh nhau",
+      "COL_FEATURE": "Tiêu chí",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Lợi thế Ledger",
+      "ROWS": {
+        "PRICE": {
+          "FEATURE": "Giá",
+          "LOCKER": "Miễn phí",
+          "LEDGER": "79–399 €"
+        },
+        "CHANNEL": {
+          "FEATURE": "Kênh ký",
+          "LOCKER": "Chỉ mã QR (quang học)",
+          "LEDGER": "USB / Bluetooth"
+        },
+        "SOURCE": {
+          "FEATURE": "Mã nguồn",
+          "LOCKER": "Hợp đồng công khai & xác minh on-chain",
+          "LEDGER": "Ứng dụng mở, firmware đóng"
+        },
+        "EXTRACTION": {
+          "FEATURE": "Đường trích xuất seed",
+          "LOCKER": "Không có, do thiết kế",
+          "LEDGER": "Recover: firmware hỗ trợ, tự chọn"
+        },
+        "SUPPLY": {
+          "FEATURE": "Rủi ro chuỗi cung ứng",
+          "LOCKER": "Không phần cứng, phần mềm dựng lại được",
+          "LEDGER": "Sản xuất và vận chuyển thiết bị"
+        },
+        "DATA": {
+          "FEATURE": "Dữ liệu cá nhân yêu cầu",
+          "LOCKER": "Không",
+          "LEDGER": "Thông tin giao hàng (rò rỉ năm 2020)"
+        },
+        "DAPPS": {
+          "FEATURE": "Cách dùng dApp",
+          "LOCKER": "Tiện ích chuẩn (EIP-6963)",
+          "LEDGER": "Ledger Live hoặc ví bên thứ ba"
+        },
+        "ONCHAIN": {
+          "FEATURE": "Đa chữ ký, vesting và khóa on-chain",
+          "LOCKER": "Tích hợp sẵn",
+          "LEDGER": "—"
+        },
+        "SECURE_ELEMENT": {
+          "FEATURE": "Chip bảo mật được chứng nhận",
+          "LOCKER": "—",
+          "LEDGER": "Có (CC EAL5+)"
+        },
+        "INSTITUTIONAL": {
+          "FEATURE": "Lưu ký tổ chức và bảo hiểm",
+          "LOCKER": "—",
+          "LEDGER": "Có (Enterprise)"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Điều chip bảo mật làm tốt hơn",
+      "DESC": "Chip bảo mật được chứng nhận chống lại việc trích xuất vật lý: kẻ trộm được thiết bị và có cả thiết bị phòng thí nghiệm sẽ vấp phải một con chip được gia cố. Đó là lợi thế thật, và chúng tôi không nói ngược lại. Câu trả lời của chúng tôi nằm ở chỗ khác: trước các cuộc tấn công từ xa — mã độc, mã rút cạn ví, xâm nhập chuỗi cung ứng — nguyên nhân của đại đa số thiệt hại crypto, cách ly quang học nghiêm ngặt hơn bất kỳ sợi cáp nào.",
+      "CTA": "Đọc toàn bộ mô hình mối đe dọa"
+    },
+    "MIGRATE": {
+      "TITLE": "Rời đi trong khoảng 10 phút",
+      "SUBTITLE": "Ba bước, không mua gì, không tài khoản.",
+      "STEPS": {
+        "S1": {
+          "TITLE": "Biến điện thoại cũ thành két",
+          "DESC": "Khôi phục cài đặt gốc, bật chế độ máy bay, cài két từ mã QR. Nó sẽ không bao giờ lên mạng nữa."
+        },
+        "S2": {
+          "TITLE": "In bản sao lưu giấy",
+          "DESC": "Một mã QR mã hóa khôi phục két của bạn ở bất cứ đâu. Ai nhặt được tờ giấy chỉ thấy văn bản đã mã hóa."
+        },
+        "S3": {
+          "TITLE": "Chuyển tài sản của bạn",
+          "DESC": "Gửi từ ví hiện tại sang địa chỉ mới — theo nhịp của bạn, không cần chuyển hết một lần."
+        }
+      },
+      "CTA": "Tạo két của bạn — miễn phí"
+    },
+    "FAQ": {
+      "TITLE": "Câu hỏi thường gặp",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "Điện thoại có thật sự an toàn như ví phần cứng không?",
+          "A": "Trước các cuộc tấn công từ xa — mã độc, mã rút cạn ví, lừa đảo — một chiếc điện thoại ngoại tuyến ký bằng QR nghiêm ngặt hơn thiết bị USB hay Bluetooth: chẳng có kênh nào để tấn công. Trước việc trích xuất vật lý cấp phòng thí nghiệm, chip bảo mật được chứng nhận vẫn giữ lợi thế; mô hình mối đe dọa của chúng tôi ghi nhận điều đó một cách trung thực thay vì nói ngược lại."
+        },
+        "COST": {
+          "Q": "Tôi có phải mua gì không?",
+          "A": "Không. Bất kỳ điện thoại nào bạn đang có sẽ thành két sau khi khôi phục cài đặt gốc và bật chế độ máy bay. Không thiết bị phải đặt, không vận chuyển, không tài khoản — nên cũng không có cơ sở dữ liệu khách hàng nào để rò rỉ."
+        },
+        "DAPPS": {
+          "Q": "Các dApp của tôi còn dùng được không?",
+          "A": "Được. Tiện ích Locker đăng ký như một ví Web3 tiêu chuẩn (EIP-6963), nên dApp nhận diện nó như mọi ví trình duyệt. Cách dùng của bạn không đổi — chỉ có chữ ký diễn ra trên két ngoại tuyến, qua mã QR."
+        },
+        "BREAK": {
+          "Q": "Điện thoại hỏng hoặc mất thì sao?",
+          "A": "Bạn khôi phục từ bản sao lưu giấy: mã QR mã hóa in ra khi tạo két. Với tờ giấy và mật khẩu, bạn lấy lại mọi thứ trên bất kỳ điện thoại nào khác trong vài phút."
+        },
+        "FREE": {
+          "Q": "Vì sao miễn phí — mô hình kinh doanh là gì?",
+          "A": "Phần mềm miễn phí từ đầu đến cuối, và sẽ luôn như vậy. Dự án bán một chiếc két phần cứng cấu hình sẵn, tùy chọn, cho ai thích thiết bị chuyên dụng; khóa và giao thức không bao giờ phụ thuộc vào nó."
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "Lựa chọn thay thế MetaMask không giữ khóa trong trình duyệt",
+      "DESCRIPTION": "Trải nghiệm dApp như cũ, không một khóa riêng nào trong trình duyệt: mỗi giao dịch được ký bởi két miễn phí trên một chiếc điện thoại offline, qua mã QR."
+    },
+    "HERO": {
+      "BADGE": "Thay thế MetaMask",
+      "TITLE_1": "Thói quen giữ nguyên.",
+      "TITLE_2": "Không còn gì để đánh cắp.",
+      "SUBTITLE": "Locker Protocol Wallet hoạt động như MetaMask trên mọi dApp. Khác biệt nằm ở những gì tiện ích không chứa: không seed, không keystore, không bộ ký. Mỗi giao dịch được ký trên một chiếc điện thoại offline, qua mã QR.",
+      "CTA_SECONDARY": "Bảo mật hoạt động ra sao"
+    },
+    "PILLARS": {
+      "TITLE": "Điều gì thay đổi với bạn",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "Không có gì để đánh cắp trong trình duyệt",
+          "DESC": "Tiện ích trình duyệt có thể bị tấn công bởi mã độc, tiện ích giả mạo hay bản cập nhật bị đầu độc. Tiện ích của chúng tôi không giữ bí mật nào: trường hợp xấu nhất chỉ là phiền toái, không bao giờ là mất mát."
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "Bạn thấy thứ mình ký",
+          "DESC": "Chiếc điện thoại offline giải mã calldata, các phê duyệt token và dữ liệu có cấu trúc, hiển thị nội dung thật trước khi bạn đồng ý. Ký mù đơn giản là không thể xảy ra."
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "Mọi dApp vẫn chạy",
+          "DESC": "Giao diện chuẩn EIP-1193 và EIP-6963: các nút kết nối nhận ra Locker như nhận ra MetaMask. Swap, cầu nối, mint và chữ ký hoạt động y nguyên, trên 9 chuỗi EVM."
+        },
+        "FREE": {
+          "TITLE": "Miễn phí, không tài khoản, không máy chủ",
+          "DESC": "Tiện ích và két đều miễn phí. Không đăng ký, không theo dõi, và không máy chủ nào của chúng tôi đứng giữa bạn và chuỗi."
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "So sánh trực tiếp",
+      "COL_FEATURE": "Tiêu chí",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "Nơi MetaMask dẫn trước",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "Khóa riêng nằm ở đâu",
+          "LOCKER": "Trên điện thoại offline, không bao giờ trong trình duyệt",
+          "MM": "Mã hóa bên trong tiện ích trình duyệt"
+        },
+        "MALWARE": {
+          "FEATURE": "Nếu máy tính của bạn nhiễm mã độc",
+          "LOCKER": "Không có gì để moi ra, việc ký vẫn offline",
+          "MM": "Khóa và việc ký phơi bày trước máy"
+        },
+        "SIGNING": {
+          "FEATURE": "Bạn phê duyệt cái gì",
+          "LOCKER": "Giao dịch đã giải mã trên một màn hình riêng",
+          "MM": "Cửa sổ bật lên trên chính chiếc máy có thể đã bị chiếm"
+        },
+        "HARDWARE": {
+          "FEATURE": "Hỗ trợ ví cứng",
+          "LOCKER": "Bất kỳ điện thoại cũ nào cũng thành bộ ký, miễn phí",
+          "MM": "Có hỗ trợ, nhưng phải mua thiết bị"
+        },
+        "BACKUP": {
+          "FEATURE": "Sao lưu seed",
+          "LOCKER": "Mã QR giấy đã mã hóa, khôi phục được trên mọi điện thoại",
+          "MM": "Chép tay cụm từ khôi phục"
+        },
+        "MOBILE": {
+          "FEATURE": "Ứng dụng di động",
+          "LOCKER": "Két chạy trên mọi điện thoại; việc lướt web ở lại máy tính",
+          "MM": "Ví di động đầy đủ với trình duyệt tích hợp"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "Nơi MetaMask thắng thật sự",
+      "DESC": "MetaMask có hơn một thập kỷ vận hành, đội ngũ bảo mật lớn và ứng dụng di động với trình duyệt tích hợp. Nếu bạn giao dịch mỗi ngày từ điện thoại và chấp nhận khóa nằm trên thiết bị có mạng, nó vẫn là lựa chọn vững. Locker sinh ra cho số tiền bạn không thể để mất: vài giây quét QR mỗi giao dịch, đổi lấy những chiếc khóa không bao giờ chạm vào internet.",
+      "CTA": "Đọc mô hình mối đe dọa"
+    },
+    "MIGRATE": {
+      "TITLE": "Chuyển đổi trong ba bước",
+      "SUBTITLE": "Mười phút, và khóa của bạn rời internet vĩnh viễn.",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "Cài tiện ích",
+          "DESC": "Thêm Locker Protocol Wallet từ cửa hàng. Các dApp của bạn nhận ra nó ngay."
+        },
+        "VAULT": {
+          "TITLE": "Biến điện thoại cũ thành két",
+          "DESC": "Mở ứng dụng két trên chiếc điện thoại bạn sẽ để offline, tạo ví mới tại đó, rồi in bản sao lưu giấy đã mã hóa."
+        },
+        "MOVE": {
+          "TITLE": "Chuyển tiền của bạn",
+          "DESC": "Gửi tài sản đến địa chỉ mới. Từ đó, mỗi giao dịch được phê duyệt trên điện thoại offline, bằng mã QR."
+        }
+      },
+      "CTA": "Tạo két của bạn"
+    },
+    "FAQ": {
+      "TITLE": "Câu hỏi thường gặp",
+      "ITEMS": {
+        "SEED": {
+          "Q": "Tôi có thể nhập seed MetaMask của mình không?",
+          "A": "Có thể, nhưng chúng tôi khuyên ngược lại: tạo ví mới trên điện thoại offline và chuyển tiền sang đó. Một seed từng sống trên máy có mạng có thể đã bị lộ, và giữ nó làm mất ý nghĩa của air gap."
+        },
+        "DAPPS": {
+          "Q": "dApp của tôi có thật sự chạy không?",
+          "A": "Có. Tiện ích cung cấp đúng các giao diện chuẩn như MetaMask (EIP-1193, EIP-6963), nên dApp liệt kê nó như mọi ví khác. Giao dịch ký từ két được các DEX, cầu nối và sàn chấp nhận trên mainnet."
+        },
+        "LOSE": {
+          "Q": "Nếu tôi làm mất chiếc điện thoại offline thì sao?",
+          "A": "Tiền của bạn vẫn an toàn. Khôi phục bản sao lưu giấy đã mã hóa trên bất kỳ điện thoại nào khác bằng mật khẩu của bạn. Thiếu một trong hai thứ, tờ giấy và mật khẩu, riêng chiếc điện thoại không tiết lộ gì."
+        },
+        "COST": {
+          "Q": "Chi phí bao nhiêu?",
+          "A": "Không đồng nào. Tiện ích và két miễn phí, không tài khoản, không thuê bao. Dự án bán một thiết bị cấu hình sẵn, tùy chọn, cho ai thích phần cứng chuyên dụng."
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask là nhãn hiệu của Consensys. Trang này là một so sánh độc lập, dựa trên hành vi được ghi nhận công khai của cả hai sản phẩm."
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "Mô hình mối đe dọa của Locker Protocol",
+      "DESCRIPTION": "Locker Protocol bảo vệ trước điều gì, không bảo vệ trước điều gì, và vì sao chúng tôi chọn khả năng kiểm chứng thay vì phần cứng phải tin tưởng. Một mô hình mối đe dọa trung thực cho tự lưu ký cách ly mạng, thuần QR."
+    },
+    "HERO": {
+      "TITLE": "Mô hình mối đe dọa của Locker Protocol",
+      "SUBTITLE": "Chúng tôi bảo vệ trước điều gì, không bảo vệ trước điều gì, và vì sao chúng tôi chọn khả năng kiểm chứng thay vì phần cứng phải tin tưởng."
+    },
+    "PRINCIPLES": {
+      "TITLE": "Ba nguyên tắc",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "Cách ly do thiết kế, không phải do chính sách",
+          "DESC": "Thiết bị ký không có USB, không Bluetooth, không mạng. Yêu cầu và chữ ký đi qua dưới dạng mã QR bạn nhìn thấy được. Thuộc tính do vật lý bảo đảm thì không cần lời hứa."
+        },
+        "VERIFY": {
+          "TITLE": "Kiểm chứng được thắng chứng nhận",
+          "DESC": "Hợp đồng — nơi tiền của bạn thực sự nằm — được công bố và xác minh on-chain trên cả 9 mạng. Chứng nhận đòi hỏi niềm tin của bạn; hợp đồng đã xác minh thì không cần."
+        },
+        "NO_DATA": {
+          "TITLE": "Không tài khoản, không máy chủ, không dữ liệu",
+          "DESC": "Không gì phải đăng ký, không gì được gửi đi, không gì về bạn được lưu lại. Cơ sở dữ liệu không tồn tại thì không thể rò rỉ."
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "Các mối đe dọa, một cách trung thực",
+      "VERDICT_PROTECTED": "Được bảo vệ",
+      "VERDICT_PARTIAL": "Một phần — giới hạn thừa nhận",
+      "VERDICT_OUT": "Ngoài phạm vi",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "Mã độc từ xa và mã rút cạn ví",
+          "HOW": "Khóa nằm trên một thiết bị không có kết nối mạng. Mã độc trên máy tính của bạn có thể đề xuất giao dịch — nhưng chỉ chiếc két ngoại tuyến mới ký được, sau khi bạn đã đọc nó."
+        },
+        "PHISHING": {
+          "THREAT": "Ký mù và lừa đảo",
+          "HOW": "Trước khi ký, két giải mã từng yêu cầu thành các trường đọc được trên một màn hình đáng tin. Thứ bạn ký chính là thứ bạn đã thấy."
+        },
+        "SUPPLY": {
+          "THREAT": "Xâm nhập nhà cung cấp hoặc chuỗi cung ứng",
+          "HOW": "Không bán phần cứng nào, nên chẳng có gì để chặn bắt trên đường đi. Bản cập nhật chỉ đến qua cửa hàng trình duyệt, và các hợp đồng giữ tiền của bạn được xác minh on-chain."
+        },
+        "LOSS": {
+          "THREAT": "Mất hoặc hỏng thiết bị",
+          "HOW": "Bản sao lưu giấy là một mã QR mã hóa. In ra, cất kỹ, khôi phục trên bất kỳ điện thoại nào bằng mật khẩu của bạn."
+        },
+        "THEFT": {
+          "THREAT": "Trộm cắp vật lý với thiết bị phòng thí nghiệm",
+          "HOW": "Két được mã hóa khi lưu trữ sau mật khẩu của bạn. Nhưng điện thoại không có chip bảo mật được chứng nhận: trước kẻ tấn công trang bị đầy đủ đang cầm thiết bị, chip của ví phần cứng chống chịu tốt hơn. Đúng ở điểm này, Ledger thắng — và chúng tôi nói thẳng điều đó."
+        },
+        "WRENCH": {
+          "THREAT": "Cưỡng ép — chiếc cờ lê 5 đô",
+          "HOW": "Không ví nào chống được cưỡng ép thân thể. Câu trả lời mang tính cấu trúc là đa chữ ký M-trên-N: không ai — dù bị ép hay không — có thể một mình di chuyển tài sản."
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "Nơi chip bảo mật thắng",
+      "DESC": "Chip bảo mật được chứng nhận (CC EAL5+) chống trích xuất khóa vật lý: mở nắp chip, gây nhiễu, kênh kề. Nếu rủi ro chính của bạn là một kẻ tấn công tinh vi chiếm được thiết bị ký, con chip chuyên dụng phòng thủ kịch bản đó tốt hơn điện thoại. Chúng tôi công bố trang này để bạn cân nhắc đánh đổi ấy một cách tỉnh táo — chứ không phải phát hiện ra nó về sau."
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "Vì sao vẫn là phần mềm",
+      "DESC": "Năm 2023, Ledger Recover chứng minh rằng firmware mới là thứ quyết định chip bảo mật làm gì: con chip bảo vệ seed cho đến ngày nhà cung cấp phát hành một lối ra. Linh kiện bạn không thể soi xét chỉ bảo vệ bạn chừng nào nhà cung cấp còn muốn. Chúng tôi chọn những thuộc tính bạn kiểm tra được thay vì những lời hứa phải tin."
+    },
+    "PROOF": {
+      "TITLE": "Cũng đừng tin chúng tôi — hãy tự kiểm tra",
+      "ITEMS": {
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "bài kiểm thử tự động, chạy ở mỗi thay đổi"
+        },
+        "CONTRACTS": {
+          "VALUE": "7",
+          "LABEL": "hợp đồng thông minh, triển khai trên 9 chuỗi"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "phát hiện phân tích tĩnh, cấu hình đã công bố"
+        },
+        "SOURCE": {
+          "VALUE": "100%",
+          "LABEL": "hợp đồng được công bố & xác minh on-chain"
+        }
+      },
+      "CTA": "Xem mã nguồn trên GitHub"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "Bảo mật & công bố có trách nhiệm",
+      "DESCRIPTION": "Không khóa trong trình duyệt, bản dựng tất định, hơn 500 bài kiểm thử tự động — và cách báo cáo lỗ hổng."
+    },
+    "HERO": {
+      "TITLE": "Bảo mật từ thiết kế",
+      "SUBTITLE": "Tiện ích không giữ bất kỳ khóa riêng nào và két không bao giờ chạm vào internet — trong trình duyệt không có gì để đánh cắp. Mỗi bản phát hành chỉ ra mắt khi các con số bên dưới đều xanh."
+    },
+    "NOKEYS": {
+      "TITLE": "Không có gì để đánh cắp trong trình duyệt",
+      "DESC": "Tiện ích không chứa bất kỳ dữ liệu bí mật nào: không seed, không keystore, không bộ ký. Mỗi chữ ký được tạo trong két air-gap và trở về dưới dạng mã QR — một kênh quang học một chiều mà mã độc trên máy tính của bạn không thể vượt qua."
+    },
+    "PROOF": {
+      "TITLE": "Những con số phía sau",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "44/44",
+          "LABEL": "tệp trong gói store được dựng lại chính xác từng bit"
+        },
+        "TESTS": {
+          "VALUE": "500+",
+          "LABEL": "bài kiểm thử tự động canh giữ mỗi bản phát hành"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "cảnh báo phân tích tĩnh được chấp nhận trong CI"
+        },
+        "MATRIX": {
+          "VALUE": "86",
+          "LABEL": "hàng bề mặt dApp, mỗi hàng cần một bài test xanh"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "Phát hiện lỗ hổng?",
+      "DESC": "Gửi email với SECURITY ở tiêu đề kèm các bước tái hiện — tuyệt đối không gửi cụm từ khôi phục thật hay khóa riêng.",
+      "ITEMS": {
+        "ACK": "Chúng tôi xác nhận trong vòng 72 giờ và cập nhật cho bạn đến khi xử lý xong.",
+        "COORD": "Công bố có phối hợp: chúng tôi cần thời gian hợp lý để phát hành bản vá — tối đa 90 ngày.",
+        "SAFE": "Safe harbor: nghiên cứu thiện chí không bao giờ dẫn đến kiện tụng. Hãy thử với tiền của chính bạn, trên testnet.",
+        "CREDIT": "Người báo cáo được xác nhận sẽ được ghi công công khai, trừ khi muốn ẩn danh."
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Hạ tầng bảo mật có chủ quyền.",
+    "LEDGER_ALTERNATIVE": "Thay thế Ledger",
+    "METAMASK_ALTERNATIVE": "Thay thế MetaMask",
+    "THREAT_MODEL": "Mô hình mối đe dọa",
+    "SECURITY": "Bảo mật",
+    "BUILT_WITH": "Được xây dựng với {heart} vì một Web3 an toàn hơn."
+  },
+  "NAV": {
+    "CONNECT_WALLET": "Kết nối ví",
+    "CONNECTING": "Đang kết nối...",
+    "EXTENSION": "Tiện ích",
+    "VAULT": "Két",
+    "SECURITY": "Bảo mật",
+    "LOCKER": "Locker",
+    "MENU": "Menu",
+    "DOCS": "Tài liệu"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet: tiện ích Web3 được AI kiểm tra, khóa ngoại tuyến"
+    },
+    "HERO": {
+      "BADGE": "Phát hiện rủi ro bằng AI nhúng",
+      "TITLE": "nhưng khóa",
+      "TITLE_2": "không nằm trên máy bạn",
+      "DESCRIPTION": "Phát hiện rủi ro bằng AI ngay trên thiết bị, không đám mây. Locker Protocol Wallet là tiện ích trình duyệt cắm thẳng vào mọi dApp Web3: hoán đổi, bắc cầu và giao dịch hợp đồng vĩnh cửu Hyperliquid như thường lệ. Mọi chữ ký đều được duyệt trên một thiết bị ngoại tuyến riêng bằng mã QR, nên khóa riêng tư không bao giờ chạm vào máy có kết nối.",
+      "CTA_VAULT": "TẢI KÉT",
+      "FREE": "Miễn phí và mã nguồn mở",
+      "SHOT_ALT": "Cửa sổ Locker Protocol Wallet: số dư, Gửi, Nhận, Hoán đổi và Bắc cầu",
+      "SHOT_HOME": "Số dư trên mọi chuỗi, cùng Gửi, Nhận, Hoán đổi và Bắc cầu",
+      "SHOT_PERPS": "Hyperliquid: số dư, lãi lỗ và vị thế đang mở",
+      "SHOT_TRADE": "Một thị trường Hyperliquid: biểu đồ giá, sổ lệnh, Mua và Bán",
+      "SHOT_SWAP": "Một báo giá hoán đổi: tỷ giá, phí và mức nhận tối thiểu",
+      "SHOT_BRIDGE": "Một cầu nối giữa hai chuỗi, kèm thời lượng và nơi đến",
+      "SHOT_SIGN": "Mã QR động mà chiếc két ngoại tuyến quét để ký",
+      "SEP": ", "
+    },
+    "PROOF": {
+      "KEYS_TITLE": "Khóa luôn ngoại tuyến",
+      "KEYS_DESC": "Tiện ích không giữ khóa riêng tư nào. Chính chiếc két ngoại tuyến của bạn ký, qua mã QR.",
+      "AI_TITLE": "AI kiểm tra mọi chữ ký",
+      "AI_DESC": "Một mô hình cục bộ cảnh báo các yêu cầu rủi ro, trên thiết bị của bạn, kể cả khi ngoại tuyến.",
+      "DAPPS_TITLE": "Mọi dApp đều chạy",
+      "DAPPS_DESC": "Nó đáp ứng API Web3 chuẩn, nên các trang thấy một chiếc ví bình thường.",
+      "OPEN_TITLE": "Mã nguồn kiểm chứng được",
+      "OPEN_DESC": "Mã nguồn mở, bản dựng tái lập được, đã phát hành trên cửa hàng.",
+      "PRIVACY_TITLE": "Không tài khoản, không theo dõi",
+      "PRIVACY_DESC": "Không đăng ký, không đo từ xa, không phân tích bên trong ví."
+    },
+    "DO": {
+      "BADGE": "Tiện ích trình duyệt",
+      "TITLE": "Mọi việc bạn vẫn làm on-chain",
+      "SUBTITLE": "Hoán đổi, bắc cầu, hợp đồng vĩnh cửu và chuyển tiền trên Ethereum, Bitcoin, Solana, Tron, Sui, Stellar và Hyperliquid. Một tiện ích, một khóa ngoại tuyến.",
+      "SHOT_ALT": "Số dư Hyperliquid, lãi lỗ và vị thế đang mở trong tiện ích",
+      "SWAP_TITLE": "Hoán đổi",
+      "SWAP_DESC": "Tuyến tốt nhất giữa các bộ tổng hợp, phí thật hiển thị trước khi bạn ký.",
+      "BRIDGE_TITLE": "Bắc cầu",
+      "BRIDGE_DESC": "Chuyển tiền từ chuỗi này sang chuỗi khác và theo dõi tới khi tới nơi.",
+      "PERPS_TITLE": "Giao dịch Hyperliquid",
+      "PERPS_DESC": "Hợp đồng vĩnh cửu, vị thế, lãi lỗ và chuyển khoản HyperCore, ngay trong cửa sổ.",
+      "SEND_TITLE": "Gửi và nhận",
+      "SEND_DESC": "Sáu họ chuỗi trong một tài khoản, mọi địa chỉ đều dẫn xuất từ cùng một chiếc két."
+    },
+    "STEPS": {
+      "BADGE": "Cách hoạt động",
+      "TITLE": "Hai thiết bị, ba phút",
+      "SUBTITLE": "Trình duyệt lo phần internet. Một thiết bị thứ hai, luôn ngoại tuyến, lo phần khóa.",
+      "STEP_1_TITLE": "Cài tiện ích",
+      "STEP_1_DESC": "Thêm từ Chrome Web Store, trên Chrome hoặc Brave.",
+      "STEP_2_TITLE": "Ghép nối chiếc két",
+      "STEP_2_DESC": "Cài ứng dụng két miễn phí lên một chiếc điện thoại cũ giữ ngoại tuyến, rồi quét mã QR tài khoản mà nó hiển thị.",
+      "STEP_3_TITLE": "Ký bằng mã QR",
+      "STEP_3_DESC": "Tiện ích hiện mã QR, chiếc két đọc, kiểm tra rồi trả lại chữ ký. Khóa không hề di chuyển.",
+      "LEARN_MORE": "Xem trang tiện ích"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "Thiết bị chỉ để giữ khóa của bạn",
+      "DESC": "Một ứng dụng miễn phí cài trên chiếc điện thoại dự phòng không bao giờ lên mạng nữa. Nó tạo khóa, hiển thị đúng thứ được yêu cầu ký, và trả lại chữ ký bằng mã QR.",
+      "POINT_1": "Chạy không cần mạng, không Bluetooth, không cáp",
+      "POINT_2": "Kiểm lại từng yêu cầu trên màn hình của chính nó, bằng mô hình AI tích hợp",
+      "POINT_3": "Ethereum, Bitcoin, Solana, Tron, Sui và Stellar từ một cụm từ khôi phục duy nhất",
+      "POINT_4": "Miễn phí, mã nguồn mở, cài được trên mọi điện thoại cũ",
+      "SHOT_ALT": "Ứng dụng Locker Vault trên điện thoại, màn hình tài khoản",
+      "LEARN_MORE": "So sánh các phiên bản của két"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "Giao thức khóa token vẫn còn đó",
+      "DESC": "Triển khai hợp đồng khóa của riêng bạn: điều kiện thời gian hoặc giá, lịch trao quyền, đa chữ ký, và Launch Suite cho các đợt bán trước. Đây là một sản phẩm riêng và giờ đã có trang riêng.",
+      "CTA": "Xem Locker Protocol",
+      "POINT_1": "Khóa theo ngày và theo giá",
+      "POINT_2": "Trao quyền tự động",
+      "POINT_3": "Đa chữ ký",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "Cài đặt, rồi giữ khóa của bạn ngoại tuyến",
+      "SUBTITLE": "Tiện ích cho việc hằng ngày, chiếc két cho khóa. Cả hai đều miễn phí và mã nguồn mở."
+    },
+    "AI": {
+      "BADGE": "AI nhúng",
+      "TITLE": "Phát hiện rủi ro bằng AI — trên thiết bị của bạn, kể cả khi ngoại tuyến",
+      "SUBTITLE": "Mỗi chữ ký được phân tích cục bộ bởi ba lớp độc lập. Không đám mây, không telemetry: khác với các trình mô phỏng giao dịch trên đám mây, những gì bạn ký không bao giờ rời thiết bị.",
+      "RULES_TITLE": "Quy tắc quyết định",
+      "RULES_DESC": "Một tập hữu hạn các quy tắc tất định, có thể kiểm toán, chặn những dạng nguy hiểm: phê duyệt không giới hạn, cấp quyền cho cả bộ sưu tập, token giả, nguồn gốc lừa đảo. Chỉ những quy tắc này mới khóa được việc ký — AI không bao giờ chặn, nên cũng không gì có thể dụ nó mở khóa.",
+      "ML_TITLE": "AI cục bộ cảnh báo",
+      "ML_DESC": "Một bộ phân loại machine learning, xây dựng từ các mẫu drainer đã biết, chấm điểm mọi yêu cầu ngay trên thiết bị của bạn trong vài mili giây - đủ gọn để chạy cả bên trong két ngoại tuyến. Nó bắt được những tổ hợp bất thường mà không quy tắc đơn lẻ nào bao quát, như 85 % số dư của bạn chảy về một địa chỉ lần đầu xuất hiện.",
+      "VAULT_TITLE": "Két kiểm tra lại",
+      "VAULT_DESC": "Mã QR không bao giờ mang theo phán quyết. Két cách ly mạng giải mã và chấm điểm lại dữ liệu thô bằng bản sao mô hình nhúng của riêng nó — máy tính bị xâm nhập sẽ bị vạch trần trên màn hình đáng tin cậy.",
+      "POINT_LOCAL": "Dữ liệu hoạt động của bạn rời thiết bị: 0 byte",
+      "POINT_REPRO": "Huấn luyện mô hình tái lập được đến từng byte — AI có thể kiểm toán",
+      "POINT_ADVISORY": "AI khuyến nghị, quy tắc tất định quyết định"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "Chọn mức bảo mật của bạn",
+    "SUBTITLE": "Locker Vault có phiên bản vật lý để cô lập hoàn toàn — hoặc ứng dụng miễn phí cho thiết bị di động của bạn.",
+    "AI": {
+      "TITLE": "AI trên màn hình đáng tin cậy",
+      "DESC": "Két nhúng sẵn mô hình rủi ro AI của riêng mình — hoàn toàn ngoại tuyến. Nó phân tích lại mọi yêu cầu từ dữ liệu QR thô, nên ngay cả máy tính bị xâm nhập cũng không thể giấu cảnh báo khỏi màn hình nắm quyền quyết định cuối cùng."
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault (Phần cứng)",
+      "BADGE": "Bảo mật cấp 0",
+      "DESC": "Loại bỏ vật lý hoàn toàn các ăng-ten. Chỉ ký bằng quang học. Mức bảo mật cao nhất cho cá voi và tổ chức.",
+      "PRICE": "Sắp ra mắt",
+      "CTA": "Sắp ra mắt"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault (Ứng dụng)",
+      "BADGE": "Cách ly mạng bằng phần mềm",
+      "DESC": "Cài PWA của chúng tôi lên một thiết bị ngoại tuyến chuyên dụng. Miễn phí, mã nguồn mở và hỗ trợ ký bằng QR.",
+      "PRICE": "MIỄN PHÍ",
+      "CTA": "MỞ KÉT"
+    },
+    "EXTENSION": {
+      "TITLE": "Tiện ích Locker Protocol Wallet",
+      "BADGE": "Mới",
+      "DESC": "Ghép két của bạn với tiện ích trình duyệt: thay thế trực tiếp MetaMask, hoạt động với mọi ứng dụng Web3 trong khi khóa vẫn được cách ly mạng.",
+      "CTA": "KHÁM PHÁ TIỆN ÍCH"
+    },
+    "COMPARISON": {
+      "TITLE": "So sánh kỹ thuật",
+      "COL_FEATURE": "Tính năng",
+      "CAT_SECURITY": "Bảo mật",
+      "CAT_COMMUNICATION": "Truyền thông",
+      "CAT_SOFTWARE": "Phần mềm",
+      "CAT_SUPPORT": "Hỗ trợ & Thêm",
+      "FEATURE_1": "Kiểu cô lập",
+      "HW_1": "Vật lý — ăng-ten bị loại bỏ",
+      "SW_1": "Phần mềm — chế độ máy bay",
+      "FEATURE_2": "Bề mặt tấn công mạng",
+      "HW_2": "Bằng không (không linh kiện vô tuyến)",
+      "SW_2": "Tối thiểu (có vô tuyến nhưng bị tắt)",
+      "FEATURE_3": "Kháng phần mềm độc hại",
+      "HW_3": "Miễn nhiễm hoàn toàn",
+      "SW_3": "Tùy vệ sinh thiết bị",
+      "FEATURE_4": "Chống zero-day",
+      "HW_4": "Bất khả thi (không bề mặt tấn công)",
+      "SW_4": "Rủi ro nếu thiết bị không chuyên dụng",
+      "FEATURE_5": "Truyền thông với ứng dụng",
+      "HW_5": "Chỉ mã QR (quang học)",
+      "SW_5": "Chỉ mã QR (camera)",
+      "FEATURE_6": "WiFi / Bluetooth / NFC",
+      "HW_6": "Không tồn tại về mặt vật lý",
+      "SW_6": "Có nhưng bị vô hiệu hóa",
+      "FEATURE_7": "Kết nối USB",
+      "HW_7": "Không — không dây cáp nào",
+      "SW_7": "Không — không dây cáp nào",
+      "FEATURE_8": "Đa chữ ký (M-trong-N)",
+      "HW_8": "Có — tối đa 20 người ký",
+      "SW_8": "Có — tối đa 20 người ký",
+      "FEATURE_9": "Ví không giới hạn (mnemonic riêng biệt)",
+      "HW_9": "Có — mỗi ví có seed phrase riêng",
+      "SW_9": "Có — mỗi ví có seed phrase riêng",
+      "FEATURE_10": "Mã nguồn mở",
+      "HW_10": "Có — mã có thể kiểm toán",
+      "SW_10": "Có — mã có thể kiểm toán",
+      "FEATURE_11": "Tương thích MetaMask",
+      "HW_11": "Có (qua mã QR)",
+      "SW_11": "Có (qua mã QR)",
+      "FEATURE_12": "Ví giấy mã hóa (AES-256)",
+      "HW_12": "Có",
+      "SW_12": "Có",
+      "FEATURE_13": "Cập nhật phần mềm",
+      "HW_13": "Không bao giờ — bề mặt tấn công bằng không",
+      "SW_13": "Tự động (PWA)",
+      "FEATURE_14": "Hỗ trợ",
+      "HW_14": "Discord VIP",
+      "SW_14": "Discord cộng đồng",
+      "FEATURE_15": "Giá",
+      "HW_15": "Sắp ra mắt",
+      "SW_15": "Miễn phí"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "Tiện ích trình duyệt",
+    "TITLE": "Tiện ích Locker Protocol Wallet",
+    "SUBTITLE": "Két cách ly mạng của bạn, ngay trong trình duyệt. Thay thế trực tiếp MetaMask, hoạt động với mọi ứng dụng Web3; khóa riêng tư không bao giờ rời két.",
+    "AI": {
+      "TITLE": "Nghi thức ký được AI kiểm tra",
+      "DESC": "Trước khi bất kỳ mã QR nào đến két của bạn, tiện ích phân tích yêu cầu ngay trên thiết bị: quy tắc tất định chặn các dạng nguy hiểm, còn mô hình AI cục bộ đánh dấu các mẫu bất thường — không đám mây, không telemetry. Sau đó, két kiểm tra lại toàn bộ một cách độc lập bằng mô hình nhúng của chính nó."
+    },
+    "DOWNLOAD": {
+      "TITLE": "Cài đặt cho trình duyệt của bạn",
+      "SUBTITLE": "Mã nguồn mở, cài từ một trang duy nhất trên Chrome Web Store.",
+      "CTA": "Cài đặt",
+      "NOTE": "Chrome và Brave cùng cài tiện ích từ một trang trên Chrome Web Store."
+    },
+    "WHY": {
+      "TITLE": "Tại sao chọn tiện ích Locker Protocol Wallet?",
+      "DAPPS": {
+        "TITLE": "Mọi ứng dụng Web3",
+        "DESC": "Thay thế trực tiếp MetaMask: hoán đổi, cầu nối, cho vay, chợ NFT — cái gì chạy với MetaMask thì cũng chạy với Locker Protocol Wallet."
+      },
+      "KEYS": {
+        "TITLE": "Khóa vẫn được cách ly mạng",
+        "DESC": "Tiện ích không giữ bất kỳ khóa riêng tư nào. Mỗi giao dịch được két ngoại tuyến của bạn ký qua mã QR — trong trình duyệt không có gì để đánh cắp."
+      },
+      "SIMPLE": {
+        "TITLE": "Trải nghiệm két đơn giản hóa",
+        "DESC": "Nghi thức ký có hướng dẫn từng bước trong bảng điều khiển bên. Bảo mật cách ly mạng đơn giản như quét một mã QR."
+      }
+    },
+    "HOW": {
+      "TITLE": "Cách hoạt động",
+      "STEP_1_TITLE": "Kết nối như MetaMask",
+      "STEP_1_DESC": "Mở bất kỳ ứng dụng Web3 nào và kết nối: tiện ích cung cấp các tài khoản trong két của bạn cho dApp — không kèm theo khóa riêng tư nào.",
+      "STEP_2_TITLE": "Quét bằng két của bạn",
+      "STEP_2_DESC": "Khi cần chữ ký, tiện ích hiển thị một mã QR. Quét bằng két cách ly mạng, xem xét và phê duyệt thao tác.",
+      "STEP_3_TITLE": "Gửi lại chữ ký",
+      "STEP_3_DESC": "Đưa mã QR đã ký vào camera của tiện ích. Giao dịch được gửi — khóa của bạn chưa từng chạm vào Internet."
+    },
+    "CTA": {
+      "TITLE": "Bạn sẽ cần một Locker Vault",
+      "DESC": "Tiện ích hoạt động cùng Locker Vault cách ly mạng — thiết bị ngoại tuyến giữ khóa của bạn và ký mọi thao tác.",
+      "BUTTON": "Nhận Locker Vault"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "Cài đặt két miễn phí",
+    "STEP_1": "Chuẩn bị một thiết bị chuyên dụng (điện thoại hoặc máy tính bảng)",
+    "STEP_2": "Mở camera và quét mã QR bên dưới",
+    "STEP_3": "Làm theo hướng dẫn \"Thêm vào màn hình chính\"",
+    "WARNING": "Để bảo mật tối đa, sau khi cài đặt hãy bật chế độ máy bay vĩnh viễn cho thiết bị này.",
+    "CLOSE": "Đóng"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "Phiên bản giới hạn",
+    "CONNECT_TO_PAY": "KẾT NỐI VÍ ĐỂ THANH TOÁN",
+    "CONFIRM_PREORDER": "XÁC NHẬN ĐẶT TRƯỚC",
+    "VIP_DETECTED": "Phát hiện người nắm giữ WLFI",
+    "VIP_APPLIED": "Đã áp dụng ưu đãi VIP!",
+    "OFFER_LIMIT": "Ưu đãi có hiệu lực đến ngày 1 tháng 1 năm 2027",
+    "DELIVERY_INFO": "Giao đợt 1: Quý 1/2027 (Th1-Th3)",
+    "INCLUDES": "Đơn hàng của bạn gồm Locker Vault (phần cứng) và quyền truy cập trọn đời vào bộ phần mềm Locker Protocol.",
+    "PAY_STABLECOINS": "Thanh toán bằng stablecoin",
+    "LOCKER_INFO": "Khoản thanh toán của bạn được Locker Protocol bảo vệ. Token đi thẳng vào một khóa qua chính giao thức của chúng tôi — chúng tôi dùng Locker để nhận thanh toán.",
+    "JOIN_DISCORD": "Tham gia cộng đồng Discord",
+    "LOCK_INFO": "Khi xác nhận, bạn đồng ý rằng tiền sẽ được gửi qua cơ chế addToLock của Locker Protocol. Chúng tôi dùng chính giao thức của mình để bảo vệ các khoản thanh toán.",
+    "BALANCE": "Số dư",
+    "REQUIRED": "Cần",
+    "INSUFFICIENT_FUNDS": "Không đủ số dư cho giao dịch này",
+    "STEP_APPROVE": "Phê duyệt",
+    "STEP_LOCK": "Khóa",
+    "APPROVING": "Đang phê duyệt chi tiêu token...",
+    "LOCKING": "Đang khóa tiền trong Locker...",
+    "SUCCESS_TITLE": "Thanh toán thành công!",
+    "SUCCESS_DESC": "Tiền của bạn đã được khóa an toàn qua Locker Protocol. Hãy tham gia Discord của chúng tôi và gửi thông tin giao hàng qua cổng bảo mật.",
+    "RECEIPT_TITLE": "Tóm tắt đơn hàng",
+    "TX_HASH": "Hash giao dịch",
+    "COPY_TX": "Sao chép hash giao dịch",
+    "PAYMENT_REF": "Mã tham chiếu thanh toán",
+    "NEXT_STEP_TITLE": "Tiếp theo là gì?",
+    "STEP1_DESC": "Sao chép hash giao dịch ở trên — đó là bằng chứng thanh toán on-chain của bạn.",
+    "STEP2_DESC": "Tham gia cộng đồng Discord của Locker Protocol bằng nút bên dưới.",
+    "STEP3_DESC": "Mở kênh #vault-orders và dán hash giao dịch của bạn. Đội ngũ chúng tôi sẽ xác minh thanh toán và liên hệ với bạn về việc giao hàng.",
+    "UNSUPPORTED_CHAIN": "Mạng không được hỗ trợ — hãy chuyển mạng"
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "Xem demo",
+      "LOCKER": "Xem demo Locker",
+      "VAULT": "Xem demo két",
+      "EXTENSION": "Xem demo tiện ích",
+      "CLOSE": "Đóng video"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "Khóa và vesting nâng cao",
+        "DESC": "Khóa token tự động theo ngày cụ thể hoặc mục tiêu giá. Bao gồm lịch vesting tự động có thể tùy chỉnh."
+      },
+      "MULTISIG": {
+        "TITLE": "Bảo mật đa chữ ký",
+        "DESC": "Giao thức phi tập trung 100% do đội của bạn kiểm soát. Ngưỡng và người ký tùy chỉnh. Không trung gian."
+      },
+      "OPENSOURCE": {
+        "TITLE": "100% mã nguồn mở",
+        "DESC": "Minh bạch tuyệt đối. Hợp đồng thông minh, ứng dụng ví cách ly đi kèm và giao diện người dùng đều hoàn toàn mã nguồn mở."
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "Phân quyền",
+      "TITLE": "Đổi ví. Không đổi két.",
+      "SUBTITLE": "Với ví thông thường, tiền của bạn CHÍNH LÀ khóa riêng tư: rò rỉ là mất hết. Locker giữ tiền bên trong một hợp đồng. Ví chỉ là chiếc chìa khóa — có thể thay ngay khi có chút nghi ngờ, mà không phải di chuyển một token nào.",
+      "NORMAL_LABEL": "Ví thông thường",
+      "NORMAL_TITLE": "Tiền của bạn CHÍNH LÀ khóa",
+      "NORMAL_DESC": "Một khóa bị rò rỉ, mọi thứ rò rỉ theo. Nghi ngờ? Bạn phải vội vàng chuyển từng token sang địa chỉ mới, chạy đua với kẻ tấn công.",
+      "LOCKER_LABEL": "Với Locker",
+      "LOCKER_TITLE": "Tiền của bạn nằm trong hợp đồng",
+      "LOCKER_DESC": "Khóa chỉ điều khiển két. Nghi ngờ? Thay nó — tiền không di chuyển và vẫn được bảo vệ bởi quy tắc của bạn.",
+      "FOOTER": "Chiếc ví trở nên dùng một lần. Bảo mật của bạn thì không."
+    },
+    "AIRGAPPED": {
+      "BADGE": "Bảo mật tối đa",
+      "TITLE": "Kiến trúc ví cách ly",
+      "DESC": "Để bảo vệ tối đa trước tấn công và mã độc, giao thức hỗ trợ sẵn ký ngoại tuyến bằng ứng dụng ví cách ly đi kèm.",
+      "FEATURE_1": "Công nghệ PWA: Cài trên bất kỳ điện thoại cũ nào, không cần cửa hàng ứng dụng",
+      "FEATURE_2": "Cách ly thật sự: Giữ thiết bị hoàn toàn ngắt kết nối internet",
+      "FEATURE_3": "100% miễn phí & mã nguồn mở: Không theo dõi, không mã ẩn. Tự kiểm chứng và tự build",
+      "FEATURE_4": "Tương thích MetaMask: Ký giao dịch Web3 mượt mà qua kết nối QR"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "Sao lưu siêu an toàn",
+      "TITLE": "Ví giấy mã hóa dưới dạng mã QR",
+      "DESC": "Không cần chép 12 từ ra giấy. Xuất ví của bạn thành mã QR mã hóa AES-256 được bảo vệ bằng mật khẩu siêu mạnh của bạn.",
+      "FEATURE_1": "Bản sao in được: Chỉ cần in mã QR và cất an toàn trong két vật lý của bạn.",
+      "FEATURE_2": "Mã hóa bằng mật khẩu: Kể cả khi ai đó tìm thấy tờ giấy, họ không thể đọc khóa nếu thiếu mật khẩu mạnh của bạn.",
+      "FEATURE_3": "Khôi phục tức thì: Quét mã QR đã in bằng thiết bị cách ly mới để khôi phục toàn bộ ví ngay lập tức."
+    },
+    "METAMASK": {
+      "TITLE": "Tích hợp MetaMask liền mạch",
+      "DESC": "Kết nối ví cách ly của bạn một cách an toàn với bất kỳ dApp Web3 nào qua MetaMask mà không bao giờ để lộ khóa riêng.",
+      "FEATURE_1": "Quét mã QR để ký giao dịch",
+      "FEATURE_2": "Tương tác với Uniswap, Aave và nhiều nền tảng khác",
+      "FEATURE_3": "Cách ly vật lý thật sự cho việc dùng Web3 hằng ngày"
+    },
+    "EXTENSION": {
+      "BADGE": "Tiện ích trình duyệt",
+      "TITLE": "Sức mạnh của két, trong trình duyệt của bạn",
+      "DESC": "Cài tiện ích Locker Protocol Wallet và dùng két cách ly mạng với mọi ứng dụng Web3. Nó hoạt động hệt như MetaMask, nhưng mỗi chữ ký đến từ két ngoại tuyến của bạn qua mã QR.",
+      "FEATURE_1": "Hoạt động với mọi ứng dụng Web3: hoán đổi, cầu nối, cho vay và hơn thế",
+      "FEATURE_2": "Nghi thức két đơn giản hóa, an toàn, có hướng dẫn từng bước",
+      "FEATURE_3": "Không một khóa riêng tư nào trong trình duyệt — mãi mãi",
+      "CTA": "Nhận tiện ích",
+      "MOCK_CONNECTED": "Đã kết nối",
+      "MOCK_SCAN": "Quét bằng két của bạn"
+    },
+    "SMART_DCA": {
+      "BADGE": "Kỷ luật & vesting",
+      "TITLE": "DCA thông minh & khóa chống FOMO",
+      "DESC": "Bảo vệ khoản đầu tư khỏi các quyết định cảm tính. Bạn có thể tạo nhiều khóa cho mỗi token với các quy tắc hoàn toàn khác nhau, kết hợp mục tiêu theo thời gian và theo giá thành một chiến lược duy nhất.",
+      "FEATURE_1": "Nhiều chiến lược: Khóa 50% trong 1 năm và 50% trong 4 năm, HOẶC mở sớm nếu giá đạt +300%.",
+      "FEATURE_2": "Quy tắc kết hợp được: Theo thời gian, theo giá, hoặc kết hợp cả hai thật đẹp trên cùng một khóa.",
+      "FEATURE_3": "Vesting & DCA: Bổ sung dần vào các khóa hiện có để trung bình giá hoặc xây vị thế dài hạn."
+    },
+    "MULTI_SIG": {
+      "BADGE": "Quản trị & bảo mật",
+      "TITLE": "Đa chữ ký thực thụ, thật dễ dàng",
+      "DESC": "Bảo vệ tài sản với nhiều người ký mà không bao giờ để lộ dù chỉ một khóa riêng. Dù bạn là nhà đầu tư đơn lẻ cẩn trọng hay một DAO phân tán, việc thu thập chữ ký hoàn toàn linh hoạt và ngoại tuyến.",
+      "CASE_1_TITLE": "Người dùng đơn lẻ (bảo mật tối đa)",
+      "CASE_1_DESC": "Giữ nhiều khóa trên một thiết bị ngoại tuyến duy nhất. Tạo từng chữ ký dưới dạng mã QR rồi lần lượt quét bằng webcam máy tính, đưa thẳng vào giao diện.",
+      "CASE_2_TITLE": "Đội nhóm phân tán & DAO",
+      "CASE_2_DESC": "Những người đồng ký tạo chữ ký ngoại tuyến, chụp ảnh mã QR bằng điện thoại và gửi qua bất kỳ ứng dụng nhắn tin nào. Người điều phối gom các ảnh trong giao diện và phát quyết định cuối cùng.",
+      "NOTE": "Không lộ lọt: Chữ ký chỉ là bằng chứng mật mã. Khóa riêng không bao giờ rời thiết bị ngoại tuyến."
+    },
+    "WORKFLOW": {
+      "TITLE": "Cách hoạt động",
+      "STEP_1_TITLE": "1. Triển khai",
+      "STEP_1_DESC": "Khởi chạy hợp đồng thông minh Locker ngay từ giao diện. Thiết lập người ký đa chữ ký và ngưỡng.",
+      "STEP_2_TITLE": "2. Khóa & vesting",
+      "STEP_2_DESC": "Khóa token ERC20 của bạn. Cấu hình quy tắc mở khóa tự động theo thời gian hoặc theo giá.",
+      "STEP_3_TITLE": "3. Quản lý an toàn",
+      "STEP_3_DESC": "Ký các thao tác ngoại tuyến bằng ví cách ly. Thực thi an toàn hoàn toàn trên chuỗi."
+    },
+    "QR_FLOW": {
+      "BADGE": "Bảo mật cách ly",
+      "TITLE": "Giao dịch cách ly an toàn",
+      "SUBTITLE": "Khóa riêng không bao giờ rời thiết bị ngoại tuyến. Mọi giao dịch đều được kiểm tra bằng mắt qua mã QR trước khi ký — không USB, không Bluetooth, không kết nối mạng.",
+      "STEP_1": "Tạo đề xuất giao dịch dưới dạng mã QR EIP-712",
+      "STEP_2": "Quét & ký ngoại tuyến trên thiết bị két cách ly của bạn",
+      "STEP_3": "Thu về các mã QR đã ký M-trên-N",
+      "STEP_4": "Phát trực tiếp lên blockchain qua RPC"
+    },
+    "USE_CASES": {
+      "TITLE": "Dành cho tất cả mọi người",
+      "DAO_TITLE": "DAO & dự án Web3",
+      "DAO_DESC": "Bảo vệ ngân quỹ cộng đồng bằng quy tắc đa chữ ký đòi hỏi sự đồng thuận của đội cho mọi lần di chuyển tiền.",
+      "FOUNDERS_TITLE": "Nhà sáng lập & nhà đầu tư",
+      "FOUNDERS_DESC": "Tự động hóa việc phân phối token với quy tắc vesting nâng cao theo thời gian hoặc khi chạm mục tiêu giá cụ thể.",
+      "INDIVIDUALS_TITLE": "Cá nhân",
+      "INDIVIDUALS_DESC": "Bảo vệ tài sản cá nhân trước tấn công và mã độc bằng cách giữ khóa cách ly vật lý."
+    },
+    "FLEXIBILITY": {
+      "TITLE": "Công cụ linh hoạt & nâng cao",
+      "BATCH_TITLE": "Quản lý hàng loạt",
+      "BATCH_DESC": "Khóa hoặc phân phối nhiều token trong một giao dịch, tiết kiệm gas và thời gian.",
+      "RESCUE_TITLE": "Cứu token",
+      "RESCUE_DESC": "Lỡ gửi token vào địa chỉ locker? Thu hồi chúng với sự chấp thuận của đội.",
+      "EXTEND_TITLE": "Thực thi không tốn gas",
+      "EXTEND_DESC": "Chữ ký được thu thập ngoại tuyến. Khi đạt ngưỡng, bất kỳ ví nào cũng có thể thực thi giao dịch trên chuỗi."
+    },
+    "LAUNCH": {
+      "BADGE": "Bộ Launch",
+      "SOON": "Sắp ra mắt",
+      "TITLE": "Khởi chạy token của bạn trên cùng hạ tầng bảo mật",
+      "DESC": "Gọi vốn, phân phối và vesting trên hạ tầng đã kiểm toán của Locker: tiền presale và phần phân bổ cho nhà đầu tư nằm trong các hợp đồng thông minh có chủ quyền do két cách ly mạng của bạn điều hành.",
+      "PRESALE_TITLE": "Presale bằng stablecoin",
+      "PRESALE_DESC": "Gọi vốn bằng stablecoin với hạn mức chặt chẽ và quy tắc on-chain. Không trò chơi oracle: khoản đóng góp đúng như những gì nó tuyên bố.",
+      "VESTING_TITLE": "Vesting cho nhà đầu tư",
+      "VESTING_DESC": "Phân phối phần phân bổ qua lịch vesting on-chain mà nhà đầu tư tự nhận, với bằng chứng công khai bất biến.",
+      "SECURITY_TITLE": "Hạ tầng đã được chứng minh",
+      "SECURITY_DESC": "Cùng các hợp đồng factory chuẩn tắc và cùng cơ chế quản trị đa chữ ký bảo vệ mọi Locker — với chữ ký đến từ két cách ly mạng của bạn.",
+      "CTA": "Sắp ra mắt"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "Mã nguồn mở (Miễn phí)",
+      "OPEN_SOURCE_DESC": "Chúng tôi tin quyền riêng tư và bảo mật là quyền cơ bản. Hợp đồng thông minh, ví cách ly và giao diện của chúng tôi 100% miễn phí và mã nguồn mở. Clone kho mã, kiểm toán và tự triển khai.",
+      "OSS_BADGE": "Mã nguồn mở",
+      "OPEN_VAULT": "Khám phá két"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Vì sao Locker ra đời",
+      "CONTENT_P1": "Mỗi năm, hàng tỷ đô la tài sản crypto bị đánh cắp — không phải vì blockchain kém an toàn, mà vì thiết bị dùng để ký giao dịch đã bị xâm nhập. Mã độc âm thầm sửa dữ liệu giao dịch trước khi chúng đến ví cứng, và khi bạn bấm xác nhận thì đã quá muộn.",
+      "CONTENT_P2": "Các giải pháp hiện có đều chung một lỗ hổng chí mạng: chúng cần kết nối trực tiếp (USB, Bluetooth hoặc cầu nối phần mềm) giữa thiết bị ký và máy có internet. Chính kết nối đó là bề mặt tấn công.",
+      "CONTENT_P3": "Locker được xây từ đầu để loại bỏ điểm hỏng duy nhất này. Bằng cách cách ly vật lý kho khóa qua Air-Gap thật sự và kiểm chứng chính xác nội dung giao dịch trên thiết bị hoàn toàn ngoại tuyến, nó bảo đảm rằng dù máy tính của bạn bị chiếm hoàn toàn, kẻ tấn công cũng không thể sửa hay chặn chữ ký của bạn.",
+      "CONTENT_P4": "Hợp đồng thông minh 100% mã nguồn mở. Clone, kiểm toán, tự triển khai. Không cần niềm tin — chỉ cần toán học.",
+      "GITHUB_CTA": "Xem hợp đồng thông minh trên GitHub"
+    },
+    "FAQ": {
+      "TITLE": "Câu hỏi thường gặp",
+      "Q1": "Locker Protocol là gì?",
+      "A1": "Locker Protocol là một hệ sinh thái hoàn chỉnh, miễn phí để bảo vệ crypto của bạn. Nó kết hợp hợp đồng thông minh khóa (theo thời gian hoặc điều kiện giá) với két ngoại tuyến cách ly tương thích Web3. Mỗi người dùng triển khai hợp đồng của riêng mình — không proxy, không khóa quản trị — và giữ 100% quyền sở hữu.",
+      "Q2": "Có thật sự miễn phí không?",
+      "A2": "Có, 100% miễn phí và mã nguồn mở. Triển khai Locker, ứng dụng két và giao diện đều hoàn toàn miễn phí. Chi phí duy nhất là phí gas tiêu chuẩn của mạng blockchain. Không phí nền tảng, không thuê bao, không trích phần trăm từ tài sản của bạn.",
+      "Q3": "Két cách ly là gì?",
+      "A3": "Két là ứng dụng cài trên một thiết bị chuyên dụng luôn ngoại tuyến (chế độ máy bay). Khóa riêng được tạo và lưu cục bộ, không bao giờ tiếp xúc internet. Giao tiếp với ứng dụng trực tuyến chỉ qua mã QR — không USB, Bluetooth hay WiFi.",
+      "Q4": "Khóa theo điều kiện giá hoạt động thế nào?",
+      "A4": "Ngoài khóa theo thời gian truyền thống, Locker Protocol tích hợp với oracle trên chuỗi của Uniswap V2/V3. Bạn có thể tạo khóa có điều kiện: token chỉ mở khi giá thị trường đạt mục tiêu đã định. Hợp đồng thông minh kiểm tra các pool thanh khoản theo thời gian thực.",
+      "Q5": "Tôi có cần thiết bị riêng cho két không?",
+      "A5": "Để bảo mật tối đa thì có — một điện thoại hoặc máy tính bảng cũ đã reset là đủ. Bạn cài két, bật chế độ máy bay, và thiết bị ở ngoại tuyến vĩnh viễn. Để thử nghiệm, bạn cũng có thể dùng trên máy chính.",
+      "Q6": "Đa chữ ký hoạt động thế nào?",
+      "A6": "Bạn định nghĩa ngưỡng M-trên-N: ví dụ 2 trong 3 người ký phải chấp thuận mỗi hành động. Chữ ký được thu thập ngoại tuyến qua mã QR. Khi đạt ngưỡng, bất kỳ ví nào cũng có thể gửi giao dịch và trả gas một lần cho cả nhóm.",
+      "Q7": "Nếu tôi mất thiết bị ngoại tuyến thì sao?",
+      "A7": "Khi tạo ví, bạn nhận được cụm từ khôi phục 12 hoặc 24 từ. Hãy chép ra giấy và cất an toàn. Nếu thiết bị mất hay hỏng, cài két lên thiết bị ngoại tuyến mới và nhập cụm từ — mọi khóa của bạn được khôi phục.",
+      "Q8": "Nếu trang web của các bạn đóng cửa thì sao?",
+      "A8": "Giao diện chỉ là lớp vỏ để giao tiếp với blockchain. Nó không giữ tiền cũng không giữ khóa. Toàn bộ mã nguồn mở trên GitHub: tải về, chạy cục bộ và giành lại toàn quyền truy cập Locker của bạn. Tiền của bạn nằm trên blockchain, không phải ở chỗ chúng tôi.",
+      "Q9": "Có thể thay đổi người ký sau khi triển khai không?",
+      "A9": "Có. Hợp đồng SignerManager cho phép thêm, xóa người ký hoặc thay đổi ngưỡng bảo mật bất cứ lúc nào. Chính các thao tác quản trị này cũng cần sự chấp thuận đa chữ ký của số đại biểu hiện tại.",
+      "Q10": "Ví giấy mã hóa là gì?",
+      "A10": "Ví giấy dùng mã hóa AES-256 được bảo vệ bằng mật khẩu của bạn. Kể cả khi ai đó tìm thấy tờ giấy, họ không thể đọc khóa nếu thiếu mật khẩu. Quét mã QR đã in bằng thiết bị cách ly mới để khôi phục ví ngay lập tức.",
+      "Q11": "Khóa riêng của tôi có bao giờ đi qua Bluetooth hay USB không?",
+      "A11": "Không bao giờ. Két không dùng Bluetooth, NFC, WiFi hay USB. Phương thức giao tiếp duy nhất là quét mã QR động (giao thức BC-UR). Không mã độc nào vượt qua được rào chắn vật lý này.",
+      "Q12": "Tích hợp MetaMask hoạt động thế nào?",
+      "A12": "Két cách ly của bạn kết nối với MetaMask qua mã QR. Bạn có thể tương tác với mọi dApp Web3 (Uniswap, Aave, v.v.) trong khi vẫn giữ cách ly vật lý tuyệt đối. Khóa riêng không bao giờ rời thiết bị ngoại tuyến.",
+      "Q13": "Token gửi nhầm vào hợp đồng có mất không?",
+      "A13": "Không. Giao thức có chức năng Cứu token. Những người ký được ủy quyền có thể thu hồi token gửi nhầm qua một thao tác đa chữ ký được số đại biểu xác nhận.",
+      "Q14": "Những mạng nào được hỗ trợ?",
+      "A14": "Locker Protocol tương thích 100 % EVM và đã được triển khai trên: Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche và Linea.",
+      "Q15": "Mã nguồn có kiểm toán được không?",
+      "A15": "Có. Toàn bộ mã nguồn — hợp đồng thông minh Solidity, giao diện web PWA và các mô-đun mật mã của két — được công bố mã nguồn mở trên GitHub. Bất kỳ chuyên gia nào cũng có thể phân tích từng dòng mã."
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "Thêm vào Chrome",
+    "CTA_BRAVE": "Thêm vào Brave",
+    "CTA_GENERIC": "Tải tiện ích"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "Khóa token",
+    "TITLE": "Hợp đồng khóa của riêng bạn,",
+    "TITLE_2": "không khóa quản trị, không trung gian",
+    "DESCRIPTION": "Mỗi người dùng triển khai hợp đồng thông minh của riêng mình. Khóa token theo ngày hoặc theo mục tiêu giá, đặt lịch trao quyền, yêu cầu nhiều chữ ký. Không proxy, không khóa quản trị: nó hoàn toàn là của bạn.",
+    "CTA_WALLET": "Xem ví",
+    "META": {
+      "TITLE": "Locker Protocol - Khóa token, trao quyền và đa chữ ký",
+      "DESCRIPTION": "Triển khai hợp đồng khóa ERC-20 của riêng bạn: khóa theo ngày và theo giá, trao quyền tự động, đa chữ ký, và ký ngoại tuyến với Locker Vault."
+    },
+    "CTA_CREATE": "TẠO LOCKER"
+  }
+}
