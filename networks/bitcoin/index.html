@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air-Gapped Bitcoin Wallet (BTC, Taproot, PSBT) | Locker Protocol</title>
+  <meta name="description" content="Hold BTC in a browser extension whose private key never touches your computer. Native SegWit and Taproot, PSBT signed by QR code on a separate offline device, watch-only export to Sparrow or Nunchuk. Free, open-source, non-custodial.">
+  <link rel="canonical" href="https://lockerprotocol.com/networks/bitcoin/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Air-Gapped Bitcoin Wallet (BTC, Taproot, PSBT) | Locker Protocol">
+  <meta property="og:description" content="Hold BTC in a browser extension whose private key never touches your computer. Native SegWit and Taproot, PSBT signed by QR code on a separate offline device, watch-only export to Sparrow or Nunchuk. Free, open-source, non-custodial.">
+  <meta property="og:url" content="https://lockerprotocol.com/networks/bitcoin/">
+  <meta property="og:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Air-Gapped Bitcoin Wallet (BTC, Taproot, PSBT) | Locker Protocol">
+  <meta name="twitter:description" content="Hold BTC in a browser extension whose private key never touches your computer. Native SegWit and Taproot, PSBT signed by QR code on a separate offline device, watch-only export to Sparrow or Nunchuk. Free, open-source, non-custodial.">
+  <meta name="twitter:image" content="https://lockerprotocol.com/assets/image/og-wallet.png">
+
+  <!-- Fonts and styles ship with the site: no third-party request at runtime. -->
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/networks/network-page.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Locker Protocol Wallet - Bitcoin",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome, Brave, Edge, Firefox",
+  "url": "https://lockerprotocol.com/networks/bitcoin/",
+  "description": "Hold BTC in a browser extension whose private key never touches your computer. Native SegWit and Taproot, PSBT signed by QR code on a separate offline device, watch-only export to Sparrow or Nunchuk. Free, open-source, non-custodial.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isAccessibleForFree": true,
+  "featureList": [
+    "PSBT, and the review that goes with it",
+    "Native SegWit and Taproot",
+    "Watch-only, if you want it",
+    "A fee you can still change"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this a free alternative to a Bitcoin hardware wallet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the same separation without the hardware: the key lives on a second device you already own, kept offline, and signs through QR codes. Nothing to buy, nothing to plug in, and the build is open-source and reproducible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which address types does it support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Native SegWit (bc1) for payments and Taproot (bc1p) alongside it, both derived from your recovery phrase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I keep using Sparrow or Nunchuk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Export the watch-only descriptor and keep your usual tool for watching and building; the signature comes from the offline Vault."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the offline device actually show me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The outputs and their amounts, the fee and what share of the amount it is, outputs below the dust limit, and how many inputs it can sign. If it cannot read a field, it says so rather than signing past it."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="/" class="logo">
+        <span class="logo-mark"><img src="/assets/images/logo.svg" alt="" width="24" height="24"></span>
+        <span class="logo-word">LOCKER <span>PROTOCOL</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/locker-vault-extensions">Extension</a>
+        <a href="/vault">Vault</a>
+        <a href="/security">Security</a>
+        <a href="/locker">Locker</a>
+        <a href="https://doc.lockerprotocol.com" target="_blank" rel="noopener noreferrer">Docs<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg></a>
+      </nav>
+      <a href="https://chromewebstore.google.com/detail/locker-protocol-wallet/pdkhlfhhjkdepnppbdpliepjaocghibh" target="_blank" rel="noopener" class="btn btn-primary btn-sm"
+        data-install-cta data-ga="cta_extension_install" data-ga-location="network_header">
+        <img src="/assets/logo/chrome.svg" alt="" width="18" height="18" data-install-logo>
+        <span data-install-label>Get the extension</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <img src="/assets/logo/btc.svg" alt="Bitcoin" width="20" height="20"> Bitcoin &middot; BTC
+        </div>
+        <h1>A Bitcoin wallet whose key is on another device</h1>
+        <p class="hero-desc">BTC in a Chrome and Brave extension, with the key on a phone or laptop that has no network at all. The unsigned PSBT leaves as a QR code and comes back signed - no cable, no Bluetooth, no pairing, and nothing to buy.</p>
+        <div class="hero-cta">
+          <a href="https://chromewebstore.google.com/detail/locker-protocol-wallet/pdkhlfhhjkdepnppbdpliepjaocghibh" target="_blank" rel="noopener" class="btn btn-primary btn-md"
+            data-install-cta data-ga="cta_extension_install" data-ga-location="network_hero">
+            <img src="/assets/logo/chrome.svg" alt="" width="20" height="20" data-install-logo>
+            <span data-install-label>Get the extension</span>
+          </a>
+          <button type="button" class="btn btn-secondary btn-md"
+            data-vault-open data-ga="vault_get_app" data-ga-location="network_hero">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z"/></svg>
+            Install the offline Vault
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="grid">
+          <div class="card">
+            <h2>PSBT, and the review that goes with it</h2>
+            <p>The offline device decodes the PSBT itself: every output, the fee as a share of what is moving, any output under the dust limit, and any input this wallet does not control. It signs what it has read, not what the browser said it was.</p>
+          </div>
+          <div class="card">
+            <h2>Native SegWit and Taproot</h2>
+            <p>A bc1 payment address and a bc1p Taproot address, both from the recovery phrase you already have. Inscriptions held on the Taproot side are labelled and never spent as if they were ordinary value.</p>
+          </div>
+          <div class="card">
+            <h2>Watch-only, if you want it</h2>
+            <p>The wallet exports a descriptor for Sparrow, Nunchuk or any watch-only tool - public keys only. Your existing setup keeps working; this adds a signer to it rather than replacing it.</p>
+          </div>
+          <div class="card">
+            <h2>A fee you can still change</h2>
+            <p>A transaction that sits unconfirmed can be replaced with a higher fee, through the same offline ceremony - the replacement is re-signed on the second device, never rubber-stamped by the browser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container faq-wrapper">
+        <h2 class="faq-title">Bitcoin wallet: questions people ask</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">Is this a free alternative to a Bitcoin hardware wallet?</h3>
+          <p class="faq-answer">It is the same separation without the hardware: the key lives on a second device you already own, kept offline, and signs through QR codes. Nothing to buy, nothing to plug in, and the build is open-source and reproducible.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Which address types does it support?</h3>
+          <p class="faq-answer">Native SegWit (bc1) for payments and Taproot (bc1p) alongside it, both derived from your recovery phrase.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I keep using Sparrow or Nunchuk?</h3>
+          <p class="faq-answer">Yes. Export the watch-only descriptor and keep your usual tool for watching and building; the signature comes from the offline Vault.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What does the offline device actually show me?</h3>
+          <p class="faq-answer">The outputs and their amounts, the fee and what share of the amount it is, outputs below the dust limit, and how many inputs it can sign. If it cannot read a field, it says so rather than signing past it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="/assets/images/logo.svg" alt="" width="24" height="24">
+        <span>Locker Protocol</span>
+      </div>
+      <nav class="footer-links">
+        <a href="/locker-vault-extensions">Extension</a>
+        <a href="/vault">Vault</a>
+        <a href="/locker">Locker</a>
+        <a href="https://doc.lockerprotocol.com" target="_blank" rel="noopener noreferrer">Docs<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg></a>
+        <a class="muted" href="/ledger-alternative">Ledger Alternative</a>
+        <a class="muted" href="/metamask-alternative">MetaMask Alternative</a>
+        <a class="muted" href="/threat-model">Threat Model</a>
+        <a class="muted" href="/security">Security</a>
+        <a class="muted" href="/privacy-policy">Privacy Policy</a>
+        <a class="muted" href="/support">Support</a>
+        <a class="muted" href="https://t.me/lockerprotocolwallet" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Telegram</a>
+        <a class="muted" href="https://www.reddit.com/user/LockerProtocolWallet/" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>Reddit</a>
+      </nav>
+      <p class="footer-copy">
+        &copy; 2026 Locker Protocol. Sovereign security infrastructure.<br>
+        <span class="footer-heart">Built with <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"/></svg> for a safer Web3.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- The /vault page's install modal (components/qr-modal), transcribed. -->
+  <div class="modal" id="vault-modal" role="dialog" aria-modal="true" aria-labelledby="vault-modal-title" hidden>
+    <button type="button" class="modal-backdrop" data-vault-close aria-label="Close"></button>
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-vault-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></button>
+      <div class="modal-body">
+        <h2 id="vault-modal-title">Install Free Vault</h2>
+        <div class="modal-steps">
+          <div class="modal-step"><b>1</b><p>Take your dedicated device (smartphone or tablet)</p></div>
+          <div class="modal-step"><b>2</b><p>Open the camera and scan the QR code below</p></div>
+          <div class="modal-step"><b>3</b><p>Follow the instructions to 'Add to home screen'</p></div>
+        </div>
+        <div class="modal-qr">
+          <img src="/assets/images/vault-qr.png" alt="QR code that installs the Locker Vault" width="240" height="240">
+        </div>
+        <div class="modal-warning">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+          <p>For maximum security, put this device in Airplane Mode permanently after installation.</p>
+        </div>
+        <button type="button" class="modal-done" data-vault-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/networks/network-page.js" defer></script>
+</body>
+</html>

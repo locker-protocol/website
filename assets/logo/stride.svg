@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Stride">
+  <circle cx="16" cy="16" r="16" fill="#E50571"/>
+  <g fill="#fff">
+    <path d="M12.6 7.8h11.6l-2.6 4.6H10Z"/>
+    <path d="M10.8 13.7h11.6l-2.6 4.6H8.2Z" opacity=".75"/>
+    <path d="M9 19.6h11.6L18 24.2H6.4Z" opacity=".5"/>
+  </g>
+</svg>

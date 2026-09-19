@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="ed-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C59A4"/>
+      <stop offset="100%" stop-color="#114A8B"/>
+    </linearGradient>
+    <linearGradient id="ed-wave" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#35C1F1"/>
+      <stop offset="55%" stop-color="#2FC3C5"/>
+      <stop offset="100%" stop-color="#66EB6E"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#ed-bg)"/>
+  <path fill="url(#ed-wave)" d="M16 60 C18 36 32 22 52 22 C72 22 84 34 84 49 C84 60 76 68 64 68 C55 68 50 63 50 56 C50 51 53 47 58 46 C55 41 49 38 42 38 C29 38 20 47 18 62 Z"/>
+  <path fill="#0C59A4" opacity="0.35" d="M50 56 C50 63 55 68 64 68 C55 74 42 76 32 70 C24 65 18 56 18 62 L16 60 C18 52 24 58 32 62 C40 66 46 63 50 56 Z"/>
+</svg>
