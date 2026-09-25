@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="br-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5500"/>
+      <stop offset="100%" stop-color="#FB542B"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#br-shield)" d="M50 4 L62 10 L74 7 L84 18 C86 34 84 58 78 70 C72 82 60 90 50 96 C40 90 28 82 22 70 C16 58 14 34 16 18 L26 7 L38 10 Z"/>
+  <path fill="#fff" d="M50 26 L60 30 L68 27 C70 36 69 46 66 52 L54 46 L50 50 L46 46 L34 52 C31 46 30 36 32 27 L40 30 Z" opacity="0.92"/>
+  <path fill="#fff" d="M50 58 L62 64 C58 72 54 76 50 79 C46 76 42 72 38 64 Z" opacity="0.92"/>
+</svg>

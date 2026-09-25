@@ -1,0 +1,3217 @@
+{
+  "COMPARISON": {
+    "TITLE": "为什么选择 Locker Protocol？",
+    "SUBTITLE": "下列每款工具都是其领域的佼佼者。Locker 把物理隔离自托管、多签和链上锁仓汇聚成一套开放、非托管的完整体系。",
+    "LEDGER_LINK": "从 Ledger 迁移过来？阅读专门的对比页",
+    "HEADER": {
+      "FEATURE": "功能",
+      "STATUS": "可用性"
+    },
+    "FEATURES": {
+      "SELF_CUSTODY": "自托管",
+      "AIR_GAP": "物理隔离签名",
+      "ON_DEVICE_VERIFY": "设备端核验",
+      "MULTISIG": "多签（M/N）",
+      "VESTING": "代币归属计划",
+      "LP_LOCK": "LP 锁仓 + 公开证明",
+      "BATCH_SIGN": "批量签名",
+      "ROLES": "细粒度访问角色",
+      "NO_SAAS": "完全链上，无 SaaS",
+      "NO_FEES": "无订阅费",
+      "SECURE_ELEMENT": "认证安全芯片",
+      "INSTITUTIONAL": "机构托管与合规"
+    },
+    "DESCRIPTIONS": {
+      "SELF_CUSTODY": "只有你持有密钥，任何第三方都无法转移或冻结你的资金。",
+      "AIR_GAP": "私钥从不接触联网设备；每个请求都以二维码方式传递。",
+      "ON_DEVICE_VERIFY": "签名前在可信屏幕上核对真实交易，阻断钓鱼。",
+      "MULTISIG": "只有多位独立签署人批准后，资金才会移动。",
+      "VESTING": "按固定的链上规则，随时间逐步释放代币。",
+      "LP_LOCK": "锁定 Uniswap/PancakeSwap 的 LP 代币，附可验证的公开证明。",
+      "BATCH_SIGN": "在一次签名会话中批准多项操作。",
+      "ROLES": "为团队分离管理员、操作员和签署人角色。",
+      "NO_SAAS": "完全运行在链上，没有可能被关停的托管服务。",
+      "NO_FEES": "部署和使用都免费，只需支付网络 Gas。",
+      "SECURE_ELEMENT": "密钥隔离在经认证、防篡改的硬件芯片中。",
+      "INSTITUTIONAL": "保险、SOC-2 审计与企业级托管管控。"
+    }
+  },
+  "LEDGER_ALT": {
+    "META": {
+      "TITLE": "Ledger 替代方案：你可以亲自验证的物理隔离钱包",
+      "DESCRIPTION": "在找 Ledger 的替代方案？Locker 把一台闲置的离线手机变成免费的物理隔离钱包：仅用二维码签名，无 USB、无蓝牙，无需购买任何设备。"
+    },
+    "HERO": {
+      "BADGE": "Ledger 替代方案",
+      "TITLE_1": "一个物理隔离钱包，",
+      "TITLE_2": "而且你可以真正验证它",
+      "SUBTITLE": "硬件钱包要求你信任一颗密封的芯片和闭源固件。Locker Protocol 什么都不要求：智能合约公开且经过链上验证，钱包完全不保存密钥。你在一台永不联网的手机上签名。",
+      "CTA_PRIMARY": "创建你的保险库，免费",
+      "CTA_SECONDARY": "阅读威胁模型"
+    },
+    "WHY": {
+      "TITLE": "为什么大家在找替代品",
+      "SUBTITLE": "三个有据可查的事实，每一个都由 Ledger 自己的公开通告佐证。",
+      "SOURCE_LABEL": "来源",
+      "ITEMS": {
+        "LEAK": {
+          "DATE": "2020 年 7 月",
+          "TITLE": "客户数据库泄露",
+          "DESC": "约 272 000 名客户的订单数据（姓名、住址、电话号码）被公开，随之而来的是钓鱼攻击和人身威胁。购买一台安全设备，反而制造了让持有者暴露的数据。",
+          "SOURCE": "Ledger 官方通告"
+        },
+        "RECOVER": {
+          "DATE": "2023 年 5 月",
+          "TITLE": "Ledger Recover",
+          "DESC": "一次固件更新表明：只要固件提出要求，助记词就能离开安全芯片。「密钥永不离开芯片」从此变成了一项政策，而不是一种属性。",
+          "SOURCE": "Ledger Recover"
+        },
+        "CONNECT_KIT": {
+          "DATE": "2023 年 12 月",
+          "TITLE": "Connect Kit 供应链攻击",
+          "DESC": "一个被入侵的 Ledger npm 库在数小时内向多个主流 dApp 注入了钱包盗币程序。攻击面不是设备，而是厂商本身。",
+          "SOURCE": "Ledger 事件报告"
+        }
+      },
+      "TRADEMARK": "Ledger 是 Ledger SAS 的商标，此处仅用于标识被比较的产品。以上每个事实都链接到 Ledger 自己的公开通告。"
+    },
+    "PILLARS": {
+      "TITLE": "换到 Locker 后有什么不同",
+      "ITEMS": {
+        "OPTICAL": {
+          "TITLE": "光学物理隔离",
+          "DESC": "无 USB、无蓝牙、无 NFC。交易以你能亲眼看到的二维码传递。没有隐藏通道，因为根本没有通道。"
+        },
+        "FREE_SOFTWARE": {
+          "TITLE": "无需盲目相信任何东西",
+          "DESC": "合约在每条链上都已公开并验证。扩展不包含任何密钥材料，浏览器里没有值得偷的东西。"
+        },
+        "NOTHING_TO_BUY": {
+          "TITLE": "无需购买，无需邮寄",
+          "DESC": "任何恢复出厂设置的手机都能成为保险库。没有订单、没有物流、没有客户数据库：从不收集的数据永远不会泄露。"
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "保留你的 dApp",
+          "DESC": "Locker 扩展是标准的 Web3 钱包：你的 dApp 使用方式完全不变，只有签名转移到了离线设备。"
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "Locker 与 Ledger 逐项对比",
+      "COL_FEATURE": "对比项",
+      "COL_LOCKER": "Locker",
+      "COL_LEDGER": "Ledger",
+      "LEDGER_WINS": "Ledger 占优",
+      "ROWS": {
+        "PRICE": {
+          "FEATURE": "价格",
+          "LOCKER": "免费",
+          "LEDGER": "79–399 欧元"
+        },
+        "CHANNEL": {
+          "FEATURE": "签名通道",
+          "LOCKER": "仅二维码（光学）",
+          "LEDGER": "USB / 蓝牙"
+        },
+        "SOURCE": {
+          "FEATURE": "源代码",
+          "LOCKER": "合约公开，链上已验证",
+          "LEDGER": "应用开源，固件闭源"
+        },
+        "EXTRACTION": {
+          "FEATURE": "助记词提取路径",
+          "LOCKER": "结构上不存在",
+          "LEDGER": "Recover：固件辅助，可选开通"
+        },
+        "SUPPLY": {
+          "FEATURE": "供应链暴露面",
+          "LOCKER": "无硬件，软件可复现构建",
+          "LEDGER": "设备制造与物流"
+        },
+        "DATA": {
+          "FEATURE": "所需个人数据",
+          "LOCKER": "无",
+          "LEDGER": "收货身份信息（2020 年泄露）"
+        },
+        "DAPPS": {
+          "FEATURE": "dApp 使用方式",
+          "LOCKER": "标准扩展（EIP-6963）",
+          "LEDGER": "Ledger Live 或第三方钱包"
+        },
+        "ONCHAIN": {
+          "FEATURE": "链上多签、归属与锁仓",
+          "LOCKER": "内置",
+          "LEDGER": "无"
+        },
+        "SECURE_ELEMENT": {
+          "FEATURE": "认证安全芯片",
+          "LOCKER": "无",
+          "LEDGER": "有（CC EAL5+）"
+        },
+        "INSTITUTIONAL": {
+          "FEATURE": "机构托管与保险",
+          "LOCKER": "无",
+          "LEDGER": "有（Enterprise）"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "安全芯片确实更强的地方",
+      "DESC": "认证安全芯片能抵御物理提取：偷走设备并拥有实验室设备的攻击者，将面对一颗强化过的芯片。这是真实的优势，我们不会否认。我们的答案在别处：面对造成绝大多数加密资产损失的远程攻击（恶意软件、盗币程序、供应链入侵），光学物理隔离比任何线缆都更严格。",
+      "CTA": "阅读完整威胁模型"
+    },
+    "MIGRATE": {
+      "TITLE": "大约 10 分钟即可迁移",
+      "SUBTITLE": "三个步骤，无需购买，无需账户。",
+      "STEPS": {
+        "S1": {
+          "TITLE": "把一台旧手机变成保险库",
+          "DESC": "恢复出厂设置，开启飞行模式，通过二维码安装保险库。它从此永不联网。"
+        },
+        "S2": {
+          "TITLE": "打印纸质备份",
+          "DESC": "一个加密二维码可在任何地方恢复你的保险库。捡到纸的人只能看到密文。"
+        },
+        "S3": {
+          "TITLE": "转移你的资产",
+          "DESC": "按你自己的节奏，从现有钱包转到新地址。无需一次性全部搬完。"
+        }
+      },
+      "CTA": "创建你的保险库，免费"
+    },
+    "FAQ": {
+      "TITLE": "常见问题",
+      "ITEMS": {
+        "SECURITY": {
+          "Q": "手机真的和硬件钱包一样安全吗？",
+          "A": "面对恶意软件、盗币程序或钓鱼这类远程攻击，一台通过二维码签名的离线手机比 USB 或蓝牙设备更严格：根本没有可攻击的通道。面对实验室级的物理提取，认证安全芯片仍占优势；我们的威胁模型如实记录这一点，而不是宣称相反。"
+        },
+        "COST": {
+          "Q": "我需要购买任何东西吗？",
+          "A": "不需要。你已有的任何手机，经过恢复出厂设置并开启飞行模式后就是保险库。无需订购设备、无需物流、无需账户，因此也没有可泄露的客户数据库。"
+        },
+        "DAPPS": {
+          "Q": "我的 dApp 还能用吗？",
+          "A": "能。Locker 扩展以标准 Web3 钱包身份注册（EIP-6963），dApp 会像识别任何浏览器钱包一样识别它。你的使用方式不变：只有签名在离线保险库上通过二维码完成。"
+        },
+        "BREAK": {
+          "Q": "手机坏了或丢了怎么办？",
+          "A": "用纸质备份恢复：创建保险库时打印的加密二维码。凭这张纸和你的密码，几分钟内就能在任何其他手机上完成恢复。"
+        },
+        "FREE": {
+          "Q": "为什么免费？商业模式是什么？",
+          "A": "安装和使用钱包是免费的，而且会一直免费。项目会对从扩展中发起的兑换、跨链桥和 Hyperliquid 订单收取少量手续费（最高 0.25%，Hyperliquid 为 0.05%，始终在你签名前显示），并向偏好专用设备的用户出售可选的预配置硬件保险库。密钥和协议从不依赖其中任何一项。"
+        }
+      }
+    }
+  },
+  "METAMASK_ALT": {
+    "META": {
+      "TITLE": "浏览器里没有密钥的 MetaMask 替代品",
+      "DESCRIPTION": "dApp 的使用体验完全不变，浏览器中零私钥：每一笔交易都由一台离线手机上的免费保险库通过二维码签名，密钥从不离开那台离线设备。"
+    },
+    "HERO": {
+      "BADGE": "MetaMask 替代品",
+      "TITLE_1": "习惯不变。",
+      "TITLE_2": "没有东西可偷了。",
+      "SUBTITLE": "Locker Protocol Wallet 在任何 dApp 上的表现都和 MetaMask 一样。区别在于扩展里没有的东西：没有助记词、没有密钥库、没有签名器。每笔交易都在一台离线手机上通过二维码签名。",
+      "CTA_SECONDARY": "安全机制如何运作"
+    },
+    "PILLARS": {
+      "TITLE": "对你而言有什么不同",
+      "ITEMS": {
+        "NO_KEYS": {
+          "TITLE": "浏览器里没有可偷的东西",
+          "DESC": "浏览器扩展可能被恶意软件、恶意扩展或被投毒的更新攻击。我们的扩展不保存任何秘密：最坏的情况只是麻烦，绝不会是损失。"
+        },
+        "CLEAR_SIGN": {
+          "TITLE": "你看得见自己在签什么",
+          "DESC": "离线手机会解码 calldata、代币授权和类型化数据，在你确认前展示真实内容。盲签根本不可能发生。"
+        },
+        "KEEP_DAPPS": {
+          "TITLE": "所有 dApp 照常工作",
+          "DESC": "标准的 EIP-1193 和 EIP-6963 接口：连接按钮像识别 MetaMask 一样识别 Locker。兑换、跨链、铸造和签名在 11 条 EVM 链上照常运行。"
+        },
+        "FREE": {
+          "TITLE": "免费，无账户，无服务器",
+          "DESC": "扩展和保险库都免费，无需注册，也没有任何统计分析。兑换和跨链桥最多加收 0.25%，Hyperliquid 订单为 0.05%，并且始终在你签名前显示。"
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "并排对比",
+      "COL_FEATURE": "对比项",
+      "COL_LOCKER": "Locker Protocol",
+      "COL_MM": "MetaMask",
+      "MM_WINS": "MetaMask 领先之处",
+      "ROWS": {
+        "KEYS": {
+          "FEATURE": "私钥存放在哪里",
+          "LOCKER": "在离线手机上，绝不在浏览器里",
+          "MM": "加密存放在浏览器扩展内"
+        },
+        "MALWARE": {
+          "FEATURE": "如果你的电脑被感染",
+          "LOCKER": "无物可取，签名始终离线",
+          "MM": "密钥与签名暴露给这台机器"
+        },
+        "SIGNING": {
+          "FEATURE": "你在批准什么",
+          "LOCKER": "在独立屏幕上解码后的交易",
+          "MM": "同一台可能已被攻破的机器上的弹窗"
+        },
+        "HARDWARE": {
+          "FEATURE": "硬件钱包支持",
+          "LOCKER": "任何旧手机都能免费成为签名器",
+          "MM": "支持，但需要购买设备"
+        },
+        "BACKUP": {
+          "FEATURE": "助记词备份",
+          "LOCKER": "加密纸质二维码，任何手机都能恢复",
+          "MM": "手抄助记词"
+        },
+        "MOBILE": {
+          "FEATURE": "移动应用",
+          "LOCKER": "保险库可在任何手机上运行；浏览留在桌面",
+          "MM": "带内置浏览器的完整移动钱包"
+        }
+      }
+    },
+    "HONEST": {
+      "TITLE": "MetaMask 真正赢的地方",
+      "DESC": "MetaMask 有十多年的生产历史、庞大的安全团队和带内置浏览器的移动应用。如果你每天用手机交易，并接受把密钥放在联网设备上，它仍是可靠的选择。Locker 为你输不起的钱而生：每笔交易多花几秒扫码，换来永不触网的密钥。",
+      "CTA": "阅读威胁模型"
+    },
+    "MIGRATE": {
+      "TITLE": "三步完成切换",
+      "SUBTITLE": "十分钟，你的密钥永远离开互联网。",
+      "STEPS": {
+        "INSTALL": {
+          "TITLE": "安装扩展",
+          "DESC": "从商店添加 Locker Protocol Wallet。你的 dApp 立即就能识别它。"
+        },
+        "VAULT": {
+          "TITLE": "把旧手机变成保险库",
+          "DESC": "在一台保持离线的手机上打开保险库应用，在那里创建新钱包，并打印加密纸质备份。"
+        },
+        "MOVE": {
+          "TITLE": "转移资金",
+          "DESC": "把资产发送到新地址。此后，每笔交易都在离线手机上通过二维码批准。"
+        }
+      },
+      "CTA": "创建你的保险库"
+    },
+    "FAQ": {
+      "TITLE": "常见问题",
+      "ITEMS": {
+        "SEED": {
+          "Q": "我能导入 MetaMask 的助记词吗？",
+          "A": "可以，但我们建议反其道而行：在离线手机上创建新钱包，把资金转过去。曾经存在于联网机器上的助记词可能已经泄露，继续用它就失去了物理隔离的意义。"
+        },
+        "DAPPS": {
+          "Q": "我的 dApp 真的能用吗？",
+          "A": "能。扩展提供与 MetaMask 相同的标准接口（EIP-1193、EIP-6963），dApp 会像列出其他钱包一样列出它。保险库签名的交易已被主网上的 DEX、跨链桥和交易所接受。"
+        },
+        "LOSE": {
+          "Q": "如果离线手机丢了怎么办？",
+          "A": "你的资金是安全的。用你的密码在任何其他手机上恢复加密纸质备份。纸和密码缺一不可，单独的手机什么也泄露不了。"
+        },
+        "COST": {
+          "Q": "要花多少钱？",
+          "A": "分文不花。扩展和保险库免费，无账户也无订阅。项目为偏好专用硬件的用户出售可选的预配置设备。"
+        }
+      }
+    },
+    "TRADEMARK": "MetaMask 是 Consensys 的商标。本页面是一项独立对比，基于两款产品公开记录的行为。"
+  },
+  "THREAT_MODEL": {
+    "META": {
+      "TITLE": "Locker Protocol 威胁模型",
+      "DESCRIPTION": "Locker Protocol 能防御什么、不能防御什么，以及我们为何选择可验证性而非可信硬件：一份关于物理隔离与二维码签名的诚实威胁模型。"
+    },
+    "HERO": {
+      "TITLE": "Locker Protocol 威胁模型",
+      "SUBTITLE": "我们能防御什么、不能防御什么，以及我们为何选择可验证性而非可信硬件。"
+    },
+    "PRINCIPLES": {
+      "TITLE": "三条原则",
+      "ITEMS": {
+        "AIR_GAP": {
+          "TITLE": "隔离源自结构，而非政策",
+          "DESC": "签名设备没有 USB、没有蓝牙、没有网络。请求与签名以你能亲眼看到的二维码传递。由物理定律保证的属性不需要承诺。"
+        },
+        "VERIFY": {
+          "TITLE": "可验证胜过有认证",
+          "DESC": "合约，也就是你的资金真正所在之处，在全部 9 条网络上公开并经过链上验证。认证要求你信任；经过验证的合约不需要。"
+        },
+        "NO_DATA": {
+          "TITLE": "无账户、无服务器、无数据",
+          "DESC": "无需注册，无需邮寄，不存储任何关于你的信息。不存在的数据库不可能泄露。"
+        }
+      }
+    },
+    "MATRIX": {
+      "TITLE": "诚实面对每一种威胁",
+      "VERDICT_PROTECTED": "已防御",
+      "VERDICT_PARTIAL": "部分防御，如实说明",
+      "VERDICT_OUT": "超出范围",
+      "ROWS": {
+        "MALWARE": {
+          "THREAT": "远程恶意软件与钱包盗币程序",
+          "HOW": "密钥保存在一台没有网络连接的设备上。你电脑上的恶意软件可以提出一笔交易，但只有离线保险库能签名，而且是在你读过之后。"
+        },
+        "PHISHING": {
+          "THREAT": "盲签与钓鱼",
+          "HOW": "签名前，保险库把每个请求解码为可读字段，显示在可信屏幕上。你签的就是你看到的。"
+        },
+        "SUPPLY": {
+          "THREAT": "厂商或供应链被入侵",
+          "HOW": "不出售任何硬件，因此没有东西可被拦截。更新只通过浏览器商店送达，而保管你资金的合约已在链上验证。"
+        },
+        "LOSS": {
+          "THREAT": "设备丢失或损毁",
+          "HOW": "纸质备份是一个加密二维码。打印、收好，凭密码即可在任何手机上恢复。"
+        },
+        "THEFT": {
+          "THREAT": "携实验室设备的物理盗窃",
+          "HOW": "保险库在静态时以你的密码加密。但手机没有认证安全芯片：面对手握设备、装备精良的攻击者，硬件钱包的芯片抵抗力更强。在这一点上，Ledger 胜出，我们如实承认。"
+        },
+        "WRENCH": {
+          "THREAT": "胁迫（五美元扳手）",
+          "HOW": "没有任何钱包能抵抗人身胁迫。结构性的答案是 M-of-N 多签：任何单独一人，无论是否被胁迫，都无法转移资金。"
+        }
+      }
+    },
+    "SE": {
+      "TITLE": "安全芯片胜出的场景",
+      "DESC": "认证安全芯片（CC EAL5+）能抵御物理密钥提取：开盖、电压毛刺、侧信道。如果你的主要风险是被高水平攻击者物理夺取签名设备，专用芯片在这一场景下确实比手机防御得更好。我们发布这个页面，是为了让你清醒地做出取舍，而不是事后才发现。"
+    },
+    "WHY_SOFTWARE": {
+      "TITLE": "为什么仍然选择软件",
+      "DESC": "2023 年，Ledger Recover 证明了：安全芯片做什么，由固件说了算。芯片保护助记词，直到厂商发布了一条出口。你无法检视的组件，只在厂商愿意时才保护你。比起必须相信的承诺，我们更青睐可以亲自检验的属性。"
+    },
+    "PROOF": {
+      "TITLE": "也别轻信我们：请自行验证",
+      "ITEMS": {
+        "TESTS": {
+          "VALUE": "2000+",
+          "LABEL": "个自动化测试，每次变更都会运行"
+        },
+        "CONTRACTS": {
+          "VALUE": "7",
+          "LABEL": "个智能合约，部署在 9 条链上"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "个静态分析问题，配置已公开"
+        },
+        "SOURCE": {
+          "VALUE": "100%",
+          "LABEL": "的合约已公开并经链上验证"
+        }
+      },
+      "CTA": "在 GitHub 上查看合约"
+    }
+  },
+  "SECURITY": {
+    "META": {
+      "TITLE": "安全与负责任的披露",
+      "DESCRIPTION": "浏览器中没有任何密钥、构建可逐字节复现、2000 多个自动化测试全部通过，以及如何向 Locker Protocol 团队报告你发现的安全漏洞。"
+    },
+    "HERO": {
+      "TITLE": "由构造保证的安全",
+      "SUBTITLE": "扩展不保存任何私钥，保险库永不联网，浏览器里没有可偷的东西。每个版本只有在下方数字全绿时才会发布。"
+    },
+    "NOKEYS": {
+      "TITLE": "浏览器里没有可偷的东西",
+      "DESC": "扩展不包含任何密钥材料：没有助记词、没有密钥库、没有签名器。每个签名都在物理隔离的保险库中生成，并以二维码返回，这是你电脑上的恶意软件无法跨越的单向光学通道。"
+    },
+    "PROOF": {
+      "TITLE": "背后的数字",
+      "ITEMS": {
+        "REPRO": {
+          "VALUE": "180/180",
+          "LABEL": "商店安装包文件逐位重建"
+        },
+        "TESTS": {
+          "VALUE": "2000+",
+          "LABEL": "自动化测试守护每个版本"
+        },
+        "SLITHER": {
+          "VALUE": "0",
+          "LABEL": "CI 允许的静态分析问题数"
+        },
+        "MATRIX": {
+          "VALUE": "710",
+          "LABEL": "dApp 接口行数，每行都需绿色测试"
+        }
+      }
+    },
+    "DISCLOSURE": {
+      "TITLE": "发现了漏洞？",
+      "DESC": "发邮件给我们，主题写 SECURITY，附上复现步骤，切勿附上真实助记词或私钥。",
+      "ITEMS": {
+        "ACK": "我们会在 72 小时内确认收到，并持续通报直至解决。",
+        "COORD": "协同披露：我们请求合理的修复时间，最长 90 天。",
+        "SAFE": "安全港：善意的研究绝不会引来法律行动。请用自己的资金，在测试网上测试。",
+        "CREDIT": "确认属实的报告者将获得公开致谢，除非你希望匿名。"
+      }
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "主权安全基础设施。",
+    "LEDGER_ALTERNATIVE": "Ledger 替代方案",
+    "METAMASK_ALTERNATIVE": "MetaMask 替代品",
+    "TOP_WALLETS": "十大钱包扩展",
+    "THREAT_MODEL": "威胁模型",
+    "SECURITY": "安全",
+    "BUILT_WITH": "用 {heart} 打造，为了更安全的 Web3。"
+  },
+  "NAV": {
+    "CONNECT_WALLET": "连接钱包",
+    "CONNECTING": "连接中...",
+    "EXTENSION": "扩展程序",
+    "VAULT": "保险库",
+    "SECURITY": "安全",
+    "LOCKER": "Locker",
+    "MENU": "菜单",
+    "DOCS": "文档"
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Locker Protocol Wallet：物理隔离加密钱包浏览器扩展",
+      "DESCRIPTION": "面向 Chrome 与 Brave 的免费加密钱包扩展，浏览器中不存放任何私钥：每一笔签名都在一台离线手机上通过二维码确认，私钥始终留在那台设备里。"
+    },
+    "HERO": {
+      "BADGE": "内嵌 AI 风险检测",
+      "TITLE": "私钥",
+      "TITLE_2": "不留在电脑里",
+      "DESCRIPTION": "AI 风险检测在设备本地完成，零云端。Locker Protocol Wallet 是一款浏览器扩展程序，可接入任意 Web3 dApp：照常兑换、跨链和交易 Hyperliquid 永续合约。每一次签名都在另一台离线设备上通过二维码确认，私钥永远不会碰到联网的电脑。",
+      "CTA_VAULT": "获取保险库",
+      "FREE": "免费，浏览器中没有密钥",
+      "SHOT_ALT": "Locker Protocol Wallet 窗口：余额、发送、接收、兑换与跨链",
+      "SHOT_HOME": "所有网络的余额，以及发送、接收、兑换和跨链",
+      "SHOT_PERPS": "Hyperliquid：余额、盈亏和持仓",
+      "SHOT_TRADE": "一个 Hyperliquid 市场：价格图表、订单簿、买入与卖出",
+      "SHOT_SWAP": "一份兑换报价：汇率、费用和最低到账",
+      "SHOT_BRIDGE": "两条链之间的跨链，附时长与目标网络",
+      "SHOT_SIGN": "离线保险库扫描以完成签名的动态二维码",
+      "SEP": "，"
+    },
+    "PROOF": {
+      "KEYS_TITLE": "私钥始终离线",
+      "KEYS_DESC": "扩展程序不保存任何私钥，签名由离线保险库通过二维码完成。",
+      "AI_TITLE": "AI 检查每一次签名",
+      "AI_DESC": "本地模型标记有风险的请求，在你的设备上，离线也能用。",
+      "DAPPS_TITLE": "所有 dApp 都能用",
+      "DAPPS_DESC": "它响应标准 Web3 接口，网站看到的就是一个普通钱包。",
+      "OPEN_TITLE": "代码可审计",
+      "OPEN_DESC": "合约公开并已在链上验证，构建可复现，并已在应用商店发布。",
+      "PRIVACY_TITLE": "无需账号，不做追踪",
+      "PRIVACY_DESC": "不注册、无遥测、钱包内没有任何统计分析。"
+    },
+    "CHAINS": {
+      "BADGE": "支持的网络",
+      "TITLE": "钱包签名的每一条链",
+      "SUBTITLE": "以太坊及其 EVM 网络、比特币、Solana、波场、Sui、Stellar、Cosmos 家族、Aptos、XRP Ledger、莱特币和狗狗币。所有地址都来自同一组助记词，每一笔签名都在离线保险库上确认。",
+      "NOTE": "一个扩展，一把离线密钥。新增网络绝不会新增备份。",
+      "LINK": "了解更多"
+    },
+    "DO": {
+      "BADGE": "浏览器扩展程序",
+      "TITLE": "你在链上做的一切，照做不误",
+      "SUBTITLE": "在以太坊及其 EVM 网络、比特币、Solana、波场、Sui、Stellar、Cosmos 家族、Aptos、XRP Ledger、莱特币、狗狗币和 Hyperliquid 上兑换、跨链、交易永续合约和转账。一个扩展，一把离线密钥。",
+      "SHOT_ALT": "扩展程序内的 Hyperliquid 余额、盈亏与持仓",
+      "SWAP_TITLE": "兑换",
+      "SWAP_DESC": "在各聚合器中选出最优路径，签名前先看到真实费用。",
+      "BRIDGE_TITLE": "跨链",
+      "BRIDGE_DESC": "把资金从一条链转到另一条链，并跟踪到账全过程。",
+      "PERPS_TITLE": "交易 Hyperliquid",
+      "PERPS_DESC": "永续合约、持仓、盈亏和 HyperCore 划转，都在窗口里完成。",
+      "SEND_TITLE": "收款与转账",
+      "SEND_DESC": "一个账户覆盖九大链系，每个地址都由同一个保险库派生。"
+    },
+    "STEPS": {
+      "BADGE": "工作方式",
+      "TITLE": "两台设备，三分钟",
+      "SUBTITLE": "浏览器负责联网，另一台始终离线的设备负责私钥。",
+      "STEP_1_TITLE": "安装扩展程序",
+      "STEP_1_DESC": "在 Chrome 或 Brave 上从 Chrome 应用商店添加。",
+      "STEP_2_TITLE": "配对保险库",
+      "STEP_2_DESC": "把免费的保险库应用装到一部保持离线的旧手机上，再扫描它显示的账户二维码。",
+      "STEP_3_TITLE": "用二维码签名",
+      "STEP_3_DESC": "扩展程序显示二维码，保险库读取、核对并返回签名，私钥始终不动。",
+      "LEARN_MORE": "查看扩展程序页面"
+    },
+    "VAULT": {
+      "BADGE": "Locker Vault",
+      "TITLE": "只保管私钥的那台设备",
+      "DESC": "一款免费应用，装在一部此后不再联网的旧手机上。它生成私钥，逐项显示待签内容，并通过二维码交回签名。",
+      "POINT_1": "无网络、无蓝牙、无数据线也能运行",
+      "POINT_2": "用内置 AI 模型在自己的屏幕上重新核对每一个请求",
+      "POINT_3": "一组助记词即可管理以太坊、比特币、Solana、波场、Sui、Stellar、Cosmos、Aptos、XRP、莱特币和狗狗币",
+      "POINT_4": "免费，任何旧智能手机都能安装",
+      "SHOT_ALT": "手机上的 Locker Vault 应用，账户界面",
+      "LEARN_MORE": "比较保险库的版本"
+    },
+    "LOCKER_TEASER": {
+      "BADGE": "Locker Protocol",
+      "TITLE": "代币锁仓协议依然在",
+      "DESC": "部署你自己的锁仓合约：时间或价格条件、归属计划、多重签名，以及用于预售的 Launch Suite。它是独立的产品，现在有了自己的页面。",
+      "CTA": "查看 Locker Protocol",
+      "POINT_1": "按时间和价格锁仓",
+      "POINT_2": "自动归属",
+      "POINT_3": "多重签名",
+      "POINT_4": "Launch Suite"
+    },
+    "FINAL": {
+      "TITLE": "先装上，再把私钥留在离线设备里",
+      "SUBTITLE": "扩展程序用于日常，保险库用于私钥。两者都免费。"
+    },
+    "AI": {
+      "BADGE": "内嵌 AI",
+      "TITLE": "AI 风险检测：在你的设备上，离线也能用",
+      "SUBTITLE": "每一次签名都由三个相互独立的层在本地分析。零云端、零遥测：与云端交易模拟器不同，你签署的内容从不离开你的设备。",
+      "RULES_TITLE": "规则做决定",
+      "RULES_DESC": "一套有限且可审计的确定性规则会拦截危险的形态：无限额度授权、覆盖整个收藏集的授权、假代币、钓鱼来源。只有这些规则能锁定签名，AI 从不拦截，因此也没有任何东西能骗它解锁。",
+      "ML_TITLE": "本地 AI 预警",
+      "ML_DESC": "一个基于已知盗币程序模式构建的机器学习分类器，在您的设备上以毫秒级为每个请求打分，并且足够精简，可以直接在离线保险库中运行。它能捕捉任何单条规则都覆盖不到的异常组合，比如您 85% 的余额正流向一个首次出现的地址。",
+      "VAULT_TITLE": "保险库复核",
+      "VAULT_DESC": "二维码从不携带结论。物理隔离的保险库用自带的内嵌模型副本重新解码并重新评分原始数据。被入侵的电脑会在可信屏幕上被当场戳穿。",
+      "POINT_LOCAL": "离开设备的活动数据为 0 字节",
+      "POINT_REPRO": "模型训练可逐字节复现：可审计的 AI",
+      "POINT_ADVISORY": "AI 只提建议，确定性规则做决定"
+    }
+  },
+  "VAULT_SELECT": {
+    "TITLE": "选择你的安全级别",
+    "SUBTITLE": "Locker Vault 提供物理版实现彻底隔离，也提供免费应用版供你的移动设备使用。",
+    "AI": {
+      "TITLE": "可信屏幕上的 AI",
+      "DESC": "保险库内嵌自己的 AI 风险模型，完全离线。它从原始二维码数据出发重新分析每个请求，即使电脑已被入侵，也无法向拥有最终决定权的屏幕隐瞒任何警告。"
+    },
+    "HARDWARE": {
+      "TITLE": "Locker Vault（硬件版）",
+      "BADGE": "第 0 层安全",
+      "DESC": "天线彻底物理移除。独有的光学签名。为巨鲸和机构准备的终极安全级别。",
+      "PRICE": "即将推出",
+      "CTA": "敬请期待"
+    },
+    "FREE": {
+      "TITLE": "Locker Vault（应用版）",
+      "BADGE": "软件隔离",
+      "DESC": "把我们的免费应用装到一台专用离线设备上。兼容 QR-Sign。",
+      "PRICE": "免费",
+      "CTA": "进入保险库"
+    },
+    "EXTENSION": {
+      "TITLE": "Locker Protocol Wallet 扩展",
+      "BADGE": "新品",
+      "DESC": "把保险库与我们的浏览器扩展配对：它可直接替代 MetaMask，兼容任何 Web3 dApp，而你的密钥始终物理隔离。",
+      "CTA": "了解扩展"
+    },
+    "COMPARISON": {
+      "TITLE": "技术对比",
+      "COL_FEATURE": "特性",
+      "CAT_SECURITY": "安全",
+      "CAT_COMMUNICATION": "通信",
+      "CAT_SOFTWARE": "软件",
+      "CAT_SUPPORT": "支持与附加",
+      "FEATURE_1": "隔离方式",
+      "HW_1": "物理：天线已移除",
+      "SW_1": "软件：飞行模式",
+      "FEATURE_2": "网络攻击面",
+      "HW_2": "零（无任何无线组件）",
+      "SW_2": "极小（有无线组件但已禁用）",
+      "FEATURE_3": "抗恶意软件能力",
+      "HW_3": "完全免疫",
+      "SW_3": "取决于设备的使用习惯",
+      "FEATURE_4": "零日漏洞防护",
+      "HW_4": "无从攻击（没有攻击面）",
+      "SW_4": "设备非专用则有风险",
+      "FEATURE_5": "与应用的通信",
+      "HW_5": "仅二维码（光学）",
+      "SW_5": "仅二维码（摄像头）",
+      "FEATURE_6": "WiFi / 蓝牙 / NFC",
+      "HW_6": "物理上不存在",
+      "SW_6": "存在但已禁用",
+      "FEATURE_7": "USB 连接",
+      "HW_7": "无：零线缆",
+      "SW_7": "无：零线缆",
+      "FEATURE_8": "多重签名（M/N）",
+      "HW_8": "支持：最多 20 位签署人",
+      "SW_8": "支持：最多 20 位签署人",
+      "FEATURE_9": "无限钱包（独立助记词）",
+      "HW_9": "支持：每个钱包有独立种子",
+      "SW_9": "支持：每个钱包有独立种子",
+      "FEATURE_10": "智能合约公开",
+      "HW_10": "是：已公开并在链上验证",
+      "SW_10": "是：已公开并在链上验证",
+      "FEATURE_11": "兼容 MetaMask",
+      "HW_11": "是（通过二维码）",
+      "SW_11": "是（通过二维码）",
+      "FEATURE_12": "加密纸钱包（AES-256）",
+      "HW_12": "支持",
+      "SW_12": "支持",
+      "FEATURE_13": "固件更新",
+      "HW_13": "无：零攻击面",
+      "SW_13": "自动（PWA）",
+      "FEATURE_14": "支持",
+      "HW_14": "VIP Telegram",
+      "SW_14": "社区 Telegram",
+      "FEATURE_15": "价格",
+      "HW_15": "即将推出",
+      "SW_15": "免费"
+    },
+    "META": {
+      "TITLE": "Locker Vault：把闲置手机变成物理隔离钱包",
+      "DESCRIPTION": "Locker Vault 把你的私钥留在一台离线手机上，只用二维码签名：无 USB、无蓝牙、也不联网。可以装成免费应用，也可以选一台专用设备。"
+    }
+  },
+  "VAULT_EXTENSIONS": {
+    "BADGE": "浏览器扩展",
+    "TITLE": "Locker Protocol Wallet 扩展",
+    "SUBTITLE": "把物理隔离保险库装进浏览器。它可直接替代 MetaMask，兼容任何 Web3 dApp，你的私钥从不离开保险库。",
+    "AI": {
+      "TITLE": "由 AI 检查的签名仪式",
+      "DESC": "在任何二维码到达保险库之前，扩展都会在设备上分析请求：确定性规则拦截危险形态，本地 AI 模型标记异常模式，且无云端、无遥测。随后，保险库再用自己的内嵌模型独立复核一切。"
+    },
+    "DOWNLOAD": {
+      "TITLE": "为你的浏览器安装",
+      "SUBTITLE": "免费，通过 Chrome 应用商店的同一个条目安装。",
+      "CTA": "安装",
+      "NOTE": "Chrome 和 Brave 都从同一个 Chrome 应用商店条目安装该扩展程序。"
+    },
+    "WHY": {
+      "TITLE": "为什么选择 Locker Protocol Wallet 扩展？",
+      "DAPPS": {
+        "TITLE": "任何 Web3 dApp",
+        "DESC": "MetaMask 的直接替代品：兑换、跨链桥、借贷、NFT 市场。能用 MetaMask 的，就能用 Locker Protocol Wallet。"
+      },
+      "KEYS": {
+        "TITLE": "密钥始终物理隔离",
+        "DESC": "扩展不持有任何私钥。每笔交易都由你的离线保险库通过二维码签署，浏览器里没有任何可偷的东西。"
+      },
+      "SIMPLE": {
+        "TITLE": "更简单的保险库使用",
+        "DESC": "侧边栏中一步步引导的签名仪式。物理隔离的安全，简单得就像扫一个二维码。"
+      }
+    },
+    "HOW": {
+      "TITLE": "工作原理",
+      "STEP_1_TITLE": "像 MetaMask 一样连接",
+      "STEP_1_DESC": "打开任意 Web3 dApp 并连接：扩展把你保险库中的账户暴露给 dApp，但不含任何私钥。",
+      "STEP_2_TITLE": "用保险库扫描",
+      "STEP_2_DESC": "需要签名时，扩展会显示一个二维码。用离线保险库扫描它，核对并批准操作。",
+      "STEP_3_TITLE": "广播签名",
+      "STEP_3_DESC": "把签好名的二维码对准扩展的摄像头。交易随即广播，你的密钥从未触网。"
+    },
+    "CTA": {
+      "TITLE": "你需要一台 Locker Vault",
+      "DESC": "扩展与物理隔离的 Locker Vault 配对，也就是那台保管你密钥并签署每项操作的离线设备。",
+      "BUTTON": "获取 Locker Vault"
+    },
+    "META": {
+      "TITLE": "Chrome 与 Brave 加密钱包扩展，私钥离线保存",
+      "DESCRIPTION": "为 MetaMask、Keplr 或 TronLink 打造的 dApp 照常连接，而你的私钥始终留在那台离线手机上。在 Chrome 与 Brave 上都可以免费使用。"
+    }
+  },
+  "MODAL_QR": {
+    "TITLE": "安装免费保险库",
+    "STEP_1": "拿出你的专用设备（智能手机或平板）",
+    "STEP_2": "打开相机，扫描下方二维码",
+    "STEP_3": "按提示操作，「添加到主屏幕」",
+    "WARNING": "为了最高安全性，安装完成后请让这台设备永久保持飞行模式。",
+    "CLOSE": "关闭"
+  },
+  "PRESALE": {
+    "TITLE": "Locker Vault - Black Edition",
+    "EDITION_LIMITEE": "限量版",
+    "CONNECT_TO_PAY": "连接钱包以支付",
+    "CONFIRM_PREORDER": "确认预订",
+    "VIP_DETECTED": "检测到 WLFI 持有者",
+    "VIP_APPLIED": "VIP 折扣已生效！",
+    "OFFER_LIMIT": "优惠截止到 2027 年 1 月 1 日",
+    "DELIVERY_INFO": "首批发货：2027 年第一季度（1-3 月）",
+    "INCLUDES": "你的订单包含 Locker Vault（硬件版）以及 Locker Protocol 软件套件的终身使用权。",
+    "PAY_STABLECOINS": "用稳定币支付",
+    "LOCKER_INFO": "你的付款由 Locker Protocol 保障。代币会通过我们自己的协议直接进入一个锁仓：我们用 Locker 来收款。",
+    "JOIN_TELEGRAM": "加入 Telegram 社区",
+    "LOCK_INFO": "确认即表示你同意资金将通过 Locker Protocol 的 addToLock 机制发送。我们用自己的协议来保障付款安全。",
+    "BALANCE": "余额",
+    "REQUIRED": "所需",
+    "INSUFFICIENT_FUNDS": "余额不足以完成此交易",
+    "STEP_APPROVE": "授权",
+    "STEP_LOCK": "锁定",
+    "APPROVING": "正在授权代币支出...",
+    "LOCKING": "正在把资金锁进 Locker...",
+    "SUCCESS_TITLE": "支付成功！",
+    "SUCCESS_DESC": "你的资金已通过 Locker Protocol 安全锁定。请加入我们的 Telegram，通过安全通道提交收货信息。",
+    "RECEIPT_TITLE": "订单摘要",
+    "TX_HASH": "交易哈希",
+    "COPY_TX": "复制交易哈希",
+    "PAYMENT_REF": "付款参考号",
+    "NEXT_STEP_TITLE": "接下来做什么？",
+    "STEP1_DESC": "复制上方的交易哈希，这是你的链上付款凭证。",
+    "STEP2_DESC": "点击下方按钮加入 Locker Protocol 的 Telegram 社区。",
+    "STEP3_DESC": "在 Telegram 群组中粘贴你的交易哈希。我们的团队会核实付款并联系你安排发货。",
+    "UNSUPPORTED_CHAIN": "不支持的网络，请切换",
+    "META": {
+      "TITLE": "Locker Vault - Black Edition",
+      "DESCRIPTION": "Locker Vault Black Edition：一台为你的加密密钥打造的专用物理隔离签名设备，并终身包含 Locker Protocol 软件套件的完整使用权。"
+    }
+  },
+  "WELCOME": {
+    "VIDEO": {
+      "WATCH": "观看演示",
+      "LOCKER": "观看 Locker 演示",
+      "VAULT": "观看保险库演示",
+      "EXTENSION": "观看扩展演示",
+      "CLOSE": "关闭视频"
+    },
+    "BENEFITS": {
+      "LOCKING": {
+        "TITLE": "进阶锁仓与归属",
+        "DESC": "让代币按指定日期或价格目标自动锁定。内置可配置的自动归属计划。"
+      },
+      "MULTISIG": {
+        "TITLE": "多重签名安全",
+        "DESC": "100% 去中心化协议，由你的团队掌控。阈值和签署人均可配置。没有任何中间方。"
+      },
+      "OPENSOURCE": {
+        "TITLE": "合约公开",
+        "DESC": "完全透明。我们的智能合约已公开并在链上验证，任何人都能确切读到它们如何处置你的资金。"
+      }
+    },
+    "CONTRACT_WALLET": {
+      "BADGE": "权力分离",
+      "TITLE": "换掉钱包，而不是保险库。",
+      "SUBTITLE": "在普通钱包里，你的资金就是你的私钥，一旦泄露，全部消失。Locker 把资金放进合约里。钱包只是一把钥匙，稍有疑虑随时更换，一枚代币都不用挪动。",
+      "NORMAL_LABEL": "普通钱包",
+      "NORMAL_TITLE": "你的资金就是你的私钥",
+      "NORMAL_DESC": "钥匙一旦泄露，一切被掏空。起了疑心？只能和攻击者赛跑，把每一枚代币火速转往新地址。",
+      "LOCKER_LABEL": "有了 Locker",
+      "LOCKER_TITLE": "你的资金住在合约里",
+      "LOCKER_DESC": "钥匙只控制保险库。起了疑心？换掉它，资金分毫不动，仍守在你的规则之后。",
+      "FOOTER": "你的钱包变得可以随手更换，你的安全不会。"
+    },
+    "AIRGAPPED": {
+      "BADGE": "最高安全性",
+      "TITLE": "物理隔离的保险库架构",
+      "DESC": "为了最大限度抵御黑客与恶意软件，我们的协议通过物理隔离配套应用原生支持离线签名。",
+      "FEATURE_1": "PWA 技术：可安装在任何旧手机上，无需应用商店",
+      "FEATURE_2": "真正的物理隔离：让设备完全断开互联网",
+      "FEATURE_3": "100% 免费开源：没有追踪，没有隐藏代码。你可以自行核验并编译",
+      "FEATURE_4": "兼容 MetaMask：通过二维码连接即可签署 Web3 交易"
+    },
+    "PAPER_WALLET": {
+      "BADGE": "超高安全备份",
+      "TITLE": "以二维码呈现的加密纸钱包",
+      "DESC": "不必再把 12 个单词抄在纸上。把钱包导出为 AES-256 加密的二维码，由你的高强度密码保护。",
+      "FEATURE_1": "可打印备份：直接打印二维码，放进你的实体保险箱即可。",
+      "FEATURE_2": "密码加密：即使有人捡到这张纸，没有你的高强度密码也读不出密钥。",
+      "FEATURE_3": "即时恢复：用新的物理隔离设备扫描这张打印的二维码，整个钱包立刻恢复。"
+    },
+    "METAMASK": {
+      "TITLE": "与 MetaMask 无缝衔接",
+      "DESC": "通过 MetaMask 把物理隔离保险库安全连接到任意 Web3 dApp，全程不暴露私钥。",
+      "FEATURE_1": "扫描二维码即可签署交易",
+      "FEATURE_2": "与 Uniswap、Aave 等应用交互",
+      "FEATURE_3": "日常使用 Web3 也能保持真正的物理隔离"
+    },
+    "EXTENSION": {
+      "BADGE": "浏览器扩展",
+      "TITLE": "保险库的力量，装进你的浏览器",
+      "DESC": "安装 Locker Protocol Wallet 扩展，在任何 Web3 dApp 上使用你的物理隔离保险库。它的行为与 MetaMask 完全一致，但每个签名都来自你的离线保险库，经由二维码传递。",
+      "FEATURE_1": "兼容所有 Web3 dApp：兑换、跨链桥、借贷等",
+      "FEATURE_2": "简化且安全的保险库仪式，一步步引导",
+      "FEATURE_3": "浏览器里零私钥，永远如此",
+      "CTA": "获取扩展",
+      "MOCK_CONNECTED": "已连接",
+      "MOCK_SCAN": "用你的保险库扫描"
+    },
+    "SMART_DCA": {
+      "BADGE": "纪律与归属",
+      "TITLE": "智能定投与反 FOMO 锁仓",
+      "DESC": "让你的投资免受情绪化决策的干扰。你可以为同一种代币创建多个规则完全不同的锁仓，把时间条件和价格目标组合进一套策略。",
+      "FEATURE_1": "多重策略：50% 锁 1 年、50% 锁 4 年，或在价格上涨 300% 时提前解锁。",
+      "FEATURE_2": "规则可组合：按时间、按价格，或在同一个锁仓里优雅地同时使用两者。",
+      "FEATURE_3": "归属与定投：随时间为已有锁仓追加资金，摊薄成本或建立长期仓位。"
+    },
+    "MULTI_SIG": {
+      "BADGE": "治理与安全",
+      "TITLE": "真正的多重签名，终于变得简单",
+      "DESC": "用多位签署人守护资金，却始终不暴露任何一把私钥。无论你是极度谨慎的个人投资者，还是分散在全球的 DAO，签名的收集方式都完全灵活且离线。",
+      "CASE_1_TITLE": "个人用户（最高安全性）",
+      "CASE_1_DESC": "在一台离线设备上保管多把密钥。逐一生成二维码签名，再用电脑摄像头依次扫入界面。",
+      "CASE_2_TITLE": "分布式团队与 DAO",
+      "CASE_2_DESC": "每位联署人在离线状态下生成签名，用手机拍下二维码，通过任意即时通讯软件发出。中继方在界面里汇总这些照片，再广播最终决定。",
+      "NOTE": "零暴露：签名只是密码学证明。私钥永远不会离开离线设备。"
+    },
+    "WORKFLOW": {
+      "TITLE": "运作方式",
+      "STEP_1_TITLE": "1. 部署",
+      "STEP_1_DESC": "直接在我们的界面中启动你的 Locker 智能合约。设置多签签署人和阈值。",
+      "STEP_2_TITLE": "2. 锁仓与归属",
+      "STEP_2_DESC": "锁定你的 ERC20 代币。配置按时间或按价格的自动解锁规则。",
+      "STEP_3_TITLE": "3. 安全管理",
+      "STEP_3_DESC": "用物理隔离保险库离线签署操作，然后完全在链上执行。"
+    },
+    "QR_FLOW": {
+      "BADGE": "物理隔离安全",
+      "TITLE": "安全的物理隔离交易",
+      "SUBTITLE": "私钥永远不会离开离线设备。每笔交易在签署前都通过二维码目视核验：不用 USB，不用蓝牙，不接网络。",
+      "STEP_1": "把交易提案生成为 EIP-712 二维码",
+      "STEP_2": "在物理隔离保险库上离线扫描并签署",
+      "STEP_3": "取回 M/N 份已签名的二维码",
+      "STEP_4": "通过 RPC 直接广播到区块链"
+    },
+    "USE_CASES": {
+      "TITLE": "为每个人而生",
+      "DAO_TITLE": "DAO 与 Web3 项目",
+      "DAO_DESC": "用多签规则守护社区金库，任何一笔资金变动都需要团队达成共识。",
+      "FOUNDERS_TITLE": "创始人与投资者",
+      "FOUNDERS_DESC": "用我们的进阶归属规则自动化代币分发，可基于时间，也可基于是否达到特定价格目标。",
+      "INDIVIDUALS_TITLE": "个人用户",
+      "INDIVIDUALS_DESC": "让密钥在物理上与网络隔离，保护个人财富免遭黑客与恶意软件侵害。"
+    },
+    "FLEXIBILITY": {
+      "TITLE": "灵活而进阶的工具",
+      "BATCH_TITLE": "批量管理",
+      "BATCH_DESC": "在一笔交易中锁定或分发多种代币，节省 Gas 与时间。",
+      "RESCUE_TITLE": "代币救援",
+      "RESCUE_DESC": "误把代币转到了 Locker 地址？经团队批准即可取回。",
+      "EXTEND_TITLE": "免 Gas 执行",
+      "EXTEND_DESC": "签名在离线状态下收集。一旦达到阈值，任何钱包都能在链上执行这笔交易。"
+    },
+    "LAUNCH": {
+      "BADGE": "Launch 套件",
+      "SOON": "即将推出",
+      "TITLE": "在同样的安全轨道上发行你的代币",
+      "DESC": "用经过审计的 Locker 基础设施完成募资、分发与归属：你的预售资金和投资人配额都存放在主权智能合约中，由你的物理隔离保险库掌控。",
+      "PRESALE_TITLE": "稳定币预售",
+      "PRESALE_DESC": "用稳定币募资，硬顶与规则全在链上。没有预言机把戏：出资就是出资，名副其实。",
+      "VESTING_TITLE": "投资人归属",
+      "VESTING_DESC": "通过链上归属计划分发配额，投资人自行领取，附公开且不可篡改的证明。",
+      "SECURITY_TITLE": "经审计的轨道",
+      "SECURITY_DESC": "与守护每个 Locker 相同的工厂官方合约和多签治理，由你的物理隔离保险库签署。",
+      "CTA": "即将推出"
+    },
+    "PRICING": {
+      "OPEN_SOURCE_TITLE": "免费，且合约公开",
+      "OPEN_SOURCE_DESC": "我们相信隐私与安全是基本权利，因此扩展程序、保险库应用和 Locker 合约都可以免费使用。智能合约发布在 GitHub 上并已在链上验证：阅读它们、审计它们，也可以自行部署。",
+      "OSS_BADGE": "合约公开",
+      "OPEN_VAULT": "了解保险库"
+    },
+    "CREATOR_STORY": {
+      "TITLE": "Locker 为何存在",
+      "CONTENT_P1": "每年都有价值数十亿美元的加密资产被盗，原因并非区块链本身不安全，而是签署交易的设备被攻陷。恶意软件会在交易内容抵达硬件钱包之前悄悄篡改它，等你按下确认，一切已经太迟。",
+      "CONTENT_P2": "现有方案都有同一个致命缺陷：它们都要求签名设备与联网机器之间存在直接连接（USB、蓝牙或软件桥）。那条连接，恰恰就是攻击面。",
+      "CONTENT_P3": "Locker 从设计之初就是为了消除这个单点故障。通过真正的物理隔离把密钥库隔开，并在完全离线的设备上核验交易的确切内容，即便你的电脑已被彻底攻陷，攻击者也无法篡改或截获你的签名。",
+      "CONTENT_P4": "智能合约 100% 开源。克隆它们、审计它们、自行部署。无需信任任何人，只需要数学。",
+      "GITHUB_CTA": "在 GitHub 上查看智能合约"
+    },
+    "FAQ": {
+      "TITLE": "常见问题",
+      "Q1": "什么是 Locker Protocol？",
+      "A1": "Locker Protocol 是一套完整且免费的生态，用于保护你的加密资产。它把锁仓智能合约（按时间或价格条件）与兼容 Web3 的物理隔离离线保险库结合起来。每位用户部署自己的合约（没有代理合约，没有管理员密钥），并始终 100% 拥有它。",
+      "Q2": "真的免费吗？",
+      "A2": "是的。部署你的 Locker 和使用界面都是免费的：唯一的开销是区块链网络的 Gas 费，没有平台费、没有订阅费，也不会从锁仓资产中抽成。浏览器扩展和保险库同样免费；从扩展中发起的兑换、跨链桥和 Hyperliquid 订单会收取少量手续费（最高 0.25%，Hyperliquid 为 0.05%），并且始终在你签名前显示。",
+      "Q3": "什么是物理隔离保险库？",
+      "A3": "保险库是一个安装在专用设备上的应用，该设备长期保持离线（飞行模式）。私钥在本地生成并保存，从不暴露给互联网。它与联网应用之间只通过二维码通信：不用 USB、蓝牙或 Wi-Fi。",
+      "Q4": "按价格条件锁仓是怎么运作的？",
+      "A4": "除了传统的按时间锁仓，Locker Protocol 还接入了 Uniswap V2/V3 的链上预言机。你可以创建条件锁仓：只有当市场价格达到设定目标时，代币才会解锁。智能合约会实时查询流动性池。",
+      "Q5": "保险库需要一台专用设备吗？",
+      "A5": "若追求最高安全性，是的：一台重置过的旧手机或平板就够了。安装保险库、切到飞行模式，设备便长期离线。若只是试用，也可以在主力设备上运行。",
+      "Q6": "多重签名是怎么运作的？",
+      "A6": "你设定一个 M/N 阈值：例如 3 位签署人中需有 2 位批准每项操作。签名通过二维码在离线状态下收集。达到阈值后，任意钱包都可以提交交易，并为整个团队一次性支付 Gas。",
+      "Q7": "如果我弄丢了离线设备怎么办？",
+      "A7": "创建钱包时会提供 12 或 24 个单词的恢复短语。请抄在纸上并妥善保管。设备丢失或损坏时，在新的离线设备上安装保险库并导入该短语，所有密钥都会恢复。",
+      "Q8": "如果你们的网站关停了怎么办？",
+      "A8": "界面只是与区块链对话的外壳，它既不持有资金也不持有密钥。智能合约发布在 GitHub 上并已在链上验证，因此你随时可以通过区块浏览器直接访问自己的 Locker。资金在区块链上，不在我们手里。",
+      "Q9": "部署之后还能更换签署人吗？",
+      "A9": "可以。SignerManager 合约允许随时增删签署人或调整安全阈值。这些管理操作本身也需要现有法定人数的多签批准。",
+      "Q10": "什么是加密纸钱包？",
+      "A10": "纸钱包采用受你密码保护的 AES-256 加密。即使有人捡到这张纸，没有密码也读不出密钥。用新的物理隔离设备扫描打印的二维码，即可立即恢复钱包。",
+      "Q11": "我的私钥会经由蓝牙或 USB 传输吗？",
+      "A11": "绝不会。保险库不使用蓝牙、NFC、Wi-Fi 或 USB。唯一的通信方式是读取动态二维码（BC-UR 协议）。没有任何恶意软件能越过这道物理屏障。",
+      "Q12": "与 MetaMask 的集成是怎么运作的？",
+      "A12": "你的物理隔离保险库通过二维码与 MetaMask 相连。你可以与任意 Web3 dApp（Uniswap、Aave 等）交互，同时保持完全的物理隔离。私钥永远不会离开离线设备。",
+      "Q13": "如果代币被误转到合约里，会不会就此丢失？",
+      "A13": "不会。协议内置代币救援功能。获授权的签署人可以通过经法定人数批准的多签操作，取回被误转的代币。",
+      "Q14": "支持哪些网络？",
+      "A14": "Locker Protocol 100% 兼容 EVM，已部署在：Ethereum、Arbitrum、Base、Optimism、Polygon、BNB Chain、Avalanche 和 Linea。",
+      "Q15": "代码可以审计吗？",
+      "A15": "智能合约可以：它们发布在 GitHub 上并已在链上验证，任何专家都能逐行读完保管你资金的每一行代码。浏览器扩展则提供可复现构建：商店里的安装包可以用提交给商店审核人员的源码压缩包逐字节重建。"
+    },
+    "ACTIONS": {
+      "STAR_GITHUB": "GitHub"
+    }
+  },
+  "INSTALL": {
+    "CTA_CHROME": "添加到 Chrome",
+    "CTA_BRAVE": "添加到 Brave",
+    "CTA_GENERIC": "获取扩展程序"
+  },
+  "LOCKER_PAGE": {
+    "BADGE": "代币锁仓",
+    "TITLE": "属于你自己的锁仓合约，",
+    "TITLE_2": "没有管理员密钥，没有中间人",
+    "DESCRIPTION": "每位用户部署自己的智能合约。按日期或价格目标锁定代币，设置归属计划，要求多方签名。没有代理合约，没有管理员密钥：它完全属于你。",
+    "CTA_WALLET": "查看钱包",
+    "META": {
+      "TITLE": "Locker Protocol - 代币锁仓、归属与多重签名",
+      "DESCRIPTION": "部署属于你自己的 ERC-20 锁仓合约：按时间锁仓、按价格锁仓、自动归属释放、多重签名，以及用物理隔离的 Locker Vault 完成离线签名。"
+    },
+    "CTA_CREATE": "创建 LOCKER"
+  },
+  "TOP_WALLETS": {
+    "META": {
+      "TITLE": "2027 年十大加密货币钱包浏览器扩展",
+      "DESCRIPTION": "2027 年最值得安装的 10 款加密钱包浏览器扩展对比：MetaMask、Phantom、Keplr、Rabby 等，按私钥存放位置、支持的链、Ledger 支持和手续费逐项评比。"
+    },
+    "HERO": {
+      "BADGE": "2026 年 9 月核实",
+      "TITLE": "2027 年十大加密货币钱包浏览器扩展",
+      "SUBTITLE": "明年值得装进浏览器的那些钱包，比较的是真正决定资金归属的几件事：私钥存放在哪里、支持哪些链和 dApp、能不能配 Ledger，以及手续费。"
+    },
+    "DISCLOSURE": {
+      "TITLE": "这份榜单由谁撰写",
+      "DESC": "Locker Protocol Wallet 是我们自己的产品，它排在第一位。原因只有一个，我们坦率写在这里：在这份榜单里，只有它从设计上就不把私钥保存在电脑上，而不是把这当成一个可选项。另外九款按同一套标准评比，每一条都写明了它比我们做得更好的地方。所有事实都在 2026 年 9 月对照各款钱包的官网、文档和商店页面核实过。"
+    },
+    "CRITERIA": {
+      "TITLE": "榜单是怎么评出来的",
+      "ITEMS": {
+        "KEY": {
+          "TITLE": "私钥存放在哪里",
+          "DESC": "留在浏览器里的密钥，即便加密，也只隔着一个恶意扩展或一台被感染的电脑就会被搬空。放在一台独立的离线设备上，电脑里就没有任何可偷的东西。"
+        },
+        "CHAINS": {
+          "TITLE": "链与 dApp",
+          "DESC": "扩展能装下哪些区块链，以及你平时用的应用在点「连接」时能不能找到它。"
+        },
+        "HARDWARE": {
+          "TITLE": "硬件与离线签名",
+          "DESC": "你能不能把密钥留在电脑之外：接一台 Ledger 或其他硬件钱包，或者用一台通过二维码签名的物理隔离设备。"
+        },
+        "FEES": {
+          "TITLE": "费用",
+          "DESC": "安装钱包是免费的，内置的兑换和跨链通常不是：钱包自己公布了抽成的，我们就写出来。"
+        },
+        "TRACK_RECORD": {
+          "TITLE": "透明度与过往记录",
+          "DESC": "代码是否公开，以及这款扩展一路走来表现如何：安全事件是钱包历史的一部分，事后怎么处理同样是。"
+        },
+        "EVERYDAY": {
+          "TITLE": "日常使用",
+          "DESC": "转账、兑换或签名要花你多少功夫，以及它能从官方商店装到哪些浏览器上。"
+        }
+      }
+    },
+    "TABLE": {
+      "TITLE": "十款一览",
+      "COL_WALLET": "钱包",
+      "COL_BEST_FOR": "最适合",
+      "COL_KEY": "私钥",
+      "COL_CHAINS": "支持的链",
+      "COL_LEDGER": "Ledger",
+      "NOTE": "链与功能以各款钱包 2026 年 9 月公布的信息为准。「Ledger」表示该扩展可以用你已有的 Ledger 设备签名；「未说明」表示钱包官网没有写。"
+    },
+    "KEY": {
+      "OFFLINE_DEVICE": "在独立的离线设备上",
+      "BROWSER": "加密存放在浏览器中"
+    },
+    "LIST": {
+      "TITLE": "逐款细说"
+    },
+    "OURS": "我们的产品",
+    "STRENGTHS": "优点",
+    "LIMITS": "不足",
+    "OFFICIAL_SITE": "官方网站",
+    "COMPARE_METAMASK": "Locker 对比 MetaMask",
+    "COMPARE_LEDGER": "Locker 对比 Ledger",
+    "TRADEMARK": "MetaMask、Phantom、Keplr、Ledger 以及本页出现的其他名称，均为各自所有者的商标。Locker Protocol 与它们没有从属关系，本页也未获得它们的认可。",
+    "ENTRIES": {
+      "LOCKER": {
+        "BEST_FOR": "最适合把密钥彻底留在电脑之外",
+        "SUMMARY": "一款浏览器扩展，照常接入你已经在用的 dApp，而私钥留在另一台手机上，那台手机离线运行免费的 Locker Vault 应用。每笔交易都以二维码呈现：你在手机上核对、在手机上批准，手机再用另一个二维码把签名传回来。九大链家族出自同一组助记词，为 MetaMask、Keplr、TronLink 或 Freighter 做的连接按钮都能自动找到它。",
+        "PRO_1": "浏览器里没有私钥：电脑上的恶意软件或恶意扩展无从下手。",
+        "PRO_2": "一个扩展覆盖 EVM 链、Solana、Bitcoin、Cosmos、Tron、Sui、Aptos、Stellar 和 XRP Ledger，并内置兑换、跨链桥和 Hyperliquid 永续合约。",
+        "CON_1": "每次签名都要在第二台设备上扫一次码，比点一下慢，而且钱包源代码未公开。"
+      },
+      "METAMASK": {
+        "BEST_FOR": "最适合追求最广的 dApp 支持",
+        "SUMMARY": "由 Consensys 发布，是绝大多数 dApp 围绕着做适配的那款扩展。除了各条 EVM 网络，它自 2025 年 5 月起原生支持 Solana，自 2025 年 12 月起支持 Bitcoin，能配合的硬件钱包也比这里任何一款扩展都多，从 Ledger、Trezor 到 Keystone 和 GridPlus。",
+        "PRO_1": "EVM 生态的 dApp 优先支持它，Solana 和 Bitcoin 账户也在同一个扩展里。",
+        "PRO_2": "最长的硬件清单：Ledger、Trezor、GridPlus Lattice、Keystone 以及其他二维码钱包。",
+        "CON_1": "不接硬件钱包的话，密钥就留在浏览器里，内置兑换还要收 0.875% 的 MetaMask 手续费。"
+      },
+      "PHANTOM": {
+        "BEST_FOR": "最适合 Solana",
+        "SUMMARY": "Solana 生态的标杆钱包，兑换、代币和 NFT 都收在一个打磨精细的扩展里。它同时装得下 Ethereum、Base、Polygon、HyperEVM 和 Bitcoin，并可用数据线连接 Ledger 签名。对 Sui 的支持已于 2026 年 9 月 24 日结束。",
+        "PRO_1": "最顺手的 Solana 使用体验，也是 Solana 各类 dApp 头一个列出的钱包。",
+        "PRO_2": "扩展内即可用 Ledger 签名，支持 Nano S Plus、Stax 和 Flex。",
+        "CON_1": "不支持 Trezor，Firefox 版不再更新，也没有 Arbitrum、Optimism 和 BNB Chain。多数兑换收取 0.85% 手续费。"
+      },
+      "RABBY": {
+        "BEST_FOR": "最适合在 EVM 网络上更稳妥地签名",
+        "SUMMARY": "由 DeBank 为 Ethereum 和各 EVM 网络打造。Rabby 会在你签名之前告诉你这笔交易会让余额发生什么变化，并标出有风险的授权。代码以 MIT 许可公开。",
+        "PRO_1": "每次签名前都会先显示余额变化和风险提示。",
+        "PRO_2": "MIT 开源，支持 Ledger、Trezor 等硬件钱包。",
+        "CON_1": "专注 Ethereum 和 EVM 网络，内置兑换收取 0.25% 手续费。"
+      },
+      "KEPLR": {
+        "BEST_FOR": "最适合 Cosmos 与 IBC",
+        "SUMMARY": "Cosmos 生态的钱包：四十多条 Cosmos SDK 链，支持 IBC 转账和质押，同一个扩展里还装着 Bitcoin 和 Starknet。代码以 Apache 2.0 公开，其文档目前仍把 EVM 支持标注为测试版。",
+        "PRO_1": "内置跨 Cosmos 链的质押与 IBC 转账。",
+        "PRO_2": "可用 Ledger 或 Keystone 签名，能装到 Chrome、Firefox 和 Edge 上。",
+        "CON_1": "EVM 支持仍处于测试阶段，内置兑换的手续费未公布。"
+      },
+      "OKX": {
+        "BEST_FOR": "最适合在一个扩展里覆盖最多网络",
+        "SUMMARY": "OKX 交易所的自托管钱包，官方称支持 140 多条网络，其中包括 EVM、Bitcoin、Solana、Sui、Tron 和 Cosmos 系列链。内置 DEX 公布了费率表，视币种从 0% 到 0.5% 不等。",
+        "PRO_1": "这里覆盖网络最多的一款，全部来自同一组助记词。",
+        "PRO_2": "公开的兑换费率表，按交易对从 0% 到 0.5%。",
+        "CON_1": "闭源，官网也没有说明是否支持硬件钱包。"
+      },
+      "COINBASE": {
+        "BEST_FOR": "最适合 Coinbase 用户",
+        "SUMMARY": "Coinbase 面向 EVM 网络和 Solana 的自托管扩展，与交易所账户相互独立。它的移动应用 2025 年 7 月更名为 Base App，2026 年 9 月 10 日改回 Coinbase Wallet，而扩展的名字自始至终没变。",
+        "PRO_1": "对新手来说是熟悉的品牌，从 Coinbase 账户过来路径很短。",
+        "PRO_2": "扩展内即可用 Ledger 签名。",
+        "CON_1": "没有 Firefox 版本，2026 年 9 月在 Chrome Web Store 的评分是 5 分里的 2.7 分。"
+      },
+      "BACKPACK": {
+        "BEST_FOR": "最适合不被钱包抽成的兑换与跨链",
+        "SUMMARY": "来自 Backpack Exchange 团队的多链钱包，覆盖 Solana、主要 EVM 网络、Sui、Aptos 以及另外十多条链。自 2026 年 3 月起，兑换和跨链不再收取钱包手续费，并支持 Ledger、Trezor 或 Keystone 签名。",
+        "PRO_1": "在它支持的每一条网络上，兑换和跨链都不收钱包手续费。",
+        "PRO_2": "Ledger、Trezor 和 Keystone 全都支持。",
+        "CON_1": "用户规模比头部产品小得多，产品也与 Backpack 交易所绑得很紧。"
+      },
+      "ZERION": {
+        "BEST_FOR": "最适合盯住 DeFi 资产组合",
+        "SUMMARY": "围绕资产组合追踪打造的钱包：Ethereum、Solana 等五十多条网络上的持仓、DeFi 和历史记录，都在同一个界面里。扩展代码以 GPL-3.0 公开，并经过 Cure53、SlowMist、Zokyo 和 Secfault Security 审计。",
+        "PRO_1": "跨链查看 DeFi 持仓，视图最清晰。",
+        "PRO_2": "开源，公开了四份安全审计报告，还设有漏洞赏金。",
+        "CON_1": "兑换和跨链收取 0.67% 手续费，付费的 Premium 方案为 0.25%。"
+      },
+      "XVERSE": {
+        "BEST_FOR": "最适合 Bitcoin、Ordinals 和 Runes",
+        "SUMMARY": "专注 Bitcoin 的一款钱包：原生 Bitcoin、Ordinals 和 Runes，Stacks、Spark 这类 Bitcoin 二层网络，以及 Starknet。可用 Ledger 或 Keystone 签名。",
+        "PRO_1": "完整支持 Ordinals 和 Runes，这正是通用钱包处理得很勉强、甚至根本不支持的部分。",
+        "PRO_2": "支持 Ledger 和 Keystone 签名，密钥始终留在设备上。",
+        "CON_1": "一切围绕 Bitcoin 展开：要用 Ethereum 或 Solana，你还得再装一个钱包。"
+      },
+      "TRUST": {
+        "BEST_FOR": "最适合手机和浏览器共用一个钱包",
+        "SUMMARY": "手机钱包 Trust Wallet 的浏览器扩展，官方称支持 100 多条网络，其中包括 Bitcoin、Ethereum、Solana 和主要的 EVM 链。2025 年 12 月 24 日至 26 日，一个被篡改的 2.68 版 Chrome 扩展曾在架上，从 2,520 个地址卷走约 850 万美元；Trust Wallet 随后在 2.69 版修复，并开始赔付。",
+        "PRO_1": "手机和电脑上是同一个钱包，覆盖 100 多条网络。",
+        "PRO_2": "Bitcoin、Solana 和 EVM 资产都收在一个扩展里。",
+        "CON_1": "它的 Chrome 扩展在 2025 年 12 月遭遇供应链入侵，官网也没有说明是否支持硬件钱包。"
+      },
+      "SLUSH": {
+        "BEST_FOR": "最适合 Sui",
+        "SUMMARY": "Mysten Labs 面向 Sui 的钱包，由 Sui Wallet 和 Stashed 演变而来。它既可以用传统助记词，也可以用 zkLogin，后者让你拿 Google、Apple、Facebook 或 Twitch 账号登录，而不必记助记词。",
+        "PRO_1": "Sui 生态的标杆钱包，2026 年 9 月在 Chrome Web Store 的评分是 5 分里的 4.9 分。",
+        "PRO_2": "面向新手的社交账号登录，不需要助记词。",
+        "CON_1": "只支持 Sui，而且 zkLogin 模式把访问权绑在了一个 OAuth 提供方身上。"
+      },
+      "PETRA": {
+        "BEST_FOR": "最适合 Aptos",
+        "SUMMARY": "Aptos Labs 为 Aptos 网络自己做的钱包，有 Chrome、手机和网页三种形态，并支持 Ledger。",
+        "PRO_1": "由打造 Aptos 这条链的团队亲自开发。",
+        "PRO_2": "可以用 Ledger 设备签名。",
+        "CON_1": "只支持 Aptos，而且闭源：一份要求公开代码的公开请求自 2025 年 7 月起一直等到现在。"
+      },
+      "TRONLINK": {
+        "BEST_FOR": "最适合 Tron 和 TRC-20 上的 USDT",
+        "SUMMARY": "Tron 生态由来已久的那款钱包，一组助记词同时装下 Tron 以及 Ethereum、BNB Chain 和 BTTC。",
+        "PRO_1": "多数 Tron dApp 都是围着它做适配的。",
+        "PRO_2": "一组助记词覆盖 Tron 和几条 EVM 网络。",
+        "CON_1": "公开文档单薄：硬件钱包支持和兑换手续费，官网都没有写。"
+      },
+      "EXODUS": {
+        "BEST_FOR": "最适合想要精致界面的新手",
+        "SUMMARY": "Exodus 的浏览器扩展，与它的桌面应用是两个产品，覆盖 50 多条网络，其中包括 Ethereum、Solana、Polygon、Avalanche 和 BNB Chain。",
+        "PRO_1": "界面清爽，对新手友好。",
+        "PRO_2": "一个扩展里装下很多条网络。",
+        "CON_1": "闭源，2026 年 9 月在 Chrome Web Store 的评分是 5 分里的 3.4 分。"
+      },
+      "RAINBOW": {
+        "BEST_FOR": "最适合追求精致的 Ethereum 体验",
+        "SUMMARY": "一款以设计见长的 Ethereum 钱包，覆盖 Ethereum 和主要的 EVM 网络，扩展代码以 GPL-3.0 公开。",
+        "PRO_1": "EVM 网络上设计最用心的钱包之一。",
+        "PRO_2": "以 GPL-3.0 开源，可装在 Chrome、Brave、Edge 和 Firefox 上。",
+        "CON_1": "只支持 EVM，内置兑换的手续费也没有公布。"
+      }
+    },
+    "FAQ": {
+      "TITLE": "大家常问的问题",
+      "ITEMS": {
+        "SAFEST": {
+          "Q": "最安全的加密钱包扩展是哪一款？",
+          "A": "把私钥留在电脑之外的那一款。会保存密钥的浏览器扩展，即便加密，也可能被恶意软件、恶意扩展或一次钓鱼签名掏空。给扩展配一台硬件钱包，或者用一款密钥放在物理隔离设备上的扩展，就能去掉这个风险：电脑始终只看得到公开地址和签好名的交易。"
+        },
+        "METAMASK": {
+          "Q": "2027 年 MetaMask 还是最好的钱包扩展吗？",
+          "A": "它仍然是绝大多数 EVM dApp 围绕着做适配的扩展，很多同行也照着同一套接口实现。是不是最好，取决于你手里拿着什么：不配硬件钱包的话，MetaMask 的密钥就留在浏览器里，而别的扩展在链、费用或安全模型上能给出它给不了的东西。"
+        },
+        "LEDGER": {
+          "Q": "哪些钱包扩展可以配 Ledger 使用？",
+          "A": "如表所示，本榜单里大多数扩展都能用 Ledger 设备签名。Ledger 把密钥留在一台你插上去的 USB 或蓝牙设备里。物理隔离钱包更进一步：签名设备根本不和电脑连接，只通过二维码交换数据。"
+        },
+        "AIR_GAPPED": {
+          "Q": "什么是物理隔离钱包？",
+          "A": "指私钥放在一台从不联网的设备上的钱包：没有 Wi-Fi，没有 USB，没有蓝牙。交易以二维码来回传递，互联网上的任何东西都够不到密钥。Locker Vault 能免费把一台闲置手机变成这样的设备。"
+        },
+        "ONE_WALLET": {
+          "Q": "一个扩展能同时取代 MetaMask、Phantom 和 Keplr 吗？",
+          "A": "越来越可以了。如今的多链扩展用一组助记词就能覆盖 EVM 链、Solana 和 Cosmos。关键在于你的 dApp 能不能识别它们：Locker Protocol Wallet 响应为 MetaMask、Keplr、TronLink 和 Freighter 设计的连接流程，并出现在 Solana、Sui 和 Aptos 的 Wallet Standard 列表里。"
+        },
+        "FEES": {
+          "Q": "加密钱包扩展是免费的吗？",
+          "A": "这里每一款钱包，安装和持币都不花钱。内置的兑换和跨链通常会在网络成本之外再由钱包加收一笔，各家不一。Locker Protocol Wallet 对兑换和跨链最多加收 0.25%，Hyperliquid 订单为 0.05%，都会在你签名前显示出来。"
+        }
+      }
+    },
+    "FINAL": {
+      "TITLE": "试试这款从不保管你密钥的扩展",
+      "DESC": "在 Chrome 或 Brave 上安装 Locker Protocol Wallet，在一台闲置手机上装好免费的 Locker Vault，然后继续用你早就熟悉的那些 dApp。"
+    },
+    "LEDGER": {
+      "YES": "支持",
+      "NO": "不支持",
+      "UNDOCUMENTED": "未说明"
+    }
+  },
+  "NETWORKS": {
+    "COMMON": {
+      "CTA_VAULT": "安装离线保险库",
+      "OTHER_NETWORKS": "其他网络",
+      "ALL_NETWORKS": "全部支持的网络",
+      "LOCKER_CTA": "立即锁仓你的代币",
+      "HUB": {
+        "META": {
+          "TITLE": "Locker Protocol Wallet 支持的网络",
+          "DESCRIPTION": "Ethereum 与各条 EVM 网络、Bitcoin、Solana、Cosmos、Tron、Sui、Aptos、Stellar 和 XRP Ledger：一个浏览器扩展，密钥留在一台离线设备上。"
+        },
+        "TITLE": "支持的网络",
+        "SUBTITLE": "Locker Protocol Wallet 能持有的每一条链，全部出自同一组助记词，而密钥留在一台离线设备上。每个页面都会讲清楚：在这条链上签名之前，钱包会给你看到什么。"
+      }
+    },
+    "PAGES": {
+      "APTOS": {
+        "META": {
+          "TITLE": "物理隔离的 Aptos 钱包（APT）：私钥不留在电脑里",
+          "DESCRIPTION": "在浏览器扩展里持有 APT，而私钥从不触碰你的电脑。Aptos 应用通过 AIP-62 Wallet Standard 连接，每一次签名都由一台离线设备用二维码完成。"
+        },
+        "BADGE": "Aptos · APT",
+        "TITLE": "一个 Aptos 钱包，密钥在另一台设备上",
+        "SUBTITLE": "APT 放在一个 Chrome 与 Brave 扩展里，Aptos 应用发现它的方式，和发现其他任何钱包完全一样，而签名用的密钥留在一台没有网络的设备上。交易以二维码的形式过去，再带着签名回来。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "Aptos 应用真正读取的那个标准",
+            "TEXT": "宣告一个 Aptos 钱包，光发事件是不够的：官方的发现机制读的是一份注册表，只发事件的钱包就是隐身的，而且不会报任何错。这个扩展按标准规定的位置注册，所以 Panora、Amnis、Liquidswap、Thala 和 Aptos Names 都会列出它。"
+          },
+          "C2": {
+            "TITLE": "签名发生在电脑之外",
+            "TEXT": "扩展持有地址，保险库持有密钥。两者之间传递的只是一个光学码：没有数据线，没有配对，也没有驱动，联网的那台电脑上没有任何可偷的东西。"
+          },
+          "C3": {
+            "TITLE": "还是那一组助记词",
+            "TEXT": "Aptos 账户由你早就抄下来的那组助记词派生，走的是 Aptos 使用的 ed25519 路径。新增这条链只会新增一个地址，绝不会新增第二份要备份的东西。"
+          },
+          "C4": {
+            "TITLE": "发出去了，还盯着",
+            "TEXT": "一笔转账会由扩展自己跟踪，直到链把它打包进区块为止，所以待处理的转账按链上的节奏给出结果，而不是永远挂在界面上。"
+          }
+        },
+        "FAQ_TITLE": "Aptos 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "Locker Protocol Wallet 能配合 Aptos 应用使用吗？",
+            "A": "能。它实现了 AIP-62 Wallet Standard，也就是 Aptos 应用发现钱包的方式，因此会和其他钱包一起出现在它们的选择列表里。"
+          },
+          "Q2": {
+            "Q": "我的 Aptos 私钥在哪里？",
+            "A": "在第二台没有网络连接的设备上，也就是 Locker Vault。扩展从不持有它。每一次签名都在那台设备上完成，再通过摄像头以二维码读回。"
+          },
+          "Q3": {
+            "Q": "Aptos 需要一组新的助记词吗？",
+            "A": "不需要。Aptos 地址和你其他链一样出自同一组助记词，只是走 Aptos 使用的派生路径。一组助记词，覆盖所有链。"
+          },
+          "Q4": {
+            "Q": "免费吗？",
+            "A": "免费，安装和持有都不收费。没有账号，无需注册，钱包里也没有任何遥测；从扩展里发起的兑换，会在你签名之前显示它那一点手续费。"
+          }
+        }
+      },
+      "BITCOIN": {
+        "META": {
+          "TITLE": "物理隔离 Bitcoin 钱包：Taproot、PSBT、二维码签名",
+          "DESCRIPTION": "持有 BTC，密钥留在一台离线设备上：原生 SegWit 与 Taproot 地址，PSBT 通过二维码签名，还能导出只读描述符给 Sparrow 或 Nunchuk。"
+        },
+        "BADGE": "Bitcoin · BTC",
+        "TITLE": "一个 Bitcoin 钱包，密钥在另一台设备上",
+        "SUBTITLE": "BTC 放在一个 Chrome 与 Brave 扩展里，密钥留在一台完全没有网络的手机或电脑上。未签名的 PSBT 以二维码的形式出去，带着签名回来：没有数据线，没有蓝牙，没有配对，也不用买任何东西。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "PSBT，以及随之而来的复核",
+            "TEXT": "离线设备自己解码 PSBT：每一个输出、手续费占转出金额的比例、低于粉尘限额的输出，以及本钱包无法控制的输入。它签的是自己读到的内容，而不是浏览器声称的内容。"
+          },
+          "C2": {
+            "TITLE": "原生 SegWit 与 Taproot",
+            "TEXT": "一个 bc1 收付地址和一个 bc1p Taproot 地址，都来自你已有的那组助记词。放在 Taproot 一侧的铭文会被标注出来，绝不会被当成普通余额花掉。"
+          },
+          "C3": {
+            "TITLE": "需要的话，还有只读模式",
+            "TEXT": "钱包可以为 Sparrow、Nunchuk 或任何只读工具导出描述符，里面只有公钥。你现有的那一套照常运转，这只是给它加一个签名器，而不是替换它。"
+          },
+          "C4": {
+            "TITLE": "手续费还能改",
+            "TEXT": "一笔迟迟没有确认的交易，可以用更高的手续费替换掉，走的还是同一套离线签名仪式：替换交易在第二台设备上重新签名，绝不会由浏览器一键放行。"
+          }
+        },
+        "FAQ_TITLE": "Bitcoin 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "这是 Bitcoin 硬件钱包的免费替代方案吗？",
+            "A": "是同样的隔离，只是不需要硬件：密钥住在你已经拥有的第二台设备上，保持离线，通过二维码签名。没有东西要买，没有东西要插，而且构建可复现。"
+          },
+          "Q2": {
+            "Q": "它支持哪些地址类型？",
+            "A": "收付用原生 SegWit（bc1），旁边还有 Taproot（bc1p），两者都由你的助记词派生。"
+          },
+          "Q3": {
+            "Q": "我还能继续用 Sparrow 或 Nunchuk 吗？",
+            "A": "能。导出只读描述符，继续用你惯用的工具看余额、构造交易；签名则来自离线保险库。"
+          },
+          "Q4": {
+            "Q": "离线设备到底会给我看什么？",
+            "A": "各个输出和它们的金额、手续费以及它占金额的比例、低于粉尘限额的输出，还有它能签下多少个输入。遇到读不懂的字段，它会直说，而不是绕过去照签。"
+          }
+        }
+      },
+      "COSMOS": {
+        "META": {
+          "TITLE": "物理隔离 Cosmos 钱包：ATOM、OSMO、INJ、RUNE",
+          "DESCRIPTION": "Cosmos Hub、Osmosis、Injective、THORChain、Stride 和 Juno 出自同一组助记词，每一份 SignDoc 都在离线设备上重新读过再签名。"
+        },
+        "BADGE": "Cosmos · ATOM",
+        "TITLE": "一个 Cosmos 钱包，密钥在另一台设备上",
+        "SUBTITLE": "Cosmos Hub、Osmosis、Injective、THORChain、Stride 和 Juno，都装在一个 Chrome 与 Brave 扩展里，它连接 Cosmos 应用的方式和 Keplr 一样，而签名用的密钥留在一台完全没有网络的手机或电脑上。交易以二维码的形式过去，再带着签名回来。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "六条链，一把密钥",
+            "TEXT": "Cosmos Hub、Osmosis、Injective、THORChain、Stride 和 Juno。每个地址都由你已有的那组助记词派生，走各条链自己的派生路径，带各自的前缀：cosmos1、osmo1、inj1、thor1、stride1、juno1。"
+          },
+          "C2": {
+            "TITLE": "离线设备会把 SignDoc 重读一遍",
+            "TEXT": "扩展不会告诉保险库它在签什么，它交过去的是字节。保险库自己解码 protobuf 格式的 SignDoc，叫出它认得的消息，完整显示备注，读不懂的就拒签。被入侵的浏览器无法把一笔交易说成另一笔。"
+          },
+          "C3": {
+            "TITLE": "Cosmos 应用照常连接",
+            "TEXT": "扩展响应 Cosmos 应用所期待的 Keplr API，所以 Osmosis、Stride、DAO DAO、Injective Helix 和 THORSwap 看到的就是一个普通钱包。这是对着真实站点测出来的，不是对着模拟页面。"
+          },
+          "C4": {
+            "TITLE": "一次 authz 授权会标红",
+            "TEXT": "MsgGrant 把动用你账户的权利交给另一个账户。它在一串消息里看上去平平无奇，却是这条链上唯一会悄悄让出控制权的东西，所以复核界面把它标成红色并要求你明确确认，而 MsgRevoke 从来不会。"
+          }
+        },
+        "FAQ_TITLE": "Cosmos 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "Locker Protocol Wallet 支持哪些 Cosmos 链？",
+            "A": "Cosmos Hub（ATOM）、Osmosis（OSMO）、Injective（INJ）、THORChain（RUNE）、Stride（STRD）和 Juno（JUNO）。六条链全都出自同一组助记词，每一条都带着自己那条链的地址前缀。"
+          },
+          "Q2": {
+            "Q": "私钥会有一刻出现在我的电脑上吗？",
+            "A": "不会。密钥住在第二台没有任何网络连接的设备上，也就是 Locker Vault，一款你装在闲置手机、平板或电脑上的免费应用。扩展只持有公钥和地址。交易以二维码显示，保险库扫描它，你在那边批准，它再用另一个二维码把签名显示回来。"
+          },
+          "Q3": {
+            "Q": "我能用它上 Osmosis 或 Injective 吗？",
+            "A": "能。扩展宣告的正是 Cosmos 应用已经在用的那套 API，所以它们会把它列进可选的钱包里。之后签名走离线设备，而不是浏览器的弹窗。"
+          },
+          "Q4": {
+            "Q": "它能质押或委托吗？",
+            "A": "钱包签的是应用发来的东西，保险库负责复核。质押界面并没有做进扩展本身：你在惯用的应用上操作，再到离线设备上批准那笔交易。"
+          }
+        }
+      },
+      "DOGECOIN": {
+        "META": {
+          "TITLE": "物理隔离的 Dogecoin 钱包（DOGE）：私钥离线",
+          "DESCRIPTION": "在浏览器扩展里持有 DOGE，而私钥从不触碰你的电脑。手续费会先和转出金额比对，粉尘输出会被点名，整笔交易在一台离线设备上通过二维码签名。"
+        },
+        "BADGE": "Dogecoin · DOGE",
+        "TITLE": "一个 Dogecoin 钱包，密钥在另一台设备上",
+        "SUBTITLE": "DOGE 放在一个 Chrome 与 Brave 扩展里，跑的是给 Bitcoin 签名的那套引擎，而签名用的密钥留在一台完全没有网络连接的设备上。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "Bitcoin 那套引擎，换一组参数",
+            "TEXT": "Dogecoin 用的是和 Bitcoin 同一套 UTXO 引擎，只是换上自己的参数和自己的传统签名方式：一份实现，验证一次，而不是复制一份再各自走样。"
+          },
+          "C2": {
+            "TITLE": "手续费高过金额就直接拒绝",
+            "TEXT": "Dogecoin 的手续费按每千字节报价，而它的金额往往很大，这恰好就是把一笔转账变成给矿工捐款的经典形状。手续费超过转出金额的发送，会在签名仪式开始之前就被拒绝，也没有任何开关可以把它强行放行。"
+          },
+          "C3": {
+            "TITLE": "粉尘会被点名，不会被藏起来",
+            "TEXT": "低于网络粉尘限额的输出，会在你批准之前就在离线设备上被指出来，因为一笔广播不出去的交易，是在你签完名之后才失败的。"
+          },
+          "C4": {
+            "TITLE": "还是那一组助记词",
+            "TEXT": "Dogecoin 地址由你早就抄下来的那组助记词派生，走 Dogecoin 自己的路径。一组助记词，覆盖所有链，只备份一次。"
+          }
+        },
+        "FAQ_TITLE": "Dogecoin 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "我能免费把 DOGE 放在物理隔离的钱包里吗？",
+            "A": "能。Locker Protocol Wallet 是免费的浏览器扩展，密钥由 Locker Vault 保管，那是一款你装在闲置手机或电脑上、并让它保持离线的免费应用。没有硬件要买。"
+          },
+          "Q2": {
+            "Q": "签名是怎么回到浏览器的？",
+            "A": "靠光学。扩展把交易显示成二维码，离线设备扫描它，你在那边批准，它再用另一个二维码把签名显示回来。没有数据线，没有蓝牙，没有配对。"
+          },
+          "Q3": {
+            "Q": "它能防住我在手续费上出错吗？",
+            "A": "手续费大于转出金额的发送会被直接拒绝，低于粉尘限额的输出也会在你签名之前，在复核界面上被点名。"
+          },
+          "Q4": {
+            "Q": "Dogecoin 需要单独备份吗？",
+            "A": "不需要。它和你其他链出自同一组助记词。"
+          }
+        }
+      },
+      "ETHEREUM": {
+        "META": {
+          "TITLE": "物理隔离 Ethereum 钱包，MetaMask 的替代品",
+          "DESCRIPTION": "一个 Ethereum 扩展，dApp 像识别 MetaMask 那样识别它，而密钥留在离线设备上：calldata 会被解码，每一次签名都通过二维码批准。"
+        },
+        "BADGE": "Ethereum · ETH",
+        "TITLE": "一个 Ethereum 钱包，密钥在另一台设备上",
+        "SUBTITLE": "你已经在用的每一个 dApp，都由标准的 Web3 接口照常服务，而密钥在一台没有网络的机器上。交易会被解码、核对，并向你展示两次：一次在浏览器里，一次在真正为它签名的那台设备上。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "可以直接顶上的钱包，不是又一个要学的插件",
+            "TEXT": "它通过 EIP-6963 宣告自己，所以网站会把它列在已经提供的那些钱包旁边。交易、personal_sign、EIP-712 类型化数据和 EIP-5792 批量调用，走的都是同一套光学签名仪式。"
+          },
+          "C2": {
+            "TITLE": "签名之前先读懂 calldata",
+            "TEXT": "一次授权、一笔转账、一次兑换：调用会被解码成它到底做了什么、又让谁能动你的钱，已知钓鱼名单则查的是随扩展一起发布的快照，不发任何请求，也不会泄露你要去哪里。"
+          },
+          "C3": {
+            "TITLE": "本地模型，不是云端服务",
+            "TEXT": "一个小模型在你的机器上运行，用来标出那些看起来和自称不符的请求。它从不离开设备，也从不拦截：它负责解释，你负责决定，而离线设备始终摆出事实。"
+          },
+          "C4": {
+            "TITLE": "给出去的额度收得回来",
+            "TEXT": "你当初授予的代币额度，可以从钱包里撤销，走的是同一套复核和同一次离线签名。"
+          }
+        },
+        "FAQ_TITLE": "Ethereum 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "它是 MetaMask 的替代品吗？",
+            "A": "它响应的是同一套标准接口，所以 dApp 把它当成一个普通钱包。区别在于密钥在哪里：在一台没有网络的独立设备上，而不是在浏览器里。"
+          },
+          "Q2": {
+            "Q": "是不是所有 dApp 都能用？",
+            "A": "它实现了标准的 Web3 提供者接口，并通过 EIP-6963 宣告自己，这正是现代站点发现钱包的方式。每次发版，测试套件都会端到端地跑近两百个真实站点。"
+          },
+          "Q3": {
+            "Q": "类型化数据和批量调用呢？",
+            "A": "EIP-712 类型化数据会在离线设备上逐个字段解码，EIP-5792 批量调用则按它本来的样子，作为一串调用列出来。"
+          },
+          "Q4": {
+            "Q": "免费吗？",
+            "A": "免费，扩展和保险库都是，而且为各应用商店发布了可复现的构建。从扩展里发起的兑换和跨链桥最多加收 0.25%，并在你签名之前显示出来。"
+          }
+        }
+      },
+      "EVM_NETWORKS": {
+        "META": {
+          "TITLE": "物理隔离钱包：Arbitrum、Base、Polygon、BNB Chain",
+          "DESCRIPTION": "一把离线密钥管住 Arbitrum、Base、Polygon、Optimism、BNB Chain、Avalanche、Linea 以及你自己添加的任何 EVM 链，每次签名都用二维码批准。"
+        },
+        "BADGE": "EVM 网络 · EVM",
+        "TITLE": "所有 EVM 网络，一把离线密钥",
+        "SUBTITLE": "Arbitrum、Base、Polygon、Optimism、BNB Chain、Avalanche 和 Linea 跑的是和 Ethereum 同一台机器，所以它们共用一个地址、一把密钥和同一个复核界面。在它们之间真正会变的，是你当前指向的那条网络，而这一点绝不会有人替你改。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "一个地址走遍所有网络",
+            "TEXT": "同一个账户，由你的助记词派生一次，就在每一条 EVM 网络上持有资金。新增一条网络，只是多一个可以看的地方，绝不会多一份要备份的东西。"
+          },
+          "C2": {
+            "TITLE": "网站无法悄悄挪走你的网络",
+            "TEXT": "切换当前网络是一次全局动作，它会牵动其他每一个已连接的标签页，也会牵动钱包自己的界面，所以网站每次提出这个请求都会弹出一张同意卡片，而你没有在看的标签页根本提不出来。"
+          },
+          "C3": {
+            "TITLE": "把网络指向你自己的节点",
+            "TEXT": "每一条网络，包括内置的那些，都可以指向你选定的端点，之后也能改回默认值。钱包会拒绝不是公网 https 的端点，正是这一点让网站没法把它对准你的局域网。"
+          },
+          "C4": {
+            "TITLE": "添加一条网络，代价先摆出来",
+            "TEXT": "网站可以请求添加一条网络。在任何东西被请求之前，你先看到它想要的 chain id、名称和 RPC，只有在你同意之后，那个端点才会被探测。"
+          }
+        },
+        "FAQ_TITLE": "EVM 网络钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "内置了哪些 EVM 网络？",
+            "A": "Ethereum、Arbitrum、Base、Polygon、Optimism、BNB Chain、Avalanche、Linea、Hyperliquid 的 EVM 和 Robinhood Chain，再加上你自己添加的任何网络。"
+          },
+          "Q2": {
+            "Q": "每条网络都要一把不同的密钥吗？",
+            "A": "不用。一组助记词派生出的一个账户，在所有网络上通用。"
+          },
+          "Q3": {
+            "Q": "dApp 能不问我就切换网络吗？",
+            "A": "不能。当前网络是全局的，所以每一次切换都会弹出同意卡片，而后台标签页根本发不出来。"
+          },
+          "Q4": {
+            "Q": "我能用自己的 RPC 端点吗？",
+            "A": "能，任何网络都行，包括内置的那些，而且随时可以恢复默认值。"
+          }
+        }
+      },
+      "HYPERLIQUID": {
+        "META": {
+          "TITLE": "Hyperliquid 钱包：用离线密钥交易永续合约",
+          "DESCRIPTION": "在浏览器扩展里交易 Hyperliquid 永续合约：持仓、资金费率和 PnL 都在钱包中，而让交易得以进行的代理授权签在一台离线设备上。"
+        },
+        "BADGE": "Hyperliquid · HYPE",
+        "TITLE": "Hyperliquid 永续合约，密钥在另一台设备上",
+        "SUBTITLE": "余额、持仓、资金费率和订单都在扩展里，而让交易得以进行的那份授权，签在一台没有网络的设备上，有效期你看得见，而且到点自己结束。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "代理授权离线签发，而且会过期",
+            "TEXT": "在 Hyperliquid 上交易要通过一把代理密钥。那份授权和其他任何交易一样，在离线设备上签署，有效期三十天，而钱包会显示它什么时候到期，而不是在你背后自动续签。"
+          },
+          "C2": {
+            "TITLE": "持仓、资金费率和 PnL，就地可读",
+            "TEXT": "未平仓的持仓、它们的资金费率和盈亏都显示在钱包里，你不必在一个界面和一个说法不一致的钱包之间来回跑。"
+          },
+          "C3": {
+            "TITLE": "现货与永续，以及两者之间的通道",
+            "TEXT": "HYPE 会在 HyperCore 和 HyperEVM 之间移动，钱包把这次划转明明白白地做出来，而不是留给你自己去想余额到底在哪一侧。"
+          },
+          "C4": {
+            "TITLE": "手续费是写明的",
+            "TEXT": "钱包在一笔交易上收多少，写在界面里，也写在条款里，不用等报价出来才发现。"
+          }
+        },
+        "FAQ_TITLE": "Hyperliquid 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "我能用物理隔离的密钥交易 Hyperliquid 永续合约吗？",
+            "A": "能。交易所需的代理授权在离线设备上签署，之后订单以那个代理的身份发出，而它三十天后过期。"
+          },
+          "Q2": {
+            "Q": "扩展会显示我的持仓吗？",
+            "A": "会：未平仓的持仓、资金费率和 PnL，从 Hyperliquid 读取，并显示在钱包里。"
+          },
+          "Q3": {
+            "Q": "代理过期之后会怎样？",
+            "A": "交易停下来，直到你签发新的一份。钱包会把日期告诉你，而不是默默续签。"
+          },
+          "Q4": {
+            "Q": "有手续费吗？",
+            "A": "有：在你同意之后，每笔订单的 0.05% 会作为 builder 手续费归钱包，叠加在 Hyperliquid 自己的费用之上。它在你签名之前显示在界面上，也写在使用条款里。"
+          }
+        }
+      },
+      "LITECOIN": {
+        "META": {
+          "TITLE": "物理隔离的 Litecoin 钱包（LTC）：私钥离线",
+          "DESCRIPTION": "在浏览器扩展里持有 LTC，而私钥从不触碰你的电脑。原生 SegWit 地址，手续费会先和金额比对，整笔交易在一台离线设备上通过二维码签名。"
+        },
+        "BADGE": "Litecoin · LTC",
+        "TITLE": "一个 Litecoin 钱包，密钥在另一台设备上",
+        "SUBTITLE": "LTC 放在一个 Chrome 与 Brave 扩展里，跑的是给 Bitcoin 签名的那套引擎，只换参数、从不复制，而签名用的密钥留在一台没有网络的设备上。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "Bitcoin 那套引擎，换一组参数",
+            "TEXT": "Litecoin 不是第二份实现：它就是同一套 UTXO 引擎、同一套 PSBT、同一个复核界面，只是带上这条链自己的参数。在 Bitcoin 上验证过的东西，在这里同样成立，而不是写了两遍却只测过一遍。"
+          },
+          "C2": {
+            "TITLE": "手续费高过金额就直接拒绝",
+            "TEXT": "这类链上的经典错误，是把每千字节的手续费当成每字节来读，于是一笔小额转账变成给矿工的一大笔捐款。手续费超过转出金额的发送会被直接拒绝，也没有哪个勾选框能把它放行。"
+          },
+          "C3": {
+            "TITLE": "签名发生在电脑之外",
+            "TEXT": "未签名的交易以二维码出去，带着签名回来。离线设备会显示各个输出、手续费占金额的比例，以及任何低于粉尘限额的输出，然后签名，而它从来看不到网络。"
+          },
+          "C4": {
+            "TITLE": "还是那一组助记词",
+            "TEXT": "Litecoin 地址来自你已有的那组助记词，走 Litecoin 自己的派生路径，用 ltc1 开头的原生 SegWit 地址。"
+          }
+        },
+        "FAQ_TITLE": "Litecoin 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "Locker Protocol Wallet 是一台 Litecoin 硬件钱包吗？",
+            "A": "它是同一个想法，只是不需要硬件：密钥住在你已经拥有的第二台设备上，保持离线，通过二维码签名。没有东西要买，没有东西要插，而且构建可复现。"
+          },
+          "Q2": {
+            "Q": "它用哪种 Litecoin 地址？",
+            "A": "原生 SegWit（ltc1），由你的助记词在 Litecoin 自己的路径上派生。"
+          },
+          "Q3": {
+            "Q": "它能转给传统的 L-address 吗？",
+            "A": "能。离线设备上的复核界面会在你批准之前，逐项列出每一个输出和手续费。"
+          },
+          "Q4": {
+            "Q": "要花钱吗？",
+            "A": "不要。扩展和保险库都是免费的，两者都没有账号，也没有任何遥测。"
+          }
+        }
+      },
+      "ROBINHOOD_CHAIN": {
+        "META": {
+          "TITLE": "Robinhood Chain 代币锁仓，由 Locker Protocol 提供",
+          "DESCRIPTION": "在 Robinhood Chain 上锁定 ERC-20 代币、WETH、USDG 和 Robinhood Stock Tokens：时间锁与按价格解锁，全部写在已验证的智能合约里。"
+        },
+        "BADGE": "Robinhood Chain · 代币锁仓",
+        "TITLE": "Robinhood Chain 上的官方代币锁仓",
+        "SUBTITLE": "安全地锁定 WETH、USDG 和官方的 Robinhood Stock Tokens。直接在 Robinhood 的 EVM Layer-2 网络上，创建高安全性的时间锁和按价格解锁的保险库。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "时间锁保险库",
+            "TEXT": "创建安全的归属保险库和锁仓。把 Robinhood Chain 上任何标准 ERC-20 资产锁到指定的日期和时间，由链上已验证的智能合约保护。"
+          },
+          "C2": {
+            "TITLE": "按价格条件解锁",
+            "TEXT": "把代币一直锁到某项资产达到指定的目标价为止，价格由 Robinhood Chain 上的 Uniswap V2 交易对和 Uniswap V3 资金池动态计算。"
+          },
+          "C3": {
+            "TITLE": "已验证的 Stock Tokens",
+            "TEXT": "对 Robinhood Stock Tokens（AAPL、NVDA、TSLA、MSFT、META、SPY、QQQ）做官方注册表验证，防止代币冒名顶替。"
+          }
+        },
+        "FAQ_TITLE": "常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "在 Locker Protocol 上怎么连接 Robinhood Chain？",
+            "A": "只需点击 Locker Protocol 应用右上角的网络选择框，选中「Robinhood Chain」。如果你的 MetaMask 或其他 EVM 钱包里还没有配置这条网络，应用会提示你自动添加并配置 chain ID 4663 的网络参数。"
+          },
+          "Q2": {
+            "Q": "我能锁定 Robinhood Stock Tokens（AAPL、NVDA、TSLA 等）吗？",
+            "A": "可以。官方的 Robinhood Stock Tokens 是 Robinhood Chain 上的标准 ERC-20 合约。Locker Protocol 认得它们的规范合约地址，会显示已验证状态标识，并支持为这些资产创建安全的时间锁和按价格条件的锁仓。"
+          },
+          "Q3": {
+            "Q": "LP 交易对和按价格条件的锁仓，价格是怎么算出来的？",
+            "A": "Locker Protocol 使用一个链上的动态 PriceCalculator 合约，直接与 Uniswap V2 和 Uniswap V3 的价格池交互。界面还接入了 DexScreener API 和链上工厂注册表检查，以干净利落地解析价格结构。"
+          }
+        }
+      },
+      "SOLANA": {
+        "META": {
+          "TITLE": "物理隔离的 Solana 钱包：SOL 与 SPL 代币",
+          "DESCRIPTION": "持有 SOL 和各种 SPL 代币，而密钥留在一台离线设备上。Solana 应用照常连接，每一笔交易都会先模拟一遍，结果摆在你面前，你再用二维码签名。"
+        },
+        "BADGE": "Solana · SOL",
+        "TITLE": "一个 Solana 钱包，密钥在另一台设备上",
+        "SUBTITLE": "SOL 和你持有的各种 SPL 代币，都在一个 Chrome 与 Brave 扩展里，Solana 应用连接它的方式，和连接其他任何钱包完全一样，而签名用的密钥留在一台没有网络的设备上。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "先模拟，再签名",
+            "TEXT": "一笔 Solana 交易是一串针对程序的指令，光看字节看不出它会做什么。所以它会先被模拟一遍，模拟结果对你余额的影响，会在签名仪式开始之前显示出来。"
+          },
+          "C2": {
+            "TITLE": "程序会被叫出名字",
+            "TEXT": "属于已知程序的指令会被叫出名字，而不是摊成一堆看不懂的数据；钱包叫不出名字的，就明说它叫不出，而不是打扮成安全的样子。"
+          },
+          "C3": {
+            "TITLE": "Sign in with Solana",
+            "TEXT": "SIWS 的消息签名同样走那台离线设备，所以登录一个应用只需扫一次二维码，而密钥从不靠近浏览器。"
+          },
+          "C4": {
+            "TITLE": "持有了，SPL 代币就会出现",
+            "TEXT": "没有什么名单要维护：账户一持有某个铸币，它就会出现，余额以链上报告的数字为准。"
+          }
+        },
+        "FAQ_TITLE": "Solana 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "Solana 应用能连上它吗？",
+            "A": "能。它提供 Solana 应用期待的那套钱包接口，所以会出现在它们的选择列表里，像其他钱包一样连接。"
+          },
+          "Q2": {
+            "Q": "Solana 私钥在哪里？",
+            "A": "在第二台没有网络的设备上，也就是 Locker Vault。扩展只持有公钥和地址。"
+          },
+          "Q3": {
+            "Q": "它能持有 SPL 代币吗？",
+            "A": "能，而且账户一持有就会显示出来，没有什么名单需要添加。"
+          },
+          "Q4": {
+            "Q": "我批准之前，交易会被检查吗？",
+            "A": "它会被模拟一遍，而离线设备还会从它即将签名的那些字节里，把指令再解码一次。"
+          }
+        }
+      },
+      "STELLAR": {
+        "META": {
+          "TITLE": "物理隔离的 Stellar 钱包：XLM 与 USDC",
+          "DESCRIPTION": "持有 XLM 以及 USDC 这类发行资产，而密钥留在一台离线设备上。备注、信任线和路径支付，都会在你用二维码签名之前完整显示出来。"
+        },
+        "BADGE": "Stellar · XLM",
+        "TITLE": "一个 Stellar 钱包，密钥在另一台设备上",
+        "SUBTITLE": "XLM 和 Stellar 上发行的各种资产，都在一个 Chrome 与 Brave 扩展里，而密钥在一台没有网络的设备上。在这条链上，一项资产是一个代码加一个发行方，这个钱包会说清楚，你信任的到底是哪个发行方。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "备注是付款的一部分",
+            "TEXT": "给交易所付一笔 Stellar 却不带备注，就是一笔谁也认不回来的付款。备注被当作收款方的一部分，始终显示，哪怕它是空的也绝不折叠收起。"
+          },
+          "C2": {
+            "TITLE": "一项资产等于代码加发行方",
+            "TEXT": "任何人都可以发行一个叫「USDC」的代币。借用别家已知代码的代币会被点出来，而且离线设备会从它正在签名的字节里重新得出这个判断，而不是相信浏览器。"
+          },
+          "C3": {
+            "TITLE": "信任线，以及它的代价",
+            "TEXT": "持有一项发行资产意味着要签一条信任线，而一条信任线会锁住储备金。被锁住的数额会在你批准之前写明。"
+          },
+          "C4": {
+            "TITLE": "在 Stellar DEX 上兑换",
+            "TEXT": "交易通过链上自有订单簿的路径支付完成，这是 Stellar 唯一的通道，也正因如此，它不必跨链就能兑换。"
+          }
+        },
+        "FAQ_TITLE": "Stellar 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "我能用它在 Stellar 上持有 USDC 吗？",
+            "A": "能，前提是信任线已经存在，而钱包能用同一套离线签名仪式开出一条，并先告诉你它会锁住多少储备金。"
+          },
+          "Q2": {
+            "Q": "它处理备注吗？",
+            "A": "处理，而且当作收款方的一部分。签名之前，备注总会显示在离线设备上。"
+          },
+          "Q3": {
+            "Q": "有什么能防住假发行方？",
+            "A": "资产由代码和发行方共同标识。顶着已知代码、却来自陌生发行方的资产会被标出来，扩展上会，离线设备上也会。"
+          },
+          "Q4": {
+            "Q": "密钥在哪里？",
+            "A": "在第二台没有网络的设备上。每一次签名都以二维码往返。"
+          }
+        }
+      },
+      "SUI": {
+        "META": {
+          "TITLE": "物理隔离的 Sui 钱包：SUI 与各类代币",
+          "DESCRIPTION": "在浏览器扩展里持有 SUI 和它的各类代币，而私钥从不触碰你的电脑。Sui 应用通过 Wallet Standard 连接，签名在离线设备上完成。"
+        },
+        "BADGE": "Sui · SUI",
+        "TITLE": "一个 Sui 钱包，密钥在另一台设备上",
+        "SUBTITLE": "SUI 和你持有的各类代币，都在一个 Chrome 与 Brave 扩展里，Sui 应用通过 Wallet Standard 发现它，而签名用的密钥留在一台没有网络的设备上。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "交易块会被解码",
+            "TEXT": "一笔 Sui 交易是一段针对对象的可编程命令块。离线设备会解码这个块，说清它到底动了什么，而不是丢给你一串哈希让你去信。"
+          },
+          "C2": {
+            "TITLE": "代付的 gas 会如实标明",
+            "TEXT": "当一个应用替你付 gas，这笔交易就有两个当事人，而其中只有一个是你。复核界面会把这一点说出来，因为「谁付钱」会改变你同意的内容。"
+          },
+          "C3": {
+            "TITLE": "代币以链上报告的样子出现",
+            "TEXT": "各种代币类型按节点返回的余额显示；你持有的一种代币就是一行，而不是某个人要维护的名单里的一条。"
+          },
+          "C4": {
+            "TITLE": "和其他钱包一样被发现",
+            "TEXT": "Sui 应用读的是 Wallet Standard 的宣告，所以扩展会和其他钱包并排出现在它们的选择列表里，这是对着真实站点测出来的。"
+          }
+        },
+        "FAQ_TITLE": "Sui 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "Sui 应用能连上它吗？",
+            "A": "能，通过 Sui 应用用来发现钱包的那套 Wallet Standard。"
+          },
+          "Q2": {
+            "Q": "Sui 私钥在哪里？",
+            "A": "在第二台没有网络连接的设备上。扩展从不持有它。"
+          },
+          "Q3": {
+            "Q": "一笔 Sui 交易，离线设备会显示什么？",
+            "A": "解码后的交易块：那些命令、它们动了什么，以及 gas 是不是由别人代付。"
+          },
+          "Q4": {
+            "Q": "它需要自己的一组助记词吗？",
+            "A": "不需要。Sui 地址由你已有的那组助记词派生。"
+          }
+        }
+      },
+      "TRON": {
+        "META": {
+          "TITLE": "物理隔离的 Tron 钱包：TRX 与 USDT-TRC20",
+          "DESCRIPTION": "持有 TRX 和 USDT 这类 TRC-20 代币，而密钥留在一台离线设备上。Tron 应用像连接 TronLink 那样连接它，签名由你用二维码完成。"
+        },
+        "BADGE": "Tron · TRX",
+        "TITLE": "一个 Tron 钱包，密钥在另一台设备上",
+        "SUBTITLE": "TRX 和各种 TRC-20 代币，尤其是 USDT，都在一个 Chrome 与 Brave 扩展里，而密钥在一台没有网络的设备上。手续费上限和正在动用的权限，会在你签名之前写明，而不是之后。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "Tron 上的 USDT，离线保管",
+            "TEXT": "这是大多数人用来转稳定币的那条链，而密钥留在第二台设备上。代币、金额和收款方都从交易的字节里读出，显示在那台设备上。"
+          },
+          "C2": {
+            "TITLE": "手续费上限会显示出来",
+            "TEXT": "Tron 的合约调用带着一个手续费上限，正是这个字段悄悄决定了一次调用最多能烧掉多少能量。复核界面会把它点出来，而不是把它留在原始数据里。"
+          },
+          "C3": {
+            "TITLE": "消息签名，两个版本都支持",
+            "TEXT": "TIP-191 消息签名同时支持应用今天在用的版本，以及它们有时仍会发来的旧版本，摘要的计算与参考实现逐字节一致。"
+          },
+          "C4": {
+            "TITLE": "Tron 应用照常连接",
+            "TEXT": "扩展响应 Tron 应用期待的那套接口，所以 SunSwap 之类的站点会把它列在已经支持的钱包旁边。"
+          }
+        },
+        "FAQ_TITLE": "Tron 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "我能用它持有 USDT-TRC20 吗？",
+            "A": "能。USDT 和其他 TRC-20 代币由同一个账户持有，每一笔转账都在离线设备上签名。"
+          },
+          "Q2": {
+            "Q": "它能配合 Tron 的 dApp 吗？",
+            "A": "能：它提供那些站点期待的接口，会出现在它们的钱包选择列表里。"
+          },
+          "Q3": {
+            "Q": "签名之前会显示什么？",
+            "A": "收款方、金额、代币、手续费上限和权限 id，都由离线设备从那笔交易里读出来。"
+          },
+          "Q4": {
+            "Q": "需要另外一组助记词吗？",
+            "A": "不需要。Tron 地址和你其他链出自同一组助记词。"
+          }
+        }
+      },
+      "XRP_LEDGER": {
+        "META": {
+          "TITLE": "物理隔离的 XRP Ledger 钱包：XRP 与 RLUSD",
+          "DESCRIPTION": "持有 XRP 以及 RLUSD 这类代币，而密钥留在一台离线设备上。储备金、目标标签和信任线，都会在你签名之前从账本上读出来，而不是猜出来。"
+        },
+        "BADGE": "XRP Ledger · XRP",
+        "TITLE": "一个 XRP Ledger 钱包，密钥在另一台设备上",
+        "SUBTITLE": "XRP 和在这个账本上发行的各种代币，都在一个 Chrome 与 Brave 扩展里，而签名用的密钥留在一台没有网络的设备上。XRP Ledger 是那张网络，XRP 是住在上面的资产，这个钱包会说清楚，离开你账户的到底是哪一个。",
+        "CARDS": {
+          "C1": {
+            "TITLE": "储备金是读出来的，不是猜出来的",
+            "TEXT": "一个 XRPL 账户不能花到储备金以下，而储备金是验证者投票决定的数字，所以它从账本上读取，而不是写死在软件里。发送界面给出的最大可用额，就是链上真正肯放行的数额。"
+          },
+          "C2": {
+            "TITLE": "目标标签是收款方的一部分",
+            "TEXT": "没有标签的交易所地址，是一笔谁也认不回来的付款。账户自己会说明它是否要求标签，所以提醒来自链上，而不是来自一份过期当天就出错的交易所名单。"
+          },
+          "C3": {
+            "TITLE": "发行代币，看的是货币代码加发行方",
+            "TEXT": "在这个账本上，一项资产是一对：一个货币代码，加上发行它的那个账户。两个发行方完全可以合法地用同一个代码，所以顶着已知符号、却来自另一个发行方的代币会被点出来，扩展上会，离线设备上也会，而后者是从已签名的字节里重新得出这个结论，而不是相信浏览器怎么说。"
+          },
+          "C4": {
+            "TITLE": "在你走向保险库之前就拒绝",
+            "TEXT": "发送一项发行代币，需要双方都有信任线、收款方的额度还有余量、发行方没有冻结这条线，以及一笔仍然用 XRP 支付的手续费。这些都在签名仪式开始之前就检查完毕，所以一次拒绝只花你两眼，而不是走到另一台设备前再扫两次码。"
+          }
+        },
+        "FAQ_TITLE": "XRP Ledger 钱包：常见问题",
+        "FAQ": {
+          "Q1": {
+            "Q": "我能用 Locker Protocol Wallet 持有 RLUSD 吗？",
+            "A": "能。RLUSD 和 XRP Ledger 上任何发行代币，只要信任线存在就会出现，而信任线可以从钱包里开，开之前会写明它锁住多少储备金，以及你签下的上限是多少。"
+          },
+          "Q2": {
+            "Q": "我的 XRP 私钥在哪里？",
+            "A": "在第二台没有网络连接的设备上，也就是 Locker Vault。扩展只持有地址，每一次签名都在那台设备上通过二维码批准。"
+          },
+          "Q3": {
+            "Q": "它处理目标标签吗？",
+            "A": "处理，而且当作收款方的一部分，不是一个可选字段。钱包还会读取目标账户是否要求标签，需要而没有时，它会拒绝把这笔付款排上队。"
+          },
+          "Q4": {
+            "Q": "XRPL 的应用能连上它吗？",
+            "A": "暂时不能，而且这是有意为之：XRP Ledger 上还没有哪一套注入标准定下来，所以钱包把这条链做好，而不去假装自己有一套 dApp 接口。发送、接收和代币都能用，连接站点还不行。"
+          }
+        }
+      }
+    }
+  },
+  "COMPARE": {
+    "META": {
+      "TITLE": "{{name}} 替代方案：Locker 对比 {{name}}",
+      "DESCRIPTION": "在找 {{name}} 的替代方案？Locker Protocol Wallet 把私钥留在一台离线设备上，绝不放进浏览器。私钥、支持的链、Ledger 支持和手续费，逐项对比。"
+    },
+    "BADGE": "对比",
+    "TITLE": "Locker Protocol Wallet 对比 {{name}}",
+    "SUBTITLE": "两款浏览器钱包，面对的是同一批 dApp。真正要紧的差别在于私钥放在哪里：{{name}} 把它留在浏览器里，Locker Protocol Wallet 把它留在一台独立的离线设备上。",
+    "DISCLOSURE": "Locker Protocol Wallet 是我们自己的产品。关于 {{name}} 的事实，已于 {{date}} 对照它的官网、文档和商店页面核实。",
+    "TABLE": {
+      "TITLE": "Locker Protocol Wallet 与 {{name}} 逐项对照",
+      "KEY": "私钥",
+      "CHAINS": "支持的链",
+      "NETWORKS": "官方称支持 {{n}} 多条网络",
+      "HARDWARE": "硬件钱包",
+      "SOURCE": "源代码",
+      "FEE": "内置兑换手续费",
+      "BROWSERS": "浏览器",
+      "NOTE": "以各款钱包在 {{date}} 公布的信息为准。「未说明」或「未公布」表示钱包官网没有写。"
+    },
+    "NOT_DOCUMENTED": "未说明",
+    "NOT_PUBLISHED": "未公布",
+    "NOT_VERIFIED": "未验证",
+    "PROPRIETARY": "闭源",
+    "LOCKER": {
+      "HARDWARE": "不接 Ledger 或 Trezor：密钥留在一台离线手机或设备上（Locker Vault），通过二维码签名",
+      "SOURCE": "智能合约公开并在链上验证；钱包构建可复现",
+      "FEE": "最多 0.25%（Hyperliquid 订单为 0.05%）"
+    },
+    "ABOUT": "关于 {{name}}",
+    "THEM_BETTER": "{{name}} 做得更好的地方",
+    "WHY": {
+      "TITLE": "为什么有人从 {{name}} 换到 Locker Protocol Wallet",
+      "KEY": {
+        "TITLE": "密钥从不接触电脑",
+        "DESC": "电脑上的恶意软件、恶意扩展或盗币脚本无从下手：每一次签名都发生在离线设备上，而且是在你已经在那边读过这笔交易之后。"
+      },
+      "DAPPS": {
+        "TITLE": "你早就在用的那些 dApp",
+        "DESC": "它响应为 MetaMask、Keplr、TronLink 和 Freighter 设计的连接流程，并出现在 Solana、Sui 和 Aptos 的 Wallet Standard 列表里，覆盖九大链家族。"
+      },
+      "CHECKS": {
+        "TITLE": "每一次请求都查两遍",
+        "DESC": "规则加上设备端模型，会在你签名之前标出有风险的授权和钓鱼网站：先在浏览器里查一遍，再在保管密钥的那台设备上查一遍。"
+      }
+    },
+    "MOVE": {
+      "TITLE": "三步从 {{name}} 搬过来",
+      "S1": {
+        "TITLE": "安装扩展",
+        "DESC": "在 Chrome 或 Brave 上装好 Locker Protocol Wallet。搬家期间，它可以和 {{name}} 并存。"
+      },
+      "S2": {
+        "TITLE": "配置离线保险库",
+        "DESC": "在一台闲置手机上安装免费的 Locker Vault，让它保持离线，并在那边新建一组助记词。"
+      },
+      "S3": {
+        "TITLE": "把资金转过去",
+        "DESC": "按你自己的节奏，从 {{name}} 转到你的新地址，先从一小笔开始。"
+      }
+    },
+    "FAQ": {
+      "TITLE": "{{name}} 对比 Locker：大家常问的问题",
+      "GOOD": {
+        "Q": "Locker Protocol Wallet 是好的 {{name}} 替代方案吗？",
+        "A": "如果你想把密钥挪出电脑，那就是。Locker Protocol Wallet 照常接入你已经在用的 dApp，只是每一次签名都要在一台独立的离线设备上用二维码批准。要是你主要图点一下就签完的痛快，{{name}} 仍然更快。"
+      },
+      "DAPPS_EVM": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "可以。它通过 EIP-6963 宣告自己，并响应标准的 Ethereum provider API，所以 EVM 上的 dApp 会把它和早已列出的那些钱包放在一起，{{name}} 也在其中。"
+      },
+      "DAPPS_SOLANA": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "通过 Wallet Standard 列出钱包的 Solana dApp，会把 Locker Protocol Wallet 显示在 {{name}} 旁边。它从不占用 {{name}} 在页面里的位置，所以只按名字找 {{name}} 的站点看不到它。"
+      },
+      "DAPPS_KEPLR": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "可以。它响应 Cosmos 应用调用的 Keplr API，所以 Osmosis、Stride、DAO DAO、Injective Helix 和 THORSwap 都能通过它们的 Keplr 按钮连上，这是对着真实站点测过的。它与真正的 Keplr 并存，而不是取而代之。"
+      },
+      "DAPPS_BITCOIN": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "支持 Unisat 或 sats-connect 标准的 Bitcoin 站点找得到 Locker Protocol Wallet：它用那些钱包同样的方式宣告自己，也从不顶替已经装好的钱包。"
+      },
+      "DAPPS_SUI": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "可以。Sui 上的 dApp 通过 Wallet Standard 列出钱包，而 Locker Protocol Wallet 在那里注册过，所以它出现在 {{name}} 旁边，支持签名、签名并执行以及个人消息。"
+      },
+      "DAPPS_APTOS": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "可以。使用 AIP-62 钱包标准的 Aptos dApp 会把 Locker Protocol Wallet 列在 {{name}} 旁边。"
+      },
+      "DAPPS_TRON": {
+        "Q": "支持 {{name}} 的 dApp 能配 Locker Protocol Wallet 用吗？",
+        "A": "可以。扩展提供 Tron dApp 调用的那套 TronLink 接口，而且只在没装 TronLink 时才提供，所以 SunSwap 这类站点连接起来和用 {{name}} 一样。"
+      },
+      "IMPORT": {
+        "Q": "我可以导入 {{name}} 的助记词吗？",
+        "A": "可以，但我们建议反过来做：在离线设备上新建一组助记词，再把资金转过去。在浏览器扩展里待过的助记词，可能早就暴露了。"
+      },
+      "FREE": {
+        "Q": "Locker Protocol Wallet 免费吗？",
+        "A": "安装和持币都是免费的，Locker Vault 应用也是。从扩展里发起的兑换和跨链最多加收 0.25%，Hyperliquid 订单为 0.05%，都会在你签名前显示出来。"
+      }
+    },
+    "OTHERS": "其他对比",
+    "HUB": {
+      "CRUMB": "对比",
+      "META": {
+        "TITLE": "加密钱包扩展对比：与 Locker 逐项比较",
+        "DESCRIPTION": "Locker Protocol Wallet 与 MetaMask、Ledger、Phantom、Keplr、Rabby、Trust Wallet 等逐项对比：私钥、支持的链、硬件支持和手续费。"
+      },
+      "TITLE": "Locker Protocol Wallet 对比一览",
+      "SUBTITLE": "每款钱包一页：它的私钥放在哪里、覆盖哪些链、能不能用 Ledger 签名、兑换收多少，以及它在哪些地方比我们做得更好。"
+    }
+  },
+  "DAPPS": {
+    "META": {
+      "TITLE": "用物理隔离钱包连接 {{name}}",
+      "DESCRIPTION": "{{date}} 实测：{{name}} 可以连上 {{chain}} 上的 Locker Protocol Wallet，私钥留在电脑之外，每一笔交易都在一台离线设备上用二维码签名。"
+    },
+    "TITLE": "{{name}} 与 Locker Protocol Wallet",
+    "SUBTITLE": "用一款私钥从不接触电脑的钱包来用 {{name}}：站点连接到扩展，而每一次签名都在一台独立的离线设备上批准。",
+    "OPEN_SITE": "打开 {{name}}",
+    "TESTED": {
+      "TITLE": "{{date}} 对照真实站点核对过",
+      "LEAD": "我们让扩展跑在真正的 {{name}} 站点上，而不是它的复制品。{{date}} 那天，五项检查全部通过：",
+      "LISTED": "{{name}} 在它的连接菜单里列出了这款钱包，名字是「{{entry}}」。",
+      "REFUSED": "拒绝连接之后，{{name}} 原地不动，什么权限也拿不到。",
+      "APPROVED": "同意连接之后，{{name}} 要的每一个窗口和每一次签名都走得通，一直走到可以用的界面。",
+      "RELOAD": "刷新页面之后会话还在，不用重新授权一次。",
+      "DISCONNECT": "在钱包的已连接站点列表里断开 {{name}}，页面就会放手。"
+    },
+    "HOW": {
+      "TITLE": "如何连接 {{name}}",
+      "S1": {
+        "TITLE": "装好扩展和保险库",
+        "DESC": "在 Chrome 或 Brave 上装好 Locker Protocol Wallet，再在一台始终离线的闲置手机上配置免费的 Locker Vault。"
+      },
+      "S2": {
+        "TITLE": "选择「{{entry}}」",
+        "DESC": "打开 {{name}}，点它的连接按钮，在列表里选「{{entry}}」，然后在扩展里批准这次连接。"
+      },
+      "S3": {
+        "TITLE": "在离线设备上签名",
+        "DESC": "{{name}} 要签名时，扩展会显示一个二维码。用保险库扫码，在那边读过这笔交易、批准，再把答复扫回来。"
+      }
+    },
+    "FAMILY": {
+      "evm": "在 {{chain}} 上，保险库会在你签名之前把这次调用解码出来：它做什么、动的是哪种代币、又把花钱的权利给了谁。",
+      "sol": "在 Solana 上，每一笔交易在你签名之前都会先模拟一遍，它调用的程序也会在复核界面上写明名字。",
+      "cosmos": "在 Cosmos 系列链上，保险库自己读 SignDoc，把每一条消息都显示出来，授权委托会标成红色。",
+      "sui": "在 Sui 上，交易通过 Wallet Standard 连接送过来，签名之前先在离线设备上读一遍。",
+      "aptos": "在 Aptos 上，站点通过 AIP-62 钱包标准找到钱包，每一次签名都在离线设备上批准。",
+      "tron": "在 Tron 上，收款方、金额、代币、手续费上限和权限，都会在你签名之前显示出来。",
+      "stellar": "在 Stellar 上，备注、信任线和路径支付都会在离线设备上完整显示，然后你再签名。",
+      "btc": "在 Bitcoin 上，保险库自己解码 PSBT：每一个输出、手续费占金额的比例，以及任何低于尘埃限额的输出。"
+    },
+    "FAQ": {
+      "TITLE": "{{name}} 与 Locker：大家常问的问题",
+      "SAFE": {
+        "Q": "用 Locker Protocol Wallet 上 {{name}} 安全吗？",
+        "A": "钱包没法让任何站点变安全，但它改变了攻击者能做到的事：密钥从不接触电脑，每一笔交易都会先在离线设备上显示出来再由你批准，有风险的授权和已知的钓鱼站点也会提前标出来。"
+      },
+      "BUTTON": {
+        "Q": "在 {{name}} 上我该点哪个按钮？",
+        "A": "「{{entry}}」。我们在 {{date}} 核对时，{{name}} 就是用这个名字显示这款钱包的。站点会改菜单，如果它挪了地方，就找 Locker Protocol Wallet，或者通用的浏览器钱包那一项。"
+      },
+      "HARDWARE": {
+        "Q": "这样用 {{name}} 需要硬件钱包吗？",
+        "A": "不需要。密钥住在 Locker Vault 里，那是一款免费应用，装在一台闲置手机上并保持离线。交易以二维码来回传递，不用数据线，也不用蓝牙。"
+      },
+      "FREE": {
+        "Q": "Locker Protocol Wallet 会在 {{name}} 上另外收费吗？",
+        "A": "不会。通过这款钱包使用 {{name}}，你付的只有 {{name}} 和网络本身收的那部分。钱包自己的手续费只针对从扩展里发起的兑换和跨链（最多 0.25%），而且会在你签名前显示出来。"
+      }
+    },
+    "SAME_CHAIN": "同一条链上核对过的其他 dApp",
+    "CHAIN_PAGE": "这款钱包在 {{chain}} 上",
+    "DISCLAIMER": "{{name}} 是第三方站点，与 Locker Protocol 没有从属关系。兼容性测于 {{date}}；站点会变，如果哪里不好用了，请告诉我们。",
+    "CATEGORY": {
+      "DEX": "交易所",
+      "LENDING": "借贷",
+      "STAKING": "质押",
+      "PERPS": "永续合约",
+      "BRIDGE": "跨链桥",
+      "YIELD": "收益",
+      "NFT": "NFT 市场",
+      "LAUNCHPAD": "发行平台",
+      "GOVERNANCE": "治理",
+      "NAMES": "域名",
+      "TOOLS": "工具",
+      "STABLECOIN": "稳定币"
+    },
+    "HUB": {
+      "CRUMB": "dApp",
+      "META": {
+        "TITLE": "在物理隔离钱包上测过的 dApp",
+        "DESCRIPTION": "{{count}} 个 dApp 用 Locker Protocol Wallet 对照真实站点逐一核对：Osmosis、Jupiter、Lido、Aerodrome、SunSwap 等，覆盖八大链家族。"
+      },
+      "TITLE": "能配 Locker Protocol Wallet 用的 dApp",
+      "SUBTITLE": "{{count}} 个站点都对着真东西核对过：每一个都连得上扩展、刷新后会话还在、断开时会放手，每一次签名都在离线设备上批准。"
+    },
+    "ITEMS": {
+      "PONSFAMILY": {
+        "DESC": "PonsFamily 是 Robinhood Chain 上的代币发行平台：在浏览器里创建代币，并开启它的发行。"
+      },
+      "JUMPER": {
+        "DESC": "Jumper 是基于 LI.FI 打造的兑换与跨链界面，这里测的是它的 Solana 那一侧。"
+      },
+      "WORLD_LIBERTY_FINANCIAL": {
+        "DESC": "World Liberty Financial 的应用，WLFI 持有者在这里查看并解锁自己的代币。"
+      },
+      "TOKENFI": {
+        "DESC": "TokenFi 的质押应用，持有者在这里质押 TOKEN 并跟踪自己的仓位。"
+      },
+      "JUPITER": {
+        "DESC": "Jupiter 是 Solana 上主要的兑换聚合器，为每一笔交易在 Solana 的各家交易所之间寻路。"
+      },
+      "RAYDIUM": {
+        "DESC": "Raydium 是 Solana 上的自动做市商和流动性枢纽。"
+      },
+      "COW_SWAP": {
+        "DESC": "CoW Swap 在 Ethereum 上通过批量拍卖成交代币，这套设计用来抵御 MEV。"
+      },
+      "SNAPSHOT": {
+        "DESC": "Snapshot 是许多 DAO 用来发提案和投票的链下投票平台。"
+      },
+      "GMX": {
+        "DESC": "GMX 是 Arbitrum 和 Avalanche 上做永续合约与现货交易的去中心化交易所。"
+      },
+      "LIDO": {
+        "DESC": "Lido 让你质押 ETH，拿到流动性质押代币 stETH。"
+      },
+      "SUILEND": {
+        "DESC": "Suilend 是 Sui 上的借贷市场。"
+      },
+      "AFTERMATH_FINANCE": {
+        "DESC": "Aftermath Finance 是 Sui 上的交易平台，提供兑换和聚合器。"
+      },
+      "STELLARX": {
+        "DESC": "StellarX 是 Stellar 去中心化交易所的交易界面。"
+      },
+      "SOROSWAP": {
+        "DESC": "Soroswap 是建在 Stellar 智能合约平台 Soroban 上的自动做市商。"
+      },
+      "SATFLOW": {
+        "DESC": "Satflow 是 Bitcoin Ordinals 和 Runes 的交易市场。"
+      },
+      "OSMOSIS": {
+        "DESC": "Osmosis 是 Cosmos 生态里最大的去中心化交易所。"
+      },
+      "STRIDE": {
+        "DESC": "Stride 为 ATOM 等 Cosmos 代币提供流动性质押。"
+      },
+      "DAO_DAO": {
+        "DESC": "DAO DAO 是在 Cosmos 系列链上创建和运营 DAO 的平台。"
+      },
+      "AMNIS_FINANCE": {
+        "DESC": "Amnis Finance 在 Aptos 上提供流动性质押，代币是 amAPT。"
+      },
+      "THALA": {
+        "DESC": "Thala 是 Aptos 上的 DeFi 平台，提供兑换、流动性质押和借贷。"
+      },
+      "SPARK": {
+        "DESC": "Spark 是一个专注稳定币的储蓄与借贷协议。"
+      },
+      "COMPOUND": {
+        "DESC": "Compound 是 Ethereum 上运行时间最久的借贷市场之一。"
+      },
+      "ROCKET_POOL": {
+        "DESC": "Rocket Pool 是发行 rETH 的去中心化 ETH 质押协议。"
+      },
+      "KELP": {
+        "DESC": "Kelp 是发行 rsETH 的流动性再质押协议。"
+      },
+      "PENDLE": {
+        "DESC": "Pendle 把生息代币拆成本金和收益两部分，让你交易未来的收益。"
+      },
+      "1INCH": {
+        "DESC": "1inch 是一个兑换聚合器，在许多网络和交易所之间为交易寻路。"
+      },
+      "SUSHI": {
+        "DESC": "Sushi 是一个多链去中心化交易所。"
+      },
+      "BEEFY": {
+        "DESC": "Beefy 是一个收益优化器，在许多网络的金库里把奖励复投。"
+      },
+      "YEARN": {
+        "DESC": "Yearn 在 Ethereum 等网络上运营自动化的收益金库。"
+      },
+      "FLUID": {
+        "DESC": "Fluid 是 Ethereum 上的借贷协议。"
+      },
+      "DOLOMITE": {
+        "DESC": "Dolomite 是 Arbitrum 上的借贷与保证金交易协议。"
+      },
+      "BENQI": {
+        "DESC": "BENQI 是 Avalanche 上的借贷市场和流动性质押协议（sAVAX）。"
+      },
+      "YIELD_YAK": {
+        "DESC": "Yield Yak 是 Avalanche 上的收益耕作平台。"
+      },
+      "LYNEX": {
+        "DESC": "Lynex 是 Linea 上的去中心化交易所。"
+      },
+      "STARGATE": {
+        "DESC": "Stargate 是一座跨链桥，用来转移稳定币、ETH 和其他资产。"
+      },
+      "ACROSS": {
+        "DESC": "Across 是一座跨链桥，在 Ethereum 和它的二层网络之间搬运资产。"
+      },
+      "ENS": {
+        "DESC": "ENS 即 Ethereum Name Service，把地址变成以 .eth 结尾的可读名字。"
+      },
+      "EXTRA_FINANCE": {
+        "DESC": "Extra Finance 是 Optimism 和 Base 上的借贷与杠杆收益耕作协议。"
+      },
+      "IPOR_FUSION": {
+        "DESC": "IPOR Fusion 提供横跨多个 DeFi 协议的收益金库。"
+      },
+      "AERODROME": {
+        "DESC": "Aerodrome 是 Base 上主要的去中心化交易所和流动性枢纽。"
+      },
+      "VELODROME": {
+        "DESC": "Velodrome 是 Optimism 上主要的去中心化交易所和流动性枢纽。"
+      },
+      "REVOKE_CASH": {
+        "DESC": "Revoke.cash 让你在 100 多条网络上查看并撤销代币授权。"
+      },
+      "MARINADE": {
+        "DESC": "Marinade 在 Solana 上提供流动性质押，代币是 mSOL。"
+      },
+      "SANCTUM": {
+        "DESC": "Sanctum 是 Solana 流动性质押代币的枢纽，其中包括 INF。"
+      },
+      "SAVE": {
+        "DESC": "Save 是 Solana 上的借贷市场。"
+      },
+      "TENSOR": {
+        "DESC": "Tensor 是 Solana 上的 NFT 市场。"
+      },
+      "JPOOL": {
+        "DESC": "JPool 在 Solana 上提供流动性质押，代币是 JSOL。"
+      },
+      "PUMPSWAP": {
+        "DESC": "PumpSwap 是 pump.fun 的交易所，用来在 Solana 上交易迷因币。"
+      },
+      "SHARKY": {
+        "DESC": "Sharky 是 Solana 上的 NFT 借贷平台。"
+      },
+      "DRIFT": {
+        "DESC": "Drift 是 Solana 上的永续合约交易所。"
+      },
+      "MOMENTUM": {
+        "DESC": "Momentum 是 Sui 上的流动性引擎和交易所。"
+      },
+      "SPRINGSUI": {
+        "DESC": "SpringSui 在 Sui 上提供流动性质押，代币是 sSUI。"
+      },
+      "SCALLOP": {
+        "DESC": "Scallop 是 Sui 上的借贷市场。"
+      },
+      "ALPHAFI": {
+        "DESC": "AlphaFi 在 Sui 上运营收益金库。"
+      },
+      "DIPCOIN": {
+        "DESC": "Dipcoin 是 Sui 上的永续合约交易所。"
+      },
+      "VOLO": {
+        "DESC": "Volo 在 Sui 上提供流动性质押。"
+      },
+      "TYPUS_FINANCE": {
+        "DESC": "Typus Finance 在 Sui 上提供永续合约和期权。"
+      },
+      "SUN": {
+        "DESC": "SUN 是 Tron 上的 DeFi 平台，可以兑换、质押和提供流动性。"
+      },
+      "SUNPUMP": {
+        "DESC": "SunPump 是 Tron 上的迷因币发行平台。"
+      },
+      "SUNSWAP": {
+        "DESC": "SunSwap 是 Tron 上的去中心化交易所。"
+      },
+      "SUNX": {
+        "DESC": "SunX 是 Tron 上的永续合约交易所。"
+      },
+      "BLEND": {
+        "DESC": "Blend 是 Stellar 上的借贷协议。"
+      },
+      "PHOENIX": {
+        "DESC": "Phoenix 是 Stellar 上的 DeFi 枢纽，提供兑换和流动性池。"
+      },
+      "FXDAO": {
+        "DESC": "FxDAO 在 Stellar 上用金库里的抵押品发行稳定币。"
+      },
+      "SATURN": {
+        "DESC": "Saturn 是 Bitcoin Runes 的交易所。"
+      },
+      "BEST_IN_SLOT": {
+        "DESC": "Best in Slot 是 Bitcoin Ordinals 和 Runes 的查询工具和交易市场。"
+      },
+      "MESON": {
+        "DESC": "Meson 是面向稳定币和 BTC 的跨链兑换服务。"
+      },
+      "HYDRO_PROTOCOL": {
+        "DESC": "Hydro Protocol 在 Injective 上提供借贷和流动性质押。"
+      },
+      "NEPTUNE_FINANCE": {
+        "DESC": "Neptune Finance 是 Injective 上的借贷市场。"
+      },
+      "ECHELON": {
+        "DESC": "Echelon 是 Aptos 上的借贷市场。"
+      },
+      "WAPAL": {
+        "DESC": "Wapal 是 Aptos 上面向迷因币和 NFT 的发行平台与交易终端。"
+      }
+    }
+  },
+  "GLOSSARY": {
+    "HUB": {
+      "CRUMB": "术语表",
+      "META": {
+        "TITLE": "加密钱包术语表：{{count}} 个词条逐一讲清",
+        "DESCRIPTION": "物理隔离钱包、助记词、盲签、代币授权、PSBT：{{count}} 个加密钱包词条，全部用大白话逐一讲清，并说明每一个对你的资金安全意味着什么。"
+      },
+      "TITLE": "加密钱包术语表",
+      "SUBTITLE": "自己持币时会遇到的 {{count}} 个词，用平实的语言解释，并说明每一个对你资金的安全意味着什么。"
+    },
+    "GROUPS": {
+      "WALLETS": "钱包",
+      "KEYS": "密钥与签名",
+      "SECURITY": "安全与骗局",
+      "TRANSACTIONS": "交易与 DeFi",
+      "CHAINS": "逐链专题"
+    },
+    "SECTIONS": {
+      "WHY": "为什么重要",
+      "LOCKER": "Locker Protocol Wallet 怎么处理",
+      "FAQ": "常见问题",
+      "RELATED": "相关词条",
+      "MORE": "延伸阅读"
+    },
+    "GO": {
+      "vault": "Locker Vault：离线签名器",
+      "extension": "浏览器扩展",
+      "ledger": "Locker 对比 Ledger",
+      "metamask": "Locker 对比 MetaMask",
+      "security": "钱包如何做安全",
+      "threat": "威胁模型",
+      "networks": "支持的网络",
+      "dapps": "已实测的 dApp",
+      "top": "十大加密钱包扩展",
+      "locker": "代币锁仓合约",
+      "NETWORK": "{{chain}} 上的钱包"
+    },
+    "TERMS": {
+      "AIR_GAPPED_WALLET": {
+        "NAME": "物理隔离钱包",
+        "TITLE": "什么是物理隔离钱包？",
+        "META": {
+          "TITLE": "什么是物理隔离钱包？离线签名是怎么做到的",
+          "DESCRIPTION": "物理隔离钱包把私钥留在一台完全不联网的设备上：没有 Wi-Fi，没有蓝牙，也没有数据线。看看它如何用二维码签名，以及恶意软件为什么够不到这把私钥。"
+        },
+        "DEF": "物理隔离钱包把私钥保存在一台与所有网络物理断开的设备上：没有 Wi-Fi，没有移动数据，没有蓝牙，也没有数据线。交易以二维码的形式进出这台设备，私钥本身从不离开它。",
+        "WHY": "加密钱包被盗，绝大多数发生在远程：电脑上的恶意软件、被做了手脚的浏览器扩展、假网站上的盗币脚本。它们都需要一条通往私钥的路径。在一台物理隔离的设备上没有这样的路径，只有一个读二维码的摄像头和一块显示二维码的屏幕。",
+        "LOCKER": "Locker Protocol Wallet 把活儿分成两半。浏览器扩展显示余额、与 dApp 通信，但不保存任何密钥。密钥住在 Locker Vault 里，那是一台闲置手机或平板上的免费应用，始终离线：它解码每一个请求，展示给你看，只有你批准之后才签名。",
+        "FAQ": {
+          "Q1": {
+            "Q": "物理隔离钱包和硬件钱包是一回事吗？",
+            "A": "不完全是。硬件钱包是一台专用设备，通常通过 USB 或蓝牙连接。物理隔离钱包完全没有数据通道，只用二维码或存储卡交换交易。有些硬件钱包可以物理隔离工作；Locker Vault 则是一款跑在你已有手机上的物理隔离钱包。"
+          },
+          "Q2": {
+            "Q": "物理隔离钱包能用 dApp 吗？",
+            "A": "能。联网的那一侧，也就是浏览器扩展，负责连上网站并准备交易。离线设备只负责签名：你在它的屏幕上批准，再把签好的二维码扫回去。"
+          }
+        }
+      },
+      "COLD_WALLET": {
+        "NAME": "冷钱包",
+        "TITLE": "什么是冷钱包？",
+        "META": {
+          "TITLE": "什么是冷钱包？冷存储与热钱包的区别",
+          "DESCRIPTION": "冷钱包把私钥放在任何联网设备之外，让远程攻击无从下手。看看冷存储和热钱包到底差在哪里、它能挡住什么，以及不花钱怎样把一部旧手机变成冷钱包。"
+        },
+        "DEF": "冷钱包泛指一切把私钥保存在不联网设备上的持币方式。与之相对的是热钱包，它的私钥就放在一台在线的电脑或手机上。",
+        "WHY": "在线的私钥，只要有人攻破了保存它的设备，就能在世界任何角落把它复制走。冷钱包里的私钥必须通过物理接触才能拿到。这正是交易所把大部分客户资金放在冷存储里的原因，也是长期持币者把积蓄挪过去的原因。",
+        "LOCKER": "Locker Vault 把一台闲置手机变成冷存储：装好之后关掉所有无线电，让它一直离线。和纸钱包不同，它还能签名：浏览器扩展把每一笔交易以二维码发给它，它也以同样的方式回答。",
+        "FAQ": {
+          "Q1": {
+            "Q": "冷钱包比热钱包更安全吗？",
+            "A": "面对远程攻击是的，因为没有一条通往私钥的网络通道。但它保护不了写在别人看得见的地方的助记词，也拦不住你亲手批准一笔坏交易，所以离线设备必须把你要签的东西原样显示出来。"
+          },
+          "Q2": {
+            "Q": "做冷存储一定要买设备吗？",
+            "A": "不用。专用硬件钱包是一种选择。另一种是一部永久离线的旧手机，装上 Locker Vault 这类签名应用，而且是免费的。"
+          }
+        }
+      },
+      "HOT_WALLET": {
+        "NAME": "热钱包",
+        "TITLE": "什么是热钱包？",
+        "META": {
+          "TITLE": "什么是热钱包？在线加密钱包有哪些风险",
+          "DESCRIPTION": "热钱包把私钥保存在联网设备上，大多数浏览器扩展都是如此。了解它为什么方便、风险究竟出在哪里，以及如何改用一把始终留在离线设备上的私钥。"
+        },
+        "DEF": "热钱包是指私钥存放在联网设备上的加密钱包：浏览器扩展、手机应用、桌面程序或交易所账户。它方便的地方在于可以随时立刻签名。",
+        "WHY": "方便同时也是弱点。私钥即便加密过，也躺在一台会运行其他软件、会访问各种网站的机器上。一个恶意扩展、一个剪贴板劫持程序或一次假更新就能把它偷走，而被偷走的私钥几秒钟就能被清空，无法撤回。",
+        "LOCKER": "Locker Protocol Wallet 看起来、用起来都像一个浏览器钱包，但它不是热钱包：扩展里不保存任何私钥。签名发生在 Locker Vault 这台离线设备上，所以攻击者在浏览器里能碰到的东西，动不了你的资金。",
+        "FAQ": {
+          "Q1": {
+            "Q": "MetaMask 是热钱包吗？",
+            "A": "单独使用时是：MetaMask 会在浏览器里保存一份加密的密钥。搭配硬件钱包使用时，密钥留在设备上，MetaMask 只负责准备交易。"
+          },
+          "Q2": {
+            "Q": "我应该彻底不用热钱包吗？",
+            "A": "放一点日常零用余额的热钱包是合理的取舍。积蓄则应该交给一把从不接触联网设备的私钥。"
+          }
+        }
+      },
+      "HARDWARE_WALLET": {
+        "NAME": "硬件钱包",
+        "TITLE": "什么是硬件钱包？",
+        "META": {
+          "TITLE": "什么是硬件钱包？还有一个免费的替代方案",
+          "DESCRIPTION": "硬件钱包是一台保存私钥、在设备内离线签名的专用设备。了解 Ledger 和 Trezor 怎么工作、它们的局限，以及一个免费的物理隔离方案。"
+        },
+        "DEF": "硬件钱包是一台小巧的专用设备，它在内部生成并保存私钥，也在内部完成签名。Ledger、Trezor 和 Keystone 是知名品牌。电脑负责准备交易，设备负责签名。",
+        "WHY": "把密钥放在独立硬件上，意味着一台被攻破的电脑读不到它。局限都很实际：设备要花钱，多数型号通过 USB 或蓝牙连接，屏幕很小，有些还无法完整解码 dApp 请你签的内容，于是就出现了盲签。",
+        "LOCKER": "Locker Protocol Wallet 不支持 Ledger 和 Trezor。它用另一条路达到同样的目的：密钥住在 Locker Vault 里，那是一台保持离线的手机上的免费应用，屏幕够大，足以读清交易，没有数据线也没有蓝牙，只有二维码。",
+        "FAQ": {
+          "Q1": {
+            "Q": "手机真的和硬件钱包一样安全吗？",
+            "A": "联网的手机不是。一部恢复出厂设置、只当签名器用、从此不再联网的手机，切断了远程攻击所需的网络通道。面对把设备抢到手的人，硬件钱包的安全芯片更强；在保险库上，密钥用你的主密码加密保存。"
+          },
+          "Q2": {
+            "Q": "用 Locker Protocol Wallet 一定要有硬件钱包吗？",
+            "A": "不用。保险库应用取代了它的位置。你需要的是浏览器扩展，加上一部可以保持离线的闲置手机或平板。"
+          }
+        }
+      },
+      "CRYPTO_WALLET": {
+        "NAME": "加密钱包",
+        "TITLE": "什么是加密钱包？",
+        "META": {
+          "TITLE": "什么是加密钱包？密钥、地址与主要类型",
+          "DESCRIPTION": "加密钱包装的不是币，而是控制币的密钥。了解钱包怎么工作、托管和非托管有什么不同、主要分成哪几类，以及怎样挑一个适合自己的钱包。"
+        },
+        "DEF": "加密钱包是保管你在区块链上资金密钥的软件或硬件。币本身一直留在链上；钱包保存的是证明它们属于你的私钥，并用它签署交易。",
+        "WHY": "谁掌握密钥，谁就掌握资金，所以任何钱包背后的真问题都是：密钥住在哪里，谁能碰到它。托管钱包，比如交易所账户，替你保管它。非托管钱包把它留给你，放在联网设备（热）或离线设备（冷）上。",
+        "LOCKER": "Locker Protocol Wallet 是一款不太一样的非托管浏览器钱包：你每天用的扩展里没有任何密钥。它显示 EVM 网络、Solana、Bitcoin、Cosmos、Tron、Sui、Aptos、Stellar 和 XRP Ledger 上的余额，并把每一次签名交给离线设备 Locker Vault。",
+        "FAQ": {
+          "Q1": {
+            "Q": "哪一类加密钱包最安全？",
+            "A": "对于输不起的钱，选一个密钥从不接触联网设备的钱包：硬件钱包，或者物理隔离签名器。最好的钱包同时还会清清楚楚地告诉你正在签什么。"
+          },
+          "Q2": {
+            "Q": "一个钱包能装多种加密货币吗？",
+            "A": "能。多链钱包从同一组助记词派生出多条链的密钥。要看清一个钱包真正支持哪些链，以及你常用的 dApp 能不能连上它。"
+          }
+        }
+      },
+      "BROWSER_EXTENSION_WALLET": {
+        "NAME": "浏览器扩展钱包",
+        "TITLE": "什么是浏览器扩展钱包？",
+        "META": {
+          "TITLE": "什么是浏览器扩展钱包？它是怎么工作的",
+          "DESCRIPTION": "浏览器扩展钱包在 Chrome 或 Brave 里把你的加密资产接入 dApp。看看它如何与网站对话、密钥放在哪里，以及怎样把密钥挪到离线设备。"
+        },
+        "DEF": "浏览器扩展钱包是装在浏览器里的钱包，例如装在 Chrome 或 Brave 上。它向网页注入一个 provider，让 dApp 能读取你的地址、请求连接并索要签名。",
+        "WHY": "扩展是使用 DeFi 最方便的方式，也是最暴露的一种。传统扩展把加密后的密钥存在浏览器配置文件里，紧挨着你装的每一个其他扩展和你访问的每一个网站。一次恶意更新或一台被攻破的电脑就能碰到它。",
+        "LOCKER": "Locker Protocol Wallet 是一款面向 Chrome 和 Brave 的扩展，它像其他钱包一样向 dApp 表明身份，却不保存任何私钥。每个请求都变成一个二维码，在离线设备 Locker Vault 上签名。",
+        "FAQ": {
+          "Q1": {
+            "Q": "浏览器扩展钱包安全吗？",
+            "A": "软件可以写得很好，却仍然跑在一台你无法完全信任的电脑上。风险取决于密钥在哪里：放在浏览器里，一次入侵就能碰到它；放在一台独立的离线设备上，就碰不到。"
+          },
+          "Q2": {
+            "Q": "dApp 是怎么发现我的扩展钱包的？",
+            "A": "靠标准：在 EVM 网络上扩展通过 EIP-6963 表明身份，在 Solana 和 Sui 上通过 Wallet Standard，在 Aptos 上通过 AIP-62。网站会把找到的每一个钱包列在连接菜单里。"
+          }
+        }
+      },
+      "NON_CUSTODIAL_WALLET": {
+        "NAME": "非托管钱包",
+        "TITLE": "什么是非托管钱包？",
+        "META": {
+          "TITLE": "什么是非托管钱包？自托管到底意味着什么",
+          "DESCRIPTION": "在非托管钱包里，只有你掌握密钥：没有公司能冻结、转移或弄丢你的资金。了解自托管到底意味着什么，以及它反过来对你提出了哪些要求。"
+        },
+        "DEF": "非托管钱包，也叫自托管钱包，是指私钥由你自己保管的钱包。没有公司能冻结、转移或弄丢你的资金；同样，如果你弄丢了助记词，也没有人能帮你恢复访问权。",
+        "WHY": "那些替客户保管密钥的交易所，有的倒闭了，有的停了提现，把客户资金一起带走。自托管消除了这个风险，换来另一个：保管好密钥、备份好助记词，从此由你负责。",
+        "LOCKER": "Locker Protocol Wallet 是非托管的，而且更进一步：连你电脑上的扩展都不保存密钥。Locker Protocol 从不接触你的助记词，保管它的保险库也从不连接互联网。",
+        "FAQ": {
+          "Q1": {
+            "Q": "托管和非托管有什么区别？",
+            "A": "托管：一家公司保管密钥，你在它那里有一个账户。非托管：密钥在你手里，无论做这个钱包的公司出了什么事，链上的资金都还是你的。"
+          },
+          "Q2": {
+            "Q": "如果 Locker Protocol 消失了，我的资金会怎样？",
+            "A": "它们仍然留在各条链上，由你的助记词控制。你可以把这组助记词恢复到任何支持同一标准（BIP-39）的钱包里。"
+          }
+        }
+      },
+      "SEED_PHRASE": {
+        "NAME": "助记词",
+        "TITLE": "什么是助记词（seed phrase）？",
+        "META": {
+          "TITLE": "什么是助记词？seed phrase 与恢复短语讲清楚",
+          "DESCRIPTION": "助记词是 12 或 24 个单词，可以重建钱包里的每一把密钥。了解它怎么工作、该抄在哪里保存，以及那些让钱包被一次清空的常见错误。"
+        },
+        "DEF": "助记词，也叫恢复短语或种子短语，是一组 12 或 24 个单词，它编码了一个钱包的主密钥。钱包里每一条链上的每一把私钥和每一个地址，都由它派生而来。",
+        "WHY": "助记词就是钱包本身。任何读到它的人都能在自己的设备上重建你的密钥并转走一切，没有任何密码拦得住。多数损失来自这几件事：把助记词输进假网站，存成照片或云端笔记，或者留在电脑里。",
+        "LOCKER": "用 Locker Protocol Wallet 时，助记词在离线的 Locker Vault 上生成并保存，从不输入浏览器。请把它抄在纸上并妥善收好：设备一旦丢失，这是恢复账户的唯一办法。",
+        "FAQ": {
+          "Q1": {
+            "Q": "可以把助记词存进密码管理器吗？",
+            "A": "抄在纸上或金属板上、放在离线的地方更安全。密码管理器会同步到云端，也运行在联网设备上，而那正是攻击者盯着看的地方。"
+          },
+          "Q2": {
+            "Q": "能把已有的助记词导入 Locker Vault 吗？",
+            "A": "可以，但一组在浏览器扩展里待过的助记词可能早已暴露。我们建议在离线设备上新建一组，再把资金转过去。"
+          }
+        }
+      },
+      "PRIVATE_KEY": {
+        "NAME": "私钥",
+        "TITLE": "加密货币里的私钥是什么？",
+        "META": {
+          "TITLE": "什么是私钥？私钥、地址和助记词的关系",
+          "DESCRIPTION": "私钥是控制某一个加密地址的秘密数字，签名就靠它。了解它和公钥、地址、助记词之间的关系，以及它为什么必须留在一台离线设备上。"
+        },
+        "DEF": "私钥是一串控制某条链上某一个地址的秘密数字。它生成为交易授权的签名。任何人都能从私钥算出公钥和地址，反过来却算不回去。",
+        "WHY": "签名需要私钥，所以任何替你签名的软件都得把它存在某个地方。存在哪里决定了你的安全：存在浏览器里，离被盗只差一次入侵；存在离线设备上，攻击者得先拿到设备，还得知道你的主密码。",
+        "LOCKER": "Locker Vault 从你的助记词派生出私钥，用你的主密码加密，保存在一台始终离线的设备上。扩展从头到尾只见得到公钥和地址；而在保险库上，每查看一次私钥都要重新输入密码。",
+        "FAQ": {
+          "Q1": {
+            "Q": "私钥和助记词是一回事吗？",
+            "A": "不是。助记词会生成许多把私钥，每个地址、每条链各一把。丢掉一把私钥，暴露的是一个地址；丢掉助记词，暴露的是全部。"
+          },
+          "Q2": {
+            "Q": "有人能猜出我的私钥吗？",
+            "A": "靠碰运气不可能：可能的密钥数量远远超出任何计算机能搜索的范围。私钥是被偷走的，不是被猜出来的，所以它存放在哪里才是关键。"
+          }
+        }
+      },
+      "WALLET_ADDRESS": {
+        "NAME": "钱包地址",
+        "TITLE": "什么是加密钱包地址？",
+        "META": {
+          "TITLE": "什么是加密钱包地址？各条链的地址格式",
+          "DESCRIPTION": "钱包地址是你在区块链上的公开标识，可以放心分享。看看 Ethereum、Bitcoin、Tron 和 Solana 的地址格式，以及转账之前该怎么核对它们。"
+        },
+        "DEF": "钱包地址是别人给你转账时使用的公开标识，由你的公钥派生而来，可以放心分享。格式因链而异：Ethereum 和 EVM 网络上是 0x... 开头，Bitcoin 上是 bc1... 开头，Tron 上是 T... 开头，Solana 上是一串 base58 字符。",
+        "WHY": "交易无法撤销，所以地址输错或粘错，就等于把钱送给了别人。攻击者正是利用这一点：剪贴板恶意软件，以及首尾字符与你常用地址完全相同的仿冒地址。",
+        "LOCKER": "Locker Protocol Wallet 用一组助记词显示你在每一条支持的链上的地址。转账时，如果收款地址看着像你认识的某个地址却又不一样，它会提醒你；签名前，保险库还会再次完整显示收款地址。",
+        "FAQ": {
+          "Q1": {
+            "Q": "分享钱包地址安全吗？",
+            "A": "安全：它只能让别人给你转账，不能花你的钱。不过拿到它的人也能在链上看到这个地址的余额和历史记录。"
+          },
+          "Q2": {
+            "Q": "为什么我在不同的链上有不同的地址？",
+            "A": "每个链系使用自己的密钥类型和地址格式。EVM 网络共用同一个地址，而 Bitcoin、Solana、Cosmos、Tron 等各有各的地址，全都由同一组助记词派生。"
+          }
+        }
+      },
+      "WATCH_ONLY_WALLET": {
+        "NAME": "观察钱包",
+        "TITLE": "什么是观察钱包（watch-only）？",
+        "META": {
+          "TITLE": "什么是观察钱包？没有私钥也能看余额",
+          "DESCRIPTION": "观察钱包只凭地址就能跟踪余额，里面没有任何私钥。看看它如何与离线签名器配合使用，把看余额和花钱分开，让私钥彻底远离互联网。"
+        },
+        "DEF": "观察钱包知道你的地址或公钥，但不知道你的私钥。它能显示余额、历史和到账记录，也能准备交易，却无法签名。",
+        "WHY": "它把「看」和「花」分开了。你每天使用、暴露在互联网上的那台设备，拿到了它有用所需的一切，却拿不到任何在被攻破时能转走资金的东西。",
+        "LOCKER": "Locker Protocol Wallet 扩展里的每一个账户都是观察账户：它们通过二维码从 Locker Vault 而来，只携带公钥。在扩展里准备好的交易会回到保险库签名。在 Bitcoin 上，这份观察视图还可以导出到 Sparrow 或 Nunchuk。",
+        "FAQ": {
+          "Q1": {
+            "Q": "观察钱包会被黑吗？",
+            "A": "它的数据可能被读走，从而暴露余额和地址，但小偷无法从中花钱，因为私钥根本不在那里。"
+          },
+          "Q2": {
+            "Q": "观察钱包和冷存储有什么区别？",
+            "A": "它们是同一套方案的两半：冷设备保管密钥并负责签名，观察钱包在线显示资产并准备交易。"
+          }
+        }
+      },
+      "QR_CODE_SIGNING": {
+        "NAME": "二维码签名",
+        "TITLE": "什么是二维码签名？",
+        "META": {
+          "TITLE": "什么是二维码签名？物理隔离交易的四步",
+          "DESCRIPTION": "二维码签名把一笔交易以二维码送到离线设备再送回来，不用数据线，也不用蓝牙。看看这四步具体怎么走，以及每一台设备各自核对些什么。"
+        },
+        "DEF": "二维码签名是一种在离线设备上签署交易的方式，全程没有任何数据连接。未签名的交易在联网电脑上显示为二维码，由离线设备扫描、在那里签名，再以另一个二维码返回。",
+        "WHY": "数据线或蓝牙都是通道，恶意软件可能会用它。摄像头读二维码只搬运屏幕上那点数据，一次只走一个方向，而且每一次交换你都看得见。",
+        "LOCKER": "Locker Protocol Wallet 的每一次签名都走同一个回路：扩展显示请求二维码，Locker Vault 读取它，解码交易并展示给你，然后显示签好的二维码，由扩展扫回去。较大的数据以动态二维码（BC-UR）传递。",
+        "FAQ": {
+          "Q1": {
+            "Q": "二维码签名比硬件钱包慢吗？",
+            "A": "慢几秒：每次签名扫两次码。换来的是你能在一整块手机屏幕上读交易，而不是在一块很小的设备显示屏上。"
+          },
+          "Q2": {
+            "Q": "恶意二维码会危害离线设备吗？",
+            "A": "保险库把每一个二维码都当作数据处理：它解码内容，把读到的东西展示给你，在你于它的屏幕上批准之前不签任何东西。"
+          }
+        }
+      },
+      "BLIND_SIGNING": {
+        "NAME": "盲签",
+        "TITLE": "什么是盲签？",
+        "META": {
+          "TITLE": "什么是盲签？签下读不懂的数据有多危险",
+          "DESCRIPTION": "盲签就是批准一笔你的钱包无法解码的交易。看看盗币程序为什么离不开盲签，以及清晰签名是怎样把你真正批准的内容原样摆在你眼前的。"
+        },
+        "DEF": "盲签是指你批准了一笔交易或一条消息，而钱包无法把它显示成可读的样子，只能给出一个哈希或一串原始十六进制数据。你是在不知道它做什么的情况下签的字。",
+        "WHY": "大多数盗币攻击都靠它。一个假网站请求一个看上去很平常的签名，实际上却是授权某个合约转走你的代币。如果钱包解码不了，你根本没有机会察觉。",
+        "LOCKER": "Locker Vault 在自己的屏幕上解码它要签的东西：合约调用、代币授权、类型化数据（EIP-712）、Bitcoin PSBT、Cosmos SignDoc。它直接从原始数据里算出风险事实，所以一个被攻破的扩展没法把一笔有害交易伪装成无害的。",
+        "FAQ": {
+          "Q1": {
+            "Q": "为什么有些硬件钱包会要求盲签？",
+            "A": "有些设备无法解析每一种智能合约，在小屏幕上尤其如此，于是提供了一个开关，允许签署它们解码不了的数据。这能用，但把判断又交回给了信任。"
+          },
+          "Q2": {
+            "Q": "什么是清晰签名？",
+            "A": "盲签的反面：钱包会解码请求，在你批准之前告诉你谁收到什么、是哪种代币、授予了哪一项权限。"
+          }
+        }
+      },
+      "MESSAGE_SIGNING": {
+        "NAME": "消息签名",
+        "TITLE": "加密货币里的消息签名是什么？",
+        "META": {
+          "TITLE": "什么是消息签名？Sign-In with Ethereum 详解",
+          "DESCRIPTION": "签一条消息不会转走任何资金，却能证明某个地址属于你，常用来登录。了解它什么时候无害、什么时候不是，以及签之前该先看什么。"
+        },
+        "DEF": "消息签名是用你的私钥去签一段文字，而不是一笔交易。它不会在链上改变任何东西。网站用它来证明你拥有某个地址，例如用 Sign-In with Ethereum（EIP-4361）登录。",
+        "WHY": "一条普通的登录消息是无害的。但签名也能在链下授权一些事：一笔免 Gas 的代币 permit，或者一张交易所订单，同样是一条签过名的消息，日后可以被用来转走你的资金。",
+        "LOCKER": "Locker Protocol Wallet 会检查 Sign-In with Ethereum 请求：如果一条登录消息写的是另一个网站，而不是正在请求的这一个，它就会被拒绝，因为假网站正是这样在真网站上开出会话的。每一条消息和每一笔交易一样，都要你在 Locker Vault 上读过之后才签。",
+        "FAQ": {
+          "Q1": {
+            "Q": "签一条消息会把钱包清空吗？",
+            "A": "一条纯文本消息不会。但像 permit 这样的类型化数据签名，日后可以授权一次转账，所以钱包必须把消息里到底写了什么原样显示给你。"
+          },
+          "Q2": {
+            "Q": "消息签名要花 Gas 吗？",
+            "A": "不要。签名是在你的设备上生成的，然后发给网站，而不是发到区块链上。"
+          }
+        }
+      },
+      "EIP_712": {
+        "NAME": "EIP-712（类型化数据）",
+        "TITLE": "什么是 EIP-712 类型化数据签名？",
+        "META": {
+          "TITLE": "什么是 EIP-712？类型化数据签名详解",
+          "DESCRIPTION": "EIP-712 让 dApp 可以请求结构化的签名，比如 permit 和交易所订单。了解类型化数据里有哪些字段，以及签名之前为什么一定要读一遍。"
+        },
+        "DEF": "EIP-712 是以太坊的一个标准，用来签署结构化数据而不是纯文本。请求会列出带名字的字段，比如支出方、金额和截止时间，并附上一个 domain，写明它针对哪个合约、哪条链。",
+        "WHY": "类型化数据支撑着免 Gas 授权（Permit、Permit2）、交易所订单和许多 dApp 登录。因为它不需要一笔链上交易就能授权代币转移，所以特别受钓鱼网站青睐：一个签名就能交出一整笔代币余额。",
+        "LOCKER": "Locker Vault 会逐个字段解码 EIP-712 请求，它的风险检查会标出 permit 和 Permit2 授权。Locker Protocol 自己的合约也使用类型化数据，因此你签署的每一项操作都能在离线屏幕上读懂。",
+        "FAQ": {
+          "Q1": {
+            "Q": "签 EIP-712 数据安全吗？",
+            "A": "取决于内容。读清 domain（哪个合约、哪条链）、支出方和金额。给一个陌生地址的无限额 permit，正是盗币程序的经典套路。"
+          },
+          "Q2": {
+            "Q": "EIP-712 要花 Gas 吗？",
+            "A": "签名本身不要。dApp 日后可能把这个签名提交到链上，那笔交易才付手续费。"
+          }
+        }
+      },
+      "TOKEN_APPROVAL": {
+        "NAME": "代币授权",
+        "TITLE": "什么是代币授权？",
+        "META": {
+          "TITLE": "什么是代币授权？额度、无限授权与撤销",
+          "DESCRIPTION": "代币授权让一个智能合约可以转走你的代币，有时还不设上限。了解额度怎么运作、无限额授权为什么危险，以及该在哪里把它撤销掉。"
+        },
+        "DEF": "代币授权，也叫额度（allowance），是你给某个智能合约的一项许可：它可以转走你某种代币，最多不超过一个设定的数量。dApp 要替你兑换或存入代币，都得先拿到它。",
+        "WHY": "很多 dApp 会索要无限额度的授权，好让你以后不用再授权一次。这项许可在你撤销之前一直有效。如果那个合约是恶意的，或者日后被人利用，它随时可以把你钱包里这种代币全部拿走。",
+        "LOCKER": "Locker Protocol Wallet 会在你签名之前标出无限额授权、覆盖整个 NFT 收藏集的授权（setApprovalForAll）和 Permit2，扩展里标一次，保险库上再标一次。它的撤销页面可以取消一笔额度；撤销本身也是一笔在保险库上签名的交易。",
+        "FAQ": {
+          "Q1": {
+            "Q": "旧的代币授权需要撤销吗？",
+            "A": "需要，对于你已经不再使用的合约。撤销只花一点网络手续费，却能除掉一项日后可能被滥用的许可。"
+          },
+          "Q2": {
+            "Q": "approve 和 setApprovalForAll 有什么区别？",
+            "A": "approve 针对一种代币，而且有额度上限。setApprovalForAll 覆盖你名下某个收藏集的全部 NFT，现在的和以后的都算，所以它经常成为 NFT 骗局的目标。"
+          }
+        }
+      },
+      "WALLET_DRAINER": {
+        "NAME": "钱包盗币程序",
+        "TITLE": "什么是钱包盗币程序（drainer）？",
+        "META": {
+          "TITLE": "什么是钱包盗币程序？drainer 如何偷走资产",
+          "DESCRIPTION": "钱包盗币程序是假网站上的一段脚本，骗你亲手签下把代币交出去的签名。看看 drainer 具体如何得手，以及它们最爱索要哪几种签名。"
+        },
+        "DEF": "钱包盗币程序是一段恶意代码，通常挂在假网站或被入侵的网站上，它向你的钱包索要一些专门设计过的签名，好把你的资产转给攻击者。它被当成现成的工具包出售，所以盗币网站成千上万地冒出来。",
+        "WHY": "盗币程序不需要你的私钥。它需要你批准：一笔无限额代币授权、一个 permit、一次 setApprovalForAll，或者在 Solana 上一笔交出账户权限的交易。请求会被包装成一次铸造、一次空投领取或一次登录。",
+        "LOCKER": "连接网站时，Locker Protocol Wallet 会对照内置的约 105,000 个已知钓鱼域名列表做检查，标出无限额授权、EIP-7702 委托、Solana SetAuthority 这类盗币套路，并在任何东西被签名之前，把解码后的交易显示在离线的保险库上。",
+        "FAQ": {
+          "Q1": {
+            "Q": "盗币程序能清空硬件钱包吗？",
+            "A": "如果你批准了它的请求，能。硬件钱包保护的是密钥，不是你的判断，所以关键在于设备有没有把这个签名到底做什么显示给你看。"
+          },
+          "Q2": {
+            "Q": "如果我已经签了盗币程序的请求，该怎么办？",
+            "A": "立刻撤销你给出的授权，并把剩下的资金转到一个由从未暴露过的助记词生成的新地址上。"
+          }
+        }
+      },
+      "PHISHING": {
+        "NAME": "加密货币钓鱼",
+        "TITLE": "什么是加密货币钓鱼？",
+        "META": {
+          "TITLE": "什么是加密货币钓鱼？假网站与假签名请求",
+          "DESCRIPTION": "加密货币钓鱼会模仿真网站、真应用和真客服，骗走你的助记词或者签名。了解最常见的几种套路，以及钱包怎样能在关键时刻提醒你。"
+        },
+        "DEF": "加密货币钓鱼指一切模仿真品的假网站、假消息、假广告或假应用，目的是让你说出助记词，或者签下一笔有害的交易。近似域名、假冒客服账号和搜索结果里的付费广告都是常见入口。",
+        "WHY": "一个钓鱼页面可以是真 dApp 的像素级复制品。差别可能只有两处：域名里的一个字符，以及那个签名请求实际上做了什么。两处都很容易漏掉。",
+        "LOCKER": "当你连上内置钓鱼列表里的网站，或者连上一个用不寻常字符写成的域名（punycode）时，Locker Protocol Wallet 会提醒你。提醒只是提醒，决定权仍在你手里；随后每一个请求都会在保险库上再解码一次。",
+        "FAQ": {
+          "Q1": {
+            "Q": "真正的钱包会索要我的助记词吗？",
+            "A": "不会。没有任何客服团队、dApp 或更新程序需要你的助记词。开口索要的人，都是想拿走你的资金。"
+          },
+          "Q2": {
+            "Q": "怎样识破一个钓鱼网站？",
+            "A": "自己输入网址或使用书签，一个字母一个字母地核对域名，并且对一切催你快点的说法保持怀疑：几分钟后就结束的铸造、马上过期的领取、一条安全警告。"
+          }
+        }
+      },
+      "ADDRESS_POISONING": {
+        "NAME": "地址投毒",
+        "TITLE": "什么是地址投毒？",
+        "META": {
+          "TITLE": "什么是地址投毒？仿冒地址骗局是怎么回事",
+          "DESCRIPTION": "地址投毒会往你的交易记录里塞进一个仿冒地址，等着你日后顺手复制。了解这个骗局具体如何运作，以及转账之前该怎样核对收款地址。"
+        },
+        "DEF": "地址投毒是一种骗局：攻击者从一个首尾与你常用地址一模一样的地址，给你转来一笔极小的金额，或者一笔假的代币转账。他指望你日后从交易记录里把它复制出来，把钱发过去。",
+        "WHY": "大多数人只核对地址开头和结尾的几个字符。攻击者会专门生成首尾字符完全对得上的地址，于是那条被投毒的记录乍看之下就是对的。",
+        "LOCKER": "转账时，Locker Protocol Wallet 会把收款地址和你用过的地址做比对，如果它看着像其中某一个却又不一样，就提醒你逐个字符核对。签名之前，保险库还会再次完整显示收款地址。",
+        "FAQ": {
+          "Q1": {
+            "Q": "收到一笔投毒转账，说明我的钱包被黑了吗？",
+            "A": "没有。收下它本身没有任何危害。危险只在于日后复制那个地址：别理它，或者把那个假代币隐藏起来。"
+          },
+          "Q2": {
+            "Q": "怎样防住地址投毒？",
+            "A": "把常用地址存进联系人，绝不从交易记录里复制收款地址，并在签名设备上比对完整地址。"
+          }
+        }
+      },
+      "GAS_FEE": {
+        "NAME": "Gas 费",
+        "TITLE": "什么是 Gas 费？",
+        "META": {
+          "TITLE": "什么是 Gas 费？加密货币网络手续费详解",
+          "DESCRIPTION": "Gas 费是你为了让区块链处理交易而付出的钱，用该链自己的币结算。了解它怎么定、为什么会波动，以及把费率给得太低会发生什么。"
+        },
+        "DEF": "Gas 费，也叫网络手续费，是你付给网络验证者、让他们把你的交易打包进去的钱。它用链自己的币支付（Ethereum 上是 ETH，Solana 上是 SOL，Tron 上是 TRX），高低取决于这笔交易需要多少工作量，以及网络有多拥堵。",
+        "WHY": "没有足够的原生币，你什么都动不了，连稳定币都发不出去。手续费给得太低，交易可能一直卡在待处理；随手给得过高，又是白花钱。",
+        "LOCKER": "在准备一笔转账或兑换之前，Locker Protocol Wallet 会检查你是否持有足够的资产，以及足够支付手续费的原生币，不够时会明确告诉你。一笔待处理的 EVM 交易，可以用一笔在保险库上签名的替换交易来加速或取消。",
+        "FAQ": {
+          "Q1": {
+            "Q": "为什么发 USDC 需要有 ETH？",
+            "A": "因为网络只收自己的币。你要发送的代币，和支付手续费的币，是两笔不同的余额。"
+          },
+          "Q2": {
+            "Q": "Locker Protocol Wallet 转账会额外收费吗？",
+            "A": "不会。一笔转账只花网络手续费。钱包自己的费用只针对在扩展里发起的兑换和跨链桥（最高 0.25%），并且会在你签名之前显示出来。"
+          }
+        }
+      },
+      "NONCE": {
+        "NAME": "nonce",
+        "TITLE": "加密货币交易里的 nonce 是什么？",
+        "META": {
+          "TITLE": "什么是交易 nonce？加速与取消是怎么回事",
+          "DESCRIPTION": "nonce 是你的账户发出的每一笔交易的序号。了解一笔卡住的交易为什么会挡住排在后面的所有交易，以及加速和取消究竟是怎么做到的。"
+        },
+        "DEF": "在 Ethereum 和 EVM 网络上，nonce 是某个账户发出的交易的序号：第一笔是 0，然后是 1、2，依此类推。每个 nonce 只能用一次，交易也按顺序处理。",
+        "WHY": "如果有一笔交易卡住了，后面每一笔都得排在它后面等。唯一的办法是再发一笔 nonce 相同、手续费更高的交易：同一笔交易，只是更快（加速），或者一笔转给自己、金额为零的交易（取消）。",
+        "LOCKER": "Locker Protocol Wallet 为待处理的 EVM 交易提供加速和取消。替换交易是一笔 nonce 相同的新交易，由扩展准备，再到 Locker Vault 上重新签名。",
+        "FAQ": {
+          "Q1": {
+            "Q": "我的交易为什么一直卡在待处理？",
+            "A": "通常是手续费相对当前的需求给得太低，或者还有一笔 nonce 更小的交易没有被打包。"
+          },
+          "Q2": {
+            "Q": "已确认的交易还能取消吗？",
+            "A": "不能。加速和取消只在交易还处于待处理状态时有效。一旦在链上确认，它就是最终的。"
+          }
+        }
+      },
+      "DAPP": {
+        "NAME": "dApp",
+        "TITLE": "什么是 dApp？",
+        "META": {
+          "TITLE": "什么是 dApp？去中心化应用与你的钱包",
+          "DESCRIPTION": "dApp 是逻辑跑在区块链智能合约上、并与你的钱包相连的网站或应用。看看连接是怎么发生的，以及一个 dApp 能做什么、不能做什么。"
+        },
+        "DEF": "dApp，即去中心化应用，是一种应用，通常是一个网站，它的逻辑跑在区块链的智能合约里。你把钱包连上去，就能交易、借贷、质押、投票或者铸造。",
+        "WHY": "连接会把你的地址告诉网站。它不会让网站碰到你的资金：每一个动作仍然需要一个签名。风险在于你签了什么，以及这个网站是不是真的那一个。",
+        "LOCKER": "Locker Protocol Wallet 已经在它支持的各条链上，对超过 70 个线上 dApp 做过实测，其中包括 Jupiter、Osmosis、Lido 和 SunSwap。你照常连接，每一次签名都在离线的保险库上批准。",
+        "FAQ": {
+          "Q1": {
+            "Q": "把钱包连上 dApp 安全吗？",
+            "A": "单是连接不会转走任何东西。要当心的是随后签的东西，并且把不再使用的网站从钱包的已连接站点列表里删掉。"
+          },
+          "Q2": {
+            "Q": "哪些 dApp 能配 Locker Protocol Wallet？",
+            "A": "我们的 dApp 目录列出了每一个对照线上版本实测过的网站，附上测试日期，以及在该网站菜单里该点哪个按钮。"
+          }
+        }
+      },
+      "SWAP": {
+        "NAME": "加密货币兑换（swap）",
+        "TITLE": "什么是加密货币兑换（swap）？",
+        "META": {
+          "TITLE": "什么是 swap 兑换？手续费、滑点与路由",
+          "DESCRIPTION": "加密货币兑换（swap）是在同一条网络上，通过去中心化交易所把一种代币换成另一种。了解路由、滑点和手续费如何决定你的成交价。"
+        },
+        "DEF": "兑换（swap）是在同一条区块链上把一种代币换成另一种，通过一个去中心化交易所，或者通过把订单拆给好几家交易所的聚合器完成。它在你签名的那一笔交易里结算。",
+        "WHY": "你拿到的价格取决于流动性、路由，以及滑点，也就是你能接受的报价与成交之间的价格变动。滑点放得太宽会招来抢跑，而藏起来的费用会减少你实际收到的数量。",
+        "LOCKER": "Locker Protocol Wallet 在扩展里内置了兑换。报价和钱包自己的手续费（最高 0.25%），都会在你于保险库上签名之前显示出来。",
+        "FAQ": {
+          "Q1": {
+            "Q": "什么是滑点？",
+            "A": "你能接受的报价与成交价之间的差距。如果市场的波动超过了这个幅度，兑换会直接失败，而不是以更差的价格成交。"
+          },
+          "Q2": {
+            "Q": "在钱包里兑换比在 DEX 上更贵吗？",
+            "A": "钱包常常在交易所的费用之上再加一层。要比较的是你实际收到的数量，而不只是标出来的汇率。Locker 的费用会在你签名之前显示。"
+          }
+        }
+      },
+      "BRIDGE": {
+        "NAME": "跨链桥",
+        "TITLE": "什么是跨链桥？",
+        "META": {
+          "TITLE": "什么是跨链桥？把代币从一条链搬到另一条",
+          "DESCRIPTION": "跨链桥把价值从一条区块链搬到另一条。了解常见的几种跨链桥怎么工作、一次转账大概要等多久，以及为什么资金发出去之后就收不回来了。"
+        },
+        "DEF": "跨链桥把价值从一条区块链搬到另一条，例如把 USDC 从 Ethereum 搬到 Solana。取决于设计，它要么在一边锁定代币、在另一边释放，要么直接用目标链上早已备好的流动性付给你。",
+        "WHY": "跨链桥里存着大量资金，这让它们成了黑客的首要目标。一次转账通常要几分钟，一旦发出就无法召回，而且你在目标链上还需要一点原生币，才能动用到账的资产。",
+        "LOCKER": "Locker Protocol Wallet 在扩展里内置了跨链桥，覆盖它支持的各条链之间。目标链和钱包自己的手续费（最高 0.25%）会在你于保险库上签名之前显示出来，转账也会一路跟踪到到账为止。",
+        "FAQ": {
+          "Q1": {
+            "Q": "一次跨链转账要多久？",
+            "A": "从不到一分钟到大约半小时不等，取决于路由，以及源链需要多少个确认。"
+          },
+          "Q2": {
+            "Q": "如果跨链的代币没有到账怎么办？",
+            "A": "用源链的交易哈希在跨链桥的浏览器上查一下。多数延迟会自行解决；但发错链或发错地址的转账无法撤回。"
+          }
+        }
+      },
+      "PERPS": {
+        "NAME": "永续合约（perps）",
+        "TITLE": "什么是永续合约（perps）？",
+        "META": {
+          "TITLE": "什么是永续合约？perps、杠杆与强平",
+          "DESCRIPTION": "永续合约让你用杠杆押注一项资产的价格，而且没有到期日。了解资金费率、保证金和强平各自如何运作，以及这中间要承担哪些风险。"
+        },
+        "DEF": "永续合约（perps）是跟踪某项资产价格、却永不到期的合约。你用保证金开一个多头或空头仓位，可以选择加杠杆；多空之间互相支付的资金费率，让合约价格贴近现货价格。",
+        "WHY": "杠杆会把盈利和亏损同时放大。如果价格朝着不利方向走得够远，仓位就会被强平，你可能损失全部保证金。永续合约属于愿意承担这种风险的交易者，不适合用来放积蓄。",
+        "LOCKER": "Locker Protocol Wallet 可以通过一把代理密钥在 Hyperliquid 上交易永续合约：那是一把有时效的密钥，只能替你下单，永远无法提现。充值和提现都在保险库上签名。经你同意后，钱包对 Hyperliquid 订单收取 0.05%。",
+        "FAQ": {
+          "Q1": {
+            "Q": "什么是强平？",
+            "A": "当你的保证金不足以覆盖亏损时，仓位被强制平掉。它会在强平价上自动发生。"
+          },
+          "Q2": {
+            "Q": "什么是资金费率？",
+            "A": "多头和空头交易者之间的一笔周期性付款，它让永续合约的价格贴近市场价。根据它的正负，你在持仓期间要么支付它，要么收到它。"
+          }
+        }
+      },
+      "PSBT": {
+        "NAME": "PSBT",
+        "TITLE": "Bitcoin 里的 PSBT 是什么？",
+        "META": {
+          "TITLE": "什么是 PSBT？部分签名的比特币交易详解",
+          "DESCRIPTION": "PSBT 是把一笔未签名的比特币交易交给签名器的标准格式。了解它里面究竟装了些什么，以及一台离线签名器应该自己核对清楚哪些内容。"
+        },
+        "DEF": "PSBT（Partially Signed Bitcoin Transaction，BIP-174）是把一笔未签名的比特币交易从一个工具交给另一个工具的标准格式。它带着输入、输出和签名器所需的数据，并不断收集签名，直到交易完整。",
+        "WHY": "正是它让一个观察钱包和一台离线签名器能够配合工作。签名器必须自己解码它：输出和手续费，恰恰是一份被篡改过的 PSBT 会动手脚的地方。",
+        "LOCKER": "Locker Protocol Wallet 在扩展里构建 PSBT，再通过二维码交给 Locker Vault。保险库自己解码它：每一个输出、手续费占金额的比例、低于粉尘限额的输出，以及本钱包并不控制的输入。",
+        "FAQ": {
+          "Q1": {
+            "Q": "PSBT 可以随便分享吗？",
+            "A": "它不含任何私钥，所以看到它的人无法用它花钱。但它会暴露你的地址和金额，所以只在你自己的工具之间传递它。"
+          },
+          "Q2": {
+            "Q": "PSBT 支持 Taproot 吗？",
+            "A": "支持。PSBT 能携带 Native SegWit 和 Taproot 输入，这两种 Locker Protocol Wallet 在 Bitcoin 上都在用。"
+          }
+        }
+      },
+      "BC_UR": {
+        "NAME": "BC-UR",
+        "TITLE": "什么是 BC-UR？",
+        "META": {
+          "TITLE": "什么是 BC-UR？钱包用的动态二维码标准",
+          "DESCRIPTION": "BC-UR 是通过二维码传递钱包数据的开放标准，数据大的时候会变成动态二维码。了解物理隔离钱包为什么用它，以及它为何不怕漏掉一帧。"
+        },
+        "DEF": "BC-UR（Uniform Resources，出自 Blockchain Commons）是把交易、PSBT、账户公钥这类二进制数据编码进二维码的标准。当数据大到一个码装不下时，它会被拆成一段会动的帧序列。",
+        "WHY": "一个二维码最多装下几千字节，而且过于密集的码很难扫。BC-UR 使用喷泉码：读取端只要收到足够多的帧，无论是哪几帧，都能把数据重建出来，所以漏掉一帧只是多等一会儿，不用从头再来。",
+        "LOCKER": "Locker Protocol Wallet 和 Locker Vault 用 BC-UR 动态二维码交换较大的请求，Keystone 等其他物理隔离钱包用的也是这一族格式。保险库在解码任何东西之前，会先给要拼装的数据设一个大小上限。",
+        "FAQ": {
+          "Q1": {
+            "Q": "二维码为什么一直在变？",
+            "A": "那是一段动态序列，承载的数据大到一个码装不下。把摄像头对着它别动，直到保险库提示已经读完。"
+          },
+          "Q2": {
+            "Q": "BC-UR 是某个钱包品牌专有的吗？",
+            "A": "不是。它是 Blockchain Commons 的一份开放规范，多款硬件钱包和软件钱包都在用。"
+          }
+        }
+      },
+      "ORDINALS": {
+        "NAME": "Bitcoin Ordinals",
+        "TITLE": "什么是 Bitcoin Ordinals？",
+        "META": {
+          "TITLE": "什么是 Bitcoin Ordinals？聪上面的铭文",
+          "DESCRIPTION": "Ordinals 给每一聪编号，好把数据铭刻在上面，于是有了比特币 NFT。了解铭文究竟如何运作，以及怎样避免不小心把一枚铭文当零钱花掉。"
+        },
+        "DEF": "Ordinals 是一套给每一聪（satoshi，比特币的最小单位）编号的方案，好让它可以被单独追踪。铭刻在某一聪上的数据（一张图片、一段文字、一个代币）叫作铭文，常被称为比特币 NFT。",
+        "WHY": "对 Bitcoin 网络本身来说，被铭刻过的聪就是普通的钱。一个不认识 Ordinals 的钱包可能把它当手续费花掉，或者随一笔付款一起发出去，铭文就永远没了。",
+        "LOCKER": "Locker Vault 把 Ordinals 放在一个与你的支付资金分开的 Taproot 地址上，这样普通转账就不会误花掉铭文。Satflow、Best in Slot 这类 Ordinals 市场可以通过扩展连接。",
+        "FAQ": {
+          "Q1": {
+            "Q": "什么是 Runes？",
+            "A": "2024 年推出的比特币同质化代币标准。和追踪单个聪的 Ordinals 不同，Runes 的余额记录在交易输出里。"
+          },
+          "Q2": {
+            "Q": "玩 Ordinals 需要专门的钱包吗？",
+            "A": "你需要一个知道哪些输出带着铭文、并把它们单独隔开的钱包。普通的比特币钱包可能一声不响就把它们花掉。"
+          }
+        }
+      },
+      "TRUSTLINE": {
+        "NAME": "信任线（trustline）",
+        "TITLE": "Stellar 和 XRP 上的信任线是什么？",
+        "META": {
+          "TITLE": "什么是信任线？Stellar 与 XRP Ledger 资产",
+          "DESCRIPTION": "信任线让你的账户可以持有 Stellar 或 XRP Ledger 上的某种代币，同时会锁定一小笔储备金。了解怎样添加一条，以及它到底要花多少钱。"
+        },
+        "DEF": "在 Stellar 和 XRP Ledger 上，信任线是你的账户同意持有某个特定发行方的某项特定资产，例如 USDC。在你添加它之前，账户无法接收这项资产。",
+        "WHY": "每一条信任线都会锁定一小笔原生币（XLM 或 XRP）作为储备金。信任一个用同样资产代码的假发行方是常见骗局：真正要看的是发行方的地址，而不是代码。",
+        "LOCKER": "Locker Protocol Wallet 会在你批准之前说明一条信任线要锁定多少储备金，离线的保险库在签名时也会完整显示这条信任线。",
+        "FAQ": {
+          "Q1": {
+            "Q": "为什么我在 Stellar 上收不到 USDC？",
+            "A": "你的账户先要有一条通往 Circle 的 USDC 发行方的信任线。添加它是一笔小交易，并会锁定一点 XLM 作为储备金。"
+          },
+          "Q2": {
+            "Q": "信任线可以删掉吗？",
+            "A": "可以，只要它的余额为零。删掉它会释放它锁定的储备金。"
+          }
+        }
+      },
+      "MEMO": {
+        "NAME": "Memo 与目标标签",
+        "TITLE": "什么是 memo 或目标标签？",
+        "META": {
+          "TITLE": "Memo 与目标标签：交易所为什么要它",
+          "DESCRIPTION": "Memo 或目标标签告诉交易所这笔转账属于哪位客户。了解 Stellar、Cosmos 和 XRP 分别在什么时候需要它，以及忘了填会发生什么事。"
+        },
+        "DEF": "memo 是附在 Stellar 和 Cosmos 链付款上的一小段备注；在 XRP Ledger 上，扮演同样角色的是一个叫目标标签（destination tag）的数字。交易所用一个共享地址服务许多客户，靠它把钱记到正确的账户上。",
+        "WHY": "往交易所充值时忘了填，资金就会到达交易所的地址却没有归属；想拿回来，最好的情况也得走一张工单。在 THORChain 上，memo 根本不是备注：它就是告诉协议该做什么的指令。",
+        "LOCKER": "Locker Protocol Wallet 允许你在转账时填写 memo 或目标标签，保险库在签名前会把它作为付款的一部分显示出来，所以漏填或填错，在资金离开之前就能看见。",
+        "FAQ": {
+          "Q1": {
+            "Q": "转给自己的钱包也需要 memo 吗？",
+            "A": "通常不用。个人地址不需要；交易所的充值地址通常需要，而且会在充值页面上写明。"
+          },
+          "Q2": {
+            "Q": "我没填 memo 就把钱发出去了，怎么办？",
+            "A": "带着交易哈希联系交易所客服。他们往往能手工入账，但可能要花上几天。"
+          }
+        }
+      },
+      "IBC": {
+        "NAME": "IBC",
+        "TITLE": "Cosmos 里的 IBC 是什么？",
+        "META": {
+          "TITLE": "什么是 IBC？Cosmos 的跨链通信协议",
+          "DESCRIPTION": "IBC 是 Cosmos 各条链之间搬运代币所用的协议。了解通道怎么工作、ibc/ 开头的 denom 到底是什么，以及怎样把 ATOM 发到 Osmosis。"
+        },
+        "DEF": "IBC（Inter-Blockchain Communication）是 Cosmos 各条链之间互相发送代币和消息所用的协议，走的是两条链之间打开的一个端口和一条通道。跨过去的代币在另一边以 ibc/... 开头的名称出现。",
+        "WHY": "选错通道，或者发到另一条链上的地址，都可能让代币卡在半路。每条链都有自己的地址前缀（cosmos1...、osmo1...、inj1...），而它们全都由同一把密钥派生。",
+        "LOCKER": "Locker Protocol Wallet 覆盖它支持的各条 Cosmos 链，其中包括 Osmosis、Injective 和 Stride，全部来自同一组助记词。保险库自己解码 SignDoc，并在你签名之前显示每一条消息。",
+        "FAQ": {
+          "Q1": {
+            "Q": "什么是 IBC denom？",
+            "A": "代币被发到另一条链上之后所带的名称，例如 Osmosis 上的 ATOM 是 ibc/27394FB0...。它是这枚代币走过的路径的哈希。"
+          },
+          "Q2": {
+            "Q": "IBC 算跨链桥吗？",
+            "A": "在 Cosmos 各链之间它扮演同样的角色，但它是一个原生协议，由每条链的轻客户端自行验证，而不是一个替你保管资金的独立服务。"
+          }
+        }
+      },
+      "AUTHZ": {
+        "NAME": "authz 授权",
+        "TITLE": "Cosmos 里的 authz 授权是什么？",
+        "META": {
+          "TITLE": "什么是 authz 授权？Cosmos 权限详解",
+          "DESCRIPTION": "authz 授权让另一个 Cosmos 账户替你的账户行事，比如自动复投质押奖励。了解它什么时候有用、什么时候是陷阱，以及该怎样撤销。"
+        },
+        "DEF": "authz 是 Cosmos SDK 的一个模块，它让一个账户（授权方）允许另一个账户（被授权方）代表自己发送某些消息，有范围限制，也有到期时间。自动复投服务就用它替你把奖励重新质押。",
+        "WHY": "一项过于宽泛的授权，比如一个笼统的转账授权，会让被授权方不再征求你的同意就动你的资金。钓鱼网站会把这类授权伪装成寻常的质押操作。",
+        "LOCKER": "Locker Vault 在它的审阅界面上用红色显示 authz 授权，所以它不可能被当成一个普通签名混过去。批准之前，请读清楚这项权限给了谁、又覆盖了什么。",
+        "FAQ": {
+          "Q1": {
+            "Q": "怎样撤销一项 authz 授权？",
+            "A": "针对那个被授权方和那种消息类型发送一条撤销消息（MsgRevoke），在支持这一操作的质押面板上完成。它是一笔普通交易，只花一点手续费。"
+          },
+          "Q2": {
+            "Q": "authz 授权一定危险吗？",
+            "A": "不一定。一项范围很窄、只限于在你选定的验证人处复投、并且带到期时间的授权，正是自动复投的工作方式。危险的是给陌生账户的宽泛授权或永久授权。"
+          }
+        }
+      },
+      "MULTICHAIN_WALLET": {
+        "NAME": "多链钱包",
+        "TITLE": "什么是多链钱包？",
+        "META": {
+          "TITLE": "什么是多链钱包？一组助记词，多条链",
+          "DESCRIPTION": "多链钱包用同一组助记词持有多条区块链上的资产。了解它怎么工作，以及该核对些什么：支持哪些链、dApp 兼容性，还有签名在哪里完成。"
+        },
+        "DEF": "多链钱包用同一组助记词管理多条区块链上的账户，比如 Ethereum、Solana 和 Bitcoin。每个链系都有自己的密钥和地址格式，全都由同一颗种子派生。",
+        "WHY": "一个钱包管所有，用起来和备份都更简单。代价是：一组助记词从此保护着一切，而各家的支持程度参差不齐。有的钱包列出了某条链，却连不上它的 dApp，或者显示了余额却签不了名。",
+        "LOCKER": "Locker Protocol Wallet 用保管在 Locker Vault 上的一组助记词，覆盖 EVM 网络、Solana、Bitcoin、Litecoin、Dogecoin、Cosmos 各链、Tron、Sui、Aptos、Stellar 和 XRP Ledger，并通过每条链各自的标准连接 dApp。",
+        "FAQ": {
+          "Q1": {
+            "Q": "多链钱包是不是更不安全？",
+            "A": "本身不是。安全取决于助记词和密钥住在哪里。一组放在离线设备上的助记词，对每一条链的保护都是一样的。"
+          },
+          "Q2": {
+            "Q": "我能在每条链上都用同一个地址吗？",
+            "A": "只有 EVM 网络可以，它们共用同一种地址格式。其他链各有各的地址。"
+          }
+        }
+      },
+      "TOKEN_LOCKER": {
+        "NAME": "代币锁仓",
+        "TITLE": "什么是代币锁仓合约？",
+        "META": {
+          "TITLE": "什么是代币锁仓？流动性锁定与线性释放",
+          "DESCRIPTION": "代币锁仓是一份持有代币直到某个日期或某个价格的智能合约，用来锁定流动性或者释放团队份额。了解锁仓怎样把信任一点点建立起来。"
+        },
+        "DEF": "代币锁仓是一份智能合约，它持有代币，只在设定的条件下释放：一个日期、一个价格，或者一张线性释放表。项目方用它锁住流动性池代币或团队份额，让它们无法提前卖出。",
+        "WHY": "一个新代币的买家想要证据，证明团队不能在一夜之间抽走流动性或者砸掉自己的份额。一份公开、已验证的合约上的锁仓就是这个证据，前提是它的所有者不能绕过它。",
+        "LOCKER": "Locker Protocol 正是从这里起步的：它的 ERC-20 锁仓合约支持时间锁和价格锁、自动线性释放和多签控制，每一项操作都在离线的 Locker Vault 上签名。合约公开，并已在链上验证。",
+        "FAQ": {
+          "Q1": {
+            "Q": "什么是流动性锁定？",
+            "A": "把一个交易池的 LP 代币锁进一份合约，锁定一段时间，这样在锁定期内流动性无法被撤走，代币也无法通过这种方式被抽干。"
+          },
+          "Q2": {
+            "Q": "什么是代币线性释放？",
+            "A": "把一份份额随时间逐步释放，通常先有一段悬崖期，让持有者分批拿到代币，而不是一次性全部到手。"
+          }
+        }
+      }
+    }
+  },
+  "TOKENS": {
+    "META": {
+      "TITLE": "{{symbol}} 钱包：用一把离线私钥保管 {{symbol}}",
+      "DESCRIPTION_MANY": "在 {{count}} 条网络上持有 {{name}}，私钥留在一台离线设备上。Locker Protocol Wallet 通过已验证的合约地址识别 {{symbol}}，每一笔转账都用二维码签名。",
+      "DESCRIPTION_ONE": "在 {{chain}} 上持有 {{name}}，私钥留在一台离线设备上。Locker Protocol Wallet 通过已验证的合约地址识别 {{symbol}}，每一笔转账都用二维码签名。",
+      "DESCRIPTION_NATIVE": "持有 {{name}}，私钥留在一台始终离线的设备上。Locker Protocol Wallet 在浏览器里负责收发 {{symbol}}，而每一笔转账都在离线设备上用二维码签名。"
+    },
+    "TITLE": "{{label}}，用一把离线私钥保管",
+    "SUBTITLE": "Locker Protocol Wallet 在浏览器里显示你的 {{symbol}} 余额，并把每一笔 {{symbol}} 转账送到离线设备 Locker Vault 上签名。",
+    "TABLE": {
+      "TITLE": "钱包在哪些网络上支持 {{symbol}}",
+      "NETWORK": "网络",
+      "STANDARD": "标准",
+      "CONTRACT": "合约",
+      "DECIMALS": "精度",
+      "FEE": "手续费币种",
+      "NATIVE": "原生币"
+    },
+    "VERIFIED": "上面每一个合约地址，都是在加入钱包之前在链上核对过的。同名代币很容易造出来：钱包只在这些地址上显示 {{symbol}} 的图标，任何其他自称 {{symbol}} 的代币都不会有图标。",
+    "STEPS": {
+      "TITLE": "收取和发送 {{symbol}}",
+      "S1": {
+        "TITLE": "把钱包装好",
+        "DESC": "在 Chrome 或 Brave 里安装 Locker Protocol Wallet，在一部保持离线的闲置手机上安装 Locker Vault。你的地址通过二维码传到扩展里。"
+      },
+      "S2": {
+        "TITLE": "收取 {{symbol}}",
+        "DESC": "把你在对方所用网络上的地址给他。网络很关键：在一条网络上发出的 {{symbol}}，不会出现在另一条网络上。"
+      },
+      "S3": {
+        "TITLE": "发送 {{symbol}}",
+        "DESC": "在扩展里填好收款方和金额，核对网络手续费，然后用保险库扫描这个请求，在它的屏幕上读一遍再批准。"
+      }
+    },
+    "FEE_NOTE": "一笔转账用网络自己的币支付手续费，即便你发的是代币：请留一点表格里列出的那种币。",
+    "FAQ": {
+      "TITLE": "关于 {{symbol}} 的常见问题",
+      "NETWORK": {
+        "Q": "收 {{symbol}} 该用哪条网络？",
+        "A": "用对方使用的那一条。从交易所提现时，提现表单里选的网络要和你给出的地址是同一条。两者对不上，资金可能不会到账。"
+      },
+      "FEE": {
+        "Q": "持有或发送 {{symbol}}，Locker Protocol Wallet 会收费吗？",
+        "A": "不会。持有不花钱，一笔转账只花网络手续费。钱包自己的费用只针对在扩展里做的兑换和跨链桥，最高 0.25%，并且会在你签名之前显示出来。"
+      },
+      "FAKE": {
+        "Q": "怎样避开假的 {{symbol}} 代币？",
+        "A": "把合约地址和这里列出的、或者发行方官网上的地址对一下。一个你没要过、却自己出现在钱包里、还自称 {{symbol}} 的代币，往往是骗局的诱饵。"
+      },
+      "KEY": {
+        "Q": "控制我 {{symbol}} 的私钥在哪里？",
+        "A": "在离线设备 Locker Vault 上，由你的助记词派生而来。你电脑上的扩展只知道你的地址，所以电脑上的恶意软件动不了你的 {{symbol}}。"
+      }
+    },
+    "RELATED": "同样这些网络上的其他资产",
+    "CHAIN_PAGE": "{{chain}} 上的钱包",
+    "DISCLAIMER": "{{name}} 并非由 Locker Protocol 发行，本页任何内容都不构成投资建议。",
+    "CATEGORY": {
+      "NATIVE": "原生币",
+      "STABLECOIN": "稳定币",
+      "MAJOR": "代币",
+      "WRAPPED": "封装资产"
+    },
+    "HUB": {
+      "CRUMB": "币与代币",
+      "META": {
+        "TITLE": "可以离线保管的加密资产：{{count}} 种币与代币",
+        "DESCRIPTION": "USDT、USDC、ETH、BTC、SOL、TRX 等 {{count}} 种资产，都附有已验证的合约地址，私钥留在一台离线设备上，每一笔转账都用二维码离线签名。"
+      },
+      "TITLE": "币与代币",
+      "SUBTITLE": "钱包认识的 {{count}} 种资产，附上它在哪些网络上持有它们，以及用来识别它们的已验证合约地址。"
+    },
+    "ITEMS": {
+      "USDT": {
+        "DESC": "Tether USD（USDT）是 Tether 发行的稳定币，设计目标是维持一美元的价值。它在很多网络上流通，其中大部分供应量在 Tron 和 Ethereum 上。"
+      },
+      "USDC": {
+        "DESC": "USD Coin（USDC）是 Circle 发行的稳定币，由现金和美国短期国债支撑，可按一比一赎回美元。在 Arbitrum 和 Optimism 上，更早的跨链版本以 USDC.e 单独列出。"
+      },
+      "DAI": {
+        "DESC": "Dai 是 Maker 协议（现名 Sky）创建的去中心化稳定币，由锁定在智能合约里的加密资产抵押品支撑。"
+      },
+      "USD1": {
+        "DESC": "USD1 是 World Liberty Financial 发行的美元稳定币，由美国国债、现金及现金等价物支撑。"
+      },
+      "PYUSD": {
+        "DESC": "PayPal USD（PYUSD）是 Paxos 为 PayPal 发行的美元稳定币，可按一比一赎回。"
+      },
+      "USDE": {
+        "DESC": "USDe 是 Ethena 的合成美元：它靠加密资产抵押品加上做空期货对冲维持在一美元附近，而不是靠银行存款。"
+      },
+      "USDG": {
+        "DESC": "Global Dollar（USDG）是 Paxos 为 Global Dollar Network 发行的美元稳定币。"
+      },
+      "USDH": {
+        "DESC": "USDH 是 Hyperliquid 的原生美元稳定币，由 Native Markets 发行。"
+      },
+      "USDT0": {
+        "DESC": "USDT0 是 Tether 的 USDT 的全链形态，通过 LayerZero 在各网络之间流转。它就是 HyperEVM 上使用的 USDT。"
+      },
+      "USDD": {
+        "DESC": "USDD 是 Tron 生态的稳定币，由 TRON DAO Reserve 持有的抵押品支撑。它换过一次合约，钱包同时识别当前的合约和第一版。"
+      },
+      "TUSD": {
+        "DESC": "TrueUSD（TUSD）是一种美元稳定币，在这里以 Tron 上的 TRC-20 代币形式持有。"
+      },
+      "GHO": {
+        "DESC": "GHO 是 Aave 协议的去中心化稳定币，由借款人用他们存入 Aave 的抵押品铸造出来。"
+      },
+      "LUSD": {
+        "DESC": "Liquity USD（LUSD）是一种去中心化稳定币，通过 Liquity 协议以 ETH 抵押品铸造。"
+      },
+      "WLFI": {
+        "DESC": "WLFI 是 World Liberty Financial 的治理代币，该项目发行 USD1 稳定币。"
+      },
+      "ONDO": {
+        "DESC": "ONDO 是 Ondo Finance 的治理代币，这个平台做美国国债和其他现实世界资产的代币化。"
+      },
+      "LINK": {
+        "DESC": "LINK 是 Chainlink 的代币，这个预言机网络把价格等链下数据送进智能合约。"
+      },
+      "ARB": {
+        "DESC": "ARB 是以太坊二层网络 Arbitrum 的治理代币，用于在 Arbitrum DAO 里投票。"
+      },
+      "OP": {
+        "DESC": "OP 是 Optimism 及其 Superchain 的治理代币，用于在 Optimism Collective 里投票。"
+      },
+      "JST": {
+        "DESC": "JST 是 JUST 的治理代币，JUST 是 Tron 上做借贷和稳定币的 DeFi 平台。"
+      },
+      "SUN": {
+        "DESC": "SUN 是 SUN.io 的治理代币，SUN.io 是 SunSwap 背后的 Tron DeFi 平台。"
+      },
+      "WIN": {
+        "DESC": "WIN 是 WINkLink 的代币，WINkLink 是 Tron 上的一个预言机网络。"
+      },
+      "BTT": {
+        "DESC": "BTT 是 BitTorrent 的代币，用在整个 BitTorrent 生态及其 BTTC 链上。"
+      },
+      "HTX": {
+        "DESC": "HTX 是 HTX DAO 的代币，与 HTX 交易所（前身为 Huobi）相关联。"
+      },
+      "WETH": {
+        "DESC": "Wrapped Ether（WETH）是代币形态的 ETH，可与 ETH 一比一互换，好让智能合约能像处理其他代币一样处理它。"
+      },
+      "WBTC": {
+        "DESC": "Wrapped Bitcoin（WBTC）是一种由托管的比特币一比一支撑的代币，它把 BTC 带到 Ethereum 和其他网络上。"
+      },
+      "CBBTC": {
+        "DESC": "Coinbase Wrapped BTC（cbBTC）是一种由 Coinbase 持有的比特币一比一支撑的代币。"
+      },
+      "ETH": {
+        "DESC": "Ether（ETH）是 Ethereum 的原生币。它在 Ethereum 以及建立在它之上的二层网络上支付交易手续费，比如 Arbitrum、Optimism、Base 和 Linea。"
+      },
+      "BTC": {
+        "DESC": "Bitcoin（BTC）是第一种加密货币，自 2009 年起运行在自己的网络上，供应量上限为 2100 万枚。"
+      },
+      "SOL": {
+        "DESC": "SOL 是 Solana 的原生币。它支付交易手续费，也用于质押来保障网络安全。"
+      },
+      "TRX": {
+        "DESC": "TRX 是 Tron 的原生币。它用来支付带宽和能量，也可以通过质押获得这两者。"
+      },
+      "BNB": {
+        "DESC": "BNB 是 BNB Chain 的原生币，在这条链上支付交易手续费。"
+      },
+      "POL": {
+        "DESC": "POL 是 Polygon PoS 的原生币。它在 2024 年取代了 MATIC。"
+      },
+      "AVAX": {
+        "DESC": "AVAX 是 Avalanche 的原生币。它在 C-Chain 上支付手续费，Avalanche 的 EVM 应用就跑在那里。"
+      },
+      "HYPE": {
+        "DESC": "HYPE 是 Hyperliquid 的原生代币。它在 HyperEVM 上支付 Gas，也用于质押来保障网络安全。"
+      },
+      "OSMO": {
+        "DESC": "OSMO 是 Osmosis 的原生代币，Osmosis 是 Cosmos 生态里最大的去中心化交易所所在的那条链。"
+      },
+      "INJ": {
+        "DESC": "INJ 是 Injective 的原生代币，Injective 是一条专为金融应用而建的 Cosmos 链。"
+      },
+      "RUNE": {
+        "DESC": "RUNE 是 THORChain 的原生代币，THORChain 可以跨链兑换原生资产，比如用 BTC 换 ETH，而不必封装它们。"
+      },
+      "SUI": {
+        "DESC": "SUI 是 Sui 的原生币。它支付 Gas 手续费，也用于质押来保障网络安全。"
+      },
+      "APT": {
+        "DESC": "APT 是 Aptos 的原生币。它支付 Gas 手续费，也用于质押来保障网络安全。"
+      },
+      "XLM": {
+        "DESC": "Lumens（XLM）是 Stellar 的原生币。每个账户都要留一小笔 XLM 作为储备金，手续费也用 XLM 支付。"
+      },
+      "XRP": {
+        "DESC": "XRP 是 XRP Ledger 的原生币。每个账户都要留一笔 XRP 作为储备金，手续费也用 XRP 支付。"
+      },
+      "LTC": {
+        "DESC": "Litecoin（LTC）是最早的加密货币之一，2011 年推出，是比特币的一个更快的兄弟。"
+      },
+      "DOGE": {
+        "DESC": "Dogecoin（DOGE）最初在 2013 年作为一个玩笑出现，后来成了持有人数最多的加密货币之一。"
+      }
+    }
+  }
+}
