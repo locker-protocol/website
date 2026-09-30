@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Osmosis">
+  <circle cx="16" cy="16" r="16" fill="#5E12A0"/>
+  <path d="M16 6.5a9.5 9.5 0 1 0 9.5 9.5 9.5 9.5 0 0 0-9.5-9.5Zm0 3.6a5.9 5.9 0 1 1-5.9 5.9 5.9 5.9 0 0 1 5.9-5.9Z" fill="#fff" opacity=".35"/>
+  <path d="M16 6.5a9.5 9.5 0 0 1 9.5 9.5h-3.6A5.9 5.9 0 0 0 16 10.1Z" fill="#fff"/>
+  <circle cx="16" cy="16" r="2.6" fill="#fff"/>
+</svg>
