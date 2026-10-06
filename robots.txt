@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /ai/
+Disallow: /widget/
+
+Sitemap: https://lockerprotocol.com/sitemap.xml
