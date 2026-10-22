@@ -1,0 +1,110 @@
+{
+    "schemaVersion": 1,
+    "modelId": "onnx-community/Qwen3-0.6B-ONNX",
+    "revision": "da1453100cf3ff33ef56d17983fc7a8648706db6",
+    "version": "qwen3-0.6b-q4f16-da145310",
+    "dtype": "q4f16",
+    "totalBytes": 578917626,
+    "files": [
+        {
+            "path": "config.json",
+            "bytes": 912,
+            "sha256": "8a04114ba59cc42b47d804d35d1d5c61d746ae4634f41f796768c6e302d39b9e",
+            "parts": [
+                {
+                    "path": "config.json.part0",
+                    "bytes": 912,
+                    "sha256": "8a04114ba59cc42b47d804d35d1d5c61d746ae4634f41f796768c6e302d39b9e"
+                }
+            ]
+        },
+        {
+            "path": "generation_config.json",
+            "bytes": 219,
+            "sha256": "9e9e031ae8bca36eefcdcdd0b35d83c61baa01e31d68d5f5a961c9ca1a4b95bf",
+            "parts": [
+                {
+                    "path": "generation_config.json.part0",
+                    "bytes": 219,
+                    "sha256": "9e9e031ae8bca36eefcdcdd0b35d83c61baa01e31d68d5f5a961c9ca1a4b95bf"
+                }
+            ]
+        },
+        {
+            "path": "tokenizer.json",
+            "bytes": 9117040,
+            "sha256": "e7a95fce95bf5b0946d0ddb3f9d7caa030b7e850bbe92b0edb26bcf563e9f3d5",
+            "parts": [
+                {
+                    "path": "tokenizer.json.part0",
+                    "bytes": 9117040,
+                    "sha256": "e7a95fce95bf5b0946d0ddb3f9d7caa030b7e850bbe92b0edb26bcf563e9f3d5"
+                }
+            ]
+        },
+        {
+            "path": "tokenizer_config.json",
+            "bytes": 9705,
+            "sha256": "b0a8115cf05a7002cbe2575058c0139c1dee3f06f221c05717c3444947d78b9f",
+            "parts": [
+                {
+                    "path": "tokenizer_config.json.part0",
+                    "bytes": 9705,
+                    "sha256": "b0a8115cf05a7002cbe2575058c0139c1dee3f06f221c05717c3444947d78b9f"
+                }
+            ]
+        },
+        {
+            "path": "onnx/model_q4f16.onnx",
+            "bytes": 569789750,
+            "sha256": "9e33a5911974174761d0dfdcc0bec975d9c45af0eae5e9eb647b8ba9442a8f91",
+            "parts": [
+                {
+                    "path": "onnx/model_q4f16.onnx.part0",
+                    "bytes": 67108864,
+                    "sha256": "dd70364819d2190ac455bdcfbd6a4fcbe144a7ae1f978bfec1036d90414c7c85"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part1",
+                    "bytes": 67108864,
+                    "sha256": "8311ea98eedd081df3ac1c96ddc6fb4bc79013934193ebdbac98125c965285a0"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part2",
+                    "bytes": 67108864,
+                    "sha256": "44bee5189c18bf67b1763da74abc33d765f5a2bc1e06653e19590e83906f7f09"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part3",
+                    "bytes": 67108864,
+                    "sha256": "daf273d8bf31365f306b7ab1a3c84348c3135531473dd97c918bde899ffdfb1b"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part4",
+                    "bytes": 67108864,
+                    "sha256": "036b0df97d5064b823304ea3c2ab78d4bd9a5c4fb1601bd3d392678c1f37dbe1"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part5",
+                    "bytes": 67108864,
+                    "sha256": "9994cbbc7ddeeee03b39ef277bbe0116b5bc0cdb97496fd4e93909f8d4c453cc"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part6",
+                    "bytes": 67108864,
+                    "sha256": "7c16fb506478bf5728fb4629552fd0e71a5ef45085ada288ae7dfa836312e01b"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part7",
+                    "bytes": 67108864,
+                    "sha256": "feed311f3969fca2e0abcee446a9d79e3ac9d16e75c52610a04f46329deafe20"
+                },
+                {
+                    "path": "onnx/model_q4f16.onnx.part8",
+                    "bytes": 32918838,
+                    "sha256": "984ece1ecbddd6304a4c776cb70c69bc8a1ec001ab747eff2609eff4f8049a43"
+                }
+            ]
+        }
+    ]
+}
